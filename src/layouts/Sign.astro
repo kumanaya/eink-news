@@ -1,7 +1,7 @@
 ---
 import '../styles/sign.css';
 
-const { masthead, refresh } = Astro.props;
+const { masthead, refresh, track } = Astro.props;
 ---
 
 <!doctype html>
@@ -12,13 +12,26 @@ const { masthead, refresh } = Astro.props;
     <link rel="icon" href="/favicon.ico" />
     {refresh && <meta http-equiv="refresh" content={String(refresh)} />}
     <title>{masthead}</title>
+    {track && (
+      <>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-85QTN3XFK6" is:inline></script>
+        <script is:inline>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-85QTN3XFK6');
+        </script>
+      </>
+    )}
   </head>
   <body>
     <slot />
 
     <!--
-      The only script in this project, in plain ES5 (the Kindle's browser is
-      old, and its bundler-free parser takes no arrows or backticks):
+      The board script, in plain ES5 (the Kindle's browser is old, and its
+      bundler-free parser takes no arrows or backticks). The Google tag above
+      is only on the live site, not on the photographed slides.
 
       - fitAll shrinks the type inside the fixed boxes until it fits. CSS cannot
         measure text, and a headline that pushes the story down the screen
