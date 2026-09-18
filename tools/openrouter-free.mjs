@@ -13,8 +13,6 @@ export const FALLBACK_FREE_MODELS = [
   'google/gemma-4-31b-it:free',
   'google/gemma-4-26b-a4b-it:free',
   'deepseek/deepseek-v4-flash-0731:free',
-  'thinkingmachines/inkling-small:free',
-  'thinkingmachines/inkling:free',
   'z-ai/glm-5.2:free',
   'nvidia/nemotron-3-super-120b-a12b:free',
   'liquid/lfm-2.5-2.6b:free',
@@ -22,7 +20,7 @@ export const FALLBACK_FREE_MODELS = [
 ];
 
 // Guardrails, coding agents and specialist clinics are a poor newspaper desk.
-const SKIP = /content-safety|-sante:|laguna|north-mini-code/;
+const SKIP = /content-safety|-sante:|laguna|north-mini-code|inkling/;
 
 const FAST_FIRST = [
   'openrouter/free',
@@ -33,7 +31,6 @@ const FAST_FIRST = [
   'google/gemma-4-31b-it:free',
   'google/gemma-4-26b-a4b-it:free',
   'deepseek/deepseek-v4-flash-0731:free',
-  'thinkingmachines/inkling-small:free',
   'z-ai/glm-5.2:free',
 ];
 
