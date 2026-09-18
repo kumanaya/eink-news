@@ -51,6 +51,8 @@ local Edition = {}
 -- How often to ask whether a new edition exists, in seconds. Low enough to
 -- feel live, high enough not to keep the Kindle's radio busy.
 Edition.watch_seconds = 20
+-- How long a slide stays on screen, matching the board (feeds.json `seconds`).
+Edition.page_seconds = 8
 
 local function editionDir()
     return DataStorage:getDataDir() .. "/einknews"
@@ -181,8 +183,11 @@ local function preparePages(server, rendering)
     return pages, missing and "some pages could not be downloaded" or nil
 end
 
--- Shows the edition full bleed and watches for the next one.
+-- Shows the edition full bleed. `opts.auto` is the board: pages turn on a
+-- timer, like the site and the scriptlet. Without it, it is a reader: you
+-- turn, it waits.
 local function openViewer(server, edition, pages, opts)
+    local auto = opts.auto and true or false
     local viewer = ImageViewer:new{
         image = pages,
         fullscreen = true,
@@ -194,6 +199,43 @@ local function openViewer(server, edition, pages, opts)
     UIManager:show(viewer)
 
     local stopped = false
+    local seconds = tonumber(edition.seconds) or Edition.page_seconds
+    if seconds < 2 then seconds = Edition.page_seconds end
+
+    local function pageCount()
+        return viewer._images_list_nb or #pages
+    end
+
+    local function go(delta)
+        local n = pageCount()
+        if n < 2 or not viewer.switchToImageNum then return end
+        local cur = viewer._images_list_cur or 1
+        local nxt = ((cur - 1 + delta) % n) + 1
+        viewer:switchToImageNum(nxt)
+    end
+
+    local advance
+    advance = function()
+        if stopped then return end
+        go(1)
+        UIManager:scheduleIn(seconds, advance)
+    end
+
+    local function arm()
+        if not auto then return end
+        UIManager:unschedule(advance)
+        UIManager:scheduleIn(seconds, advance)
+    end
+
+    -- Same gesture as the board: tap left/right thirds, wrap around.
+    viewer.onShowNextImage = function()
+        go(1)
+        arm()
+    end
+    viewer.onShowPrevImage = function()
+        go(-1)
+        arm()
+    end
 
     local function tick()
         if stopped then return end
@@ -201,19 +243,21 @@ local function openViewer(server, edition, pages, opts)
         if fresh and fresh.generated ~= edition.generated then
             logger.info("einknews: a new edition is on the wire:", tostring(fresh.generated))
             stopped = true
+            UIManager:unschedule(advance)
             UIManager:close(viewer)
-            Edition.show{ server = server, quiet = true }
+            Edition.show{ server = server, quiet = true, auto = auto }
             return
         end
         UIManager:scheduleIn(Edition.watch_seconds, tick)
     end
+    arm()
     UIManager:scheduleIn(Edition.watch_seconds, tick)
 
-    -- Stop asking the server the moment the viewer goes away.
     local inherited_close = viewer.onCloseWidget
     viewer.onCloseWidget = function(self)
         stopped = true
         UIManager:unschedule(tick)
+        UIManager:unschedule(advance)
         if inherited_close then
             return inherited_close(self)
         end
@@ -221,12 +265,16 @@ local function openViewer(server, edition, pages, opts)
 end
 
 --[[--
-Edition.show{ server = "http://host:port", on_need_server = fn, quiet = bool }
+Edition.show{
+    server = "http://host:port",
+    on_need_server = fn,
+    quiet = bool,
+    auto = bool,
+}
 
-Downloads and opens the edition. Downloading happens in the UI thread, but a
-local network makes that a couple of seconds; the socket timeouts keep a dead
-server from hanging it forever. `quiet` is for the background refresh that
-follows a new edition - it must not flash a message on the screen.
+Downloads and opens the edition. `auto` is the board (pages turn themselves).
+Without it, it is a reader: left and right thirds, nothing moves on its own.
+`quiet` is for the background refresh that follows a new edition.
 --]]
 function Edition.show(opts)
     local server = opts.server

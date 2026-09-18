@@ -49,34 +49,59 @@ at a time, on a panel that loves a full-screen repaint.
 
 ## On the Kindle
 
-Two doors. Same paper: [eink-news-nine.vercel.app](https://eink-news-nine.vercel.app/).
+Same paper: [eink-news-nine.vercel.app](https://eink-news-nine.vercel.app/).
+Two ways to read it on the panel, plus the live HTML if you want it.
 
-### Experimental browser
+| | **Reader** | **Board** |
+| --- | --- | --- |
+| What it is | You turn the pages | Walk away; it turns itself |
+| Where | KOReader → Tools | Library, as a scriptlet |
+| Gesture | Left / right thirds | Tap once to leave |
+| Beat | Still until you tap | Every eight seconds |
+| Needs | KOReader plugin | `curl` or HTTPS `wget` |
 
-Open `https://eink-news-nine.vercel.app/` and leave it.
-
-The board turns on its own. A tap on the side turns it by hand. Only the
-picture on screen is fetched. Every ten minutes the page reloads for the
-next edition.
-
-### KOReader plugin
+### Reader
 
 KOReader cannot draw HTML, so the server photographs each slide and the
-plugin shows the pictures. It already knows the Vercel address.
+plugin shows the pictures. You turn them like a book.
 
 ```sh
 cp -r einknews.koplugin /path/to/koreader/plugins/
 ```
 
-Restart KOReader, then **Tools → E-INK NEWS**. The paper opens.
+Restart KOReader, then **Tools → E-INK NEWS: reader**.
 
-To host it yourself instead, set **Tools → E-INK NEWS: server** to that
-URL (no trailing slash).
+Left third goes back. Right third goes forward. Middle tap for the
+buttons. While it is open it checks for a new edition every 20 seconds
+and pulls pages one at a time (the radio is slow).
 
-Left / right to turn. Middle tap for the buttons. While it is open it
-checks for a new edition every 20 seconds, and pulls pages one at a time
-(the radio is slow). Copy the plugin once. After that the Kindle follows
-the server by itself.
+### Board
+
+The scriptlet paints the same photographs with fbink, full screen, on
+the same eight-second beat as the site. Open it from the library and
+leave the Kindle on the table.
+
+```sh
+cp eink-news.sh /mnt/us/documents/
+```
+
+Eject. It shows up as **E-INK NEWS**. Tap once to go back to the library.
+
+The Kindle needs `curl` or a `wget` that speaks HTTPS. The paper lives
+on Vercel.
+
+Inside KOReader there is the same mode: **Tools → E-INK NEWS: board**.
+The pages turn by themselves; a tap on the side still skips.
+
+To host the paper yourself, set **Tools → E-INK NEWS: server** (no
+trailing slash).
+
+### Experimental browser
+
+Open `https://eink-news-nine.vercel.app/` and leave it.
+
+This is the **only** door that draws the live HTML: the timer, the taps,
+the footer. Every ten minutes the page reloads for the next edition.
 
 ---
 
@@ -179,6 +204,7 @@ src/data/summaries.json    so a headline is never asked twice
 public/img/news/           pictures for this edition
 public/kindle/             photographed slides for the plugin
 einknews.koplugin/         KOReader app
+eink-news.sh               scriptlet: the paper from the library
 docs/banner.jpg            the masthead above
 ```
 

@@ -11,6 +11,8 @@ return {
     description = _([[Reads the newspaper from the E-INK NEWS server.
 
 The default address is https://eink-news-nine.vercel.app.
-Change it under Tools > E-INK NEWS: server, then open Tools > E-INK NEWS.]]),
+Tools > E-INK NEWS: reader — you turn the pages.
+Tools > E-INK NEWS: board — the pages turn themselves, like the scriptlet.
+Change the address under Tools > E-INK NEWS: server.]]),
     version = "0.1.0",
 }
