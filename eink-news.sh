@@ -156,6 +156,9 @@ load_edition() {
 }
 
 mkdir -p "$APP_DIR" "$CACHE"
+# Always start from the server's paper. page-00.png kept from last open would
+# otherwise outlive a new edition.json (same filenames, new pictures).
+rm -f "$CACHE"/page-*.png
 log "start $SERVER"
 say "E-INK NEWS
 fetching today's edition..."
