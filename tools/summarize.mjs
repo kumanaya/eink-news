@@ -17,9 +17,8 @@
 //   so the board fills in English instead of reprinting the feed language;
 // - the Vercel build never waits on a model.
 //
-// Free models are shared and rate-limited, so the live :free catalogue is
-// tried in order. A 429 retires that model for the rest of the run; a daily
-// free-model cap is shared across the whole pool.
+// The copy desk stays on one model (feeds.json `summaries_model`). Fallback
+// through the live :free catalogue is opt-in; a 429 or 403 retires that model.
 
 import { existsSync, readFileSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
@@ -257,6 +256,8 @@ async function main() {
         lastError = `${candidate.split('/')[0]}: ${err.message}`;
         if (isRateLimit(err)) {
           retire(candidate, isDailyFreeCap(err) ? 'daily free cap' : '429');
+        } else if (/HTTP 403/.test(String(err && err.message))) {
+          retire(candidate, '403');
         } else if (pool[0] === candidate && pool.length > 1) {
           pool.push(pool.shift());
         }

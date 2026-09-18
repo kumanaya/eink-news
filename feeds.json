@@ -840,6 +840,6 @@
   "require_image": true,
   "max_downloads": 500,
   "summaries_concurrency": 4,
-  "summaries_model": "nex-agi/nex-n2.5-pro:free",
-  "summaries_fallback": true
+  "summaries_model": "deepseek/deepseek-v4-flash-0731:free",
+  "summaries_fallback": false
 }
