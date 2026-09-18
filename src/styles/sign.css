@@ -87,6 +87,8 @@ body {
 
 .masthead-meta .center {
   text-align: center;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .section {
@@ -163,22 +165,12 @@ body {
   color: #555;
 }
 
-.stamp {
-  position: absolute;
-  bottom: 1vh;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.35vh;
-  letter-spacing: 0.04em;
-  color: #555;
-  z-index: 2;
-}
-
 .stamp-link {
   display: inline-block;
-  margin: 0 1.2vw;
-  color: #555;
+  margin: 0 0.7vw;
+  color: #333;
+  letter-spacing: 0.04em;
+  text-decoration: none;
   vertical-align: middle;
 }
 
