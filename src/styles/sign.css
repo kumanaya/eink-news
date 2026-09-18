@@ -117,19 +117,17 @@ body {
   height: 26vh;
   margin-top: 1.2vh;
   overflow: hidden;
-  text-align: center;
+  border: 1px solid #999;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .media img {
-  max-width: 100%;
-  max-height: 100%;
-  border: 1px solid #999;
-}
-
-/* A story without a picture hands its box to the summary, so everything under
-   it keeps the same place on the screen. */
-.slide.no-media .summary {
-  height: 41vh;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-object-fit: cover;
+  object-fit: cover;
 }
 
 .summary {

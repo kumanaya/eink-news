@@ -7,7 +7,7 @@ const lead = slide.summary || slide.description;
 const rest = slide.summary ? slide.description : '';
 ---
 
-<div class={media ? 'slide' : 'slide no-media'}>
+<div class="slide">
   <div class="slide-inner">
     <div class="masthead-block">
       <div class="masthead-title">{masthead}</div>
@@ -26,17 +26,17 @@ const rest = slide.summary ? slide.description : '';
       <a href={slide.link}>{slide.title}</a>
     </h1>
 
-    {media && (
-      <div class="media">
-        <!-- data-src: the board's script puts it in src when the story comes
-             up. With hundreds of slides, loading every picture at once would
-             sink the Kindle's browser. -->
-        <img data-src={media} alt="" />
-      </div>
-    )}
+    <div class="media">
+      <!-- data-src: the board's script puts it in src when the story comes
+           up. With hundreds of slides, loading every picture at once would
+           sink the Kindle's browser. The well is always 26vh; the picture
+           fills it (cropped if the ratio differs), so a tall photo and a
+           wide one leave every block in the same place. -->
+      {media && <img data-src={media} alt="" />}
+    </div>
 
     <p class="summary fit" data-min="1.8" data-max="3.1">{lead}</p>
-    {rest && <p class="description fit" data-min="1.5" data-max="2.3">{rest}</p>}
+    <p class="description fit" data-min="1.5" data-max="2.3">{rest}</p>
 
     <div class="byline">By {slide.byline} · {slide.dateline}</div>
   </div>
