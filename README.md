@@ -109,7 +109,7 @@ taps. Every ten minutes the page reloads for the next edition.
 
 ```sh
 npm install
-npm run news      # stories, pictures, summaries
+npm run news      # stories, pictures, English via NLLB
 npm run build     # the static board
 npm run render    # photos for the plugin
 npm run serve     # http://<this-machine-ip>:8080/  (local only)
@@ -124,14 +124,9 @@ sudo ufw allow 8080/tcp
 `npm run build` never goes online. It reads `src/data/news.json`, which
 already lives in the repo.
 
-Summaries need an OpenRouter key. Without one the board still builds —
-the feed text stands in until the lines catch up.
-
-```sh
-export OPENROUTER_API_KEY=sk-or-...      # or drop it in .openrouter-key
-```
-
-`.openrouter-key` is git-ignored.
+English comes from a local NLLB-200 model (`pip install -r
+tools/requirements-translate.txt`). The GitHub Action does that on the
+runner; the live board never waits on OpenRouter.
 
 ---
 
