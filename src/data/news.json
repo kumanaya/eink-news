@@ -4,10 +4,10 @@
   "edition": "Morning Edition",
   "price": "Free",
   "seconds": 8,
-  "generatedAt": "2026-09-18T02:45:06.024Z",
+  "generatedAt": "2026-09-18T04:15:40.578Z",
   "feeds": {
     "polled": 170,
-    "reachable": 170
+    "reachable": 168
   },
   "slides": [
     {
@@ -22,46 +22,483 @@
       "image": "/img/news/3806a87443a9.png"
     },
     {
+      "section": "Europe",
+      "title": "VIDEO Borbeni zrakoplov F-16 srušio se u sjevernom Michiganu",
+      "summary": "Pilot se sigurno katapultirao. Američki mediji o tome su izvijestili u četvrtak.",
+      "description": "Američki borbeni zrakoplov F-16 srušio se u Michiganu, na sjeveru Sjedinjenih Država, a pilot se sigurno katapultirao, izvijestili su u četvrtak američki mediji…",
+      "link": "https://www.jutarnji.hr/vijesti/svijet/f-16-pao-michigan-pilot-katapultiran-evakuacija-interlochen-15747511",
+      "date": "Fri, 18 Sep 2026 06:14:43 +0200",
+      "byline": "Tomasz Kruk",
+      "image": "/img/news/86383e56c92c.png"
+    },
+    {
       "section": "Asia",
-      "title": "민주, '학생 전용 스마트폰' 검토…'알파폰 프로젝트'TF 꾸려",
-      "summary": "The Democratic Party is considering a student-only smartphone to curb excessive use. It formed an Alpha Phone task force led by Rep. Kim Young-ho.",
-      "description": "더불어민주당 최고위원회[연합뉴스 자료 제공][연합뉴스 자료 제공] 더불어민주당이 학생들 스마트폰 과몰입을 방지하고자 학생 전용 스마트폰을 도입하기 위한 검토에 들어가기로 했습니다. 민주당 박성준 수석대변인은 오늘(18일) 비공개 최고위원회의 뒤 기자들과 만나 \"김영호 의원을 단장으로 학생전용 스마트폰…",
-      "link": "https://www.yonhapnewstv.co.kr/news/AKR20260918114320HsV",
-      "date": "Fri, 18 Sep 2026 11:43:21 +0900",
+      "title": "갤럽 \"이 대통령 국정지지율 37%로 최저…1%p↓\"",
+      "summary": "한국갤럽은 지난 15일부터 사흘간 전국 만 18세 이상 유권자 1,002명을 대상으로 조사했다. 긍정 평가는 4주 연속 하락했다.",
+      "description": "이재명 대통령의 국정 운영 지지도가 4주 연속 하락하며 취임 후 최저치를 또 다시 경신했다는 여론조사 결과가 나왔습니다. 한국갤럽이 지난 15일부터 사흘간 전국 만 18세 이상 유권자 1,002명을 대상으로 조사한 결과에 따르면, 대통령 직무 수행 긍정 평가는 37%로 직전 조사보다 1%p…",
+      "link": "https://www.yonhapnewstv.co.kr/news/MYH20260918131237apq",
+      "date": "Fri, 18 Sep 2026 13:12:40 +0900",
       "byline": "Kenji Sato",
-      "dateline": "TOKYO",
-      "image": "/img/news/47a0253b8505.png"
+      "dateline": "WASHINGTON",
+      "image": "/img/news/a2b6dc34e275.png"
     },
     {
       "section": "Europe",
-      "title": "Nieoficjalnie: USA chcą wycofać co trzeciego żołnierza z Europy. A może nawet co drugiego",
-      "summary": "The Pentagon is reportedly considering withdrawing up to 25,000 US troops from Europe. It is also weighing cuts to aircraft, ships and other military equipment.",
-      "description": "Wycofanie nawet 25 tysięcy żołnierzy z Europy, a także redukcję liczby samolotów, okrętów i sprzętu wojskowego stacjonujących na Starym Kontynencie rozważa Pentagon -…",
-      "link": "https://www.rp.pl/dyplomacja/art45158451-nieoficjalnie-usa-chca-wycofac-co-trzeciego-zolnierza-z-europy-a-moze-nawet-co-drugiego",
-      "date": "Fri, 18 Sep 2026 04:42:26 +0200",
+      "title": "Eldrebølgen kan gi flere trafikkulykker – forskere krever mer kunnskap",
+      "summary": "",
+      "description": "Forskere frykter at eldrebølgen kan påvirke antallet trafikkulykker framover.",
+      "link": "https://www.aftenposten.no/norge/i/XMk5Vn/eldreboelgen-kan-gi-flere-trafikkulykker-forskere-krever-mer-kunnskap",
+      "date": "Fri, 18 Sep 2026 04:11:58 GMT",
+      "byline": "Ada Morrow",
+      "dateline": "PARIS",
+      "image": "/img/news/7019db3571ab.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Marad a kellemes szeptemberi idő, akár 28 fok is lehet",
+      "summary": "A nappali csúcsok 23 és 28 fok között várhatók. Késő estére 14–21 fokig hűl a levegő.",
+      "description": "A legmagasabb nappali hőmérséklet 23 és 28 fok között alakul, késő estére 14–21 fokig hűl a levegő. The post Marad a kellemes szeptemberi idő, akár 28 fok is lehet first…",
+      "link": "https://24.hu/belfold/2026/09/18/idojaras-napsutes-28-fok-futo-zapor/",
+      "date": "Fri, 18 Sep 2026 04:08:35 +0000",
       "byline": "Amira Hassan",
-      "image": "/img/news/c5eaba5cd5a7.png"
+      "dateline": "PARIS",
+      "image": "/img/news/d7ef8e035069.png"
     },
     {
-      "section": "Europe",
-      "title": "Marek Pol: Korzenie sukcesu. Dlaczego jednym się udaje, a inni zostają w tyle?",
-      "summary": "Marek Pol explores why some regions succeed while others lag behind. He argues that inheritance rules shaped farm size and prosperity.",
-      "description": "Gdyby Wielkopolska była pod zaborem austriackim, tamtejsze gospodarstwa niczym nie różniłyby się od tych z Małopolski. Jedna prosta decyzja dotycząca zasad dziedziczenia…",
-      "link": "https://www.rp.pl/opinie-ekonomiczne/art45154361-marek-pol-korzenie-sukcesu-dlaczego-jednym-sie-udaje-a-inni-zostaja-w-tyle",
-      "date": "Fri, 18 Sep 2026 04:41:00 +0200",
-      "byline": "James Hale",
-      "image": "/img/news/4b7f2ddd1b48.png"
+      "section": "Finance",
+      "title": "We quit our jobs to travel the world. Now my wife and I run her family's farm in South…",
+      "summary": "Kang Soo-il, known as Kay, had never grown a crop from start to finish before moving to his in-laws' farm in South Korea. His father-in-law taught him the basics of farming.",
+      "description": "Kang \"Kay\" Soo-il had never grown a crop from start to finish. He learned the basics from his father-in-law on his wife's family farm in South Korea.",
+      "link": "https://www.businessinsider.com/couple-quit-jobs-travel-the-world-family-farm-south-korea-2026-9",
+      "date": "2026-09-18T04:08:16Z",
+      "byline": "Amira Hassan",
+      "image": "/img/news/543457f002ce.png"
     },
     {
       "section": "Asia",
-      "title": "Japan’s manufacturing hub Aichi bets on Asian Games to drive growth despite soaring costs",
-      "summary": "Aichi prefecture expects the Asian Games to generate trillions of yen for its manufacturing economy. Its hosting budget has more than tripled from the original estimate as costs have surged.",
-      "description": "The Japanese prefecture expects the Games to generate trillions of yen in economic benefits, after its budget for hosting the event more than tripled from initial…",
-      "link": "https://www.channelnewsasia.com/asia/japan-manufacturing-hub-aichi-asian-games-soaring-costs-6391536",
-      "date": "Fri, 18 Sep 2026 10:36:10 +0800",
+      "title": "Watch: Why are these Paniya families still living in tents seven years after Kerala…",
+      "summary": "The Kerala Human Rights Commission directed authorities to arrange permanent rehabilitation for 26 families. They have remained in temporary shelters since the 2019 floods.",
+      "description": "Kerala’s Human Rights Commission has ordered urgent rehabilitation for 26 Paniya tribal families living in temporary shelters since the 2019 floods.",
+      "link": "https://www.thehindu.com/videos/watch-why-are-these-paniya-families-still-living-in-tents-seven-years-after-kerala-floods/article71479363.ece",
+      "date": "Fri, 18 Sep 2026 09:37:11 +0530",
+      "byline": "Tomasz Kruk",
+      "dateline": "BERLIN",
+      "image": "/img/news/d08b4a93703f.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Visszatér a napsütés és a 28 fok, kellemes, kora őszi időjárás jön pénteken",
+      "summary": "Az északnyugati szél többfelé megerősödik, estére északkeleten záporok is előfordulhatnak. Szombaton 21 és 26 fok várható.",
+      "description": "",
+      "link": "https://index.hu/belfold/2026/09/18/idojaras-elorejelzes-radar-napsutes-osz-eso/",
+      "date": "Fri, 18 Sep 2026 06:07:00 +0200",
+      "byline": "Amira Hassan",
+      "image": "/img/news/adaa3fd36b6c.png"
+    },
+    {
+      "section": "Europe",
+      "title": "„Abszolút pokol” jöhet Kijevben, katasztrófától tartanak az ukránok októberig -…",
+      "summary": "",
+      "description": "Oroszország háborúja Ukrajnában – az Index pénteki hírösszefoglalója.",
+      "link": "https://index.hu/kulfold/2026/09/18/oroszorszag-ukrajna-orosz-ukran-konfliktus-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-drontamadas-nato-europai-unio/",
+      "date": "Fri, 18 Sep 2026 06:06:00 +0200",
+      "byline": "Amira Hassan",
+      "image": "/img/news/42bc66719694.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Szabadlábra került a Volánbusz-ügy harmadik gyanúsítottja",
+      "summary": "",
+      "description": "A döntésről a törvényszék péntekre ígért részletes tájékoztatást.",
+      "link": "https://hvg.hu/itthon/20260918_volanbusz-ugy-gyanusitott-szabadlabra-kerult",
+      "date": "Fri, 18 Sep 2026 04:05:19 Z",
+      "byline": "Kenji Sato",
+      "dateline": "BERLIN",
+      "image": "/img/news/a391f2667437.png"
+    },
+    {
+      "section": "Asia",
+      "title": "Rights panel orders rehabilitation after Vaniyampuzha tribal families spend 7 years in…",
+      "summary": "",
+      "description": "The commission registered a suo motu case following a detailed report in The Hindu on the tribal families living in plastic tents since the August 2019 floods destroyed…",
+      "link": "https://www.thehindu.com/news/national/kerala/the-hindu-impact-rights-panel-orders-rehabilitation-after-vaniyampuzha-tribal-families-spend-7-years-in-plastic-tents/article71456637.ece",
+      "date": "Fri, 18 Sep 2026 09:35:03 +0530",
       "byline": "Amira Hassan",
       "dateline": "WASHINGTON",
-      "image": "/img/news/cefb2faaf216.png"
+      "image": "/img/news/35387253b3ca.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Listán a legkisebb fogyasztású villanyautók",
+      "summary": "A 635 forintos benzin és a 710 forintos gázolaj miatt sokan fontolgatják az elektromos autóra váltást. A cikk a modellek fogyasztási adatait hasonlítja össze.",
+      "description": "A 635 forintos benzin és a 710 forintos gázolaj idején sokan elgondolkodnak a váltáson. De ki fizet a legkevesebbet villanyautóval? The post Listán a legkisebb…",
+      "link": "https://24.hu/elet-stilus/2026/09/18/toplista-legkisebb-fogyasztasu-villanyautok-elektromos-autok/",
+      "date": "Fri, 18 Sep 2026 04:04:38 +0000",
+      "byline": "Elena Voss",
+      "image": "/img/news/27c6170d8d6b.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Nikkei, Topix, CSI 300: Asiens Börsen im Plus – Bank of Japan hebt Zinsen an",
+      "summary": "Der Leitzins erreichte den höchsten Stand seit 31 Jahren. Der Krieg im Nahen Osten schürt unterdessen weltweit Inflationsängste.",
+      "description": "Im Fokus steht die Anhebung des Leitzinses der BOJ auf den höchsten Stand seit 31 Jahren. Denn der andauernde Krieg im Nahen Osten schürt weltweit Inflationsängste.",
+      "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-topix-csi-300-asiens-boersen-im-plus-bank-of-japan-hebt-zinsen-an/100255536.html",
+      "date": "Fri, 18 Sep 2026 04:04:16 GMT",
+      "byline": "Elena Voss",
+      "image": "/img/news/ccc43034ed4e.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Da, Dinamo bez njega izgleda prazno, ali Kovačević ima problem koji ne može riješiti ni…",
+      "summary": "",
+      "description": "No Beljo, no party, stigla je poruka negdje oko ponoći, dok su navijači sumanuto gradom tražili dežurne ljekarne u potrazi za praxitenima. I doista, pisali smo, bez…",
+      "link": "https://www.jutarnji.hr/sportske/nogomet/hnl/klubovi/dinamo/dinamo-bez-belje-bukurest-razotkrio-takticki-pad-i-prekid-opskrbe-napada-15747510",
+      "date": "Fri, 18 Sep 2026 06:04:16 +0200",
+      "byline": "Tomasz Kruk",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/cb188a947c0d.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Ukraińskie drony atakowały w nocy Moskwę. Nowe doniesienia o redukcji sił USA w Europie",
+      "summary": "",
+      "description": "Przedstawiamy przegląd najważniejszych wydarzeń mijającej nocy: Według NBC News USA mogą wycofać nawet 40 tys. żołnierzy z Europy; Chiny interweniują w Iranie w sprawie…",
+      "link": "https://www.rp.pl/przeglad-wydarzen-z-nocy/art45158441-ukrainskie-drony-atakowaly-w-nocy-moskwe-nowe-doniesienia-o-redukcji-sil-usa-w-europie",
+      "date": "Fri, 18 Sep 2026 06:02:57 +0200",
+      "byline": "James Hale",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/7778da43e681.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Soha ennyi pénz nem volt a magyar kormány malacperselyében, pedig Brüsszelből még el sem…",
+      "summary": "",
+      "description": "Júliusban új történelmi csúcsra emelkedett a jegybanknál vezetett kincstári egységes számla (kesz) egyenlege, mely a kormányzat likvid betéteit tartalmazza. Augusztusban…",
+      "link": "https://www.portfolio.hu/gazdasag/20260918/soha-ennyi-penz-nem-volt-a-magyar-kormany-malacperselyeben-pedig-brusszelbol-meg-el-sem-inditottak-az-utalast-863474",
+      "date": "Fri, 18 Sep 2026 06:00:00 +0200",
+      "byline": "Ada Morrow",
+      "dateline": "BERLIN",
+      "image": "/img/news/58ad6f07f061.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Coraz więcej linii lotniczych, które zarabiają miliard dolarów na usługach dodatkowych",
+      "summary": "W 2025 r. próg miliarda dolarów osiągnęły 30 linii lotniczych. Ich przychody z usług dodatkowych rosły niemal dwa razy szybciej niż łączne przychody.",
+      "description": "Przychody linii lotniczych z usług dodatkowych rosły w 2025 roku niemal dwa razy szybciej niż ich łączne przychody. Nowy raport pokazuje, że już 30 linii uzyskało z tego…",
+      "link": "https://turystyka.rp.pl/linie-lotnicze/art45155631-coraz-wiecej-linii-lotniczych-ktore-zarabiaja-miliard-dolarow-na-uslugach-dodatkowych",
+      "date": "Fri, 18 Sep 2026 06:00:00 +0200",
+      "byline": "Kenji Sato",
+      "image": "/img/news/0c066f2ff6bb.png"
+    },
+    {
+      "section": "Africa",
+      "title": "British woman rescued in Malawi shootout that left four suspected kidnappers dead",
+      "summary": "The woman is the mother of two young children. She was abducted last week in Blantyre, Malawi’s main city, in the middle of the day.",
+      "description": "The mother of two young children was kidnapped last week in the middle of the day in the main city, Blantyre.",
+      "link": "https://www.bbc.co.uk/news/articles/cmlyrzz2gpw4o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 18 Sep 2026 03:59:17 GMT",
+      "byline": "Ada Morrow",
+      "dateline": "TOKYO",
+      "image": "/img/news/69e0578b70c3.png"
+    },
+    {
+      "section": "Asia",
+      "title": "Rival TMC factions fight over control: Mamata submits three preferred names, symbols to EC",
+      "summary": "",
+      "description": "",
+      "link": "https://timesofindia.indiatimes.com/india/rival-tmc-factions-fight-over-control-mamata-submits-three-preferred-names-symbols-to-ec/articleshow/134325052.cms",
+      "date": "2026-09-18T09:16:17+05:30",
+      "byline": "Ada Morrow",
+      "image": "/img/news/854c7e22fcd0.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Néhány helyen futó záporok lehetnek, de napos idő várható",
+      "summary": "A nappali csúcshőmérséklet általában 23 fok felett alakul. Egyes helyeken 28 fokig melegedhet a levegő.",
+      "description": "A legmagasabb nappali hőmérséklet általában 23 és 28 fok között alakul.",
+      "link": "https://hvg.hu/itthon/20260918_idojaras-jelentes-napsutes",
+      "date": "Fri, 18 Sep 2026 03:45:21 Z",
+      "byline": "Claire Brennan",
+      "image": "/img/news/8db1aa6dada0.png"
+    },
+    {
+      "section": "Africa",
+      "title": "2014-15 fuel queues were ‘artificial’ – NPA boss reveals lesson driving government’s…",
+      "summary": "",
+      "description": "The CEO of the National Petroleum Authority (NPA), Godwin Edudzi Tamakloe, says lessons from Ghana’s 2014–15 fuel crisis are shaping the government’s strategy to protect…",
+      "link": "https://www.myjoyonline.com/2014-15-fuel-queues-were-artificial-npa-boss-reveals-lesson-driving-governments-strategy/",
+      "date": "Fri, 18 Sep 2026 03:44:00 +0000",
+      "byline": "Elena Voss",
+      "dateline": "NEW YORK",
+      "image": "/img/news/39fa3df709f0.png"
+    },
+    {
+      "section": "Asia",
+      "title": "Hublot and Jeff Koons transform the Classic Fusion watch into wearable pop art",
+      "summary": "",
+      "description": "Contemporary pop artist Jeff Koons brings his iconic Balloon Dog sculpture to the world of haute horlogerie with a limited edition Classic Fusion timepiece.",
+      "link": "https://www.channelnewsasia.com/obsessions/hublot-jeff-koons-balloon-dog-watch-6392701",
+      "date": "Fri, 18 Sep 2026 11:41:00 +0800",
+      "byline": "Amira Hassan",
+      "dateline": "BERLIN",
+      "image": "/img/news/647b6e666d05.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "XRPL’s new lending tool could lock up your XRP from minutes to decades",
+      "summary": "",
+      "description": "Closed-ended vaults would bar withdrawals during fixed investment terms and count interest only when paid, but activation and XRP-denominated use remain unproven. The…",
+      "link": "https://cryptoslate.com/xrpls-new-lending-tool-could-lock-up-your-xrp-from-minutes-to-decades/",
+      "date": "Fri, 18 Sep 2026 03:40:57 +0000",
+      "byline": "James Hale",
+      "dateline": "TOKYO",
+      "image": "/img/news/05c1c70b1862.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "World launches self-custodial ‘super app’ World Money",
+      "summary": "The rollout covers more than 150 countries. The app combines stablecoin payments, digital-asset rewards and trading.",
+      "description": "World Money is rolling out across more than 150 countries, combining stablecoin payments, digital asset rewards and trading in a self-custodial app.",
+      "link": "https://cointelegraph.com/news/world-launches-self-custodial-super-app-world-money?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "date": "Fri, 18 Sep 2026 03:40:28 +0000",
+      "byline": "Tomasz Kruk",
+      "dateline": "TOKYO",
+      "image": "/img/news/48fa6d206e74.png"
+    },
+    {
+      "section": "Latin America",
+      "title": "Clima hoy en Punta Lara, Buenos Aires: el pronóstico del tiempo para este viernes 18…",
+      "summary": "El SMN prevé una mínima de 11 °C y una máxima de 21 °C para Punta Lara. Además, detalla la evolución del tiempo durante toda la jornada.",
+      "description": "El SMN anticipa para este viernes temperaturas entre 11°C y 21°C. El pronóstico extendido durante la jornada. ¿Cómo estará el cielo? ¿Cuál es la probabilidad de lluvias?",
+      "link": "https://www.clarin.com/informacion-general/clima-hoy-punta-lara-buenos-aires-pronostico-tiempo-viernes-18-septiembre-2026_0_vaSFXog3wM.html",
+      "date": "Fri, 18 Sep 2026 03:40:17 +0000",
+      "byline": "Ada Morrow",
+      "dateline": "LONDON",
+      "image": "/img/news/e064dde4d001.png"
+    },
+    {
+      "section": "Latin America",
+      "title": "Clima hoy en Valencia, Carabobo, Venezuela: el pronóstico del tiempo para este viernes 18…",
+      "summary": "",
+      "description": "El pronóstico extendido durante la jornada. ¿Cómo estará el cielo? ¿Cuál es la probabilidad de lluvias?",
+      "link": "https://www.clarin.com/informacion-general/clima-hoy-valencia-carabobo-venezuela-pronostico-tiempo-viernes-18-septiembre-2026_0_xw9AyeAaFe.html",
+      "date": "Fri, 18 Sep 2026 03:39:53 +0000",
+      "byline": "Elena Voss",
+      "dateline": "LONDON",
+      "image": "/img/news/f576fc0f1461.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Ezekért érdemes moziba menni szeptember 18-tól 25-ig",
+      "summary": "A Telex Diszpó a következő hét nap filmajánlóit gyűjti egybe. A válogatásból az is kiderül, hol és mikor lehet megnézni a javasolt alkotásokat.",
+      "description": "Itt a következő hét napra szóló Telex Diszpó.",
+      "link": "https://telex.hu/karakter/kultura/2026/09/18/ezekert-erdemes-moziba-menni-szeptember-18-tol-25-ig",
+      "date": "Fri, 18 Sep 2026 05:39:00 +0200",
+      "byline": "Tomasz Kruk",
+      "dateline": "LONDON",
+      "image": "/img/news/bf20c99fc76c.png"
+    },
+    {
+      "section": "Asia",
+      "title": "LNG shortages hit Pakistan badly",
+      "summary": "",
+      "description": "BANGKOK: Pakistan is among the worst-hit nations by liquefied natural gas (LNG) disruptions due to the closure of the Strait of Hormuz and could future-proof its…",
+      "link": "https://www.dawn.com/news/2030754/lng-shortages-hit-pakistan-badly",
+      "date": "Fri, 18 Sep 2026 08:37:06 +0500",
+      "byline": "Claire Brennan",
+      "dateline": "BERLIN",
+      "image": "/img/news/23f7e855c2c5.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Ha túl sok szépségpöttye volt egy nőnek, akár prostituáltnak is hihették",
+      "summary": "A kis tapaszokat eredetileg sérülések eltakarására ragasztották a bőrre. A 18. századi Franciaországban az arisztokraták külön divatot teremtettek használatukból.",
+      "description": "A pöttyöket az ókorban a sebek eltakarására használták, de a 18. századra a francia arisztokraták egész trendet alakítottak ki a kis tapaszok köré.",
+      "link": "https://telex.hu/eszkombajn/2026/09/18/szepsegpottyok-a-francia-arisztokratak-koreben",
+      "date": "Fri, 18 Sep 2026 05:34:58 +0200",
+      "byline": "Tomasz Kruk",
+      "dateline": "LONDON",
+      "image": "/img/news/5a7af6101368.png"
+    },
+    {
+      "section": "Asia",
+      "title": "SAGIP BATA bill takes aim at ‘sadistic extortion,’ online recruitment into violence",
+      "summary": "",
+      "description": "The proposed SAGIP BATA Act expands the anti-online child sex abuse law to cover grooming, violent recruitment, and other technology-facilitated abuse amid recent school…",
+      "link": "https://www.rappler.com/technology/features/sagip-bata-bill-sadistic-extortion-online-recruitment-violence/",
+      "date": "Fri, 18 Sep 2026 11:32:14 +0800",
+      "byline": "Claire Brennan",
+      "dateline": "NEW YORK",
+      "image": "/img/news/3c7f73dd05b9.png"
+    },
+    {
+      "section": "Europe",
+      "title": "„Konsequente Nichtnachbesetzung“ – CDU will fünf Prozent der Stellen für Beamte streichen",
+      "summary": "",
+      "description": "Die CDU erklärt jetzt nicht nur, wie viel Prozent der Stellen für Beamte sie bis 2031 abschaffen will. Sondern auch, welche Behörden es besonders treffen soll – und wer…",
+      "link": "https://www.welt.de/politik/deutschland/article6aa26cbc240b302c8a83fc5a/wahlen-in-berlin-und-mecklenburg-vorpommern-news-liveticker.html",
+      "date": "Fri, 18 Sep 2026 03:31:00 GMT",
+      "byline": "James Hale",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/db61b188330b.png"
+    },
+    {
+      "section": "Europe",
+      "title": "\"Drastyczna\" redukcja sił USA w Europie. Media: Ma dotyczyć trzech krajów",
+      "summary": "Według NBC News z Europy może zostać wycofanych około 25 tys. żołnierzy. Największe zmiany mają objąć Niemcy, Włochy i Hiszpanię.",
+      "description": "Około 25 tys. amerykańskich żołnierzy może zostać wycofanych z Europy - informuje portal telewizji NBC News. Redukcja ma dotyczyć głównie Niemiec, Włoch i Hiszpanii. W…",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-09-18/drastyczna-redukcja-sil-usa-w-europie-media-ma-dotyczyc-trzech-krajow/",
+      "date": "Fri, 18 Sep 2026 05:28:00 +0200",
+      "byline": "Kenji Sato",
+      "image": "/img/news/474e95cdb29d.png"
+    },
+    {
+      "section": "Finance",
+      "title": "Bank of Japan raises rates to highest since 1995",
+      "summary": "The central bank raised its benchmark rate by 0.25 percentage points to 1.25%. It cited inflation risks as the reason for the increase.",
+      "description": "Central bank cites inflation risks as it lifts interest rates by 0.25 percentage points to 1.25%",
+      "link": "https://www.ft.com/content/97a0bed5-0580-4ccc-bd3c-fe9a714259e2?syn-25a6b1a6=1",
+      "date": "Fri, 18 Sep 2026 03:26:05 GMT",
+      "byline": "Tomasz Kruk",
+      "image": "/img/news/301a89b6ab32.png"
+    },
+    {
+      "section": "Africa",
+      "title": "Petroleum is nervous system of the economy – NPA boss explains why fuel security is…",
+      "summary": "",
+      "description": "The CEO of the National Petroleum Authority (NPA), Godwin Edudzi Tamakloe, has described petroleum supply as a critical national security issue, stressing its importance…",
+      "link": "https://www.myjoyonline.com/petroleum-is-nervous-system-of-the-economy-npa-boss-explains-why-fuel-security-is-national-security/",
+      "date": "Fri, 18 Sep 2026 03:23:00 +0000",
+      "byline": "Ada Morrow",
+      "image": "/img/news/d17345fd5861.png"
+    },
+    {
+      "section": "Latin America",
+      "title": "Lotto, sorteo 3466: estos son los números ganadores del 17 de septiembre",
+      "summary": "",
+      "description": "",
+      "link": "https://eluniverso.com/noticias/ecuador/lotto-sorteo-3466-estos-son-los-numeros-ganadores-del-17-de-septiembre-nota/",
+      "date": "Fri, 18 Sep 2026 03:19:19 +0000",
+      "byline": "Tomasz Kruk",
+      "dateline": "PARIS",
+      "image": "/img/news/087eff80e8ec.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Syrische oud-gevangenisdirecteur krijgt in VS 60 jaar cel voor marteling",
+      "summary": "",
+      "description": "Een Syriër die onder de afgezette president Assad leiding gaf aan een gevangenis in Damascus is in de Verenigde Staten veroordeeld tot 60 jaar gevangenisstraf. Hij is…",
+      "link": "https://nos.nl/l/2631452",
+      "date": "Fri, 18 Sep 2026 05:12:07 +0200",
+      "byline": "Ada Morrow",
+      "image": "/img/news/3a6632d6ce17.png"
+    },
+    {
+      "section": "United States",
+      "title": "Terrebonne | Coups de feu tirés vers une résidence",
+      "summary": "Les tirs ont eu lieu jeudi soir. Le service de police de Terrebonne confirme qu’aucune personne n’a été blessée.",
+      "description": "Des coups de feu ont été tirés vers une résidence de Terrebonne, jeudi soir. L’évènement n’a fait aucun blessé, précise le service de police de la ville.",
+      "link": "https://www.lapresse.ca/actualites/justice-et-faits-divers/2026-09-17/terrebonne/coups-de-feu-tires-vers-une-residence.php?utm_source=rss&utm_medium=fil&utm_campaign=actualites",
+      "date": "Thu, 17 Sep 2026 23:11:47 -0400",
+      "byline": "Kenji Sato",
+      "dateline": "NEW YORK",
+      "image": "/img/news/eb5b09d06276.png"
+    },
+    {
+      "section": "Finance",
+      "title": "OpenAI’s listing delay raises stakes for SoftBank’s $50bn data centre IPO",
+      "summary": "",
+      "description": "Initial public offering of SB Energy set to test investor appetite for Masayoshi Son’s AI gamble",
+      "link": "https://www.ft.com/content/6c467774-9d91-425e-a901-26db055e37ad?syn-25a6b1a6=1",
+      "date": "Fri, 18 Sep 2026 03:04:36 GMT",
+      "byline": "Ada Morrow",
+      "dateline": "NEW YORK",
+      "image": "/img/news/5a24048e5dd9.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "Bank of Japan raises interest rates by 25 basis points. Bitcoin tops $77,000",
+      "summary": "The yen declined as the BOJ lifted rates to their highest level in 31 years. BTC rose in response to the decision.",
+      "description": "The yen declined and BTC rose after the BOJ hiked rates to the highest level in 31 years.",
+      "link": "https://www.coindesk.com/markets/2026/09/17/boj-rate-hike",
+      "date": "Fri, 18 Sep 2026 03:03:38 +0000",
+      "byline": "Amira Hassan",
+      "dateline": "PARIS",
+      "image": "/img/news/748fb6446754.png"
+    },
+    {
+      "section": "Europe",
+      "title": "In Camembert country, drought exhausts apples, livestock and people",
+      "summary": "",
+      "description": "While Normandy is not the region of France most affected by drought this year, the signs are tangible. It has raised questions about the future of cider and milk…",
+      "link": "https://www.lemonde.fr/en/economy/article/2026/09/18/in-camembert-country-drought-exhausts-apples-livestock-and-people_6757651_19.html",
+      "date": "Fri, 18 Sep 2026 05:00:07 +0200",
+      "byline": "Elena Voss",
+      "dateline": "LONDON",
+      "image": "/img/news/e2a0bd3cc02d.png"
+    },
+    {
+      "section": "United States",
+      "title": "Horse in New Mexico infected with screwworm before Mexico livestock imports resume",
+      "summary": "",
+      "description": "A new case of New World screwworm was confirmed in a horse in New Mexico Thursday, days before the state was set to resume livestock imports from Mexico. The infected…",
+      "link": "https://thehill.com/policy/energy-environment/6097215-new-mexico-screwworm-horse-confirmed/",
+      "date": "Fri, 18 Sep 2026 02:56:41 +0000",
+      "byline": "Kenji Sato",
+      "image": "/img/news/67ba42c12448.png"
+    },
+    {
+      "section": "Europe",
+      "title": "DEM’liler LGBT’ye destek verince taban çıldırıyor",
+      "summary": "",
+      "description": "",
+      "link": "https://www.hurriyet.com.tr/yazarlar/ahmet-hakan/demliler-lgbtye-destek-verince-taban-cildiriyor-43310649",
+      "date": "Fri, 18 Sep 2026 02:55:01 Z",
+      "byline": "Amira Hassan",
+      "image": "/img/news/4bee9430bf8f.png"
+    },
+    {
+      "section": "Asia",
+      "title": "अमेरिका के सऊदी अरब को एफ़-35 फ़ाइटर प्लेन बेचने पर क्यों हो रहा है विवाद?",
+      "summary": "",
+      "description": "सऊदी अरब सालों से एफ़-35 ख़रीदने के लिए अमेरिका में लॉबी कर रहा था. इसे दुनिया का अब तक का सबसे एडवांस फ़ाइटर जेट माना जाता है.",
+      "link": "https://www.bbc.com/hindi/articles/c6qxvddzr2xqo?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 18 Sep 2026 02:53:54 GMT",
+      "byline": "James Hale",
+      "dateline": "LONDON",
+      "image": "/img/news/f93b3dde5f59.png"
+    },
+    {
+      "section": "United States",
+      "title": "Barenaked Ladies perform ‘O Canada’ for packed house at Bills’ new stadium",
+      "summary": "",
+      "description": "As a border city, Buffalo paid tribute to its fanbase by having both the U.S. and Canadian anthems performed with both country’s flags displayed on the field.",
+      "link": "https://globalnews.ca/news/12064032/barenaked-ladies-perform-o-canada-bills-game/",
+      "date": "Fri, 18 Sep 2026 02:46:25 +0000",
+      "byline": "Amira Hassan",
+      "dateline": "TOKYO",
+      "image": "/img/news/35a38a1a8fa9.png"
+    },
+    {
+      "section": "United States",
+      "title": "Une adolescente de 15 ans est portée disparue",
+      "summary": "",
+      "description": "Aurélie Turcotte, une adolescente âgée de 15 ans, manque à l’appel. Le Service de police de la Ville de Montréal (SPVM) est à sa recherche, et sa famille et ses proches…",
+      "link": "https://www.lapresse.ca/actualites/justice-et-faits-divers/2026-09-17/une-adolescente-de-15-ans-est-portee-disparue.php?utm_source=rss&utm_medium=fil&utm_campaign=actualites",
+      "date": "Thu, 17 Sep 2026 22:46:20 -0400",
+      "byline": "Claire Brennan",
+      "image": "/img/news/e8f623a5d355.png"
+    },
+    {
+      "section": "Asia",
+      "title": "Air India Express suspends 8 crew members for missing post-flight declaration deadline",
+      "summary": "",
+      "description": "",
+      "link": "https://timesofindia.indiatimes.com/india/air-india-express-suspends-8-crew-members-for-missing-post-flight-declaration-deadline/articleshow/134324269.cms",
+      "date": "2026-09-18T08:14:30+05:30",
+      "byline": "Elena Voss",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/fd6fc0ffbe47.png"
     },
     {
       "section": "United States",
@@ -75,20 +512,20 @@
       "image": "/img/news/1c7b5660f155.png"
     },
     {
-      "section": "Europe",
-      "title": "Tužno. Najveći svih vremena upravo je podržao Vladimira Putina",
-      "summary": "Russian hockey star Alexander Ovechkin endorsed United Russia, President Vladimir Putin’s party, in a video message. He said the party supports his country.",
-      "description": "Legendarni ruski hokejaš Aleksandar Ovečkin (41) u video poruci je pružio podršku stranci Jedinstvena Rusija ruskog predsjednika Vladimira Putina jer podržava svoju…",
-      "link": "https://www.jutarnji.hr/vijesti/svijet/oveckin-podrzao-jedinstvenu-rusiju-porucio-da-zeli-mir-15747503",
-      "date": "Fri, 18 Sep 2026 04:32:18 +0200",
-      "byline": "Claire Brennan",
-      "image": "/img/news/1e57f544507a.png"
+      "section": "United States",
+      "title": "Tillis supports Hegseth impeachment resolution: 'He needs to go'",
+      "summary": "",
+      "description": "Sen. Thom Tillis (R-N.C.), who voted to confirm Defense Secretary Pete Hegseth, is renewing his call for President Trump to fire the Pentagon chief after Army Secretary…",
+      "link": "https://thehill.com/homenews/senate/6097194-tillis-calls-for-hegseth-impeachment/",
+      "date": "Fri, 18 Sep 2026 02:33:56 +0000",
+      "byline": "Elena Voss",
+      "image": "/img/news/b0239a682948.png"
     },
     {
       "section": "Asia",
       "title": "Pakistan ‘prefers dialogue over coercion’ to address Houthi threat",
-      "summary": "Pakistan says it prefers dialogue with Houthis, stressing Riyadh agreement operational. Pakistan says dialogue with Houthis, stressing Riyadh agreement operational.",
-      "description": "<p><strong>• FO terms situation around the Red Sea chokepoint ‘exceptionally serious’<br>• Says Strategic Mutual Defence Agreement with Riyadh ‘is operational’, some…",
+      "summary": "",
+      "description": "• FO terms situation around the Red Sea chokepoint ‘exceptionally serious’ • Says Strategic Mutual Defence Agreement with Riyadh ‘is operational’, some forces already…",
       "link": "https://www.dawn.com/news/2030797/pakistan-prefers-dialogue-over-coercion-to-address-houthi-threat",
       "date": "Fri, 18 Sep 2026 07:32:02 +0500",
       "byline": "Ada Morrow",
@@ -106,6 +543,17 @@
       "image": "/img/news/dd8a89043955.png"
     },
     {
+      "section": "VC Blogs",
+      "title": "UPI’s MDR Era, SEMICON India Day 1 Highlights & More",
+      "summary": "",
+      "description": "Who Will Foot The UPI MDR Bill? UPI transformed digital payments by making them virtually free. From October 15, this…",
+      "link": "https://inc42.com/buzz/upis-mdr-era-semicon-india-day-1-highlights-more/",
+      "date": "Fri, 18 Sep 2026 02:30:53 +0000",
+      "byline": "Ada Morrow",
+      "dateline": "TOKYO",
+      "image": "/img/news/9e4b2c78965f.png"
+    },
+    {
       "section": "United States",
       "title": "Basketball en fauteuil roulant : les Canadiennes joueront pour l’or au mondial",
       "summary": "Canada's women's wheelchair basketball team will play for gold at the world championships. They beat the Netherlands, the two-time defending champions, in the semifinal.",
@@ -115,48 +563,6 @@
       "byline": "Kenji Sato",
       "dateline": "WASHINGTON",
       "image": "/img/news/3b32a4f93ec6.png"
-    },
-    {
-      "section": "Asia",
-      "title": "25 years on, Konaseema Railway Line project yet to get on track",
-      "summary": "The 57-km Kotipalli-Narsapur railway project in Konaseema remains pending 25 years after its foundation stone was laid. It includes three bridges across the Godavari River.",
-      "description": "The ambitious 57-km Kotipalli–Narsapur railway line—which includes three bridges across the mighty Godavari River—still hangs fire 25 years after its foundation stone…",
-      "link": "https://www.thehindu.com/news/national/andhra-pradesh/25-years-on-konaseema-railway-line-project-yet-to-get-on-track/article71476791.ece",
-      "date": "Fri, 18 Sep 2026 07:59:25 +0530",
-      "byline": "Ada Morrow",
-      "dateline": "BERLIN",
-      "image": "/img/news/2d5e6b7fce56.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Marabu Féknyúz: Dízel",
-      "summary": "A Marabu Féknyúz Dízel címmel jelent meg. A közölt adatok nem tartalmaznak további részleteket.",
-      "description": "",
-      "link": "https://hvg.hu/cegauto/20260918_marabu-feknyuz-dizel",
-      "date": "Fri, 18 Sep 2026 02:26:00 Z",
-      "byline": "James Hale",
-      "dateline": "TOKYO",
-      "image": "/img/news/cc1349aec456.png"
-    },
-    {
-      "section": "Asia",
-      "title": "Imaan, Hadi sent on judicial remand in another case after SC suspends sentences",
-      "summary": "The Supreme Court suspended the sentences of lawyer Imaan Mazari-Hazir and Hadi Ali Chattha. An anti-terrorism court then sent them on judicial remand in a separate case.",
-      "description": "<p>ISLAMABAD: Hours after the Supreme Court suspended the sentences of human rights lawyer Imaan Zainab Mazari-Hazir and her husband, Hadi Ali Chattha, an anti-terrorism…",
-      "link": "https://www.dawn.com/news/2030611/imaan-hadi-sent-on-judicial-remand-in-another-case-after-sc-suspends-sentences",
-      "date": "Fri, 18 Sep 2026 07:24:56 +0500",
-      "byline": "James Hale",
-      "image": "/img/news/fea10bbf1827.png"
-    },
-    {
-      "section": "Asia",
-      "title": "South Korea makes Asian Games complaint over Japan warlord ceremony",
-      "summary": "South Korea has lodged an Asian Games complaint over a ceremony honoring Japanese warlord Toyotomi Hideyoshi. The complaint cites Hideyoshi's invasions of Korea and Japan's colonial rule as sensitive historical issues.",
-      "description": "Historical issues are sensitive between South Korea and Japan, with Hideyoshi's invasion a significant episode in Korean history and Korea later under Japanese colonial…",
-      "link": "https://www.thehindu.com/sport/south-korea-makes-asian-games-complaint-over-japan-warlord-ceremony/article71479237.ece",
-      "date": "Fri, 18 Sep 2026 07:46:18 +0530",
-      "byline": "James Hale",
-      "image": "/img/news/66c3b8c6c93f.png"
     },
     {
       "section": "Asia",
@@ -170,46 +576,14 @@
       "image": "/img/news/afacbe553f7c.png"
     },
     {
-      "section": "Europe",
-      "title": "Συγκρούσεις με 26 νεκρούς και πάνω από 80 τραυματίες σε περιοχή που διεκδικούν Σουδάν και…",
-      "summary": "Clashes in the disputed Abyei region killed 26 people and wounded more than 80.",
-      "description": "<img src=\"https://www.iefimerida.gr/sites/default/files/styles/big_article_image/public/2025-06/sudan_fire.jpg?itok=TgYu7RI_\" width=\"1290\" height=\"645\" alt=\"Αιματηρή…",
-      "link": "https://www.iefimerida.gr/kosmos/sygkroyseis-26-nekroys-80-traymaties-soydan-notio-soydan?utm_source=rss",
-      "date": "Fri, 18 Sep 2026 05:14:49 +0300",
-      "byline": "Tomasz Kruk",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/826c4cfb921f.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Gastkommentar: Mehr Maschendrahtzaun wagen, anstatt Brandmauern zu errichten",
-      "summary": "Neuropsychologin Laura plädiert für mehr persönliche Begegnung statt politischer Abschottung. Sie sieht Alltagskontakte als Beitrag zu einer resilienteren Demokratie.",
-      "description": "Warum ein Löffel Dreck, ein Bier am Gartenzaun und 30 Prozent Unverständnis unsere Demokratie resilienter machen können. Ein Gastbeitrag der Neuropsychologin Laura…",
-      "link": "https://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-mehr-maschendrahtzaun-wagen-anstatt-brandmauern-zu-errichten/100254320.html",
-      "date": "Fri, 18 Sep 2026 02:09:44 GMT",
-      "byline": "Kenji Sato",
-      "dateline": "TOKYO",
-      "image": "/img/news/52dafe09bb1e.png"
-    },
-    {
-      "section": "Asia",
-      "title": "Alphabet-owned Waymo to launch autonomous ride-hailing service in Singapore by 2028",
-      "summary": "Alphabet-owned Waymo plans to launch autonomous ride-hailing in Singapore by 2028. Its first vehicles are expected to arrive in the coming months.",
-      "description": "Waymo says its first vehicles are expected to arrive in Singapore in the coming months.",
-      "link": "https://www.channelnewsasia.com/singapore/autonomous-vehicle-av-waymo-transport-6393631",
-      "date": "Fri, 18 Sep 2026 10:09:00 +0800",
-      "byline": "Claire Brennan",
-      "dateline": "TOKYO",
-      "image": "/img/news/1d280d7d7dcd.png"
-    },
-    {
       "section": "United States",
-      "title": "L’équilibre budgétaire au cœur du débat de Zone économie",
-      "summary": "Representatives of the five main parties debated the economy on ICI RDI. Budget balance was central to the discussion.",
+      "title": "Élections au Québec : l’équilibre budgétaire au cœur du débat de Zone économie",
+      "summary": "",
       "description": "Les représentants des cinq principaux partis ont débattu d'économie sur les ondes d'ICI RDI.",
       "link": "https://ici.radio-canada.ca/nouvelle/2284923/equilibre-budgetaire-debat-economique-caq-pq-plq-qs-pcq",
       "date": "Fri, 18 Sep 2026 02:08:59 GMT",
-      "byline": "Tomasz Kruk",
+      "byline": "Elena Voss",
+      "dateline": "WASHINGTON",
       "image": "/img/news/7bc8527b562a.png"
     },
     {
@@ -224,39 +598,6 @@
       "image": "/img/news/b032b9a6093c.png"
     },
     {
-      "section": "Latin America",
-      "title": "Venezuela levanta el bloqueo a varios portales de noticias censurados durante años",
-      "summary": "Venezuela lifted its block on several news websites after years of censorship. The announcement came before Thursday’s second round of political dialogue.",
-      "description": "El anuncio se dio antes del inicio el jueves de la segunda ronda de diálogo político entre el gobierno interino y la oposición.",
-      "link": "https://eluniverso.com/noticias/internacional/venezuela-levanta-el-bloqueo-a-varios-portales-de-noticias-censurados-durante-anos-nota/",
-      "date": "Fri, 18 Sep 2026 02:03:02 +0000",
-      "byline": "James Hale",
-      "dateline": "TOKYO",
-      "image": "/img/news/b7f9ee5f6e83.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Γερμανία: Σχεδόν οι μισοί ψηφοφόροι αναμένουν αντικατάσταση του Μερτς μέσα στο 2026…",
-      "summary": "Σχεδόν οι μισοί Γερμανοί ψηφοφόροι, 48%, αναμένουν ότι ο Φρίντριχ Μερτς δεν θα είναι καγκελάριος στις αρχές του 2027. Το 31% θεωρεί ότι θα παραμείνει, σύμφωνα με δημοσκόπηση.",
-      "description": "Το 48% των γερμανών ψηφοφόρων θεωρεί πως ο Μερτς δεν θα είναι καγκελάριος στις αρχές του 2027, ενώ το 31% θεωρεί το αντίθετο, σύμφωνα με δημοσκόπηση του ινστιτούτου…",
-      "link": "https://www.in.gr/2026/09/18/world/germania-sxedon-oi-misoi-psifoforoi-anamenoun-antikatastasi-tou-merts-mesa-sto-2026-deixnei-dimoskopisi/",
-      "date": "Fri, 18 Sep 2026 05:00:21 +0300",
-      "byline": "Ada Morrow",
-      "dateline": "LONDON",
-      "image": "/img/news/d64d050a4879.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Borbély Balázs: Mondjuk azt, hogy ez egész jól nézett ki",
-      "summary": "Ferencváros coach Balázs Borbély praised his team’s relaxed and confident performance against Celtic. He said the match showed they can play good football.",
-      "description": "A Fradi edzője szerint a Celtic ellen megmutatták, hogy tudnak focizni, lazán, önbizalomtól duzzadva. The post Borbély Balázs: Mondjuk azt, hogy ez egész jól nézett ki…",
-      "link": "https://24.hu/sport/foci/2026/09/18/europa-liga-celtic-ftc-nyilatkozatok-borbely-balazs/",
-      "date": "Fri, 18 Sep 2026 01:59:54 +0000",
-      "byline": "Claire Brennan",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/a5787c87b6bf.png"
-    },
-    {
       "section": "Europe",
       "title": "Budget 2027: Deficit widens as Sébastien Lecornu delays fiscal consolidation by one year",
       "summary": "France's deficit is expected to reach 5.4% of GDP in 2026, missing the government's 5% target. Prime Minister Sébastien Lecornu has delayed fiscal consolidation by one year.",
@@ -268,90 +609,15 @@
       "image": "/img/news/b565a248723a.png"
     },
     {
-      "section": "Europe",
-      "title": "Novi incident umjetne inteligencije, objavljena uznemirujuća uputa koju je sam sebi…",
-      "summary": "OpenAI identified six new cases of irresponsible behavior by its ChatGPT models. An Astra-family model reportedly gave itself a disturbing instruction.",
-      "description": "AI div OpenAI priopćio je da su identificirali šest novih slučajeva neodgovornog ponašanja svojih modela ChatGPT. Kako su izvijestili, model iz obitelji Astra koji se…",
-      "link": "https://www.jutarnji.hr/life/tehnologija/openai-model-neposlusnost-ravnopravnost-s-ljudima-skriva-pogreske-15747502",
-      "date": "Fri, 18 Sep 2026 03:51:00 +0200",
-      "byline": "Claire Brennan",
-      "image": "/img/news/3af1e066a31a.png",
-      "dateline": "PARIS"
-    },
-    {
-      "section": "Latin America",
-      "title": "Medallero de los Juegos Suramericanos Santa Fe 2026: cuántas medallas tiene Argentina y…",
-      "summary": "The 2026 South American Games run through Sept. 26 in Rosario, Santa Fe and Rafaela. More than 4,000 athletes from 15 countries are competing.",
-      "description": "Los XIII Juegos Suramericanos se disputan hasta el 26 de septiembre, con Rosario, Santa Fe y Rafaela como las tres sedes principales. Más de 4.000 atletas de 15 países…",
-      "link": "https://www.clarin.com/deportes/medallero-juegos-suramericanos-santa-fe-2026-cuantas-medallas-argentina-tabla-posiciones-pais_0_WWMtx0mk4e.html",
-      "date": "Fri, 18 Sep 2026 01:46:00 +0000",
-      "byline": "Elena Voss",
-      "image": "/img/news/6fe5f2459ee3.png",
-      "dateline": "TOKYO"
-    },
-    {
-      "section": "Latin America",
-      "title": "Con cambios en el biodiésel, el Senado aprobó el nuevo marco regulatorio para los…",
-      "summary": "The Senate approved a new biofuels regulatory framework by 41 votes to 25.",
-      "description": "El proyecto fue aprobado por 41 votos contra 25 y establece que el biodiésel pase del 7,5% al 10% en el gasoil y el bioetanol del 12% al 15% en las naftas. La iniciativa…",
-      "link": "https://www.clarin.com/rural/senado-aprobo-nuevo-marco-regulatorio-biocombustibles-amplia-mayoria_0_Qj2NSnYOnZ.html",
-      "date": "Fri, 18 Sep 2026 01:45:32 +0000",
-      "byline": "James Hale",
-      "image": "/img/news/164b1ac0ebaf.png",
-      "dateline": "BERLIN"
-    },
-    {
       "section": "United States",
       "title": "Juror who blocked Lindsay Clancy verdict disputes fellow jurors' claims: report",
       "summary": "Michael Desronvil, the holdout juror in Lindsay Clancy’s trial, disputes fellow jurors’ accounts. They said he expressed doubts about the prosecution’s case.",
-      "description": "Michael Desronvil, the holdout Lindsay Clancy juror, disputes fellow jurors&apos; claims he expressed doubts about the prosecution&apos;s case during deliberations.",
+      "description": "Michael Desronvil, the holdout Lindsay Clancy juror, disputes fellow jurors' claims he expressed doubts about the prosecution's case during deliberations.",
       "link": "https://www.foxnews.com/us/juror-who-blocked-lindsay-clancy-verdict-disputes-fellow-jurors-claims-report",
       "date": "Thu, 17 Sep 2026 21:44:13 -0400",
       "byline": "Kenji Sato",
       "dateline": "LONDON",
       "image": "/img/news/2247546d2447.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Französischer Polizist wegen Terrorverdachts festgenommen",
-      "summary": "A French police officer was arrested by colleagues on suspicion of terrorism, according to several television channels. He is also accused of weapons-related offenses.",
-      "description": "In Frankreich wurde ein Polizeibeamter wegen Terrorverdachts von seinen Kollegen festgenommen. Das berichten mehrere TV-Sender. Der Mann wird auch beschuldigt, Waffen…",
-      "link": "https://www.welt.de/politik/ausland/article6aac94627a2a14cb01bec9fb/untersuchungshaft-franzoesischer-polizist-wegen-terrorverdachts-festgenommen.html",
-      "date": "Fri, 18 Sep 2026 01:42:30 GMT",
-      "byline": "Elena Voss",
-      "image": "/img/news/9cf57d13ade6.png"
-    },
-    {
-      "section": "United States",
-      "title": "Pentagon issues new guidance for testosterone testing after rescinding previous one",
-      "summary": "The Pentagon issued new guidance requiring testosterone deficiency screening for male active-duty and reserve service members. It rescinded an earlier directive on the testing.",
-      "description": "The Pentagon issued new guidance late Thursday instructing mandatory testosterone deficiency screening for male active-duty and ​reserve service members over the age of…",
-      "link": "https://thehill.com/policy/defense/6097148-pentagon-new-male-testosterone-screening/",
-      "date": "Fri, 18 Sep 2026 01:40:45 +0000",
-      "byline": "Ada Morrow",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/c8dda17e2d54.png"
-    },
-    {
-      "section": "United States",
-      "title": "Montreal police order officers to stop using controversial ‘hog-tie’ restraint",
-      "summary": "Montreal police ordered officers to stop using hog-tie restraints. A coroner found the technique likely contributed to a man’s death.",
-      "description": "Montreal police have told officers to stop using a controversial restraint technique after a coroner found it likely contributed to a man’s death.",
-      "link": "https://globalnews.ca/news/12063955/montreal-police-hog-tie-abisay-cruz-death/",
-      "date": "Fri, 18 Sep 2026 01:38:27 +0000",
-      "byline": "Amira Hassan",
-      "dateline": "NEW YORK",
-      "image": "/img/news/4f79d9e45681.png"
-    },
-    {
-      "section": "Asia",
-      "title": "After long-awaited BARMM polls, voters look ahead with hope",
-      "summary": "Voters in BARMM have cast and counted their ballots in the long-awaited regional polls. Communities are now looking ahead to what comes next.",
-      "description": "With the votes counted, voters are now looking ahead to what that future can look like for their communities",
-      "link": "https://www.rappler.com/philippines/after-delays-barmm-election-voters-look-ahead-hope/",
-      "date": "Fri, 18 Sep 2026 09:34:31 +0800",
-      "byline": "Claire Brennan",
-      "image": "/img/news/79f17f4b6d5c.png"
     },
     {
       "section": "Crypto",
@@ -365,29 +631,9 @@
       "image": "/img/news/aca18e292825.png"
     },
     {
-      "section": "Asia",
-      "title": "बिहार: जो 1400 सरकारी स्कूल पानी में डूब गए, वहां के बच्चे कैसे पढ़ रहे हैं?",
-      "summary": "Floodwaters submerged 1,400 government schools in Bihar, leaving dirt and debris behind. Classes have resumed in some, teachers have returned to others, and some remain closed.",
-      "description": "कई स्कूलों में बाढ़ के पानी के साथ आई गंदगी जमा है. इनमें से कुछ स्कूलों में पढ़ाई-लिखाई शुरू हो गई है, कुछ में शिक्षकों ने आना शुरू कर दिया है और कुछ में ताला लगा है.",
-      "link": "https://www.bbc.com/hindi/articles/ck8d35g8r4yqo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 18 Sep 2026 01:33:41 GMT",
-      "byline": "Elena Voss",
-      "image": "/img/news/ad24cbfbceca.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Utólag visszalépett, és lemondott győztes pontjairól a sportoló, aki verseny közben…",
-      "summary": "Joanna Wietrzyk súlyos hasmenéssel is megnyerte a pekingi Hyrox-versenyt. Utólag visszalépett, és lemondott a győzelemért járó pontokról.",
-      "description": "Az ausztrál Joanna Wietrzyk a múlt héten súlyos hasmenéssel küzdve is megnyerte a pekingi Hyrox-versenyt. The post Utólag visszalépett, és lemondott győztes pontjairól a…",
-      "link": "https://24.hu/sport/2026/09/18/hyrox-joanna-wietrzyk-hasmenes-utolagos-visszalepes/",
-      "date": "Fri, 18 Sep 2026 01:33:07 +0000",
-      "byline": "Claire Brennan",
-      "image": "/img/news/068312664a03.png"
-    },
-    {
       "section": "Crypto",
       "title": "From Kaiko to OpenZeppelin, S&P Global is quietly preparing for markets that never close",
-      "summary": "Hereells where and 220 characters max. Two sentences. Plain English. Factual. No quotes, no opinions. No markdown. Just the summary.",
+      "summary": "",
       "description": "S&P Global agreed to acquire smart contract security firm OpenZeppelin, expanding its digital asset business into the technology underpinning tokenized finance. On Sept…",
       "link": "https://cryptoslate.com/from-kaiko-to-openzeppelin-sp-global-is-quietly-preparing-for-markets-that-never-close/",
       "date": "Fri, 18 Sep 2026 01:30:37 +0000",
@@ -438,53 +684,10 @@
       "image": "/img/news/11a02f0985d6.png"
     },
     {
-      "section": "Europe",
-      "title": "„Sie sind zu weit gegangen“ – Republikanische Abgeordnete attackiert Trump scharf",
-      "summary": "A Republican congresswoman has sharply criticized President Donald Trump’s deportation policy. The criticism comes from within his party seven weeks before US congressional elections.",
-      "description": "Knapp sieben Wochen vor den US-Parlamentswahlen bekommt Präsident Donald Trump aus den eigenen Reihen Gegenwind für seine umstrittene Abschiebepolitik. Eine Abgeordnete…",
-      "link": "https://www.welt.de/politik/ausland/article6aac89adb1857e86757a57aa/us-wahlkampf-sie-sind-zu-weit-gegangen-republikanische-abgeordnete-attackiert-trump-scharf.html",
-      "date": "Fri, 18 Sep 2026 00:55:42 GMT",
-      "byline": "Amira Hassan",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/8718a1cd7f8a.png"
-    },
-    {
-      "section": "Asia",
-      "title": "SC takes exception to 31 unnatural deaths in Manipur relief camps",
-      "summary": "The Supreme Court raised concerns over 31 unnatural deaths in Manipur relief camps. It sought details about the deaths and asked authorities to explain the circumstances.",
-      "description": "<a href=\"https://timesofindia.indiatimes.com/india/sc-takes-exception-to-31-unnatural-deaths-in-manipur-relief-camps/articleshow/134323536.cms\"><img border=\"0\"…",
-      "link": "https://timesofindia.indiatimes.com/india/sc-takes-exception-to-31-unnatural-deaths-in-manipur-relief-camps/articleshow/134323536.cms",
-      "date": "2026-09-18T06:22:33+05:30",
-      "byline": "Ada Morrow",
-      "image": "/img/news/30b35069d837.png"
-    },
-    {
-      "section": "Asia",
-      "title": "Centre agrees to lower cut-off for NEET-SS admission",
-      "summary": "The Centre has agreed to lower the cut-off for NEET-SS admissions. NEET-SS is the entrance test for super-specialty medical courses.",
-      "description": "<a href=\"https://timesofindia.indiatimes.com/india/centre-agrees-to-lower-cut-off-for-neet-ss-admission/articleshow/134323519.cms\"><img border=\"0\" hspace=\"10\"…",
-      "link": "https://timesofindia.indiatimes.com/india/centre-agrees-to-lower-cut-off-for-neet-ss-admission/articleshow/134323519.cms",
-      "date": "2026-09-18T06:17:38+05:30",
-      "byline": "Amira Hassan",
-      "dateline": "LONDON",
-      "image": "/img/news/87a3c30c4b33.png"
-    },
-    {
-      "section": "United States",
-      "title": "Trump signs orders loosening hunting restrictions, teases Outdoors Act '2.0'",
-      "summary": "Trump signed executive orders Thursday loosening hunting restrictions and promoting fishing and outdoor recreation. He plans to pursue an Outdoors Act 2.0 with Congress.",
-      "description": "President Trump hosted over 100 hunters, anglers and outdoor industry officials for a dinner in the Rose Garden Thursday to announce executive orders rolling back…",
-      "link": "https://thehill.com/homenews/6097091-trump-executive-order-hunting-restrictions/",
-      "date": "Fri, 18 Sep 2026 00:42:18 +0000",
-      "byline": "James Hale",
-      "dateline": "BERLIN",
-      "image": "/img/news/ffa8a82ea82d.png"
-    },
-    {
       "section": "United States",
       "title": "Blanche warned of contempt risk in Epstein files case",
       "summary": "A federal judge warned Attorney General Todd Blanche that he could face contempt proceedings in the Epstein files case. The judge said Blanche must comply with court orders.",
-      "description": "<p>A federal judge warned Attorney General <a href=\"https://www.axios.com/2026/08/08/todd-blanche-trump-attorney-general-confirmed\" target=\"_blank\">Todd Blanche</a>…",
+      "description": "A federal judge warned Attorney General Todd Blanche Wednesday that he could face contempt proceedings if the Department of Justice fails to comply with an order…",
       "link": "https://www.axios.com/2026/09/17/epstein-files-doj-contempt-judge-blanche",
       "date": "Fri, 18 Sep 2026 00:37:01 +0000",
       "byline": "Ada Morrow",
@@ -539,18 +742,8 @@
       "description": "The top official at the U.S. Postal Service said Thursday that the agency has stopped work on developing a controversial computer system that was central to President…",
       "link": "https://www.pbs.org/newshour/politics/work-has-stopped-on-system-that-was-key-to-trump-effort-to-limit-mail-voting-usps-chief-says",
       "date": "Thu, 17 Sep 2026 20:19:24 -0400",
-      "byline": "Amira Hassan",
+      "byline": "Claire Brennan",
       "image": "/img/news/15dff40f4b41.png"
-    },
-    {
-      "section": "Europe",
-      "title": "37 verdachten van illegale mijnbouw overleden in cel Nigeria",
-      "summary": "Zeker 37 verdachten van illegale mijnbouw zijn dood aangetroffen in een cel in Nigeria. Zij waren vastgezet door een militaire politie-eenheid.",
-      "description": "Zeker 37 verdachten die waren opgepakt voor illegale mijnbouw zijn dood gevonden in een cel in Nigeria. Ze waren vastgezet door een militaire politie-eenheid. Volgens…",
-      "link": "https://nos.nl/l/2631450",
-      "date": "Fri, 18 Sep 2026 02:14:09 +0200",
-      "byline": "Elena Voss",
-      "image": "/img/news/5629cc45e940.png"
     },
     {
       "section": "United States",
@@ -559,19 +752,8 @@
       "description": "Pauline Marois affirme avoir le cœur brisé après avoir su qu’un bambin a été retrouvé seul dans un campement d’itinérants.",
       "link": "https://www.tvanouvelles.ca/2026/09/17/bambin-retrouve-dans-un-campement-imaginez-quon-laisse-nos-enfants-dans-la-rue-ca-me-creve-le-cur-reagit-pauline-marois",
       "date": "Thu, 17 Sep 2026 20:09:09 EDT",
-      "byline": "Ada Morrow",
-      "image": "/img/news/741f45c67576.png",
-      "dateline": "NEW YORK"
-    },
-    {
-      "section": "Africa",
-      "title": "South Africa pushes back against new US visa curbs",
-      "summary": "South Africa criticized new U.S. visa restrictions on Wednesday. It accused fringe groups of promoting the measures with false claims about its white minority.",
-      "description": "South Africa on Wednesday criticised new U.S. visa restrictions, saying the ‌measures were driven by fringe groups that falsely claim to represent the country's white…",
-      "link": "https://www.myjoyonline.com/south-africa-pushes-back-against-new-us-visa-curbs/",
-      "date": "Fri, 18 Sep 2026 00:05:00 +0000",
-      "byline": "Elena Voss",
-      "image": "/img/news/9b6a0bb5d859.png"
+      "byline": "James Hale",
+      "image": "/img/news/741f45c67576.png"
     },
     {
       "section": "Crypto",
@@ -583,37 +765,6 @@
       "byline": "Amira Hassan",
       "dateline": "TOKYO",
       "image": "/img/news/a0eba0cf2d81.png"
-    },
-    {
-      "section": "Africa",
-      "title": "Grand Theft Auto 6 soundtrack reveal revives digital release debate",
-      "summary": "The Grand Theft Auto 6 soundtrack album was revealed. Its release renewed debate over the decision not to issue the game on disc.",
-      "description": "The reveal of a Grand Theft Auto 6 soundtrack album has reignited a debate over the decision not to release the game on disc.",
-      "link": "https://www.myjoyonline.com/grand-theft-auto-6-soundtrack-reveal-revives-digital-release-debate/",
-      "date": "Thu, 17 Sep 2026 23:54:00 +0000",
-      "byline": "Claire Brennan",
-      "image": "/img/news/6bb50b85bb4a.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "North Korea drives onchain malware surge, CoinEx shuts: Asia Express",
-      "summary": "CoinEx has shut down. North Korea and Iran account for most onchain malware, while Malaysia ranks among the most crypto-curious Islamic nations.",
-      "description": "North Korea and Iran account for the majority of onchain malware, while Malaysia has been named among the most crypto curious Islamic nations.",
-      "link": "https://cointelegraph.com/magazine/north-korea-drives-onchain-malware-surge-coinex-shuts-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "date": "Thu, 17 Sep 2026 23:49:23 +0000",
-      "byline": "Ada Morrow",
-      "image": "/img/news/ba1aeed874e8.png"
-    },
-    {
-      "section": "United States",
-      "title": "Churchill Falls | Les élus de Terre-Neuve-et-Labrador votent pour l’entente-cadre",
-      "summary": "Newfoundland and Labrador lawmakers approved a multibillion-dollar framework deal to share Labrador’s energy with Hydro-Quebec. The agreement concerns Churchill Falls.",
-      "description": "Le gouvernement de Terre-Neuve-et-Labrador a voté pour un accord de plusieurs milliards de dollars visant à partager l’énergie produite au Labrador avec Hydro-Québec…",
-      "link": "https://www.lapresse.ca/actualites/politique/2026-09-17/churchill-falls/les-elus-de-terre-neuve-et-labrador-votent-pour-l-entente-cadre.php?utm_source=rss&utm_medium=fil&utm_campaign=actualites",
-      "date": "Thu, 17 Sep 2026 19:35:44 -0400",
-      "byline": "James Hale",
-      "dateline": "NEW YORK",
-      "image": "/img/news/369ac7356f56.png"
     },
     {
       "section": "Community",
@@ -638,13 +789,12 @@
     },
     {
       "section": "Asia",
-      "title": "My dream was to be a doctor, now it could come to zero",
-      "summary": "Afghan medical students in Pakistan fear deportation. They say it could end their dreams of becoming doctors.",
-      "description": "Afghan medical students are in despair as they fear being deported from Pakistan",
+      "title": "'Complete despair': Afghan female medical students fear being sent home from Pakistan",
+      "summary": "",
+      "description": "Since 2023, hundreds of thousands of Afghans have been deported from Pakistan and over two million have left.",
       "link": "https://www.bbc.co.uk/news/articles/cmy0z3kez6xno?at_medium=RSS&at_campaign=rss",
       "date": "Thu, 17 Sep 2026 23:31:43 GMT",
-      "byline": "Ada Morrow",
-      "dateline": "PARIS",
+      "byline": "James Hale",
       "image": "/img/news/76484acce721.png"
     },
     {
@@ -656,6 +806,16 @@
       "date": "Thu, 17 Sep 2026 23:29:17 GMT",
       "byline": "Elena Voss",
       "image": "/img/news/dc75e4e52faa.png"
+    },
+    {
+      "section": "Africa",
+      "title": "'This is our company': Nigerians show off oil wealth after share-buying frenzy",
+      "summary": "",
+      "description": "Many Nigerians buy their first ever shares - in the oil refinery owned by Africa's richest man, Aliko Dangote.",
+      "link": "https://www.bbc.co.uk/news/articles/cw7v4jr2932ro?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 17 Sep 2026 23:24:07 GMT",
+      "byline": "Claire Brennan",
+      "image": "/img/news/05134855b08b.png"
     },
     {
       "section": "Community",
@@ -671,7 +831,7 @@
       "section": "Finance",
       "title": "National Cheeseburger Day 2026: Burger deals at McDonald's, Wendy's and others",
       "summary": "Major burger chains are offering free and discounted cheeseburgers for National Cheeseburger Day. Participating restaurants include McDonald’s, Burger King, Wendy’s, Five Guys and Carl’s Jr.",
-      "description": "Burger lovers can score free and discounted cheeseburgers at major chains, including McDonald&apos;s, Burger King, Wendy&apos;s, Five Guys, Carl&apos;s Jr. and Shake…",
+      "description": "Burger lovers can score free and discounted cheeseburgers at major chains, including McDonald's, Burger King, Wendy's, Five Guys, Carl's Jr. and Shake Shack.",
       "link": "https://www.foxbusiness.com/lifestyle/national-cheeseburger-day-2026-burger-deals-mcdonalds-wendys-more",
       "date": "Thu, 17 Sep 2026 19:20:11 -0400",
       "byline": "James Hale",
@@ -685,19 +845,9 @@
       "description": "The War Department released clinical practice guidelines for medical professionals across the force on how to evaluate and treat potential testosterone deficiencies in…",
       "link": "https://www.war.gov/News/News-Stories/Article/Article/4604632/department-releases-guidance-on-implementing-testosterone-deficiency-screenings/",
       "date": "Thu, 17 Sep 2026 23:14:00 GMT",
-      "byline": "Kenji Sato",
+      "byline": "Amira Hassan",
       "dateline": "BERLIN",
       "image": "/img/news/b9d93741e454.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "Aave V4’s Arc market is swimming in $76 million of USDC nobody is borrowing",
-      "summary": "Aave V4’s Arc market holds about $76 million in USDC. Borrowers have taken less than $100,000, leaving utilization near 0.1%.",
-      "description": "Less than $100,000 was borrowed as utilization hovered near 0.1%, separating supply appetite from credit demand. The post Aave V4’s Arc market is swimming in $76 million…",
-      "link": "https://cryptoslate.com/aave-v4s-arc-market-is-swimming-in-76-million-of-usdc-nobody-is-borrowing/",
-      "date": "Thu, 17 Sep 2026 23:10:30 +0000",
-      "byline": "Claire Brennan",
-      "image": "/img/news/006d401d75e6.png"
     },
     {
       "section": "United States",
@@ -720,24 +870,13 @@
       "image": "/img/news/53d2ba08d446.png"
     },
     {
-      "section": "United States",
-      "title": "B.C. Conservative leader Findlay 'not going anywhere' amid private-eye revelations",
-      "summary": "Kerry-Lynne Findlay said she will remain B.C. Conservative leader. Her comments came amid private-investigator revelations that have unsettled the Opposition.",
-      "description": "British Columbia Conservative leader Kerry-Lynne Findlay said Thursday she was \"not going anywhere\" on another day of tumult for the Opposition, roiled by revelations…",
-      "link": "https://www.thestar.com/news/canada/british-columbia/cp-newsalert-b-c-conservative-leader-findlay-not-going-anywhere-vows-to-stay/article_92afeba4-c6ce-55b8-9eda-07fb598b66c3.html",
-      "date": "Thu, 17 Sep 2026 18:55:05 -0400",
-      "byline": "Kenji Sato",
-      "dateline": "PARIS",
-      "image": "/img/news/d231800a6b2f.png"
-    },
-    {
       "section": "Europe",
       "title": "Russia put Meduza journalist and podcast host Vladislav Gorin on its wanted list. The…",
       "summary": "Russia’s Interior Ministry has placed Meduza journalist and podcast host Vladislav Gorin on its wanted list. Mediazona reported the listing.",
       "description": "Russia’s Interior Ministry has put Vladislav Gorin, a Meduza journalist and the host of the podcast “Chto sluchilos” (“What Happened”), on its wanted list, Mediazona…",
       "link": "https://meduza.io/en/news/2026/09/18/russia-put-meduza-journalist-and-podcast-host-vladislav-gorin-on-its-wanted-list-the-basis-for-his-criminal-case-disseminating-informational-materials-about-political-and-social-processes",
       "date": "Fri, 18 Sep 2026 01:48:09 +0300",
-      "byline": "Tomasz Kruk",
+      "byline": "Ada Morrow",
       "image": "/img/news/4f12bcb5bb81.png"
     },
     {
@@ -768,7 +907,7 @@
       "description": "Les usagers de la route à Montréal pourraient gagner beaucoup de temps si on allait de l’avant avec un modèle de feux de circulation intelligents.",
       "link": "https://www.tvanouvelles.ca/2026/09/17/montreal-pourrait-avoir-son-systeme-de-feux-de-circulation-intelligents-en-6-mois-estime-miovision",
       "date": "Thu, 17 Sep 2026 18:35:57 EDT",
-      "byline": "James Hale",
+      "byline": "Kenji Sato",
       "image": "/img/news/82a57ab9c020.png"
     },
     {
@@ -778,19 +917,9 @@
       "description": "Russia’s three-day State Duma elections have begun. The first polling stations opened at 8:00 a.m. local time in Kamchatka and Chukotka.",
       "link": "https://meduza.io/en/news/2026/09/18/russia-begins-three-days-of-voting-for-its-450-seat-parliament-with-the-first-polling-stations-opening-in-the-far-eastern-regions-of-kamchatka-and-chukotka",
       "date": "Fri, 18 Sep 2026 01:33:34 +0300",
-      "byline": "Kenji Sato",
+      "byline": "Amira Hassan",
       "dateline": "WASHINGTON",
       "image": "/img/news/98fe572f0117.png"
-    },
-    {
-      "section": "Finance",
-      "title": "Netflix's 'Monster' makes Lizzie Borden's maid her lover and accomplice. Here's what we…",
-      "summary": "Netflix’s Monster portrays Lizzie Borden as the lover and accomplice of her maid, Bridget Sullivan. Historians have no evidence of a relationship or Sullivan’s role in the 1892 murders.",
-      "description": "Netflix's \"Monster: The Lizzie Borden Story\" depicts Borden in a relationship with her maid. Were Lizzie Borden and Bridget Sullivan actually lovers?",
-      "link": "https://www.businessinsider.com/who-was-bridget-sullivan-true-story-lizzie-borden-murders-2026-9",
-      "date": "2026-09-17T22:31:05Z",
-      "byline": "Claire Brennan",
-      "image": "/img/news/ece1619511ff.png"
     },
     {
       "section": "Crypto",
@@ -860,11 +989,22 @@
       "section": "United States",
       "title": "Exclusive: Scalise puts GOP high-water mark at 225 House seats",
       "summary": "House Majority Leader Steve Scalise predicts Republicans will win 225 House seats. That would be the party’s strongest result in decades despite a challenging political environment.",
-      "description": "<p>House Majority Leader Steve Scalise (R-La.) is staring at a scary political environment for Republicans and claiming to see something very different: <a…",
+      "description": "House Majority Leader Steve Scalise (R-La.) is staring at a scary political environment for Republicans and claiming to see something very different: a path to 225 seats…",
       "link": "https://www.axios.com/2026/09/17/house-republicans-steve-scalise-midterm-elections",
       "date": "Thu, 17 Sep 2026 22:15:22 +0000",
       "byline": "Ada Morrow",
       "image": "/img/news/cc89f9bdd952.png"
+    },
+    {
+      "section": "United States",
+      "title": "Former ‘Alligator Alcatraz’ detainee says he was placed in phone booth-sized cage for 15…",
+      "summary": "",
+      "description": "For around 15 hours, immigration detention officers kept Raúl Suárez Herrero confined in a cage slightly larger than a phone booth, where he feared snakes and endured…",
+      "link": "https://www.nbcnews.com/news/us-news/former-alligator-alcatraz-detainee-says-was-placed-phone-booth-sized-c-rcna598013",
+      "date": "Thu, 17 Sep 2026 22:06:29 GMT",
+      "byline": "Ada Morrow",
+      "dateline": "BERLIN",
+      "image": "/img/news/d96ad082b1ed.png"
     },
     {
       "section": "Africa",
@@ -876,17 +1016,6 @@
       "byline": "James Hale",
       "dateline": "PARIS",
       "image": "/img/news/91c5148e1ca7.png"
-    },
-    {
-      "section": "Finance",
-      "title": "Amazon's big, new delivery push targets Walmart's biggest advantage, Bank of America says",
-      "summary": "Bank of America says Amazon plans more than 1,000 same-day delivery hubs. The push aims to narrow Walmart's proximity advantage.",
-      "description": "BofA analysts say Amazon's plan for more than 1,000 same-day delivery hubs is a bid to close Walmart's powerful proximity advantage.",
-      "link": "https://www.businessinsider.com/amazons1000-hub-same-day-delivery-bet-catching-walmart-bofa-analyst-2026-9",
-      "date": "2026-09-17T22:05:48Z",
-      "byline": "Claire Brennan",
-      "dateline": "PARIS",
-      "image": "/img/news/862655e814ff.png"
     },
     {
       "section": "Europe",
@@ -909,38 +1038,6 @@
       "byline": "Amira Hassan",
       "dateline": "LONDON",
       "image": "/img/news/333f40eabe97.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Κορινθία: Ηλικιωμένοι στο στόχαστρο σπείρας απατεώνων – Πάνω από 14.000 ευρώ η λεία",
-      "summary": "Police in Loutraki solved five fraud and attempted fraud cases targeting elderly people in Corinthia. Two people were charged with running a criminal organization and fraud, which stole more than €14,000.",
-      "description": "Πέντε περιπτώσεις απάτης και απόπειρας απάτης εξιχνίασαν οι αστυνομικοί του Λουτρακίου – Δύο άτομα κατηγορούνται για εγκληματική οργάνωση και απάτη",
-      "link": "https://www.tanea.gr/2026/09/18/greece/korinthia-ilikiomenoi-sto-stoxastro-speiras-apateonon-pano-apo-14-000-eyro-i-leia/",
-      "date": "Thu, 17 Sep 2026 21:59:24 +0000",
-      "byline": "Amira Hassan",
-      "dateline": "LONDON",
-      "image": "/img/news/b28b1762f9ae.png"
-    },
-    {
-      "section": "United States",
-      "title": "Condamné pour attentat à la pudeur | Le milliardaire Frank Stronach évitera la prison",
-      "summary": "Billionaire Frank Stronach was convicted of indecent assault. An Ontario judge ruled out jail time.",
-      "description": "Une juge ontarienne a écarté toute peine de prison à l’encontre de l’homme d’affaires milliardaire Frank Stronach.",
-      "link": "https://www.lapresse.ca/actualites/national/2026-09-17/condamne-pour-attentat-a-la-pudeur/le-milliardaire-frank-stronach-evitera-la-prison.php?utm_source=rss&utm_medium=fil&utm_campaign=actualites",
-      "date": "Thu, 17 Sep 2026 17:56:07 -0400",
-      "byline": "Elena Voss",
-      "image": "/img/news/da5fd1e9c8e1.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Dieselpriser over 30 kroner ved 650 stasjoner",
-      "summary": "On Thursday, Drivstoffappen recorded diesel prices of at least 30 kroner per liter at 650 gas stations. The stations were across Norway.",
-      "description": "Torsdag registrerte Drivstoffappen dieselpriser på minst 30 kroner per liter ved 650 forskjellige bensinstasjoner i…",
-      "link": "https://www.aftenposten.no/okonomi/i/L4Rr7V/dieselpriser-over-30-kroner-ved-650-stasjoner",
-      "date": "Thu, 17 Sep 2026 21:55:45 GMT",
-      "byline": "Elena Voss",
-      "dateline": "TOKYO",
-      "image": "/img/news/cc3857846e15.png"
     },
     {
       "section": "Africa",
@@ -984,27 +1081,6 @@
       "byline": "Tomasz Kruk",
       "dateline": "TOKYO",
       "image": "/img/news/9b501bace906.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Meklingsfristen nærmer seg – fortsatt fare for togstreik fredag morgen",
-      "summary": "Mediation between the Norwegian Locomotive Drivers’ Union and Vy is nearing its deadline. A train strike remains possible Friday morning.",
-      "description": "Norsk lokomotivførerforbund (NLF) og Vy har siden torsdag meklet hos riksmekleren.",
-      "link": "https://www.aftenposten.no/norge/i/Rj7gmd/fortsatt-fare-for-togstreik-mekling-paa-overtid",
-      "date": "Thu, 17 Sep 2026 21:48:45 GMT",
-      "byline": "James Hale",
-      "image": "/img/news/601b7957777c.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Η Γαλλία ετοιμάζει πρόγραμμα εξοικονόμησης 54 δισ. ευρώ εν μέσω αυξανόμενων διαδηλώσεων",
-      "summary": "France is preparing a 54 billion euro savings plan as demonstrations grow. Budget negotiations remain difficult.",
-      "description": "Δύσκολες διαπραγματεύσεις για τον προϋπολογισμό",
-      "link": "https://www.tanea.gr/2026/09/18/economy/diethni/i-gallia-etoimazei-programma-eksoikonomisis-54-dis-eyro-en-meso-ayksanomenon-diadiloseon/",
-      "date": "Thu, 17 Sep 2026 21:47:49 +0000",
-      "byline": "Amira Hassan",
-      "dateline": "PARIS",
-      "image": "/img/news/fc2d1a6de643.png"
     },
     {
       "section": "Crypto",
@@ -1059,27 +1135,6 @@
       "image": "/img/news/6c73ba486760.png"
     },
     {
-      "section": "Crypto",
-      "title": "The Ondo Finance succession crisis gets messier as Kathleen Allman’s daughter alleges…",
-      "summary": "Kathleen Allman’s estranged daughter asked a Hawaii court to create a limited conservatorship. The filing deepens the succession dispute involving Ondo Finance.",
-      "description": "The estranged daughter of 77-year-old Kathleen Allman has petitioned a Hawaiian court to establish a limited conservatorship to protect her parents’ share of her…",
-      "link": "https://www.coindesk.com/business/2026/09/17/the-ondo-finance-succession-crisis-gets-messier-as-kathleen-allman-s-daughter-alleges-dementia-alcoholism-and-reckless-spending",
-      "date": "Thu, 17 Sep 2026 21:28:35 +0000",
-      "byline": "James Hale",
-      "image": "/img/news/468fb97f51c0.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Több mint száz évvel a csíkos pampamacska után megint felfedeztek egy teljesen új…",
-      "summary": "Leopardus tilcayo is a newly identified wild cat species native to Bolivia. Its only known specimen was found by chance in 2016.",
-      "description": "Az új faj a Leopardus tilcayo nevet viseli, Bolíviában őshonos, és 2016-ban teljesen véletlenül találta meg valaki az egyetlen ismert példányt.",
-      "link": "https://telex.hu/techtud/2026/09/17/macskafele-uj-faj-bolivia-kutatas-felfedezes",
-      "date": "Thu, 17 Sep 2026 23:26:35 +0200",
-      "byline": "Amira Hassan",
-      "dateline": "TOKYO",
-      "image": "/img/news/1cd530c83a4e.png"
-    },
-    {
       "section": "Security",
       "title": "CISA Ditches Weekly Vulnerability Roundups for Risk-Based Focus",
       "summary": "CISA is ending its weekly vulnerability roundups. The agency will instead help organizations focus on the security flaws that pose the greatest risk.",
@@ -1091,17 +1146,6 @@
       "image": "/img/news/ee1dc0f7713c.png"
     },
     {
-      "section": "Europe",
-      "title": "Schilling Árpád is pályázik az Újszínházra",
-      "summary": "Árpád Schilling, a director living in France for political reasons, is applying to lead Budapest’s Újszínház. He plans to rebuild György Dörner’s theatre as a wholly new institution.",
-      "description": "A politikai okokból nyolc éve Franciaországban élő rendező minden elemében új intézménnyé alakítaná a Dörner György-vezette színházat.",
-      "link": "https://telex.hu/karakter/kultura/2026/09/17/schilling-arpad-palyazatott-ujszinhazra",
-      "date": "Thu, 17 Sep 2026 23:16:21 +0200",
-      "byline": "Ada Morrow",
-      "dateline": "BERLIN",
-      "image": "/img/news/037b387e8853.png"
-    },
-    {
       "section": "Latin America",
       "title": "The Canada-EU partnership 'a classic win-win situation', economist says",
       "summary": "Fabian Zuleeg says the Canada-EU partnership benefits both sides. He discussed the relationship with FRANCE 24.",
@@ -1110,27 +1154,6 @@
       "date": "Thu, 17 Sep 2026 21:12:37 GMT",
       "byline": "James Hale",
       "image": "/img/news/3ba395bad56a.png"
-    },
-    {
-      "section": "United States",
-      "title": "PQ attacked over federal transfers in economy debate",
-      "summary": "The Parti Québécois faced criticism in Montreal on Thursday over its fiscal plan’s reliance on federal transfers.",
-      "description": "MONTREAL - The Parti Québécois was attacked for relying on federal transfers in its fiscal plan during an economy debate Thursday evening.",
-      "link": "https://www.thestar.com/news/canada/quebec/quebec-electoral-candidates-to-debate-on-economy/article_3a331ec6-2c31-5c61-b59f-74f29d6f3753.html",
-      "date": "Thu, 17 Sep 2026 17:10:51 -0400",
-      "byline": "Ada Morrow",
-      "image": "/img/news/abccb3c5cc98.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Încă patru instigatori de la protestul violent din Piața Victoriei, arestați pentru 30 de…",
-      "summary": "Four more suspects accused of inciting violence during the Victory Square protest were detained for 30 days. Five people are now in custody in the case.",
-      "description": "Încă patru instigatori de la protestul violent din Piața Victoriei au fost trimiși după gratii pentru 30 de zile. Sunt cinci în total. Alți patru se află deja în arest…",
-      "link": "https://www.digi24.ro/stiri/actualitate/inca-patru-instigatori-de-la-protestul-violent-din-piata-victoriei-arestati-pentru-30-de-zile-unul-a-primit-arest-miercuri-3953239",
-      "date": "Fri, 18 Sep 2026 00:07:42 +0300",
-      "byline": "Claire Brennan",
-      "image": "/img/news/60a97759bd0f.png",
-      "dateline": "PARIS"
     },
     {
       "section": "Europe",
@@ -1166,16 +1189,6 @@
       "image": "/img/news/ad80efaa2b54.png"
     },
     {
-      "section": "Europe",
-      "title": "Fritz respinge speculațiile că el i-a zis președintelui „România e problema ta, cu…",
-      "summary": "USR leader Dominic Fritz denied making a remark attributed to him during talks with President Nicușor Dan. He rejected speculation that he told Dan Romania was his problem.",
-      "description": "Preşedintele USR, Dominic Fritz, a transmis, joi seară, că nu este el cel care i-a spus preşedintelui Nicuşor Dan la consultări „asta cu România e problema ta, cu…",
-      "link": "https://www.digi24.ro/stiri/actualitate/politica/fritz-respinge-speculatiile-ca-el-i-a-zis-presedintelui-romania-e-problema-ta-cu-partidul-e-problema-mea-cine-a-sugerat-acuzatia-3953237",
-      "date": "Thu, 17 Sep 2026 23:56:25 +0300",
-      "byline": "James Hale",
-      "image": "/img/news/27b392b094c3.png"
-    },
-    {
       "section": "Cloud",
       "title": "Intel squeezed a 1.58-bit LLM down to 1.485 bits without changing a single weight",
       "summary": "Intel researchers reduced a ternary 1.58-bit language model to 1.485 bits per weight without changing any weights. The result shows the 1.58-bit label is not a fixed limit.",
@@ -1184,17 +1197,6 @@
       "date": "Thu, 17 Sep 2026 20:51:57 +0000",
       "byline": "Kenji Sato",
       "image": "/img/news/756a7384dc3a.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Szenzáció Skóciában: a Ferencváros bombagóllal ütötte ki a Celticet az Európa-ligában",
-      "summary": "A Ferencváros bombagóllal ejtette ki a Celtict az Európa-ligából. A mérkőzés végére a skóciai stadion kiürült.",
-      "description": "A mérkőzés végére az egész stadion kiürült.",
-      "link": "https://index.hu/sport/futball/2026/09/17/celtic-ferencvaros-uefa-europa-liga-2026-27-alapszakasz-1.-fordulo-skocia-ftc-borbely-balazs-yusuf-arzani-osszefoglalo/",
-      "date": "Thu, 17 Sep 2026 22:51:00 +0200",
-      "byline": "Kenji Sato",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/be24375738b4.png"
     },
     {
       "section": "Europe",
@@ -1229,6 +1231,17 @@
       "image": "/img/news/f6d02bf7f8c6.png"
     },
     {
+      "section": "Europe",
+      "title": "Beşiktaş'ta İlhan Fakılı fırtınası: Sahneye çıktı, tarihe geçti!",
+      "summary": "",
+      "description": "Beşiktaş'ın genç futbolcusu İlhan Fakılı, Marsilya karşısında attığı golle hem takımını öne geçirdi hem de siyah-beyazlıların Avrupa kupaları tarihine adını yazdırdı.",
+      "link": "https://www.hurriyet.com.tr/sporarena/besiktasta-ilhan-fakili-firtinasi-sahneye-cikti-tarihe-gecti-43310654",
+      "date": "Thu, 17 Sep 2026 20:41:49 Z",
+      "byline": "James Hale",
+      "dateline": "BERLIN",
+      "image": "/img/news/7af218459917.png"
+    },
+    {
       "section": "Middle East",
       "title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
       "summary": "UN experts say there are grounds to believe the US committed war crimes in deadly February strikes in Iran. The US has not acknowledged attacks on a primary school in Minab and a sports complex in Lamerd.",
@@ -1238,16 +1251,6 @@
       "byline": "Elena Voss",
       "dateline": "LONDON",
       "image": "/img/news/79820cc4b89e.png"
-    },
-    {
-      "section": "Europe",
-      "title": "\"Pogarszająca się sytuacja międzynarodowa\". Emmanuel Macron zwołał naradę",
-      "summary": "Prezydent Francji Emmanuel Macron zwołał na piątek spotkanie z szefami parlamentarnych partii. Mają rozmawiać o pogarszającej się sytuacji międzynarodowej.",
-      "description": "Prezydent Francji Emmanuel Macron zaprosił na piątek szefów partii politycznych zasiadających w parlamencie, by rozmawiać z nimi o pogarszającej się sytuacji…",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-09-17/pogarszajaca-sie-sytuacja-miedzynarodowa-emmanuel-macron-zwolal-narade/",
-      "date": "Thu, 17 Sep 2026 22:31:00 +0200",
-      "byline": "Kenji Sato",
-      "image": "/img/news/8c7e257cab0d.png"
     },
     {
       "section": "Community",
@@ -1355,16 +1358,6 @@
     },
     {
       "section": "Europe",
-      "title": "Magyar Péternek gyanús, hogy mentelmi joggal bíró személy is a nyomozók radarján lehet a…",
-      "summary": "Péter Magyar said a person with immunity may be under investigation. He spoke after Miklós Seszták was mentioned.",
-      "description": "Magyar Péter az Egyenes beszédben Seszták Miklós említése után tért ki arra, hogy a most eljáró Központi Nyomozó Főügyészség a mentelmi joggal is érintett esetekben…",
-      "link": "https://hvg.hu/itthon/20260917_magyar-peter-gyanu-mentelmi-jog-nyomozas-radar-volanbusz-ugy",
-      "date": "Thu, 17 Sep 2026 20:08:11 Z",
-      "byline": "Amira Hassan",
-      "image": "/img/news/db60b6d39c42.png"
-    },
-    {
-      "section": "Europe",
       "title": "Pluszban zártak az amerikai tőzsdék, a tech szektor húzta az indexeket",
       "summary": "Az amerikai tőzsdék pluszban zártak csütörtökön, miután a beárazott Fed-kamatemelés javította a befektetői hangulatot. A technológiai szektor húzta felfelé az indexeket.",
       "description": "Bár a Fed szerdai kamatemelését eséssel fogadta a Wall Street, csütörtökre már javult a hangulat a piacokon. A nagyrészt beárazott döntés után némi megkönnyebbülést…",
@@ -1373,60 +1366,6 @@
       "byline": "Ada Morrow",
       "dateline": "LONDON",
       "image": "/img/news/499b2a1e7cb3.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Oláh Gergő vendéglátózni kezdett, saját helyet nyitott: „Egy újabb mérföldkőhöz ért az…",
-      "summary": "Gergő Oláh has entered the hospitality business by opening his own venue. The singer described it as another milestone in his career.",
-      "description": "",
-      "link": "https://index.hu/mindekozben/poszt/2026/09/17/olah-gergo-vendeglatozas-etterem-gyrosozot-nyitott-salgotarjanban/",
-      "date": "Thu, 17 Sep 2026 22:04:12 +0200",
-      "byline": "Amira Hassan",
-      "dateline": "PARIS",
-      "image": "/img/news/49305c04df34.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Tisza-kormány: Magyar Péter üzent a nyugdíjasoknak, indulnak a vagyonosodási vizsgálatok",
-      "summary": "Prime Minister Péter Magyar said wealth investigations could return. He also addressed pensioners, with checks expected to cover the political elite and parts of state administration.",
-      "description": "Magyar Péter miniszterelnök csütörtökön bejelentette, hogy újra jöhetnek a vagyonosodási vizsgálatok, amelyek a politikai elit mellett az államigazgatás több…",
-      "link": "https://www.portfolio.hu/gazdasag/20260917/tisza-kormany-magyar-peter-uzent-a-nyugdijasoknak-indulnak-a-vagyonosodasi-vizsgalatok-863286",
-      "date": "Thu, 17 Sep 2026 22:04:00 +0200",
-      "byline": "James Hale",
-      "image": "/img/news/b47e4ebd70df.png"
-    },
-    {
-      "section": "Asia",
-      "title": "Cancer Aaj Ka Rashifal: पढ़ाई और कला में रुचि बढ़ेगी, रिश्तों में गलतफहमी से बचें",
-      "summary": "The September 18, 2026, Cancer horoscope says interest in studies and the arts may increase. It advises avoiding misunderstandings, too many tasks and unexpected spending on entertainment, hobbies or children.",
-      "description": "Cancer Horoscope Today 18 September 2026, Kark Rashifal: मन की चंचलता के कारण एक साथ कई काम शुरू करने से बचें. नोरंजन, शौक या बच्चों से संबंधित खर्च अचानक बढ़ सकता है.",
-      "link": "https://ndtv.in/faith/cancer-horoscope-today-18-september-2026-kark-aaj-ka-rashifal-daily-future-predictions-12058352#publisher=newsstand",
-      "date": "Fri, 18 Sep 2026 01:20:03 +0530",
-      "byline": "James Hale",
-      "dateline": "TOKYO",
-      "image": "/img/news/36db607301fc.png"
-    },
-    {
-      "section": "United States",
-      "title": "‘Godfather of AI’ warns Congress has ‘maybe a year’ left to regulate AI",
-      "summary": "AI pioneer Geoffrey Hinton warned Congress that it may have only a year to regulate artificial intelligence. He urged lawmakers to establish safeguards for the technology.",
-      "description": "Geoffrey Hinton, known as the “Godfather of AI,” issued an ominous warning: Congress may only have one year left to implement safeguards on artificial intelligence…",
-      "link": "https://www.nbcnews.com/politics/congress/godfather-ai-warns-congress-maybe-year-left-regulate-ai-rcna598330",
-      "date": "Thu, 17 Sep 2026 19:45:09 GMT",
-      "byline": "Tomasz Kruk",
-      "dateline": "NEW YORK",
-      "image": "/img/news/c3d449efd58d.png"
-    },
-    {
-      "section": "Asia",
-      "title": "Gemini Aaj Ka Rashifal: काम में मिल सकती है नई जिम्मेदारी, खर्च पर नजर जरूरी",
-      "summary": "The Gemini horoscope for September 18, 2026, predicts new responsibilities at work. It advises avoiding overconfidence and unnecessary arguments while watching expenses.",
-      "description": "Gemini Horoscope Today 18 September 2026, Mithun Rashifal: अति-आत्मविश्वास आपको नुकसान दे सकता है. अनावश्यक बहस में पड़ने के बजाय परिणाम पर ध्यान देना आपके लिए ज्यादा…",
-      "link": "https://ndtv.in/faith/gemini-horoscope-today-18-september-2026-mithun-aaj-ka-rashifal-daily-future-predictions-12058306#publisher=newsstand",
-      "date": "Fri, 18 Sep 2026 01:15:03 +0530",
-      "byline": "Claire Brennan",
-      "dateline": "TOKYO",
-      "image": "/img/news/2305621c094a.png"
     },
     {
       "section": "Community",
@@ -1467,8 +1406,8 @@
       "description": "Nadzieja, że Morawiecki i jego ludzie wystąpią przeciwko PiS i podniosą rękę za ustawą ustanawiającą status osoby najbliższej, okazała się płonna. W kuluarach politycy…",
       "link": "https://oko.press/morawiecki-nie-pomogl-odrzucic-weta-ws-osoby-najblizszej",
       "date": "Thu, 17 Sep 2026 19:01:52 +0000",
-      "byline": "Claire Brennan",
-      "dateline": "WASHINGTON",
+      "byline": "Ada Morrow",
+      "dateline": "BERLIN",
       "image": "/img/news/3c4125615dd7.png"
     },
     {
@@ -1545,15 +1484,14 @@
       "image": "/img/news/caa0814031ca.png"
     },
     {
-      "section": "Europe",
-      "title": "War in Ukraine: Uncovering the lair of the 'Butcher of Bucha'",
-      "summary": "Russian Colonel Azatbek Omurbekov's men massacred Ukrainians near Kyiv in March 2022. Le Monde traced him to a school in Ukraine.",
-      "description": "Russian Colonel Azatbek Omurbekov's men carried out massacres of Ukrainians in the Kyiv region in March 2022. Le Monde traced his presence to a school in a Ukrainian…",
-      "link": "https://www.lemonde.fr/en/international/article/2026/09/17/war-in-ukraine-uncovering-the-lair-of-the-butcher-of-bucha_6757640_4.html",
-      "date": "Thu, 17 Sep 2026 20:30:06 +0200",
+      "section": "Tech",
+      "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
+      "summary": "",
+      "description": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
+      "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
+      "date": "Thu, 17 Sep 2026 18:33:13 +0000",
       "byline": "Elena Voss",
-      "dateline": "NEW YORK",
-      "image": "/img/news/bc91e2e1fba0.png"
+      "image": "/img/news/f1d0350f0587.png"
     },
     {
       "section": "Cloud",
@@ -1562,7 +1500,7 @@
       "description": "OpenAI revealed Wednesday evening that some GPT-5.6 Sol model instances, during reinforcement learning (RL) training, wrote instructions to conceal mistakes The post “Be…",
       "link": "https://thenewstack.io/openai-model-misalignment-reports/",
       "date": "Thu, 17 Sep 2026 18:27:44 +0000",
-      "byline": "Kenji Sato",
+      "byline": "Claire Brennan",
       "image": "/img/news/324fd13dc02c.png"
     },
     {
@@ -1668,18 +1606,9 @@
       "description": "Secretary of State Marco Rubio isn’t the face of the Iran negotiations. He’s kept a discreet public distance as the unpopular war grinds on.",
       "link": "https://www.nbcnews.com/politics/trump-administration/marco-rubio-role-iran-war-keeping-options-open-future-rcna596618",
       "date": "Thu, 17 Sep 2026 16:47:05 GMT",
-      "byline": "Ada Morrow",
+      "byline": "Claire Brennan",
+      "dateline": "LONDON",
       "image": "/img/news/29fa6992e4b2.png"
-    },
-    {
-      "section": "Europe",
-      "title": "'Bosna kasabı' görselli skandal çorap! Bakanlık harekete geçti",
-      "summary": "Turkey's Trade Ministry opened an investigation into claims that socks bearing Made in Türkiye and an image of Ratko Mladic were exported to Serbia. The claims spread on social media.",
-      "description": "Ticaret Bakanlığı, 'Made in Türkiye' ibaresi ve savaş suçlusu Ratko Mladic'in görselinin bulunduğu çorabın Sırbistan’a ihraç edildiğine ilişkin sanal medya paylaşımları…",
-      "link": "https://www.hurriyet.com.tr/gundem/bosna-kasabi-gorselli-skandal-corap-bakanlik-harekete-gecti-43310501",
-      "date": "Thu, 17 Sep 2026 16:39:12 Z",
-      "byline": "James Hale",
-      "image": "/img/news/8ca7091543d8.png"
     },
     {
       "section": "Asia",
@@ -1725,6 +1654,17 @@
     },
     {
       "section": "Europe",
+      "title": "Fees to be hiked on Russian grain transit, total ban to be considered",
+      "summary": "",
+      "description": "The Saeima Budget and Finance (Tax) Committee on Thursday considered amendments to the law in two readings, which provide for increasing fees for grain transit…",
+      "link": "https://eng.lsm.lv/article/economy/transport/17.09.2026-fees-to-be-hiked-on-russian-grain-transit-total-ban-to-be-considered.a663670/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "date": "Thu, 17 Sep 2026 15:17:07 GMT",
+      "byline": "Amira Hassan",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/9a663d519ca9.png"
+    },
+    {
+      "section": "Europe",
       "title": "Protests Continue in Pristina After Conviction of Kosovo Liberation Army Leaders",
       "summary": "Protests continued in Pristina after Hashim Thaci and three former KLA leaders were convicted. War veterans joined demonstrations against the verdicts.",
       "description": "Demonstrations continue against guilty verdicts handed down to former Kosovo President Hashim Thaci and three other former KLA leaders – with war veterans hoping to…",
@@ -1765,17 +1705,6 @@
       "image": "/img/news/d4d1e537f601.png"
     },
     {
-      "section": "VC Blogs",
-      "title": "MDR On UPI Is Here, But Who Foots The Bill?",
-      "summary": "",
-      "description": "UPI is one of the cheapest ways for Indian merchants to collect digital payments. Now, the economics of India’s biggest…",
-      "link": "https://inc42.com/features/mdr-on-upi-is-here-but-who-foots-the-bill/",
-      "date": "Thu, 17 Sep 2026 14:37:12 +0000",
-      "byline": "Kenji Sato",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/da5b90cadfcd.png"
-    },
-    {
       "section": "Middle East",
       "title": "Leaders discuss ways to elevate bilateral relations",
       "summary": "",
@@ -1802,28 +1731,8 @@
       "description": "Newly launched Skalar provides startups with capital to fund sales and marketing initiatives in a fairly straightforward, though somewhat unusual model which lets the…",
       "link": "https://news.crunchbase.com/venture/fintech-alternative-funding-customer-acquisition-skalar/",
       "date": "Thu, 17 Sep 2026 14:00:42 +0000",
-      "byline": "Ada Morrow",
+      "byline": "Elena Voss",
       "image": "/img/news/3220d905d25f.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Court suspends hunting of bears given nuisance status",
-      "summary": "",
-      "description": "The Tallinn Circuit Court has suspended permits to hunt problem bears pending a ruling on an appeal filed by NGO Eesti Suurkiskjad, which had challenged the permits.",
-      "link": "https://news.err.ee/1610140636/court-suspends-hunting-of-bears-given-nuisance-status",
-      "date": "Thu, 17 Sep 2026 16:57:00 +0300",
-      "byline": "Claire Brennan",
-      "image": "/img/news/8591e203970c.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Estonia weighs pushing Rail Baltica completion to 2034",
-      "summary": "",
-      "description": "Estonia's government is considering pushing back its Rail Baltica completion target to 2034 to make greater use of EU funding and reduce the rail project's cost to…",
-      "link": "https://news.err.ee/1610141035/estonia-weighs-pushing-rail-baltica-completion-to-2034",
-      "date": "Thu, 17 Sep 2026 16:52:00 +0300",
-      "byline": "James Hale",
-      "image": "/img/news/bdf4d4746195.png"
     },
     {
       "section": "Middle East",
@@ -1836,7 +1745,7 @@
       "image": "/img/news/64b9e00e264d.png"
     },
     {
-      "section": "Africa",
+      "section": "Politics",
       "title": "Ninth woman's body found as South African police investigate string of deaths",
       "summary": "",
       "description": "South Africa police have cautioned against assuming that all the killings are linked but many women are afraid.",
@@ -1900,6 +1809,17 @@
       "image": "/img/news/38604ec843ce.png"
     },
     {
+      "section": "Europe",
+      "title": "Criminal case launched regarding drunk driving welfare minister in Latvia",
+      "summary": "",
+      "description": "The Prosecutor’s Office has received the criminal case against Reinis Uzulnieks, the former Minister for Welfare, who was driving under the influence of alcohol, the…",
+      "link": "https://eng.lsm.lv/article/society/crime/17.09.2026-criminal-case-launched-regarding-drunk-driving-welfare-minister-in-latvia.a663633/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "date": "Thu, 17 Sep 2026 12:30:24 GMT",
+      "byline": "Elena Voss",
+      "dateline": "PARIS",
+      "image": "/img/news/b687a2a108d4.png"
+    },
+    {
       "section": "Politics",
       "title": "Canada welcomes EU proposal to become 'associate member'",
       "summary": "",
@@ -1917,7 +1837,7 @@
       "description": "The UN Children’s Fund (UNICEF) is seeking to raise $97.5 million to protect 540,000 children and their families in Gaza and the West Bank from harsh winter conditions…",
       "link": "https://news.un.org/feed/view/en/story/2026/09/1168362",
       "date": "Thu, 17 Sep 2026 12:00:00 +0000",
-      "byline": "Tomasz Kruk",
+      "byline": "Ada Morrow",
       "dateline": "LONDON",
       "image": "/img/news/ecca4a3da131.png"
     },
@@ -1925,23 +1845,12 @@
       "section": "Government",
       "title": "Gender equality woefully off track, new UN report reveals",
       "summary": "",
-      "description": "At the current rate of progress, gender equality would take 171 years to achieve,&nbsp;a new UN report finds as institutions built to advance gains are being defunded…",
+      "description": "At the current rate of progress, gender equality would take 171 years to achieve, a new UN report finds as institutions built to advance gains are being defunded and…",
       "link": "https://news.un.org/feed/view/en/story/2026/09/1168360",
       "date": "Thu, 17 Sep 2026 12:00:00 +0000",
       "byline": "Claire Brennan",
       "dateline": "LONDON",
       "image": "/img/news/73776590cefc.png"
-    },
-    {
-      "section": "Finance",
-      "title": "Turkish authorities rush to stem fallout from stock market scandal",
-      "summary": "",
-      "description": "Funds frozen or liquidated and 38 people referred to prosecutors as regulators move to restore calm",
-      "link": "https://www.ft.com/content/ef54585a-4d2f-4538-b185-9bff75ef2f5e?syn-25a6b1a6=1",
-      "date": "Thu, 17 Sep 2026 11:59:41 GMT",
-      "byline": "James Hale",
-      "dateline": "TOKYO",
-      "image": "/img/news/2f87c3af9320.png"
     },
     {
       "section": "United States",
@@ -1952,6 +1861,17 @@
       "date": "Thu, 17 Sep 2026 07:38:27 EDT",
       "byline": "Elena Voss",
       "image": "/img/news/3aff062eaffc.png"
+    },
+    {
+      "section": "Latin America",
+      "title": "Nacimiento, muerte y resurrección de las organizaciones políticas: así evolucionó en 105…",
+      "summary": "",
+      "description": "La posibilidad de que los independientes pudieran candidatizarse se abrió en el referéndum impulsado por el entonces presidente Sixto Durán-Ballén en 1994.",
+      "link": "https://eluniverso.com/noticias/politica/nacimiento-muerte-y-resurreccion-de-las-organizaciones-politicas-asi-evoluciono-en-105-anos-el-sistema-de-partidos-en-ecuador-nota/",
+      "date": "Thu, 17 Sep 2026 11:15:00 +0000",
+      "byline": "Kenji Sato",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/0d6d1ebfeecc.png"
     },
     {
       "section": "Europe",
@@ -1980,8 +1900,8 @@
       "description": "From putting nuclear reactors on barges to grading how well AI models can control robots, this month’s crop of interesting startup deals takes AI and other emerging…",
       "link": "https://news.crunchbase.com/venture/interesting-startup-deals-nuclear-power-robotics-ai-agtech-proptech/",
       "date": "Thu, 17 Sep 2026 11:00:13 +0000",
-      "byline": "Tomasz Kruk",
-      "dateline": "WASHINGTON",
+      "byline": "Elena Voss",
+      "dateline": "LONDON",
       "image": "/img/news/3cec18da3ccf.png"
     },
     {
@@ -2017,34 +1937,15 @@
       "image": "/img/news/6f76b8501ee8.png"
     },
     {
-      "section": "Europe",
-      "title": "Büşra bebek olayında yeni gelişme: Kardeşlerinin 'çadırdan alıp götürdü' dediği şüpheli…",
-      "summary": "",
-      "description": "Sivas'ın Divriği ilçesinde 7 gündür kayıp olan 11 aylık Büşra Balıkçı soruşturmasında, koruma altındaki diğer kardeşlerin beyanı üzerine Büşra'yı çadırdan alıp götürdüğü…",
-      "link": "https://www.hurriyet.com.tr/gundem/busra-bebek-olayinda-yeni-gelisme-kardeslerinin-cadirdan-alip-goturdu-dedigi-supheli-diyarbakirda-gozaltina-alindi-43309775",
-      "date": "Thu, 17 Sep 2026 09:09:00 Z",
-      "byline": "Elena Voss",
-      "image": "/img/news/b495a60b3b66.png"
-    },
-    {
       "section": "United States",
       "title": "'Blood is on our hands': Haitian honour student's death sparks outcry over ICE ankle…",
       "summary": "",
       "description": "Pierre Damas Bel fled Haiti and came to the U.S. with a dream of becoming a neurosurgeon. But after U.S. immigration authorities fitted the 20-year-old university…",
       "link": "https://www.cbc.ca/news/world/pierre-damas-bel-ice-ankle-monitor-haiti-tps-9.7346603?cmp=rss",
       "date": "Thu, 17 Sep 2026 04:00:00 EDT",
-      "byline": "Tomasz Kruk",
+      "byline": "Kenji Sato",
+      "dateline": "TOKYO",
       "image": "/img/news/c41747463853.png"
-    },
-    {
-      "section": "Africa",
-      "title": "Abducted South African journalist found dead with gunshot wounds",
-      "summary": "",
-      "description": "The body of veteran broadcaster Owen Ndlovu was found hours after armed men kidnapped him near Johannesburg.",
-      "link": "https://www.bbc.co.uk/news/articles/c52e047wpw7po?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 17 Sep 2026 06:46:31 GMT",
-      "byline": "Claire Brennan",
-      "image": "/img/news/497c36b9c479.png"
     },
     {
       "section": "Positive",
@@ -2097,6 +1998,27 @@
       "image": "/img/news/d7f95559fba1.png"
     },
     {
+      "section": "Finance",
+      "title": "Diesel Price Predictions: How Much Higher Prices Can Go as Diesel Prices Top Record $6…",
+      "summary": "",
+      "description": "",
+      "link": "https://finance.yahoo.com/energy/articles/diesel-price-predictions-much-higher-161226017.html",
+      "date": "2026-09-16T16:12:26Z",
+      "byline": "Tomasz Kruk",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/8415ffc9baee.png"
+    },
+    {
+      "section": "Finance",
+      "title": "Dow Jones Tech Titan Apple, Nvidia Chipmaker TSMC, AMD, Bloom Energy In Or Near Buy Zones",
+      "summary": "",
+      "description": "",
+      "link": "https://www.investors.com/stock-lists/stocks-near-a-buy-zone/dow-jones-apple-stock-aapl-nvidia-chipmaker-tsm-amd-bloom/?src=A00220&yptr=yahoo",
+      "date": "2026-09-16T16:10:31Z",
+      "byline": "Tomasz Kruk",
+      "image": "/img/news/b6d64d1f7023.png"
+    },
+    {
       "section": "Africa",
       "title": "Sudan gold mine collapse kills dozens as search for missing continues",
       "summary": "",
@@ -2115,6 +2037,89 @@
       "date": "Wed, 16 Sep 2026 14:56:43 +0000",
       "byline": "Kenji Sato",
       "image": "/img/news/782712261752.png"
+    },
+    {
+      "section": "Africa",
+      "title": "DRC opposition condemns violence at protests over constitutional changes",
+      "summary": "",
+      "description": "Despite being authorised, an opposition protest in Kinshasa was cut short on Tuesday after clashes broke out and police dispersed demonstrators. The march was part of…",
+      "link": "https://www.rfi.fr/en/africa/20260916-drc-opposition-condemns-violence-at-protests-over-constitutional-changes",
+      "date": "Wed, 16 Sep 2026 13:37:19 GMT",
+      "byline": "Elena Voss",
+      "image": "/img/news/f5fa0ba642fe.png"
+    },
+    {
+      "section": "Latin America",
+      "title": "Colombia and Brazil deadliest countries for environmental activists, report says",
+      "summary": "",
+      "description": "The two countries accounted for 52% of killings of environmental activists in 2025, according to Global Witness.",
+      "link": "https://www.bbc.co.uk/news/articles/c6kgxjl35822o?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 16 Sep 2026 11:02:54 GMT",
+      "byline": "Claire Brennan",
+      "dateline": "LONDON",
+      "image": "/img/news/5849fe564549.png"
+    },
+    {
+      "section": "Science",
+      "title": "Single CAR T Injection Eases Multiple Sclerosis Symptoms in Small Trial",
+      "summary": "",
+      "description": "A potentially safer, simpler way to create CAR T cells in the body could bring this powerful therapy to the masses. The post Single CAR T Injection Eases Multiple…",
+      "link": "https://singularityhub.com/2026/09/15/single-car-t-injection-eases-multiple-sclerosis-symptoms-in-small-trial/",
+      "date": "Tue, 15 Sep 2026 19:45:41 +0000",
+      "byline": "Elena Voss",
+      "dateline": "BERLIN",
+      "image": "/img/news/46abc3a44d1f.png"
+    },
+    {
+      "section": "Asia",
+      "title": "Day 8: Search Ends for Two Experienced Divers Missing at Palau’s Peleliu Wall",
+      "summary": "",
+      "description": "Divers along a vertical reef wall off Peleliu Island, Palau. \" data-large-file=\"https://i0.wp.com/islandtimes.org/wp-content/uploads/2026/09/Peleliu-Wall-Dive-Site.jpg?fi…",
+      "link": "https://islandtimes.org/day-8-search-ends-for-two-experienced-divers-missing-at-palaus-peleliu-wall/",
+      "date": "Tue, 15 Sep 2026 10:58:37 +0000",
+      "byline": "Amira Hassan",
+      "dateline": "LONDON",
+      "image": "/img/news/d24a92f53753.png"
+    },
+    {
+      "section": "Asia",
+      "title": "Former Ngeremlengui Governor and Senator Ngiraklang John Skebong dies at 79",
+      "summary": "",
+      "description": "Late Ngiraklang John Skebong, former Senator and former governor \" data-large-file=\"https://i0.wp.com/islandtimes.org/wp-content/uploads/2026/09/Late-Ngiraklang-John-Skeb…",
+      "link": "https://islandtimes.org/former-ngeremlengui-governor-and-senator-ngiraklang-john-skebong-dies-at-79/",
+      "date": "Tue, 15 Sep 2026 10:52:58 +0000",
+      "byline": "Elena Voss",
+      "image": "/img/news/d61e4ea43c76.png"
+    },
+    {
+      "section": "Dev",
+      "title": "Changelog IRL @ PlanetScale (Sept 17, 2026)",
+      "summary": "",
+      "description": "Changelog is taking over PlanetScale's HQ We’re getting together IRL!! On Thursday, September 17th, Changelog is taking over PlanetScale’s HQ in San Francisco for an…",
+      "link": "https://changelog.com/posts/changelog-irl-sf26-planetscale",
+      "date": "Mon, 14 Sep 2026 06:07:29 +0000",
+      "byline": "Claire Brennan",
+      "image": "/img/news/5ff4b2dec660.png"
+    },
+    {
+      "section": "United States",
+      "title": "LIVE: ABC News Live",
+      "summary": "",
+      "description": "24/7 coverage of breaking news and live events",
+      "link": "https://abcnews.com/video/41463246/",
+      "date": "Fri, 11 Sep 2026 20:00:35 -0400",
+      "byline": "James Hale",
+      "image": "/img/news/692022cca76a.png"
+    },
+    {
+      "section": "Middle East",
+      "title": "Nine reported killed in southern Lebanon as IDF retaliates for Hezbollah drone launches",
+      "summary": "",
+      "description": "A least killed in IDF strikes village of Kfar Reman, including terrorists identified as transporting weapons, according to the IDF; \"Steps were taken to minimize harm to…",
+      "link": "https://www.ynetnews.com/article/bykok7noze",
+      "date": "Mon, 07 Sep 2026 15:32:57 +0300",
+      "byline": "James Hale",
+      "image": "/img/news/c82d14dfc392.png"
     }
   ]
 }
