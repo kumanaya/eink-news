@@ -29,8 +29,8 @@ jobs:
           HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
         run: |
           if [ -z "$HOOK" ]; then
-            echo "::error::VERCEL_DEPLOY_HOOK is not set; see the header of this workflow"
-            exit 1
+            echo "::notice::VERCEL_DEPLOY_HOOK is not set yet; see the header of this workflow"
+            exit 0
           fi
           curl -fsS -X POST "$HOOK" -o /dev/null
           echo "Vercel is building a new edition."
