@@ -10,11 +10,12 @@ name: edition
 #   GitHub -> repository secrets -> OPENROUTER_API_KEY
 #
 # Note: GitHub disables scheduled workflows in repositories that stay quiet
-# for 60 days; the "Run workflow" button wakes it up again.
+# for 60 days; the "Run workflow" button wakes it up again. Cron is UTC:
+# 03:00 is midnight in Brazil (UTC-3).
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 3 * * *'
   workflow_dispatch:
 
 concurrency:

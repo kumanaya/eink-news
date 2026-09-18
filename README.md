@@ -137,7 +137,8 @@ export OPENROUTER_API_KEY=sk-or-...      # or drop it in .openrouter-key
 
 ## How it stays fresh
 
-A GitHub Action collects the paper every **30 minutes**: feeds, pictures,
+A GitHub Action collects the paper every day at **midnight** (Brazil,
+UTC-3): feeds, pictures,
 a handful of AI summaries, then photographs the slides for the Kindle and
 commits the lot. Vercel only runs `npm run build`. It never waits on a
 model, and it never needs Chromium — the pictures are already in
