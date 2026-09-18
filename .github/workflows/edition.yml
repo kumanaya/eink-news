@@ -39,6 +39,8 @@ jobs:
           cache: npm
 
       - name: ImageMagick
+        # Ubuntu ships ImageMagick 6 (`convert`/`identify`). tools/render-pages.mjs
+        # accepts that or ImageMagick 7 (`magick`).
         run: sudo apt-get update && sudo apt-get install -y imagemagick
 
       - uses: browser-actions/setup-chrome@v1

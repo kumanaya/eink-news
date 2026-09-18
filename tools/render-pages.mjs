@@ -47,6 +47,26 @@ const MIME = {
 
 // --- what we need ------------------------------------------------------------
 
+function hasBin(name) {
+  try {
+    execFileSync(name, ['-version'], { stdio: 'ignore' });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// ImageMagick 7 is `magick`; Ubuntu's package is still 6 (`convert` / `identify`).
+function findMagick() {
+  if (hasBin('magick')) {
+    return { identify: ['magick', 'identify'], convert: ['magick'] };
+  }
+  if (hasBin('identify') && hasBin('convert')) {
+    return { identify: ['identify'], convert: ['convert'] };
+  }
+  throw new Error('ImageMagick not found (tried magick, convert/identify)');
+}
+
 function findChromium() {
   const fromEnv = process.env.CHROME_PATH;
   if (fromEnv) {
@@ -124,7 +144,7 @@ function screenshot(chromium, url, width, height, shot) {
   });
 }
 
-async function renderProfile(chromium, port, profile, slides) {
+async function renderProfile(chromium, im, port, profile, slides) {
   const { width, height } = profile;
   const dir = path.join(OUT, `${width}x${height}`);
   rmSync(dir, { recursive: true, force: true });
@@ -135,12 +155,17 @@ async function renderProfile(chromium, port, profile, slides) {
     const url = `http://127.0.0.1:${port}/slides/${i}.html`;
     await screenshot(chromium, url, width, height, shot);
 
-    const [w, h] = execFileSync('magick', ['identify', '-format', '%w %h', shot]).toString().trim().split(' ').map(Number);
+    const [w, h] = execFileSync(im.identify[0], [...im.identify.slice(1), '-format', '%w %h', shot])
+      .toString()
+      .trim()
+      .split(' ')
+      .map(Number);
     if (w !== width || h !== height) {
       throw new Error(`slide ${i} came out ${w}x${h}, expected ${width}x${height}`);
     }
 
-    execFileSync('magick', [
+    execFileSync(im.convert[0], [
+      ...im.convert.slice(1),
       shot,
       '-colorspace', 'Gray',
       '-depth', '4',
@@ -169,13 +194,14 @@ if (!existsSync(path.join(DIST, 'index.html'))) {
 
 const slides = slideCount();
 const chromium = findChromium();
+const im = findMagick();
 const { server, port } = await serveDist();
 
 let failed = false;
 try {
   const renderings = [];
   for (const profile of PROFILES) {
-    renderings.push(await renderProfile(chromium, port, profile, slides));
+    renderings.push(await renderProfile(chromium, im, port, profile, slides));
   }
   const edition = {
     generated: new Date().toISOString(),
