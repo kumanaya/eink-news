@@ -827,7 +827,7 @@
     }
   ],
   "max_slides": 200,
-  "render_slides": 100,
+  "render_slides": 200,
   "summaries_per_run": 100,
   "max_images": 150,
   "profiles": [

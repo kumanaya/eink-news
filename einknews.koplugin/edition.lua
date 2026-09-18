@@ -12,7 +12,9 @@ replaced by it. That is what makes the Kindle follow the paper - no closing
 and reopening the plugin.
 
 The pictures are produced by tools/render-pages.mjs and published under
-/kindle/, so the Kindle never has to render anything but a PNG.
+/kindle/, so the Kindle never has to render anything but a PNG. The first
+file is pages.png, the same way KOReader's news EPUB puts a portrait plate
+in front of the pages.
 --]]
 
 local DataStorage = require("datastorage")
@@ -78,6 +80,20 @@ local function request(url, sink)
     return n, code, headers, status
 end
 
+local function bustToken(value)
+    if value and value ~= "" then
+        return (tostring(value):gsub("[^%w]", ""))
+    end
+    return tostring(os.time())
+end
+
+-- Same filenames every edition (page-00.png). A query string keeps Kindle
+-- HTTP caches and the CDN from serving yesterday's pictures.
+local function withBust(url, token)
+    local sep = url:find("?", 1, true) and "&" or "?"
+    return url .. sep .. "t=" .. bustToken(token)
+end
+
 local function fetch(url)
     local sink = {}
     local _, code, _, status = request(url, ltn12.sink.table(sink))
@@ -111,7 +127,7 @@ local function complain(title, server, detail)
 end
 
 local function fetchEdition(server)
-    local body, err = fetch(server .. "/kindle/edition.json")
+    local body, err = fetch(withBust(server .. "/kindle/edition.json", os.time()))
     if not body then
         return nil, err
     end
@@ -148,7 +164,7 @@ end
 -- Prepares the pages of a rendering. An edition can hold a hundred of them and
 -- the Kindle's radio is slow, so each page is downloaded when the viewer asks
 -- for it; the previous edition's files are dropped first.
-local function preparePages(server, rendering)
+local function preparePages(server, rendering, token)
     local dir = editionDir()
     lfs.mkdir(dir)
     for entry in lfs.dir(dir) do
@@ -167,7 +183,7 @@ local function preparePages(server, rendering)
         -- fetches the page (once), then decodes it.
         pages[#pages + 1] = function()
             if not io.open(dest, "rb") then
-                local ok, why = download(base .. "/" .. page, dest)
+                local ok, why = download(withBust(base .. "/" .. page, token), dest)
                 if not ok then
                     logger.warn("einknews: page failed:", page, why)
                     missing = true
@@ -190,6 +206,7 @@ local function openViewer(server, edition, pages, opts)
     local auto = opts.auto and true or false
     local viewer = ImageViewer:new{
         image = pages,
+        images_list_nb = #pages,
         fullscreen = true,
         with_title_bar = false,
         image_padding = 0,
@@ -325,7 +342,7 @@ function Edition.show(opts)
         screen:getWidth(), screen:getHeight(),
         rendering.width or 0, rendering.height or 0, tostring(how)))
 
-    local pages, why = preparePages(server, rendering)
+    local pages, why = preparePages(server, rendering, edition.generated)
     if not pages then
         closeMessage()
         if not opts.quiet then

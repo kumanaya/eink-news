@@ -9,8 +9,9 @@
 // each panel size, and the plugin shows those pictures - one per screen, tap to
 // move on.
 //
-// The result goes to dist/kindle/<panel>/page-NN.png, with edition.json telling
-// the plugin what to download for the screen it is running on.
+// The result goes to dist/kindle/<panel>/pages.png then page-NN.png. The
+// plate is docs/pages.png, the same portrait-first trick KOReader's news
+// EPUB uses. edition.json tells the plugin which files to download.
 //
 // Needs Chromium on this machine (the Kindle needs neither).
 
@@ -25,6 +26,7 @@ const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.resolve(process.argv[2] || path.join(ROOT, 'dist'));
 const OUT = path.join(DIST, 'kindle');
 const NEWS = path.join(ROOT, 'src', 'data', 'news.json');
+const PAGES_PLATE = path.join(ROOT, 'docs', 'pages.png');
 
 // The panels this board is printed for, and how many slides are worth
 // photographing: feeds.json decides (only the Kindle's pose by default - the
@@ -144,11 +146,32 @@ function screenshot(chromium, url, width, height, shot) {
   });
 }
 
+// KOReader's news EPUB takes a portrait image as the cover, then the pages.
+// Same here: docs/pages.png is printed to the panel and listed first.
+function printCover(im, src, dest, width, height) {
+  execFileSync(im.convert[0], [
+    ...im.convert.slice(1),
+    src,
+    '-resize', `${width}x${height}^`,
+    '-gravity', 'center',
+    '-extent', `${width}x${height}`,
+    '-colorspace', 'Gray',
+    '-depth', '4',
+    '-strip',
+    dest,
+  ]);
+}
+
 async function renderProfile(chromium, im, port, profile, slides) {
   const { width, height } = profile;
   const dir = path.join(OUT, `${width}x${height}`);
   rmSync(dir, { recursive: true, force: true });
   mkdirSync(dir, { recursive: true });
+
+  if (existsSync(PAGES_PLATE)) {
+    printCover(im, PAGES_PLATE, path.join(dir, 'pages.png'), width, height);
+    console.log(`  ${width}x${height}: pages`);
+  }
 
   for (let i = 1; i <= slides; i += 1) {
     const shot = path.join(process.env.TMPDIR || '/tmp', `eink-news-${width}x${height}-${i}-${process.pid}.png`);
@@ -178,7 +201,11 @@ async function renderProfile(chromium, im, port, profile, slides) {
 
   const files = readdirSync(dir)
     .filter((f) => f.endsWith('.png'))
-    .sort();
+    .sort((a, b) => {
+      if (a === 'pages.png') return -1;
+      if (b === 'pages.png') return 1;
+      return a.localeCompare(b);
+    });
   const bytes = files.reduce((n, f) => n + statSync(path.join(dir, f)).size, 0);
   process.stdout.write('\n');
   console.log(`  ${width}x${height}: ${files.length} slides, ${(bytes / 1024).toFixed(0)} KB`);
