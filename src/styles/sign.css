@@ -2,8 +2,8 @@
  *
  * The reader is an old WebKit browser on a 16-shade e-ink panel, so the type is
  * set in vh (it follows whatever the visible viewport turns out to be), the
- * palette is black on white, and the only motion is a whole-screen swap every
- * `seconds` - which is how a signboard behaves and what e-ink does well.
+ * palette is ink on pearl paper (not pure white — that is not what the panel
+ * shows), and the only motion is a whole-screen swap every `seconds`.
  */
 
 html,
@@ -12,8 +12,8 @@ body {
   padding: 0;
   height: 100%;
   overflow: hidden;
-  background: #fff;
-  color: #111;
+  background: #e6e2d4;
+  color: #1c1a17;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -24,6 +24,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background: #e6e2d4;
 }
 
 .slide {
@@ -34,6 +35,7 @@ body {
   height: 100%;
   overflow: hidden;
   opacity: 0;
+  background: #e6e2d4;
 }
 
 /* Without JavaScript the board still shows its first story. */
@@ -56,7 +58,7 @@ body {
 
 .masthead-block {
   padding-bottom: 0.6vh;
-  border-bottom: 3px double #111;
+  border-bottom: 3px double #1c1a17;
   text-align: center;
 }
 
@@ -110,14 +112,14 @@ body {
 }
 
 .headline a {
-  color: #111;
+  color: #1c1a17;
 }
 
 .media {
   height: 26vh;
   margin-top: 1.2vh;
   overflow: hidden;
-  border: 1px solid #999;
+  border: 1px solid #8a8680;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -142,7 +144,7 @@ body {
 .description {
   margin: 1vh 0 0;
   padding-top: 0.8vh;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #b5b09f;
   height: 8vh;
   overflow: hidden;
   font-size: 2.3vh;
