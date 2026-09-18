@@ -5,6 +5,7 @@
 import { readFileSync } from 'node:fs';
 import Sign from '../../layouts/Sign.astro';
 import SignSlide from '../../components/SignSlide.astro';
+import { slideHasBody } from '../../tools/plain-text.mjs';
 import news from '../../data/news.json';
 
 // Only the stories the renderer photographs become pages: building one for
@@ -14,9 +15,10 @@ import news from '../../data/news.json';
 export function getStaticPaths() {
   const settings = JSON.parse(readFileSync(new URL('../../../feeds.json', import.meta.url), 'utf8'));
   const rendered = Number(settings.render_slides) || 100;
-  return news.slides.slice(0, rendered).map((slide, i) => ({
+  const usable = news.slides.filter(slideHasBody);
+  return usable.slice(0, rendered).map((slide, i) => ({
     params: { n: String(i + 1) },
-    props: { slide, index: i + 1, total: Math.min(news.slides.length, rendered) },
+    props: { slide, index: i + 1, total: Math.min(usable.length, rendered) },
   }));
 }
 

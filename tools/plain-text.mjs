@@ -118,3 +118,11 @@ export function isUsableSummary(text, title) {
   if (title && likeHeadline(trimmed, title)) return false;
   return true;
 }
+
+// A slide with a headline and a picture but no dek and no feed blurb is an
+// empty box. Those do not belong on the board.
+export function slideHasBody(slide) {
+  if (!slide) return false;
+  if (isUsableSummary(slide.summary, slide.title)) return true;
+  return plainText(slide.description).length >= 40;
+}

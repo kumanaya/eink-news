@@ -1,6 +1,7 @@
 ---
 import Sign from '../layouts/Sign.astro';
 import SignSlide from '../components/SignSlide.astro';
+import { slideHasBody } from '../tools/plain-text.mjs';
 import news from '../data/news.json';
 
 const MONTHS = [
@@ -12,7 +13,7 @@ const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const when = new Date(news.generatedAt);
 const dateLabel = `${DAYS[when.getDay()]} ${when.getDate()} ${MONTHS[when.getMonth()]} ${when.getFullYear()}`;
 
-const slides = news.slides;
+const slides = news.slides.filter(slideHasBody);
 const count = slides.length;
 const seconds = news.seconds || 8;
 ---

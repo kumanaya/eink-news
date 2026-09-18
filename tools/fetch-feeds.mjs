@@ -110,7 +110,10 @@ function attr(tag, name) {
 }
 
 function pick(list, seed) {
-  return list[seed % list.length];
+  const n = list.length;
+  let i = seed % n;
+  if (i < 0) i += n;
+  return list[i];
 }
 
 function hash(s) {
@@ -315,6 +318,7 @@ async function main() {
     reachable += 1;
     for (const raw of result.items) {
       if (!raw.title) continue;
+      if (!isRealSummary(raw.description)) continue;
       // Feeds overlap: the same story can arrive from several of them.
       const key = raw.title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
       if (seen.has(key)) continue;
@@ -332,7 +336,7 @@ async function main() {
         link: raw.link,
         date: raw.date || null,
         byline: pick(BYLINES, seed),
-        dateline: pick(DATELINES, seed >> 3),
+        dateline: pick(DATELINES, seed >>> 3),
         image: null,
         sourceImage: raw.image,
       });
