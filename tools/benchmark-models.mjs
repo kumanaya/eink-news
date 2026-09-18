@@ -9,25 +9,17 @@
 //
 //   "summaries_model": "vendor/model:free"
 //
-// With that set, tools/summarize.mjs uses only that model - no fallbacks.
+// With that set, tools/summarize.mjs tries it first, then the rest of the
+// live :free catalogue.
 
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { loadFreeModels } from './openrouter-free.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const KEY_FILE = path.join(ROOT, '.openrouter-key');
 const ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions';
-
-const MODELS = [
-  'nex-agi/nex-n2.5-pro:free',
-  'nvidia/nemotron-3.5-lightning:free',
-  'qwen/qwen3.8-27b:free',
-  'meta-llama/llama-3.3-70b-instruct:free',
-  'google/gemma-3-27b-it:free',
-  'mistralai/mistral-small-3.2-24b-instruct:free',
-  'deepseek/deepseek-chat-v3-0324:free',
-];
 const CALLS = Number(process.argv[2]) || 3;
 const TIMEOUT_MS = 60000;
 
@@ -95,8 +87,11 @@ async function main() {
     process.exit(1);
   }
 
+  const models = (await loadFreeModels()).filter((id) => id !== 'openrouter/free');
+  console.log(`  ${models.length} free models from OpenRouter\n`);
+
   const results = [];
-  for (const model of MODELS) {
+  for (const model of models) {
     const times = [];
     for (let i = 1; i <= CALLS; i += 1) {
       process.stdout.write(`  ${model} [${i}/${CALLS}]... `);
