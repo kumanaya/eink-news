@@ -152,11 +152,14 @@ wait_page() {
     else
         JOB=""
     fi
-    N=0
+    # WAITED, not N: this function shares the script's global scope, and the
+    # main loop keeps the page count in N. Reusing it here capped the board at
+    # `hold` slides (8) - the wrap check read the seconds, not the page count.
+    WAITED=0
     while [ ! -f "$FLAG" ]; do
         sleep 1
-        N=$((N + 1))
-        if [ "$N" -ge "$hold" ]; then
+        WAITED=$((WAITED + 1))
+        if [ "$WAITED" -ge "$hold" ]; then
             [ -n "$JOB" ] && kill "$JOB" 2>/dev/null
             wait "$JOB" 2>/dev/null
             rm -f "$FLAG"
