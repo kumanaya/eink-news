@@ -183,9 +183,11 @@ local function preparePages(server, rendering)
     return pages, missing and "some pages could not be downloaded" or nil
 end
 
--- Shows the edition full bleed, turns the pages on a timer like the site, and
--- watches for the next edition.
+-- Shows the edition full bleed. `opts.auto` is the board: pages turn on a
+-- timer, like the site and the scriptlet. Without it, it is a reader: you
+-- turn, it waits.
 local function openViewer(server, edition, pages, opts)
+    local auto = opts.auto and true or false
     local viewer = ImageViewer:new{
         image = pages,
         fullscreen = true,
@@ -219,17 +221,20 @@ local function openViewer(server, edition, pages, opts)
         UIManager:scheduleIn(seconds, advance)
     end
 
-    -- Same gesture as the board: tap left/right thirds, wrap around, and the
-    -- timer starts again so a tap is not overwritten by the next tick.
-    viewer.onShowNextImage = function()
-        go(1)
+    local function arm()
+        if not auto then return end
         UIManager:unschedule(advance)
         UIManager:scheduleIn(seconds, advance)
     end
+
+    -- Same gesture as the board: tap left/right thirds, wrap around.
+    viewer.onShowNextImage = function()
+        go(1)
+        arm()
+    end
     viewer.onShowPrevImage = function()
         go(-1)
-        UIManager:unschedule(advance)
-        UIManager:scheduleIn(seconds, advance)
+        arm()
     end
 
     local function tick()
@@ -240,15 +245,14 @@ local function openViewer(server, edition, pages, opts)
             stopped = true
             UIManager:unschedule(advance)
             UIManager:close(viewer)
-            Edition.show{ server = server, quiet = true }
+            Edition.show{ server = server, quiet = true, auto = auto }
             return
         end
         UIManager:scheduleIn(Edition.watch_seconds, tick)
     end
-    UIManager:scheduleIn(seconds, advance)
+    arm()
     UIManager:scheduleIn(Edition.watch_seconds, tick)
 
-    -- Stop asking the server the moment the viewer goes away.
     local inherited_close = viewer.onCloseWidget
     viewer.onCloseWidget = function(self)
         stopped = true
@@ -261,12 +265,16 @@ local function openViewer(server, edition, pages, opts)
 end
 
 --[[--
-Edition.show{ server = "http://host:port", on_need_server = fn, quiet = bool }
+Edition.show{
+    server = "http://host:port",
+    on_need_server = fn,
+    quiet = bool,
+    auto = bool,
+}
 
-Downloads and opens the edition. Downloading happens in the UI thread, but a
-local network makes that a couple of seconds; the socket timeouts keep a dead
-server from hanging it forever. `quiet` is for the background refresh that
-follows a new edition - it must not flash a message on the screen.
+Downloads and opens the edition. `auto` is the board (pages turn themselves).
+Without it, it is a reader: left and right thirds, nothing moves on its own.
+`quiet` is for the background refresh that follows a new edition.
 --]]
 function Edition.show(opts)
     local server = opts.server

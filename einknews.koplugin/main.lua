@@ -1,9 +1,10 @@
 --[[--
 E-INK NEWS: plugin entry point.
 
-Registers two entries under KOReader's Tools menu: one opens the newspaper that
-the server is printing, the other points the plugin at that server. The address
-is remembered in KOReader's settings directory, so it is asked only once.
+Registers the paper under KOReader's Tools menu in two modes: a reader you
+turn by hand, and a board that turns itself like the site and the scriptlet.
+A third entry points the plugin at the server. The address is remembered in
+KOReader's settings directory, so it is asked only once.
 --]]
 
 local DataStorage = require("datastorage")
@@ -83,9 +84,10 @@ function EinkNews:askServer(after)
     dialog:onShowKeyboard()
 end
 
-function EinkNews:openEdition()
+function EinkNews:openEdition(auto)
     Edition.show{
         server = self:server(),
+        auto = auto and true or false,
         on_need_server = function()
             self:askServer()
         end,
@@ -93,11 +95,18 @@ function EinkNews:openEdition()
 end
 
 function EinkNews:addToMainMenu(menu_items)
-    menu_items.einknews_open = {
-        text = _("E-INK NEWS"),
+    menu_items.einknews_reader = {
+        text = _("E-INK NEWS: reader"),
         sorting_hint = "tools",
         callback = function()
-            self:openEdition()
+            self:openEdition(false)
+        end,
+    }
+    menu_items.einknews_board = {
+        text = _("E-INK NEWS: board"),
+        sorting_hint = "tools",
+        callback = function()
+            self:openEdition(true)
         end,
     }
     menu_items.einknews_server = {
