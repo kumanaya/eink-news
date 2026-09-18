@@ -1,0 +1,24 @@
+{
+  "name": "hogwarts-newspaper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The Wizarding World's newspaper, rendered for an e-ink Kindle",
+  "license": "MIT",
+  "scripts": {
+    "news": "node tools/fetch-feeds.mjs && node tools/summarize.mjs",
+    "edition": "node -e \"const fs=require('fs');if(!fs.existsSync('src/data/news.json')){console.error('no edition yet: run \\\"npm run news\\\" first');process.exit(1)}\"",
+    "prebuild": "npm run edition",
+    "predev": "npm run edition",
+    "dev": "astro dev --host",
+    "build": "astro build",
+    "render": "node tools/render-pages.mjs",
+    "serve": "node tools/serve.mjs dist 8080",
+    "check": "node tools/check-legacy.mjs",
+    "feed": "npm run news && npm run build && npm run render",
+    "auto-feed": "sh tools/auto-feed.sh"
+  },
+  "devDependencies": {
+    "astro": "^7.3.3"
+  }
+}

@@ -1,0 +1,36 @@
+---
+import Sign from '../layouts/Sign.astro';
+import SignSlide from '../components/SignSlide.astro';
+import news from '../data/news.json';
+
+const MONTHS = [
+  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+];
+const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+const when = new Date(news.generatedAt);
+const dateLabel = `${DAYS[when.getDay()]} ${when.getDate()} ${MONTHS[when.getMonth()]} ${when.getFullYear()}`;
+
+const slides = news.slides;
+const count = slides.length;
+const seconds = news.seconds || 8;
+---
+
+<Sign masthead={news.masthead} refresh={600}>
+  <!-- data-seconds is read by the rotation timer (the layout's script). -->
+  <div class="board" data-seconds={seconds}>
+    {slides.map((slide, i) => (
+      <SignSlide
+        slide={slide}
+        masthead={news.masthead}
+        dateLabel={dateLabel}
+        edition={news.edition}
+        price={news.price}
+        index={i + 1}
+        count={count}
+      />
+    ))}
+    <div class="stamp">{news.edition} · {news.price} · printed by owl post</div>
+  </div>
+</Sign>

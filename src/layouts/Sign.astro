@@ -1,0 +1,97 @@
+---
+import '../styles/sign.css';
+
+const { masthead, refresh } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+    {refresh && <meta http-equiv="refresh" content={String(refresh)} />}
+    <title>{masthead}</title>
+  </head>
+  <body>
+    <slot />
+
+    <!--
+      The only script in this project, in plain ES5 (the Kindle's browser is
+      old, and its bundler-free parser takes no arrows or backticks):
+
+      - fitAll shrinks the type inside the fixed boxes until it fits. CSS cannot
+        measure text, and a headline that pushes the story down the screen
+        breaks the signboard - the boxes hold their place, the font is what
+        gives.
+      - rotate is the signboard itself. It is a timer, not a CSS animation,
+        because the Kindle browser does not run those and the board would sit
+        on the first story forever.
+    -->
+    <script is:inline>
+      (function () {
+        function fitAll() {
+          var nodes = document.querySelectorAll('.fit');
+          for (var i = 0; i < nodes.length; i++) {
+            var el = nodes[i];
+            var min = parseFloat(el.getAttribute('data-min'));
+            var max = parseFloat(el.getAttribute('data-max'));
+            var size = max;
+            el.style.fontSize = max + 'vh';
+            while (size > min && el.scrollHeight > el.clientHeight + 1) {
+              size = size - 0.2;
+              el.style.fontSize = size + 'vh';
+            }
+          }
+        }
+
+        function loadImage(slide) {
+          if (!slide) return;
+          var img = slide.querySelector('img[data-src]');
+          if (img && !img.getAttribute('src')) {
+            img.setAttribute('src', img.getAttribute('data-src'));
+          }
+        }
+
+        function show(slides, index) {
+          for (var i = 0; i < slides.length; i++) {
+            // inline opacity wins over the first-child rule that covers the
+            // no-JavaScript case
+            slides[i].style.opacity = i === index ? 1 : 0;
+          }
+          loadImage(slides[index]);
+          loadImage(slides[(index + 1) % slides.length]);
+        }
+
+        function rotate() {
+          var board = document.querySelector('.board');
+          var slides = document.querySelectorAll('.slide');
+          if (!board) return;
+          if (slides.length < 2) {
+            loadImage(slides[0]);
+            return;
+          }
+          var seconds = parseFloat(board.getAttribute('data-seconds')) || 8;
+          var current = 0;
+          show(slides, current);
+          setInterval(function () {
+            current = (current + 1) % slides.length;
+            show(slides, current);
+          }, seconds * 1000);
+        }
+
+        function start() {
+          fitAll();
+          rotate();
+        }
+
+        start();
+        if (window.addEventListener) {
+          window.addEventListener('load', start, false);
+        } else {
+          window.onload = start;
+        }
+      })();
+    </script>
+  </body>
+</html>

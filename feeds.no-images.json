@@ -1,0 +1,652 @@
+{
+  "note": "Feeds that carried no picture when tools/filter-feeds.mjs probed them.",
+  "sections": [
+    {
+      "name": "Europe",
+      "feeds": [
+        {
+          "name": "EuroNews",
+          "url": "https://www.euronews.com/rss?format=xml"
+        },
+        {
+          "name": "DW News",
+          "url": "https://rss.dw.com/xml/rss-en-all"
+        },
+        {
+          "name": "ANSA",
+          "url": "https://www.ansa.it/sito/ansait_rss.xml"
+        },
+        {
+          "name": "SVT Nyheter",
+          "url": "https://www.svt.se/nyheter/rss.xml"
+        },
+        {
+          "name": "Yle News",
+          "url": "https://yle.fi/rss/news"
+        },
+        {
+          "name": "Seznam Zprávy",
+          "url": "https://www.seznamzpravy.cz/rss"
+        },
+        {
+          "name": "HotNews",
+          "url": "https://www.hotnews.ro/rss"
+        },
+        {
+          "name": "G4Media",
+          "url": "https://www.g4media.ro/feed/"
+        },
+        {
+          "name": "Dnevnik",
+          "url": "https://www.dnevnik.bg/rss/"
+        },
+        {
+          "name": "TVN24",
+          "url": "https://tvn24.pl/swiat.xml"
+        },
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/rss/news"
+        },
+        {
+          "name": "Civil.ge",
+          "url": "https://civil.ge/feed/"
+        },
+        {
+          "name": "NewsMaker",
+          "url": "https://newsmaker.md/feed"
+        },
+        {
+          "name": "Ziarul de Gardă",
+          "url": "https://www.zdg.md/feed/"
+        },
+        {
+          "name": "Naftemporiki",
+          "url": "https://www.naftemporiki.gr/feed/"
+        }
+      ]
+    },
+    {
+      "name": "United States",
+      "feeds": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/latest/rss/main"
+        },
+        {
+          "name": "National Post",
+          "url": "https://nationalpost.com/feed/"
+        },
+        {
+          "name": "Financial Post",
+          "url": "https://financialpost.com/feed/"
+        },
+        {
+          "name": "iPolitics",
+          "url": "https://www.ipolitics.ca/feed"
+        },
+        {
+          "name": "Le Devoir",
+          "url": "https://www.ledevoir.com/rss/manchettes.xml"
+        },
+        {
+          "name": "Vancouver Sun",
+          "url": "https://vancouversun.com/feed/"
+        },
+        {
+          "name": "Calgary Herald",
+          "url": "https://calgaryherald.com/feed/"
+        },
+        {
+          "name": "Winnipeg Free Press",
+          "url": "https://www.winnipegfreepress.com/feed"
+        },
+        {
+          "name": "Ottawa Citizen",
+          "url": "https://ottawacitizen.com/feed/"
+        },
+        {
+          "name": "Edmonton Journal",
+          "url": "https://edmontonjournal.com/feed/"
+        },
+        {
+          "name": "The Province",
+          "url": "https://theprovince.com/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Africa",
+      "feeds": [
+        {
+          "name": "News24",
+          "url": "https://feeds.news24.com/articles/news24/TopStories/rss"
+        },
+        {
+          "name": "Jeune Afrique",
+          "url": "https://www.jeuneafrique.com/feed/"
+        },
+        {
+          "name": "Daily Trust",
+          "url": "https://dailytrust.com/feed/"
+        },
+        {
+          "name": "ThisDay",
+          "url": "https://www.thisdaylive.com/feed"
+        },
+        {
+          "name": "Radio Tamazuj",
+          "url": "https://www.radiotamazuj.org/en/feed"
+        },
+        {
+          "name": "The Reporter Ethiopia",
+          "url": "https://www.thereporterethiopia.com/feed/"
+        },
+        {
+          "name": "Actualite.cd",
+          "url": "https://actualite.cd/feed"
+        },
+        {
+          "name": "Radio Okapi",
+          "url": "https://www.radiookapi.net/rss.xml"
+        },
+        {
+          "name": "Le Quotidien",
+          "url": "https://lequotidien.sn/feed/"
+        },
+        {
+          "name": "leFaso.net",
+          "url": "https://lefaso.net/spip.php?page=backend"
+        },
+        {
+          "name": "Aïr Info",
+          "url": "https://airinfoagadez.com/feed/"
+        },
+        {
+          "name": "Tchadinfos",
+          "url": "https://tchadinfos.com/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Asia",
+      "feeds": [
+        {
+          "name": "Japan Today",
+          "url": "https://japantoday.com/feed/atom"
+        },
+        {
+          "name": "Asahi Shimbun",
+          "url": "https://www.asahi.com/rss/asahi/newsheadlines.rdf"
+        },
+        {
+          "name": "Aaj Tak",
+          "url": "https://www.aajtak.in/rssfeeds/?id=home"
+        },
+        {
+          "name": "Amar Ujala",
+          "url": "https://www.amarujala.com/rss/national.xml"
+        },
+        {
+          "name": "Eurasianet",
+          "url": "https://eurasianet.org/rss"
+        },
+        {
+          "name": "Irrawaddy",
+          "url": "https://www.irrawaddy.com/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Community",
+      "feeds": [
+        {
+          "name": "USNI News",
+          "url": "https://news.google.com/rss/search?q=site:news.usni.org+when:3d&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/feed/"
+        },
+        {
+          "name": "Foreign Affairs",
+          "url": "https://www.foreignaffairs.com/rss.xml"
+        },
+        {
+          "name": "Atlantic Council",
+          "url": "https://www.atlanticcouncil.org/feed/"
+        },
+        {
+          "name": "FAO News",
+          "url": "https://www.fao.org/feeds/fao-newsroom-rss"
+        },
+        {
+          "name": "DFRLab",
+          "url": "https://dfrlab.org/feed/"
+        },
+        {
+          "name": "Lighthouse Reports",
+          "url": "https://www.lighthousereports.com/feed/"
+        },
+        {
+          "name": "The Sentry",
+          "url": "https://thesentry.org/feed/"
+        },
+        {
+          "name": "GITOC",
+          "url": "https://globalinitiative.net/feed/"
+        },
+        {
+          "name": "Correctiv",
+          "url": "https://correctiv.org/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Crypto",
+      "feeds": [
+        {
+          "name": "The Block",
+          "url": "https://news.google.com/rss/search?q=site:theblock.co+when:1d&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "name": "DL News",
+          "url": "https://news.google.com/rss/search?q=site:dlnews.com+when:3d&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "name": "DeFi News",
+          "url": "https://news.google.com/rss/search?q=(DeFi+OR+\"decentralized+finance\")+when:3d&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "name": "Bloomberg Crypto",
+          "url": "https://news.google.com/rss/search?q=bloomberg+crypto+when:1d&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "name": "Reuters Crypto",
+          "url": "https://news.google.com/rss/search?q=reuters+crypto+when:1d&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "name": "Wu Blockchain",
+          "url": "https://news.google.com/rss/search?q=site:wublockchain.com+when:7d&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "name": "Messari",
+          "url": "https://news.google.com/rss/search?q=site:messari.io+when:3d&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "name": "NFT News",
+          "url": "https://news.google.com/rss/search?q=(NFT+OR+\"non-fungible\")+when:3d&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "name": "Stablecoin Policy",
+          "url": "https://news.google.com/rss/search?q=(stablecoin+regulation+OR+\"stablecoin+bill\")+when:7d&hl=en-US&gl=US&ceid=US:en"
+        }
+      ]
+    },
+    {
+      "name": "Latin America",
+      "feeds": [
+        {
+          "name": "Primicias",
+          "url": "https://www.primicias.ec/feed/"
+        },
+        {
+          "name": "Caracas Chronicles",
+          "url": "https://www.caracaschronicles.com/feed/"
+        },
+        {
+          "name": "Havana Times",
+          "url": "https://havanatimes.org/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Middle East",
+      "feeds": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/xml/rss/all.xml"
+        },
+        {
+          "name": "Jerusalem Post",
+          "url": "https://www.jpost.com/rss/rssfeedsheadlines.aspx"
+        },
+        {
+          "name": "Asharq Business",
+          "url": "https://asharqbusiness.com/rss.xml"
+        },
+        {
+          "name": "+972 Magazine",
+          "url": "https://www.972mag.com/feed/"
+        },
+        {
+          "name": "Naharnet Lebanon",
+          "url": "https://www.naharnet.com/tags/lebanon/en/feed.atom"
+        },
+        {
+          "name": "Libya Herald",
+          "url": "https://libyaherald.com/rss.xml"
+        }
+      ]
+    },
+    {
+      "name": "Finance",
+      "feeds": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+        },
+        {
+          "name": "GlobeNewswire",
+          "url": "https://www.globenewswire.com/RssFeed/subjectcode/22/feedTitle/GlobeNewswire"
+        },
+        {
+          "name": "Business Wire",
+          "url": "https://feed.businesswire.com/rss/home/?rss=G1QFDERJXkJeGVtRWA=="
+        },
+        {
+          "name": "CNBC Tech",
+          "url": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
+        }
+      ]
+    },
+    {
+      "name": "VC Blogs",
+      "feeds": [
+        {
+          "name": "EU Startups",
+          "url": "https://www.eu-startups.com/feed/"
+        },
+        {
+          "name": "Sifted (Europe)",
+          "url": "https://sifted.eu/feed"
+        },
+        {
+          "name": "Tech in Asia",
+          "url": "https://www.techinasia.com/feed"
+        }
+      ]
+    },
+    {
+      "name": "Government",
+      "feeds": [
+        {
+          "name": "White House",
+          "url": "https://www.whitehouse.gov/briefings-statements/feed/"
+        },
+        {
+          "name": "White House Actions",
+          "url": "https://www.whitehouse.gov/presidential-actions/feed/"
+        },
+        {
+          "name": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/feeds/press_all.xml"
+        },
+        {
+          "name": "SEC",
+          "url": "https://www.sec.gov/news/pressreleases.rss"
+        },
+        {
+          "name": "U.S. Trade Representative",
+          "url": "https://ustr.gov/rss.xml"
+        },
+        {
+          "name": "CISA",
+          "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml"
+        }
+      ]
+    },
+    {
+      "name": "Markets",
+      "feeds": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+        },
+        {
+          "name": "Seeking Alpha",
+          "url": "https://seekingalpha.com/market_currents.xml"
+        },
+        {
+          "name": "GlobeNewswire",
+          "url": "https://www.globenewswire.com/RssFeed/subjectcode/22/feedTitle/GlobeNewswire"
+        },
+        {
+          "name": "Business Wire",
+          "url": "https://feed.businesswire.com/rss/home/?rss=G1QFDERJXkJeGVtRWA=="
+        }
+      ]
+    },
+    {
+      "name": "Tech",
+      "feeds": [
+        {
+          "name": "Hacker News",
+          "url": "https://hnrss.org/frontpage"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Think Tanks",
+      "feeds": [
+        {
+          "name": "Atlantic Council",
+          "url": "https://www.atlanticcouncil.org/feed/"
+        },
+        {
+          "name": "Foreign Affairs",
+          "url": "https://www.foreignaffairs.com/rss.xml"
+        },
+        {
+          "name": "War on the Rocks",
+          "url": "https://warontherocks.com/feed/"
+        },
+        {
+          "name": "CSIS",
+          "url": "https://www.csis.org/rss.xml"
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "feeds": [
+        {
+          "name": "VentureBeat AI",
+          "url": "https://venturebeat.com/category/ai/feed/"
+        },
+        {
+          "name": "ArXiv AI",
+          "url": "https://export.arxiv.org/rss/cs.AI"
+        }
+      ]
+    },
+    {
+      "name": "Dev",
+      "feeds": [
+        {
+          "name": "Dev.to",
+          "url": "https://dev.to/feed"
+        },
+        {
+          "name": "Lobsters",
+          "url": "https://lobste.rs/rss"
+        },
+        {
+          "name": "Show HN",
+          "url": "https://hnrss.org/show"
+        }
+      ]
+    },
+    {
+      "name": "Energy",
+      "feeds": [
+        {
+          "name": "OilPrice.com",
+          "url": "https://oilprice.com/rss/main"
+        },
+        {
+          "name": "Rigzone",
+          "url": "https://www.rigzone.com/news/rss/rigzone_latest.aspx"
+        },
+        {
+          "name": "Australian Mining",
+          "url": "https://www.australianmining.com.au/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Positive",
+      "feeds": [
+        {
+          "name": "Good News Network",
+          "url": "https://www.goodnewsnetwork.org/feed/"
+        },
+        {
+          "name": "Positive.News",
+          "url": "https://www.positive.news/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Science",
+      "feeds": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/rss/all.xml"
+        },
+        {
+          "name": "Nature News",
+          "url": "https://www.nature.com/nature.rss"
+        },
+        {
+          "name": "Human Progress",
+          "url": "https://humanprogress.org/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Politics",
+      "feeds": [
+        {
+          "name": "Trump - Truth Social",
+          "url": "https://trumpstruth.org/feed"
+        }
+      ]
+    },
+    {
+      "name": "Crisis",
+      "feeds": [
+        {
+          "name": "CrisisWatch",
+          "url": "https://www.crisisgroup.org/rss"
+        },
+        {
+          "name": "WHO",
+          "url": "https://www.who.int/rss-feeds/news-english.xml"
+        }
+      ]
+    },
+    {
+      "name": "Startups",
+      "feeds": [
+        {
+          "name": "TechCrunch Startups",
+          "url": "https://techcrunch.com/category/startups/feed/"
+        },
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Cloud",
+      "feeds": [
+        {
+          "name": "InfoQ",
+          "url": "https://feed.infoq.com/"
+        }
+      ]
+    },
+    {
+      "name": "Nature",
+      "feeds": [
+        {
+          "name": "Conservation Optimism",
+          "url": "https://conservationoptimism.org/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Inspiring",
+      "feeds": [
+        {
+          "name": "GNN Heroes",
+          "url": "https://www.goodnewsnetwork.org/category/news/inspiring/feed/"
+        },
+        {
+          "name": "GNN Health",
+          "url": "https://www.goodnewsnetwork.org/category/news/health/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Layoffs",
+      "feeds": [
+        {
+          "name": "TechCrunch Layoffs",
+          "url": "https://techcrunch.com/tag/layoffs/feed/"
+        }
+      ]
+    },
+    {
+      "name": "Accelerators",
+      "feeds": [
+        {
+          "name": "YC News",
+          "url": "https://news.ycombinator.com/rss"
+        }
+      ]
+    },
+    {
+      "name": "Producthunt",
+      "feeds": [
+        {
+          "name": "Product Hunt",
+          "url": "https://www.producthunt.com/feed"
+        }
+      ]
+    },
+    {
+      "name": "Centralbanks",
+      "feeds": [
+        {
+          "name": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/feeds/press_all.xml"
+        }
+      ]
+    },
+    {
+      "name": "Fintech",
+      "feeds": [
+        {
+          "name": "SEC",
+          "url": "https://www.sec.gov/news/pressreleases.rss"
+        }
+      ]
+    },
+    {
+      "name": "Analysis",
+      "feeds": [
+        {
+          "name": "Mining.com",
+          "url": "https://www.mining.com/feed/"
+        }
+      ]
+    }
+  ]
+}

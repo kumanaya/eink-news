@@ -1,0 +1,176 @@
+/* The Daily Prophet as a signboard: one story per screen.
+ *
+ * The reader is an old WebKit browser on a 16-shade e-ink panel, so the type is
+ * set in vh (it follows whatever the visible viewport turns out to be), the
+ * palette is black on white, and the only motion is a whole-screen swap every
+ * `seconds` - which is how a signboard behaves and what e-ink does well.
+ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #111;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* --- the board --------------------------------------------------------------- */
+
+.board {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* Without JavaScript the board still shows its first story. */
+.slide:first-child {
+  opacity: 1;
+}
+
+.board.standalone .slide {
+  opacity: 1;
+}
+
+.slide-inner {
+  height: 100%;
+  padding: 2.2vh 3.2vw 2vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* --- the slide --------------------------------------------------------------- */
+
+.masthead-block {
+  padding-bottom: 0.6vh;
+  border-bottom: 3px double #111;
+  text-align: center;
+}
+
+.masthead-title {
+  font-size: 4.4vh;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.masthead-meta {
+  overflow: hidden;
+  margin-top: 0.2vh;
+  font-size: 1.35vh;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.masthead-meta .left {
+  float: left;
+}
+
+.masthead-meta .right {
+  float: right;
+}
+
+.masthead-meta .center {
+  text-align: center;
+}
+
+.section {
+  height: 3vh;
+  margin-top: 1.2vh;
+  overflow: hidden;
+  font-size: 1.6vh;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #444;
+}
+
+/* Every block below has a fixed height: the type inside may shrink to fit,
+   but nothing ever pushes what comes after it. The fit script at the foot of
+   the page does the shrinking; CSS cannot measure text on its own. */
+.headline {
+  margin: 0.8vh 0 0;
+  height: 18vh;
+  overflow: hidden;
+  font-size: 6.4vh;
+  font-weight: normal;
+  line-height: 1.03;
+}
+
+.headline a {
+  color: #111;
+}
+
+.media {
+  height: 26vh;
+  margin-top: 1.2vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.media img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid #999;
+}
+
+/* A story without a picture hands its box to the summary, so everything under
+   it keeps the same place on the screen. */
+.slide.no-media .summary {
+  height: 41vh;
+}
+
+.summary {
+  margin: 1.2vh 0 0;
+  height: 15vh;
+  overflow: hidden;
+  font-size: 3.1vh;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+.description {
+  margin: 1vh 0 0;
+  padding-top: 0.8vh;
+  border-top: 1px solid #ccc;
+  height: 8vh;
+  overflow: hidden;
+  font-size: 2.3vh;
+  line-height: 1.3;
+  color: #333;
+  text-align: justify;
+}
+
+.byline {
+  height: 3vh;
+  margin-top: 1vh;
+  overflow: hidden;
+  font-size: 1.5vh;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.stamp {
+  position: absolute;
+  bottom: 1vh;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3vh;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #666;
+}

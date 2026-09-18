@@ -1,0 +1,46 @@
+---
+// One slide on its own, standing still: this is what tools/render-pages.mjs
+// screenshots for the KOReader plugin (the board itself animates, and a
+// screenshot cannot wait for that). The URL is not linked from anywhere.
+import { readFileSync } from 'node:fs';
+import Sign from '../../layouts/Sign.astro';
+import SignSlide from '../../components/SignSlide.astro';
+import news from '../../data/news.json';
+
+// Only the stories the renderer photographs become pages: building one for
+// every story on the board would be hundreds of copies of the same CSS.
+// (The settings are read inside getStaticPaths: Astro runs it in its own
+// scope, where module-level constants are not around.)
+export function getStaticPaths() {
+  const settings = JSON.parse(readFileSync(new URL('../../../feeds.json', import.meta.url), 'utf8'));
+  const rendered = Number(settings.render_slides) || 100;
+  return news.slides.slice(0, rendered).map((slide, i) => ({
+    params: { n: String(i + 1) },
+    props: { slide, index: i + 1, total: Math.min(news.slides.length, rendered) },
+  }));
+}
+
+const { slide, index, total } = Astro.props;
+
+const MONTHS = [
+  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+];
+const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const when = new Date(news.generatedAt);
+const dateLabel = `${DAYS[when.getDay()]} ${when.getDate()} ${MONTHS[when.getMonth()]} ${when.getFullYear()}`;
+---
+
+<Sign masthead={news.masthead}>
+  <div class="board standalone">
+    <SignSlide
+      slide={slide}
+      masthead={news.masthead}
+      dateLabel={dateLabel}
+      edition={news.edition}
+      price={news.price}
+      index={index}
+      count={total}
+    />
+  </div>
+</Sign>
