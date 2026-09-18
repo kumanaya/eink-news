@@ -49,7 +49,7 @@ at a time, on a panel that loves a full-screen repaint.
 
 ## On the Kindle
 
-Two doors. Same paper: [eink-news-nine.vercel.app](https://eink-news-nine.vercel.app/).
+Three doors. Same paper: [eink-news-nine.vercel.app](https://eink-news-nine.vercel.app/).
 
 ### Experimental browser
 
@@ -57,7 +57,20 @@ Open `https://eink-news-nine.vercel.app/` and leave it.
 
 The board turns on its own. A tap on the side turns it by hand. Only the
 picture on screen is fetched. Every ten minutes the page reloads for the
-next edition.
+next edition. **This is the only door that draws the live HTML.**
+
+### Scriptlet
+
+A scriptlet cannot draw HTML either. It downloads the photographed slides
+and paints them with fbink, full screen, turning every eight seconds —
+the same beat as the site. Tap once to go back to the library.
+
+```sh
+cp eink-news.sh /mnt/us/documents/
+```
+
+Eject. It shows up in the library as **E-INK NEWS**. The Kindle needs
+`curl` or a `wget` that speaks HTTPS (the paper lives on Vercel).
 
 ### KOReader plugin
 
@@ -73,7 +86,8 @@ Restart KOReader, then **Tools → E-INK NEWS**. The paper opens.
 To host it yourself instead, set **Tools → E-INK NEWS: server** to that
 URL (no trailing slash).
 
-Left / right to turn. Middle tap for the buttons. While it is open it
+Left / right to turn, same thirds as the board. The page also turns itself
+every eight seconds. Middle tap for the buttons. While it is open it
 checks for a new edition every 20 seconds, and pulls pages one at a time
 (the radio is slow). Copy the plugin once. After that the Kindle follows
 the server by itself.
@@ -179,6 +193,7 @@ src/data/summaries.json    so a headline is never asked twice
 public/img/news/           pictures for this edition
 public/kindle/             photographed slides for the plugin
 einknews.koplugin/         KOReader app
+eink-news.sh               scriptlet: the paper from the library
 docs/banner.jpg            the masthead above
 ```
 

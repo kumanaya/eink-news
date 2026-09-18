@@ -51,6 +51,8 @@ local Edition = {}
 -- How often to ask whether a new edition exists, in seconds. Low enough to
 -- feel live, high enough not to keep the Kindle's radio busy.
 Edition.watch_seconds = 20
+-- How long a slide stays on screen, matching the board (feeds.json `seconds`).
+Edition.page_seconds = 8
 
 local function editionDir()
     return DataStorage:getDataDir() .. "/einknews"
@@ -181,7 +183,8 @@ local function preparePages(server, rendering)
     return pages, missing and "some pages could not be downloaded" or nil
 end
 
--- Shows the edition full bleed and watches for the next one.
+-- Shows the edition full bleed, turns the pages on a timer like the site, and
+-- watches for the next edition.
 local function openViewer(server, edition, pages, opts)
     local viewer = ImageViewer:new{
         image = pages,
@@ -194,6 +197,40 @@ local function openViewer(server, edition, pages, opts)
     UIManager:show(viewer)
 
     local stopped = false
+    local seconds = tonumber(edition.seconds) or Edition.page_seconds
+    if seconds < 2 then seconds = Edition.page_seconds end
+
+    local function pageCount()
+        return viewer._images_list_nb or #pages
+    end
+
+    local function go(delta)
+        local n = pageCount()
+        if n < 2 or not viewer.switchToImageNum then return end
+        local cur = viewer._images_list_cur or 1
+        local nxt = ((cur - 1 + delta) % n) + 1
+        viewer:switchToImageNum(nxt)
+    end
+
+    local advance
+    advance = function()
+        if stopped then return end
+        go(1)
+        UIManager:scheduleIn(seconds, advance)
+    end
+
+    -- Same gesture as the board: tap left/right thirds, wrap around, and the
+    -- timer starts again so a tap is not overwritten by the next tick.
+    viewer.onShowNextImage = function()
+        go(1)
+        UIManager:unschedule(advance)
+        UIManager:scheduleIn(seconds, advance)
+    end
+    viewer.onShowPrevImage = function()
+        go(-1)
+        UIManager:unschedule(advance)
+        UIManager:scheduleIn(seconds, advance)
+    end
 
     local function tick()
         if stopped then return end
@@ -201,12 +238,14 @@ local function openViewer(server, edition, pages, opts)
         if fresh and fresh.generated ~= edition.generated then
             logger.info("einknews: a new edition is on the wire:", tostring(fresh.generated))
             stopped = true
+            UIManager:unschedule(advance)
             UIManager:close(viewer)
             Edition.show{ server = server, quiet = true }
             return
         end
         UIManager:scheduleIn(Edition.watch_seconds, tick)
     end
+    UIManager:scheduleIn(seconds, advance)
     UIManager:scheduleIn(Edition.watch_seconds, tick)
 
     -- Stop asking the server the moment the viewer goes away.
@@ -214,6 +253,7 @@ local function openViewer(server, edition, pages, opts)
     viewer.onCloseWidget = function(self)
         stopped = true
         UIManager:unschedule(tick)
+        UIManager:unschedule(advance)
         if inherited_close then
             return inherited_close(self)
         end

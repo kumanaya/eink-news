@@ -179,6 +179,7 @@ try {
   }
   const edition = {
     generated: new Date().toISOString(),
+    seconds: Number(settings.seconds) || 8,
     renderings,
   };
   await writeFile(path.join(OUT, 'edition.json'), JSON.stringify(edition, null, 2) + '\n');
