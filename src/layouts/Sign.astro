@@ -1,14 +1,25 @@
 ---
 import '../styles/sign.css';
 
-const { masthead, refresh, track } = Astro.props;
+const { masthead, refresh, track, night } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class:list={[night && 'night']}>
   <head>
+    {night && (
+      <script is:inline>
+        (function () {
+          var ua = navigator.userAgent || '';
+          if (!/Kindle|Silk/i.test(ua)) return;
+          var html = document.documentElement;
+          html.className = html.className.replace(/(^|\s)night(\s|$)/, ' ');
+        })();
+      </script>
+    )}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {night && <meta name="theme-color" content="#1c1a17" />}
     <link rel="icon" href="/favicon.ico" />
     {refresh && <meta http-equiv="refresh" content={String(refresh)} />}
     <title>{masthead}</title>
