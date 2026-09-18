@@ -841,5 +841,5 @@
   "max_downloads": 500,
   "summaries_concurrency": 3,
   "summaries_model": "nex-agi/nex-n2.5-pro:free",
-  "summaries_fallback": false
+  "summaries_fallback": true
 }
