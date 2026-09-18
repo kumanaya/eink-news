@@ -327,7 +327,7 @@ async function main() {
       candidates.push({
         section: result.job.section,
         title: truncate(raw.title, TITLE_CHARS),
-        // The English headline, dek and blurb are written by tools/summarize.mjs.
+        // English copy is written by tools/translate.py (NLLB on the runner).
         summary: '',
         description: isRealSummary(raw.description)
           ? truncate(plainText(raw.description), DESCRIPTION_CHARS)

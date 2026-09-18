@@ -6,7 +6,9 @@
   "description": "A signboard of the day's news, rendered for an e-ink Kindle",
   "license": "MIT",
   "scripts": {
-    "news": "node tools/fetch-feeds.mjs && node tools/summarize.mjs",
+    "news": "node tools/fetch-feeds.mjs && python3 tools/translate.py",
+    "translate": "python3 tools/translate.py",
+    "summarize": "node tools/summarize.mjs",
     "edition": "node -e \"const fs=require('fs');if(!fs.existsSync('src/data/news.json')){console.error('no edition yet: run \\\"npm run news\\\" first');process.exit(1)}\"",
     "prebuild": "npm run edition",
     "predev": "npm run edition",

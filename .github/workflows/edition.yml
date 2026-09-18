@@ -1,13 +1,11 @@
 name: edition
 
-# The board is static. RSS, pictures and AI summaries are collected here,
-# committed as the raw edition (src/data/news.json, src/data/summaries.json,
-# public/img/news/), then photographed for KOReader (public/kindle/). The
-# Vercel build only reads what is already in the tree. Summaries take minutes
-# on the free models, which is why they never run inside a deploy.
-#
-# Setup (once):
-#   GitHub -> repository secrets -> OPENROUTER_API_KEY
+# The board is static. RSS and pictures are collected here, headlines are
+# translated to English on the runner (NLLB-200, CPU), then the edition is
+# committed (src/data/news.json, public/img/news/) and photographed for
+# KOReader (public/kindle/). The Vercel build only reads what is already in
+# the tree. No OpenRouter call is required for the paper to come out in
+# English.
 #
 # Note: GitHub disables scheduled workflows in repositories that stay quiet
 # for 60 days; the "Run workflow" button wakes it up again. Cron is UTC:
@@ -39,6 +37,17 @@ jobs:
           node-version: 22
           cache: npm
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: tools/requirements-translate.txt
+
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: nllb-200-distilled-600M-ct2-${{ hashFiles('tools/requirements-translate.txt') }}
+
       - name: ImageMagick
         # Ubuntu ships ImageMagick 6 (`convert`/`identify`). tools/render-pages.mjs
         # accepts that or ImageMagick 7 (`magick`).
@@ -49,9 +58,10 @@ jobs:
 
       - run: npm ci
 
-      - name: Fetch feeds and write summaries
-        env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      - name: Translate dependencies
+        run: pip install -r tools/requirements-translate.txt
+
+      - name: Fetch feeds and translate to English
         run: npm run news
 
       - name: Photograph the slides for the Kindle
