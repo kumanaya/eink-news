@@ -17,14 +17,16 @@
 //   so the board fills in English instead of reprinting the feed language;
 // - the Vercel build never waits on a model.
 //
-// Free models are shared and rate-limited, so the list is tried in order and a
-// slow or busy model never blocks the edition.
+// Free models are shared and rate-limited, so the live :free catalogue is
+// tried in order. A 429 retires that model for the rest of the run; a daily
+// free-model cap is shared across the whole pool.
 
 import { existsSync, readFileSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { isEnglishCopy, isUsableSummary, plainText, tidySummary } from './plain-text.mjs';
+import { isDailyFreeCap, isRateLimit, loadFreeModels } from './openrouter-free.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const NEWS_FILE = path.join(ROOT, 'src', 'data', 'news.json');
@@ -32,15 +34,6 @@ const CACHE_FILE = path.join(ROOT, 'src', 'data', 'summaries.json');
 const FEEDS_FILE = path.join(ROOT, 'feeds.json');
 const KEY_FILE = path.join(ROOT, '.openrouter-key');
 const ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions';
-
-// Tried in order; the one that answers is kept for the rest of the run.
-// feeds.json may name its own favourite in `summaries_model`, which goes
-// first - all of them are free models, so they come and go.
-const MODELS = [
-  'nex-agi/nex-n2.5-pro:free',
-  'nvidia/nemotron-3.5-lightning:free',
-  'qwen/qwen3.8-27b:free',
-];
 const MAX_SUMMARY_CHARS = 240;
 const MAX_HEADLINE_CHARS = 90;
 const MAX_BLURB_CHARS = 170;
@@ -219,54 +212,66 @@ async function main() {
   }
   console.log(`  ${pending.length} to write this run (budget ${budget}, ${cached} from cache)`);
 
-  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
   // Each summary is a round trip to a shared free model, and they are slow:
   // measured between 4 and 17 seconds each. Doing them one at a time made the
-  // whole pipeline take ten minutes, so a few are in flight at once - the
-  // retry below catches the rate limits that invites.
+  // whole pipeline take ten minutes, so a few are in flight at once - a 429
+  // drops that model and the next free one is tried immediately.
   const concurrency = Number(settings.summaries_concurrency) || 3;
-  const preferred = settings.summaries_model;
-  if (preferred) {
-    if (settings.summaries_fallback === false) {
-      MODELS.length = 0; // one model only, as asked
-    }
-    MODELS.splice(0, 0, preferred);
-    console.log(`  model: ${preferred}${settings.summaries_fallback === false ? ' (no fallback)' : ''}`);
-  }
+  const pool = await loadFreeModels({
+    preferred: settings.summaries_model,
+    fallback: settings.summaries_fallback !== false,
+  });
+  console.log(`  ${pool.length} free models, starting with ${pool[0]}${settings.summaries_fallback === false ? ' (no fallback)' : ''}`);
   const started = Date.now();
-  let model = MODELS[0];
   let done = 0;
+
+  const retire = (id, why) => {
+    const i = pool.indexOf(id);
+    if (i < 0) return;
+    pool.splice(i, 1);
+    console.log(`  drop ${id} (${why}, ${pool.length} left)`);
+  };
 
   const summarizeOne = async (slide) => {
     let copy = null;
     let lastError = '';
-    for (let round = 1; round <= 3 && !copy; round += 1) {
-      for (const candidate of [model, ...MODELS.filter((m) => m !== model)]) {
-        try {
-          const answer = await ask(candidate, key, slide);
-          if (!isGoodCopy(answer, slide)) {
-            throw new Error(`unusable answer: "${(answer.dek || '').slice(0, 50)}"`);
-          }
-          copy = answer;
-          model = candidate;
-          break;
-        } catch (err) {
-          lastError = `${candidate.split('/')[0]}: ${err.message}`;
+    let winner = '';
+    if (pool.length === 0) {
+      done += 1;
+      console.log(`  ${String(done).padStart(3)}/${pending.length} no copy (no free models left) — ${slide.title.slice(0, 44)}`);
+      return null;
+    }
+
+    const maxAttempts = Math.max(pool.length * 2, 4);
+    for (let attempt = 0; attempt < maxAttempts && !copy && pool.length; attempt += 1) {
+      const candidate = pool[0];
+      try {
+        const answer = await ask(candidate, key, slide);
+        if (!isGoodCopy(answer, slide)) {
+          throw new Error(`unusable answer: "${(answer.dek || '').slice(0, 50)}"`);
+        }
+        copy = answer;
+        winner = candidate;
+        break;
+      } catch (err) {
+        lastError = `${candidate.split('/')[0]}: ${err.message}`;
+        if (isRateLimit(err)) {
+          retire(candidate, isDailyFreeCap(err) ? 'daily free cap' : '429');
+        } else if (pool[0] === candidate && pool.length > 1) {
+          pool.push(pool.shift());
         }
       }
-      if (!copy && round < 3) await sleep(round * 5000);
     }
 
     if (copy) {
-      const key = cacheKey(slide);
+      const cacheId = cacheKey(slide);
       slide.title = copy.headline;
       slide.summary = copy.dek;
       if (copy.blurb) slide.description = copy.blurb;
-      cache[key] = copy;
+      cache[cacheId] = copy;
     }
     done += 1;
-    const how = copy ? `ok (${model.split('/')[0]})` : `no copy (${lastError})`;
+    const how = copy ? `ok (${winner.split('/')[0]})` : `no copy (${lastError})`;
     console.log(`  ${String(done).padStart(3)}/${pending.length} ${how} — ${(copy ? copy.headline : slide.title).slice(0, 44)}`);
     return copy;
   };
