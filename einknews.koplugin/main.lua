@@ -15,9 +15,14 @@ local _ = require("gettext")
 
 local Edition = require("edition")
 
--- The machine this paper was built against. Change it in
--- Tools > E-INK NEWS: server (it is stored in KOReader's settings).
-local DEFAULT_SERVER = "http://192.168.15.25:8080"
+-- The paper on Vercel. Change it in Tools > E-INK NEWS: server
+-- (it is stored in KOReader's settings).
+local DEFAULT_SERVER = "https://eink-news-nine.vercel.app"
+local LEGACY_SERVERS = {
+    ["http://192.168.15.25:8080"] = true,
+    ["http://127.0.0.1:8080"] = true,
+    ["http://localhost:8080"] = true,
+}
 
 local SETTINGS_FILE = DataStorage:getSettingsDir() .. "/einknews.lua"
 
@@ -32,14 +37,21 @@ function EinkNews:init()
 end
 
 function EinkNews:server()
-    return self.settings:readSetting("server") or DEFAULT_SERVER
+    local saved = self.settings:readSetting("server")
+    if saved and saved ~= "" then
+        saved = saved:gsub("/+$", "")
+        if not LEGACY_SERVERS[saved] then
+            return saved
+        end
+    end
+    return DEFAULT_SERVER
 end
 
 function EinkNews:askServer(after)
     local dialog
     dialog = InputDialog:new{
         title = _("E-INK NEWS: server"),
-        description = _("Where the newspaper is being served, for instance http://192.168.1.10:8080"),
+        description = _("Where the newspaper is being served, for instance https://eink-news-nine.vercel.app"),
         input = self:server(),
         buttons = {
             {

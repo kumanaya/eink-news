@@ -41,13 +41,23 @@ const MIME = {
   '.jpg': 'image/jpeg',
   '.gif': 'image/gif',
   '.ico': 'image/x-icon',
+  '.svg': 'image/svg+xml',
   '.json': 'application/json; charset=utf-8',
 };
 
 // --- what we need ------------------------------------------------------------
 
 function findChromium() {
-  for (const name of ['chromium', 'chromium-browser', 'google-chrome', 'google-chrome-stable']) {
+  const fromEnv = process.env.CHROME_PATH;
+  if (fromEnv) {
+    try {
+      execFileSync(fromEnv, ['--version'], { stdio: 'ignore' });
+      return fromEnv;
+    } catch {
+      /* fall through to the usual names */
+    }
+  }
+  for (const name of ['chromium', 'chromium-browser', 'google-chrome', 'google-chrome-stable', 'chrome']) {
     try {
       execFileSync(name, ['--version'], { stdio: 'ignore' });
       return name;
@@ -55,7 +65,7 @@ function findChromium() {
       /* try the next one */
     }
   }
-  throw new Error('Chromium not found (tried chromium, chromium-browser, google-chrome)');
+  throw new Error('Chromium not found (tried chromium, chromium-browser, google-chrome, chrome)');
 }
 
 function slideCount() {
@@ -96,15 +106,19 @@ function serveDist() {
 
 function screenshot(chromium, url, width, height, shot) {
   return new Promise((resolve, reject) => {
-    const child = spawn(chromium, [
+    const args = [
       '--headless',
       '--disable-gpu',
       '--hide-scrollbars',
       '--force-device-scale-factor=1',
       `--window-size=${width},${height}`,
       `--screenshot=${shot}`,
-      url,
-    ]);
+    ];
+    if (process.env.CI) {
+      args.unshift('--no-sandbox', '--disable-dev-shm-usage');
+    }
+    args.push(url);
+    const child = spawn(chromium, args);
     child.on('error', reject);
     child.on('exit', (code) => (code === 0 ? resolve() : reject(new Error(`chromium exited with ${code}`))));
   });

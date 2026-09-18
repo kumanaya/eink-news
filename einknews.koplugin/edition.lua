@@ -7,12 +7,12 @@ KOReader's data directory and handed to ImageViewer, which fills the screen
 with them.
 
 While the viewer is open the plugin keeps asking the server for edition.json
-(a few hundred bytes): when the machine that prints the paper renders a new
-edition, the page on screen is replaced by it. That is what makes the Kindle
-follow this machine - no closing and reopening the plugin.
+(a few hundred bytes): when a new edition is committed, the page on screen is
+replaced by it. That is what makes the Kindle follow the paper - no closing
+and reopening the plugin.
 
-The pictures are produced on the server by tools/render-pages.mjs, so the
-Kindle never has to render anything but a PNG.
+The pictures are produced by tools/render-pages.mjs and published under
+/kindle/, so the Kindle never has to render anything but a PNG.
 --]]
 
 local DataStorage = require("datastorage")
@@ -24,10 +24,21 @@ local UIManager = require("ui/uimanager")
 local logger = require("logger")
 local lfs = require("libs/libkoreader-lfs")
 local ltn12 = require("ltn12")
-local socket = require("socket")
 local http = require("socket.http")
 local socketutil = require("socketutil")
 local _ = require("gettext")
+
+-- socket.http does not speak TLS. Vercel (and anything https://) needs LuaSec.
+local function requester(url)
+    if url:match("^https://") then
+        local ok, https = pcall(require, "ssl.https")
+        if not ok then
+            return nil, _("this KOReader has no HTTPS (ssl.https)")
+        end
+        return https
+    end
+    return http
+end
 
 -- rapidjson on every recent KOReader; dkjson as the fallback.
 local has_rapidjson, JSON = pcall(require, "rapidjson")
@@ -45,16 +56,29 @@ local function editionDir()
     return DataStorage:getDataDir() .. "/einknews"
 end
 
+local function request(url, sink)
+    local lib, why = requester(url)
+    if not lib then
+        return nil, 0, nil, why
+    end
+    socketutil:set_timeout(socketutil.FILE_BLOCK_TIMEOUT, socketutil.FILE_TOTAL_TIMEOUT)
+    local req = {
+        url = url,
+        headers = { ["Accept-Encoding"] = "identity" },
+        sink = sink,
+    }
+    -- LuaSec: Kindles often have a CA store older than Let's Encrypt.
+    if url:match("^https://") then
+        req.verify = "none"
+    end
+    local n, code, headers, status = lib.request(req)
+    socketutil:reset_timeout()
+    return n, code, headers, status
+end
+
 local function fetch(url)
     local sink = {}
-    socketutil:set_timeout(socketutil.FILE_BLOCK_TIMEOUT, socketutil.FILE_TOTAL_TIMEOUT)
-    local code, _, status = socket.skip(1, http.request{
-        url = url,
-        -- The server does not compress; being explicit avoids old proxies.
-        headers = { ["Accept-Encoding"] = "identity" },
-        sink = ltn12.sink.table(sink),
-    })
-    socketutil:reset_timeout()
+    local _, code, _, status = request(url, ltn12.sink.table(sink))
     if code ~= 200 then
         return nil, string.format("%s (%s)", tostring(status or code), url)
     end
@@ -66,13 +90,7 @@ local function download(url, dest)
     if not handle then
         return false, _("cannot write to the Kindle's data directory")
     end
-    socketutil:set_timeout(socketutil.FILE_BLOCK_TIMEOUT, socketutil.FILE_TOTAL_TIMEOUT)
-    local code, _, status = socket.skip(1, http.request{
-        url = url,
-        headers = { ["Accept-Encoding"] = "identity" },
-        sink = ltn12.sink.file(handle),
-    })
-    socketutil:reset_timeout()
+    local _, code, _, status = request(url, ltn12.sink.file(handle))
     if code ~= 200 then
         os.remove(dest)
         return false, string.format("%s (%s)", tostring(status or code), url)
@@ -85,8 +103,7 @@ local function complain(title, server, detail)
     if detail then
         text = text .. "\n\n" .. detail
     end
-    text = text .. "\n\n" .. _("On the machine that prints the paper: npm run serve") ..
-        "\n" .. _("(and let the firewall allow that port).")
+    text = text .. "\n\n" .. _("If this address is wrong: Tools → E-INK NEWS: server")
     logger.warn("einknews:", title, server, detail or "")
     UIManager:show(InfoMessage:new{ text = text, timeout = 10 })
 end

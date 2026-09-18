@@ -169,8 +169,24 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 1.3vh;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #666;
+  font-size: 1.35vh;
+  letter-spacing: 0.04em;
+  color: #555;
+  z-index: 2;
+}
+
+.stamp-link {
+  display: inline-block;
+  margin: 0 1.8vw;
+  color: #555;
+  vertical-align: middle;
+}
+
+.stamp-link img {
+  display: inline-block;
+  width: 1.6vh;
+  height: 1.6vh;
+  margin-right: 0.45vw;
+  vertical-align: middle;
+  border: 0;
 }

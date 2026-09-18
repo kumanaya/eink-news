@@ -42,11 +42,11 @@ at a time, on a panel that loves a full-screen repaint.
 
 ## On the Kindle
 
-Two doors. Same address.
+Two doors. Same paper: [eink-news-nine.vercel.app](https://eink-news-nine.vercel.app/).
 
 ### Experimental browser
 
-Open `http://<this-machine-ip>:8080/` and leave it.
+Open `https://eink-news-nine.vercel.app/` and leave it.
 
 The board turns on its own. A tap on the side turns it by hand. Only the
 picture on screen is fetched. Every ten minutes the page reloads for the
@@ -55,16 +55,16 @@ next edition.
 ### KOReader plugin
 
 KOReader cannot draw HTML, so the server photographs each slide and the
-plugin shows the pictures.
+plugin shows the pictures. It already knows the Vercel address.
 
 ```sh
 cp -r einknews.koplugin /path/to/koreader/plugins/
 ```
 
-Restart KOReader, then:
+Restart KOReader, then **Tools → E-INK NEWS**. The paper opens.
 
-1. **Tools → E-INK NEWS: server** — type `http://<this-machine-ip>:8080` once
-2. **Tools → E-INK NEWS** — the paper opens
+To host it yourself instead, set **Tools → E-INK NEWS: server** to that
+URL (no trailing slash).
 
 Left / right to turn. Middle tap for the buttons. While it is open it
 checks for a new edition every 20 seconds, and pulls pages one at a time
@@ -80,7 +80,7 @@ npm install
 npm run news      # stories, pictures, summaries
 npm run build     # the static board
 npm run render    # photos for the plugin
-npm run serve     # http://<this-machine-ip>:8080/
+npm run serve     # http://<this-machine-ip>:8080/  (local only)
 ```
 
 Kindle cannot see it? Open the port:
@@ -106,12 +106,14 @@ export OPENROUTER_API_KEY=sk-or-...      # or drop it in .openrouter-key
 ## How it stays fresh
 
 A GitHub Action collects the paper every **30 minutes**: feeds, pictures,
-a handful of AI summaries, then a commit. Vercel only runs `npm run build`.
-It never waits on a model.
+a handful of AI summaries, then photographs the slides for the Kindle and
+commits the lot. Vercel only runs `npm run build`. It never waits on a
+model, and it never needs Chromium — the pictures are already in
+`public/kindle/`.
 
 Put `OPENROUTER_API_KEY` in the **GitHub** secrets. Vercel does not need it.
 
-At home, for the LAN board and the plugin slides:
+At home, for a local board:
 
 ```sh
 npm run feed        # one round: news + build + render
@@ -122,9 +124,8 @@ npm run auto-feed   # the same, every 10 minutes
 setsid nohup npm run auto-feed > /tmp/eink-news-feed.log 2>&1 &
 ```
 
-Host the browser board on Vercel by importing the repo. Photographing
-slides for KOReader needs Chromium, so that part stays on a machine you
-control.
+Host the browser board on Vercel by importing the repo. The KOReader
+plugin talks to that same site.
 
 ---
 
@@ -169,6 +170,7 @@ feeds.json                 the paper: sections, feeds, masthead
 src/data/news.json         what the board reads
 src/data/summaries.json    so a headline is never asked twice
 public/img/news/           pictures for this edition
+public/kindle/             photographed slides for the plugin
 einknews.koplugin/         KOReader app
 docs/banner.png            the masthead above
 ```

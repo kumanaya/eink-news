@@ -31,6 +31,15 @@ const seconds = news.seconds || 8;
         count={count}
       />
     ))}
-    <div class="stamp">{news.edition} · {news.price} · printed for e-ink</div>
+    <div class="stamp">
+      <a class="stamp-link" href="https://github.com/kumanaya/eink-news">
+        <img src="/img/github.svg" alt="" width="12" height="12" />
+        eink-news
+      </a>
+      <a class="stamp-link" href="https://x.com/danielkumanaya">
+        <img src="/img/x.svg" alt="" width="12" height="12" />
+        danielkumanaya
+      </a>
+    </div>
   </div>
 </Sign>

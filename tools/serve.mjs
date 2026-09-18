@@ -27,10 +27,11 @@ const MIME = {
   '.jpeg': 'image/jpeg',
   '.gif': 'image/gif',
   '.ico': 'image/x-icon',
+  '.svg': 'image/svg+xml',
   '.txt': 'text/plain; charset=utf-8',
 };
 
-const COMPRESSIBLE = new Set(['.html', '.css', '.js', '.json', '.txt']);
+const COMPRESSIBLE = new Set(['.html', '.css', '.js', '.json', '.txt', '.svg']);
 
 if (!existsSync(path.join(ROOT, 'index.html'))) {
   console.error(`error: no index.html under ${ROOT} - run "npm run build" first`);
