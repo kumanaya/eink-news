@@ -100,8 +100,8 @@ trailing slash).
 
 Open `https://eink-news-nine.vercel.app/` and leave it.
 
-This is the **only** door that draws the live HTML: the timer, the taps,
-the footer. Every ten minutes the page reloads for the next edition.
+This is the **only** door that draws the live HTML: the timer and the
+taps. Every ten minutes the page reloads for the next edition.
 
 ---
 

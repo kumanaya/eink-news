@@ -1,7 +1,7 @@
 ---
 import { isUsableSummary, plainText } from '../../tools/plain-text.mjs';
 
-const { slide, masthead, dateLabel, edition, price, index, count } = Astro.props;
+const { slide, masthead, dateLabel, index, count } = Astro.props;
 const media = slide.image;
 const summary = isUsableSummary(slide.summary, slide.title) ? plainText(slide.summary) : '';
 const description = plainText(slide.description);
@@ -18,7 +18,20 @@ const rest = summary ? description : '';
       <div class="masthead-meta">
         <span class="left">{dateLabel}</span>
         <span class="right">{index} / {count}</span>
-        <span class="center">{edition} · {price}</span>
+        <span class="center">
+          <a class="stamp-link" href="https://github.com/kumanaya/eink-news">
+            <img src="/img/github.svg" alt="" width="12" height="12" />
+            eink-news
+          </a>
+          <a class="stamp-link" href="https://x.com/danielkumanaya">
+            <img src="/img/x.svg" alt="" width="12" height="12" />
+            danielkumanaya
+          </a>
+          <a class="stamp-link" href="https://discord.gg/KYChSeuyk">
+            <img src="/img/discord.svg" alt="" width="12" height="12" />
+            discord
+          </a>
+        </span>
       </div>
     </div>
 
