@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.png" alt="E-INK NEWS — one story per screen" width="720" />
+  <img src="docs/banner.jpg" alt="E-INK NEWS — one story per screen" width="720" />
 </p>
 
 <h1 align="center">E-INK NEWS</h1>
@@ -179,7 +179,7 @@ src/data/summaries.json    so a headline is never asked twice
 public/img/news/           pictures for this edition
 public/kindle/             photographed slides for the plugin
 einknews.koplugin/         KOReader app
-docs/banner.png            the masthead above
+docs/banner.jpg            the masthead above
 ```
 
 ---
