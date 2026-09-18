@@ -13,12 +13,7 @@
   <img src="https://img.shields.io/badge/Kindle-e--ink-111111?style=flat-square" alt="Kindle" />
   <img src="https://img.shields.io/badge/World%20Monitor-feeds-6b6b6b?style=flat-square" alt="World Monitor" />
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="MIT" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/kumanaya/eink-news"><img src="https://img.shields.io/badge/GitHub-eink--news-1c1a17?style=flat-square&logo=github" alt="GitHub" /></a>
-  <a href="https://x.com/danielkumanaya"><img src="https://img.shields.io/badge/X-danielkumanaya-1c1a17?style=flat-square&logo=x" alt="X" /></a>
-  <a href="https://discord.gg/KYChSeuyk"><img src="https://img.shields.io/badge/Discord-E--INK%20HACK-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://eink-news-nine.vercel.app/"><img src="https://img.shields.io/badge/Read%20it-live-1c1a17?style=flat-square" alt="Live paper" /></a>
 </p>
 
 <p align="center">
@@ -29,6 +24,8 @@
   <a href="#how-it-stays-fresh">How it stays fresh</a>
   ·
   <a href="#make-it-yours">Make it yours</a>
+  ·
+  <a href="#community">Community</a>
 </p>
 
 ---
@@ -43,6 +40,10 @@ Same gesture as turning a Kindle page. The middle is for the link.
 Politics, Europe, Asia, Tech, Finance — the
 [World Monitor](https://github.com/koala73/worldmonitor) list, one picture
 at a time, on a panel that loves a full-screen repaint.
+
+> [!NOTE]
+> A house project of **E-INK HACK**. The workshop is on
+> [Discord](https://discord.gg/KYChSeuyk) — Kindle, Kobo, any e-ink panel.
 
 ---
 
@@ -183,11 +184,49 @@ docs/banner.png            the masthead above
 
 ---
 
+<h2 align="center">Community</h2>
+
+<p align="center">
+  A house project of <strong>E-INK HACK</strong>.<br />
+  Kindle, Kobo, or anything with a slow, honest screen — bring the hack.
+</p>
+
+<p align="center">
+  <a href="https://discord.gg/KYChSeuyk">
+    <img src="https://invidget.switchblade.xyz/KYChSeuyk" alt="Join the E-INK HACK Discord" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://discord.gg/KYChSeuyk"><img src="https://dcbadge.limes.pink/api/server/KYChSeuyk" alt="E-INK HACK on Discord" /></a>
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center" width="220">
+      <a href="https://discord.gg/KYChSeuyk">
+        <img src="https://img.shields.io/badge/Discord-join%20the%20workshop-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /><br />
+        <sub>Where the hacks land</sub>
+      </a>
+    </td>
+    <td align="center" width="220">
+      <a href="https://github.com/kumanaya/eink-news">
+        <img src="https://img.shields.io/badge/GitHub-eink--news-181717?style=for-the-badge&logo=github" alt="GitHub" /><br />
+        <sub>This paper</sub>
+      </a>
+    </td>
+    <td align="center" width="220">
+      <a href="https://x.com/danielkumanaya">
+        <img src="https://img.shields.io/badge/X-danielkumanaya-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /><br />
+        <sub>What we are shipping</sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+> [!TIP]
+> Start in the [Discord](https://discord.gg/KYChSeuyk). Drop a photo of the panel, a KOReader plugin, a scriptlet, a dead end. That is the whole point.
+
+---
+
 MIT. See [LICENSE](LICENSE). The news belongs to the feeds it came from.
-
-A house project of **E-INK HACK**. Come share Kindle and e-ink projects
-in the [Discord](https://discord.gg/KYChSeuyk).
-
-- GitHub: [kumanaya/eink-news](https://github.com/kumanaya/eink-news)
-- X: [danielkumanaya](https://x.com/danielkumanaya)
-- Discord: [E-INK HACK](https://discord.gg/KYChSeuyk)
