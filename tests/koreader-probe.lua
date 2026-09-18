@@ -95,6 +95,7 @@ local function slidesOnServer()
     local json = readFile(DIST .. "/edition.json") or ""
     local n = 0
     for _ in json:gmatch('"page%-%d+%.png"') do n = n + 1 end
+    for _ in json:gmatch('"pages%.png"') do n = n + 1 end
     return n
 end
 
@@ -120,6 +121,7 @@ local function publishNewEdition()
 
     local n = 0
     for _ in json:gmatch('"page%-%d+%.png"') do n = n + 1 end
+    for _ in json:gmatch('"pages%.png"') do n = n + 1 end
     return n
 end
 

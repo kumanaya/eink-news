@@ -85,7 +85,13 @@ leave the Kindle on the table.
 cp eink-news.sh /mnt/us/documents/
 ```
 
-Eject. It shows up as **E-INK NEWS**. Tap once to go back to the library.
+Eject. It shows up as **E-INK NEWS**, with the newspaper cover from
+`docs/cover.png` as the library icon (embedded in the scriptlet, so the
+`.sh` file is enough). Tap once to go back to the library.
+
+Every time you open it, the scriptlet throws away last visit's pages and
+downloads the current edition. Same filenames every day (`page-00.png`);
+without that wipe, yesterday's pictures would stay on the panel.
 
 The Kindle needs `curl` or a `wget` that speaks HTTPS. The paper lives
 on Vercel.
@@ -177,6 +183,7 @@ so the design does not fight it.
 | Knob | Default | What it does |
 | --- | --- | --- |
 | `max_slides` | 200 | stories on the board, newest first |
+| `render_slides` | 200 | pages photographed for the Kindle |
 | `require_image` | true | no picture, no slide |
 | `items_per_feed` | 2 | cap per feed |
 | `summaries_per_run` | 40 | AI lines written in one run |
@@ -199,8 +206,13 @@ src/data/news.json         what the board reads
 src/data/summaries.json    so a headline is never asked twice
 public/img/news/           pictures for this edition
 public/kindle/             photographed slides for the plugin
-einknews.koplugin/         KOReader app
+einknews.koplugin/         KOReader app (cover.png inside)
 eink-news.sh               scriptlet: the paper from the library
+                           (docs/cover.png is embedded as # Icon:)
+eink-news.png              same cover, if you want a sidecar PNG
+docs/cover.png             the app / library cover
+docs/pages.png             cover of the generated `pages` library item,
+                           and first plate of the photographed edition
 docs/banner.jpg            the masthead above
 ```
 
