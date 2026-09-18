@@ -17,7 +17,7 @@ const count = slides.length;
 const seconds = news.seconds || 8;
 ---
 
-<Sign masthead={news.masthead} refresh={600} track>
+<Sign masthead={news.masthead} refresh={600} track night>
   <!-- data-seconds is read by the rotation timer (the layout's script). -->
   <div class="board" data-seconds={seconds}>
     {slides.map((slide, i) => (

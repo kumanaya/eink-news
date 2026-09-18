@@ -193,3 +193,61 @@ body {
   vertical-align: middle;
   border: 0;
 }
+
+.byline-when {
+  display: none;
+}
+
+/* Live site (phones and desktops): Kindle night. Photographed slides and the
+   Kindle browser stay on pearl paper — html.night is stripped when the UA is
+   Kindle/Silk, and /slides/* never get the class. */
+html.night {
+  color-scheme: dark;
+  background: #1c1a17;
+  color: #e6e2d4;
+}
+
+html.night body,
+html.night .board,
+html.night .slide {
+  background: #1c1a17;
+  color: #e6e2d4;
+}
+
+html.night .masthead-block {
+  border-bottom-color: #e6e2d4;
+}
+
+html.night .masthead-meta,
+html.night .section,
+html.night .description,
+html.night .byline,
+html.night .stamp-link {
+  color: #c4bfb0;
+}
+
+html.night .headline a {
+  color: #e6e2d4;
+}
+
+html.night .media {
+  border-color: #5c5850;
+}
+
+html.night .description {
+  border-top-color: #5c5850;
+}
+
+html.night .inky,
+html.night .stamp-link img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+html.night .byline-when {
+  display: inline;
+}
+
+html.night .masthead-meta .left {
+  display: none;
+}
