@@ -11,10 +11,11 @@
 // slides simply show the description alone.
 //
 // There are hundreds of stories and the free models are slow, so:
-// - summaries are cached by headline in src/data/summaries.json, and survive
-//   editions (a story keeps its line when it appears again);
+// - summaries are cached by headline in src/data/summaries.json (committed),
+//   and survive editions (a story keeps its line when it appears again);
 // - each run spends a budget (summaries_per_run in feeds.json), so the board
-//   fills up over time instead of hammering the API all at once.
+//   fills up over the following Actions runs instead of hammering the API
+//   all at once, and the Vercel build never waits on a model.
 //
 // Free models are shared and rate-limited, so the list is tried in order and a
 // slow or busy model never blocks the edition.

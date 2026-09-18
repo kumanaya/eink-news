@@ -1,0 +1,62 @@
+name: edition
+
+# The board is static. RSS, pictures and AI summaries are collected here,
+# committed as the raw edition (src/data/news.json, src/data/summaries.json,
+# public/img/news/), and the Vercel build only reads what is already in the
+# tree. Summaries take minutes on the free models, which is why they never
+# run inside a deploy.
+#
+# Setup (once):
+#   GitHub -> repository secrets -> OPENROUTER_API_KEY
+#
+# Note: GitHub disables scheduled workflows in repositories that stay quiet
+# for 60 days; the "Run workflow" button wakes it up again.
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: edition
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
+      - run: npm ci
+
+      - name: Fetch feeds and write summaries
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: npm run news
+
+      - name: Commit the edition
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/news.json src/data/summaries.json public/img/news
+          if git diff --cached --quiet; then
+            echo "Edition unchanged."
+            exit 0
+          fi
+          git commit -m "Refresh the edition"
+          git pull --rebase origin main
+          git push

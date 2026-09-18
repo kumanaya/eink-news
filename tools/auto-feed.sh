@@ -1,6 +1,6 @@
 #!/bin/sh
-# Keeps the board fed: fetches a new edition, rebuilds it and re-renders the
-# slides for the KOReader plugin, then waits and does it again.
+# Local loop for the LAN board and the KOReader slides. Production is fed by
+# .github/workflows/edition.yml (every 30 minutes, commit the raw edition).
 #
 #   sh tools/auto-feed.sh [minutes]      # default: every 10 minutes
 #

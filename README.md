@@ -1,15 +1,16 @@
 # E-INK HACKER NEWS
 
 A signboard for the Kindle: the day's news, one story per screen, changing every
-15 seconds. It is a static site - `tools/fetch-feeds.mjs` extracts the stories
-from RSS, `tools/summarize.mjs` writes a two-sentence summary of each one
-through OpenRouter, and the page presents them as a newspaper front page that
-turns by itself.
+15 seconds. It is a static site. The edition is already in the repository -
+`src/data/news.json`, `src/data/summaries.json` and `public/img/news/` - and the
+page only reads that raw. A GitHub Action polls the feeds, writes AI summaries
+and commits the edition every 30 minutes; the Vercel build never talks to RSS
+or to a model.
 
 ```sh
 npm install
 npm run news      # RSS -> src/data/news.json (+ images, + AI summaries)
-npm run build     # -> dist/ (one edition per browser turn)
+npm run build     # -> dist/ from the committed edition (offline)
 npm run render    # -> dist/kindle/ (the slide pictures the plugin downloads)
 npm run serve     # http://<this-machine-ip>:8080/
 ```
@@ -62,9 +63,9 @@ to be bounded somewhere - on purpose, not by accident:
 | `seconds` | 8 | how long each story stays on screen |
 | `profiles` | `[[600,800]]` | the panels the renderer prints for |
 
-`npm run build` never re-fetches: the edition is whatever `npm run news` last
-wrote (the build refuses to run without one), so a rebuild is offline and the
-summaries are not paid for twice.
+`npm run build` never re-fetches: the edition is whatever is committed in
+`src/data/news.json` (the build refuses to run without one), so a rebuild is
+offline and the summaries are not paid for twice.
 
 Feeds are polled twelve at a time (`FEED_CONCURRENCY`), pictures four at a time,
 and the whole collection takes under a minute.
@@ -98,9 +99,11 @@ throughput - measured on usable answers only, because some fast models answer
 with their own reasoning. With `summaries_model` pinned and
 `summaries_fallback: false` there are no fallbacks; the script validates every
 answer (a line that stops mid-sentence is worse than no line). It writes a handful per run - `summaries_per_run`, 40 by
-default - and caches each line by headline in `src/data/summaries.json`
-(git-ignored), so nothing is ever asked twice and the board fills up over the
-following runs. A story with no summary yet shows the feed's own text alone.
+default - and caches each line by headline in `src/data/summaries.json`, so
+nothing is ever asked twice and the board fills up over the following Actions
+runs. The cache is committed: a Vercel build does not start from zero, and a
+story keeps its line when it comes back. A story with no summary yet shows the
+feed's own text alone.
 
 The key is never in the repository:
 
@@ -164,44 +167,42 @@ panel size, and writes `dist/kindle/<panel>/page-NN.png` plus the
 ## Hosting it on Vercel
 
 The board is deliberately static (the Kindle wants one plain HTML file), so
-there is **no server-side at runtime** - and there does not need to be. The
-routine runs *inside the build*:
+there is **no server-side at runtime**. The edition is collected in this
+repository, not in the builder:
 
 ```
-Vercel build  ->  npm run news   (RSS, pictures, AI summaries)
-              ->  npm run build  (the static board)
+GitHub Actions (every 30 min)
+  ->  npm run news                 (RSS, pictures, AI summaries)
+  ->  commit src/data/ + img/news  (the raw edition)
+
+Vercel build
+  ->  npm run build                (the static board, from that raw)
 ```
 
-- `vercel.json` sets exactly that as the build command. Import the repository in
-  Vercel, add `OPENROUTER_API_KEY` as an environment variable, and every
-  deployment ships a freshly collected edition.
-- Deploy Hooks + `.github/workflows/refresh.yml` make it repeat: the workflow
-  asks Vercel to build again every 20 minutes (create a Deploy Hook for `main`
-  and store its URL as the `VERCEL_DEPLOY_HOOK` repository secret).
-- Nothing generated is committed: `src/data/news.json` and `public/img/news/`
-  stay git-ignored, and the pictures are produced during the build and served
-  from Vercel's CDN, so the repository never grows with the news.
+- `vercel.json` only runs `npm run build`. Import the repository in Vercel;
+  every push of a new edition ships a new board. No OpenRouter key is needed
+  on Vercel.
+- `.github/workflows/edition.yml` is the collector: it runs every 30 minutes,
+  writes as many summaries as `summaries_per_run` allows, and commits what
+  changed. Put `OPENROUTER_API_KEY` in the **GitHub** repository secrets.
+- The pictures live in `public/img/news/` and are served from Vercel's CDN
+  like any other static file. A picture already on disk is not downloaded
+  again, so the commits stay small after the first edition.
 
 What does **not** go to Vercel is `npm run render`: photographing the slides for
 the KOReader plugin needs Chromium, which serverless builders do not have. The
 plugin keeps pointing at a machine that runs the full pipeline - or at this
 same Vercel deployment for the browser, which is the part it was built for.
 
-If you would rather not rebuild to refresh, the alternative is Vercel Cron Jobs
-calling a serverless route that fetches the news itself and stores the edition
-in Vercel Blob, with the board rendering on demand. It works, but it needs
-storage, a function, and the same AI key - more moving parts for a page whose
-whole charm is being one static file.
-
 ## Keeping it fed (locally)
+
+Production is already fed by the Action. Locally, for the LAN board and the
+KOReader slides:
 
 ```sh
 npm run feed        # one round: news + build + render
 npm run auto-feed   # the same round every 10 minutes, for as long as it runs
 ```
-
-(For the LAN setup: the machine that serves the board and the KOReader slides is
-also the one that collects the news.)
 
 `tools/auto-feed.sh` loops (default 10 minutes, `sh tools/auto-feed.sh 5` for a
 tighter cycle) and appends to `/tmp/prophet-feed.log`. Leave it running and the
@@ -223,16 +224,19 @@ src/components/SignSlide.astro   one slide
 src/layouts/Sign.astro    the shell
 src/styles/sign.css       the whole look, written for old WebKit
 prophet.koplugin/         the KOReader app: downloads the pages, shows them
+src/data/news.json        the committed edition the board reads
+src/data/summaries.json   AI summary cache, so a headline is never asked twice
+public/img/news/          pictures for that edition
+.github/workflows/edition.yml  every 30 minutes: news, then commit
 tools/fetch-feeds.mjs     every feed -> src/data/news.json (+ local images)
 tools/import-worldmonitor-feeds.mjs   the World Monitor feed list -> feeds.json
 tools/summarize.mjs       OpenRouter -> the summary of each slide (cached)
-tools/auto-feed.sh        keeps running the whole pipeline
+tools/auto-feed.sh        local loop of the whole pipeline (LAN / plugin)
 tools/render-pages.mjs    slides -> dist/kindle/<panel>/ (Chromium)
 tools/serve.mjs           zero-dependency static server for the LAN
 tools/check-legacy.mjs    compatibility and weight guard
 tools/make-art.sh         redraws the illustrations and the favicon (benched)
 tests/koreader-probe.lua  runs the plugin inside a real, headless KOReader
-public/img/               the downloaded news images
 ```
 
 ## Checking it

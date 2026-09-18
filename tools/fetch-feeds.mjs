@@ -15,8 +15,9 @@
 //   require_image     true (default): a story without a picture is dropped
 //   items_per_feed    how many stories a single feed may contribute
 //
-// Zero dependencies on purpose: fetch and a few regexes cover RSS 2.0 and Atom,
-// and the build then never needs the network to work.
+// Zero dependencies on purpose: fetch and a few regexes cover RSS 2.0 and Atom.
+// The edition (news.json, summaries.json, public/img/news/) is committed, so
+// `npm run build` never needs the network: it only reads what is already here.
 //
 // If every feed fails, the previous edition is kept (and a sample edition is
 // written if there is none), so `npm run build` always has something to show.
@@ -210,13 +211,17 @@ function imageFromHtml(html) {
 
 // --- images ------------------------------------------------------------------
 
-function magickAvailable() {
-  try {
-    execFileSync('magick', ['-version'], { stdio: 'ignore' });
-    return true;
-  } catch {
-    return false;
+// ImageMagick 7 ships `magick`; Ubuntu's package is still 6 and ships `convert`.
+function magickCommand() {
+  for (const cmd of ['magick', 'convert']) {
+    try {
+      execFileSync(cmd, ['-version'], { stdio: 'ignore' });
+      return cmd;
+    } catch {
+      continue;
+    }
   }
+  return '';
 }
 
 function extensionOf(url) {
@@ -237,27 +242,35 @@ function biggerVariant(url) {
 // and one of them can delete the picture the other just wrote.
 const imageDownloads = new Map();
 
-function downloadImage(url, slug, useMagick) {
-  const key = `${url}|${useMagick ? 'gray' : 'raw'}`;
+function downloadImage(url, slug, magick) {
+  const key = `${url}|${magick ? 'gray' : 'raw'}`;
   if (!imageDownloads.has(key)) {
-    imageDownloads.set(key, fetchImage(url, slug, useMagick));
+    imageDownloads.set(key, fetchImage(url, slug, magick));
   }
   return imageDownloads.get(key);
 }
 
-async function fetchImage(url, slug, useMagick) {
+async function fetchImage(url, slug, magick) {
+  mkdirSync(IMG_DIR, { recursive: true });
+  const base = path.join(IMG_DIR, slug);
+  const png = `${base}.png`;
+  const kept = base + extensionOf(url);
+
+  // A previous edition already fetched this URL: keep the file. Re-converting
+  // every picture every run would rewrite the PNGs and turn the committed
+  // edition into an 8 MB diff twice an hour.
+  if (magick && existsSync(png)) return png;
+  if (!magick && existsSync(kept)) return kept;
+
   try {
     const res = await fetch(biggerVariant(url), { signal: AbortSignal.timeout(FETCH_TIMEOUT_MS) });
     if (!res.ok) return null;
     const buffer = Buffer.from(await res.arrayBuffer());
     if (buffer.length === 0 || buffer.length > MAX_IMAGE_BYTES) return null;
 
-    mkdirSync(IMG_DIR, { recursive: true });
-    const base = path.join(IMG_DIR, slug);
     const ext = extensionOf(url);
 
-    if (!useMagick) {
-      const kept = base + ext;
+    if (!magick) {
       await writeFile(kept, buffer);
       return kept;
     }
@@ -267,9 +280,8 @@ async function fetchImage(url, slug, useMagick) {
     // already a .png would otherwise be read and written at the same path -
     // and the cleanup below would then delete the picture.
     const tmp = `${base}.src${ext}`;
-    const png = `${base}.png`;
     await writeFile(tmp, buffer);
-    execFileSync('magick', [
+    execFileSync(magick, [
       tmp,
       '-resize', `${IMAGE_WIDTH}x>`,
       '-colorspace', 'Gray',
@@ -299,7 +311,7 @@ async function main() {
   const maxSlides = Number(config.max_slides) || 200;
   const maxImages = Number(config.max_images) || 150;
   const perFeed = Number(config.items_per_feed) || 2;
-  const useMagick = magickAvailable();
+  const magick = magickCommand();
 
   const jobs = [];
   for (const section of config.sections) {
@@ -384,7 +396,7 @@ async function main() {
   const withPicture = async (chunk) => {
     await mapPool(chunk, IMAGE_CONCURRENCY, async (slide) => {
       tried += 1;
-      const file = await downloadImage(slide.sourceImage, hash(slide.sourceImage).slice(0, 12), useMagick);
+      const file = await downloadImage(slide.sourceImage, hash(slide.sourceImage).slice(0, 12), magick);
       if (file && !existsSync(file)) {
         // a race lost the file: better a story less than a broken frame
         console.warn(`    image vanished: ${slide.sourceImage}`);
