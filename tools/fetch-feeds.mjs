@@ -28,6 +28,7 @@ import { existsSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { plainText } from './plain-text.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const FEEDS_FILE = path.join(ROOT, 'feeds.json');
@@ -87,38 +88,8 @@ const SAMPLE_EDITION = [
 
 // --- small helpers -----------------------------------------------------------
 
-const decodeEntities = (s) =>
-  s
-    .replace(/&#x([0-9a-f]+);/gi, (_, h) => safeCodePoint(parseInt(h, 16)))
-    .replace(/&#(\d+);/g, (_, d) => safeCodePoint(parseInt(d, 10)))
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
-    .replace(/&hellip;/g, '\u2026')
-    .replace(/&mdash;/g, '\u2014')
-    .replace(/&ndash;/g, '\u2013')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>');
-
-function safeCodePoint(n) {
-  try {
-    return String.fromCodePoint(n);
-  } catch {
-    return '';
-  }
-}
-
 function stripMarkup(s) {
-  return decodeEntities(
-    s
-      .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-      .replace(/<script[\s\S]*?<\/script>/gi, '')
-      .replace(/<style[\s\S]*?<\/style>/gi, '')
-      .replace(/<[^>]+>/g, ' ')
-  )
-    .replace(/\s+/g, ' ')
-    .trim();
+  return plainText(s);
 }
 
 function truncate(s, max) {
@@ -147,8 +118,10 @@ function hash(s) {
 }
 
 function isRealSummary(s) {
-  const text = (s || '').trim();
-  return text.length >= 40 && !/^comments?\b/i.test(text);
+  const text = plainText(s);
+  if (text.length < 40 || /^comments?\b/i.test(text)) return false;
+  if (/<[a-z/]/i.test(text)) return false;
+  return true;
 }
 
 // Runs `fn` over `items` with at most `limit` in flight: hundreds of feeds do
@@ -354,7 +327,7 @@ async function main() {
         // stays as the description under it.
         summary: '',
         description: isRealSummary(raw.description)
-          ? truncate(raw.description, DESCRIPTION_CHARS)
+          ? truncate(plainText(raw.description), DESCRIPTION_CHARS)
           : '',
         link: raw.link,
         date: raw.date || null,

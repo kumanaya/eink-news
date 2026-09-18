@@ -24,6 +24,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { isUsableSummary, plainText, tidySummary } from './plain-text.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const NEWS_FILE = path.join(ROOT, 'src', 'data', 'news.json');
@@ -44,9 +45,11 @@ const MAX_SUMMARY_CHARS = 240;
 const TIMEOUT_MS = 60000;
 
 const SYSTEM_PROMPT =
-  'You are the copy desk of a newspaper. Summarize the story for a front-page ' +
-  'board in exactly two sentences, at most 220 characters, plain English, ' +
-  'factual, no quotes, no opinions, no markdown. Answer with the summary only.';
+  'You write the dek under a newspaper headline. The headline is already on the page. ' +
+  'Add facts the headline does not say: who else, where, what happens next, a number. ' +
+  'Exactly two sentences, at most 220 characters. Same language as the story. ' +
+  'Plain text only: no HTML, no markdown, no quotes, no opinions, no preamble. ' +
+  'Do not restate or lightly rephrase the headline. Answer with the two sentences only.';
 
 function readKey() {
   if (process.env.OPENROUTER_API_KEY) return process.env.OPENROUTER_API_KEY.trim();
@@ -77,7 +80,10 @@ async function ask(model, key, slide) {
         { role: 'system', content: SYSTEM_PROMPT },
         {
           role: 'user',
-          content: `Title: ${slide.title}\n\nText: ${(slide.description || slide.title).slice(0, 700)}`,
+          content:
+            `Headline: ${slide.title}\n\n` +
+            `Story: ${plainText(slide.description || '').slice(0, 700) || '(no extra text; do not repeat the headline)'}\n\n` +
+            'Write two sentences that add facts the headline does not already say.',
         },
       ],
       // Generous, because some models spend tokens thinking before answering;
@@ -94,42 +100,11 @@ async function ask(model, key, slide) {
   }
   const data = await res.json();
   const raw = data.choices?.[0]?.message?.content || '';
-  return clean(raw);
+  return tidySummary(raw, MAX_SUMMARY_CHARS);
 }
 
-// A summary is only accepted when it reads like one: long enough to say
-// something, and finished. Free models occasionally return nothing, or stop
-// mid-sentence, and a broken line on the board is worse than no line.
-function isGoodSummary(text) {
-  if (typeof text !== 'string') return false;
-  const trimmed = text.trim();
-  if (trimmed.length < 60 || !/[.!?]$/.test(trimmed)) return false;
-  // A leftover like "Final answer only." means the answer was not the summary.
-  return !ARTIFACTS.test(trimmed);
-}
-
-// Models sometimes add reasoning, quotes or a preamble; keep the summary.
-// "Final answer only." and friends are the usual leftovers.
-const ARTIFACTS =
-  /^(final answer( only)?|answer|summary|short summary|here('s| is) the summary|the summary is|resumo)\s*[:\-\u2013\u2014.]*\s*/i;
-
-function clean(text) {
-  let out = text
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-  let before;
-  do {
-    before = out;
-    out = out.replace(ARTIFACTS, '').trim();
-  } while (out !== before);
-  out = out.replace(/^["'“”]+|["'“”]+$/g, '').trim();
-  if (out.length > MAX_SUMMARY_CHARS) {
-    const cut = out.slice(0, MAX_SUMMARY_CHARS);
-    const end = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? '));
-    out = end > 80 ? cut.slice(0, end + 1) : cut.replace(/\s+\S*$/, '') + '\u2026';
-  }
-  return out;
+function isGoodSummary(text, title) {
+  return isUsableSummary(text, title);
 }
 
 const settings = existsSync(FEEDS_FILE) ? JSON.parse(readFileSync(FEEDS_FILE, 'utf8')) : {};
@@ -154,12 +129,22 @@ async function main() {
   const edition = JSON.parse(await readFile(NEWS_FILE, 'utf8'));
   const cache = await loadCache();
 
+  // Drop HTML leftovers and headline-echo lines so a re-run repairs the board
+  // instead of reprinting the damage from last time.
+  for (const slide of edition.slides) {
+    slide.description = plainText(slide.description);
+    if (slide.summary && !isGoodSummary(slide.summary, slide.title)) {
+      delete cache[cacheKey(slide.title)];
+      slide.summary = '';
+    }
+  }
+
   // Whatever is already known is applied first, so the board keeps the lines it
   // has even when the API is unreachable.
   let fromCache = 0;
   for (const slide of edition.slides) {
     const known = cache[cacheKey(slide.title)];
-    if (!slide.summary && isGoodSummary(known)) {
+    if (!slide.summary && isGoodSummary(known, slide.title)) {
       slide.summary = known;
       fromCache += 1;
     }
@@ -169,7 +154,7 @@ async function main() {
   // Anything that failed validation last time is retried, so re-running the
   // command repairs a bad edition instead of keeping the damage.
   const pending = edition.slides
-    .filter((slide) => !isGoodSummary(slide.summary) && slide.title)
+    .filter((slide) => !isGoodSummary(slide.summary, slide.title) && slide.title)
     .slice(0, budget);
 
   if (pending.length === 0) {
@@ -214,7 +199,7 @@ async function main() {
       for (const candidate of [model, ...MODELS.filter((m) => m !== model)]) {
         try {
           const answer = await ask(candidate, key, slide);
-          if (!isGoodSummary(answer)) {
+          if (!isGoodSummary(answer, slide.title)) {
             throw new Error(`unusable answer: "${answer.slice(0, 50)}"`);
           }
           text = answer;

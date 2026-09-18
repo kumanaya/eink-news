@@ -1,10 +1,14 @@
 ---
+import { isUsableSummary, plainText } from '../../tools/plain-text.mjs';
+
 const { slide, masthead, dateLabel, edition, price, index, count } = Astro.props;
 const media = slide.image;
+const summary = isUsableSummary(slide.summary, slide.title) ? plainText(slide.summary) : '';
+const description = plainText(slide.description);
 // Until the summarizer gets to this story, the feed's own text takes the lead
 // slot - an empty box in the middle of the slide would read as a mistake.
-const lead = slide.summary || slide.description;
-const rest = slide.summary ? slide.description : '';
+const lead = summary || description;
+const rest = summary ? description : '';
 ---
 
 <div class="slide">
