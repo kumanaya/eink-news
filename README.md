@@ -16,6 +16,12 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/kumanaya/eink-news"><img src="https://img.shields.io/badge/GitHub-eink--news-1c1a17?style=flat-square&logo=github" alt="GitHub" /></a>
+  <a href="https://x.com/danielkumanaya"><img src="https://img.shields.io/badge/X-danielkumanaya-1c1a17?style=flat-square&logo=x" alt="X" /></a>
+  <a href="https://discord.gg/KYChSeuyk"><img src="https://img.shields.io/badge/Discord-E--INK%20HACK-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" /></a>
+</p>
+
+<p align="center">
   <a href="#on-the-kindle">On the Kindle</a>
   ·
   <a href="#on-your-desk">On your desk</a>
@@ -179,4 +185,9 @@ docs/banner.png            the masthead above
 
 MIT. See [LICENSE](LICENSE). The news belongs to the feeds it came from.
 
-A house project of **E-INK HACK**.
+A house project of **E-INK HACK**. Come share Kindle and e-ink projects
+in the [Discord](https://discord.gg/KYChSeuyk).
+
+- GitHub: [kumanaya/eink-news](https://github.com/kumanaya/eink-news)
+- X: [danielkumanaya](https://x.com/danielkumanaya)
+- Discord: [E-INK HACK](https://discord.gg/KYChSeuyk)
