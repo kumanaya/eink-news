@@ -68,8 +68,8 @@ async function ask(model, key, slide) {
       authorization: `Bearer ${key}`,
       'content-type': 'application/json',
       // OpenRouter uses these for attribution; they are optional.
-      'http-referer': 'https://github.com/kumanaya/e-ink-hack',
-      'x-title': 'E-INK HACKER NEWS',
+      'http-referer': 'https://github.com/kumanaya/eink-news',
+      'x-title': 'E-INK NEWS',
     },
     body: JSON.stringify({
       model,

@@ -26,10 +26,12 @@ const { masthead, refresh } = Astro.props;
         gives.
       - rotate is the signboard itself. It is a timer, not a CSS animation,
         because the Kindle browser does not run those and the board would sit
-        on the first story forever.
+        on the first story forever. A tap on the left third goes back, a tap
+        on the right third goes forward, the same way the Kindle turns a page.
     -->
     <script is:inline>
       (function () {
+        var started = false;
         function fitAll() {
           var nodes = document.querySelectorAll('.fit');
           for (var i = 0; i < nodes.length; i++) {
@@ -39,58 +41,66 @@ const { masthead, refresh } = Astro.props;
             var size = max;
             el.style.fontSize = max + 'vh';
             while (size > min && el.scrollHeight > el.clientHeight + 1) {
-              size = size - 0.2;
+              size -= 0.2;
               el.style.fontSize = size + 'vh';
             }
           }
         }
-
-        function loadImage(slide) {
+        function loadImg(slide) {
           if (!slide) return;
           var img = slide.querySelector('img[data-src]');
-          if (img && !img.getAttribute('src')) {
-            img.setAttribute('src', img.getAttribute('data-src'));
-          }
+          if (img && !img.getAttribute('src')) img.setAttribute('src', img.getAttribute('data-src'));
         }
-
         function show(slides, index) {
-          for (var i = 0; i < slides.length; i++) {
-            // inline opacity wins over the first-child rule that covers the
-            // no-JavaScript case
-            slides[i].style.opacity = i === index ? 1 : 0;
-          }
-          loadImage(slides[index]);
-          loadImage(slides[(index + 1) % slides.length]);
+          var n = slides.length;
+          for (var i = 0; i < n; i++) slides[i].style.opacity = i === index ? 1 : 0;
+          loadImg(slides[index]);
+          loadImg(slides[(index + 1) % n]);
+          loadImg(slides[(index + n - 1) % n]);
         }
-
         function rotate() {
           var board = document.querySelector('.board');
           var slides = document.querySelectorAll('.slide');
           if (!board) return;
-          if (slides.length < 2) {
-            loadImage(slides[0]);
-            return;
+          if (board.className.indexOf('standalone') !== -1) { loadImg(slides[0]); return; }
+          if (slides.length < 2) { loadImg(slides[0]); return; }
+          var sec = parseFloat(board.getAttribute('data-seconds')) || 8;
+          var n = slides.length, cur = 0, timer = null, last = 0;
+          function step(d) { cur = (cur + d + n) % n; show(slides, cur); }
+          function arm() {
+            if (timer) clearInterval(timer);
+            timer = setInterval(function () { step(1); }, sec * 1000);
           }
-          var seconds = parseFloat(board.getAttribute('data-seconds')) || 8;
-          var current = 0;
-          show(slides, current);
-          setInterval(function () {
-            current = (current + 1) % slides.length;
-            show(slides, current);
-          }, seconds * 1000);
+          function tap(e) {
+            e = e || window.event;
+            var now = new Date().getTime();
+            if (now - last < 400) return;
+            var t = e.changedTouches && e.changedTouches[0];
+            var x = t ? t.clientX : e.clientX;
+            var w = board.clientWidth || document.body.clientWidth;
+            var d = x < w / 3 ? -1 : x > (2 * w) / 3 ? 1 : 0;
+            if (!d) return;
+            last = now;
+            if (e.preventDefault) e.preventDefault();
+            step(d);
+            arm();
+          }
+          show(slides, cur);
+          arm();
+          if (board.addEventListener) {
+            board.addEventListener('click', tap, false);
+            board.addEventListener('touchend', tap, false);
+          } else board.onclick = tap;
         }
-
         function start() {
+          if (started) return;
+          started = true;
           fitAll();
           rotate();
         }
-
         start();
-        if (window.addEventListener) {
-          window.addEventListener('load', start, false);
-        } else {
-          window.onload = start;
-        }
+        if (window.addEventListener) window.addEventListener('load', start, false);
+        else window.onload = start;
       })();
     </script>
   </body>

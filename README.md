@@ -1,4 +1,4 @@
-# E-INK HACKER NEWS
+# E-INK NEWS
 
 A signboard for the Kindle: the day's news, one story per screen, changing every
 15 seconds. It is a static site. The edition is already in the repository -
@@ -29,8 +29,9 @@ sudo ufw allow 8080/tcp
   summary and the feed's own text underneath.
 - The rotation is a **timer in the page's ES5 script**, not a CSS animation:
   the Kindle's browser does not run CSS animations, and the board would sit on
-  the first story forever (it did). A browser with JavaScript off still sees the
-  first slide.
+  the first story forever (it did). A tap on the **left third** goes back, a tap
+  on the **right third** goes forward (the middle third leaves links alone). A
+  browser with JavaScript off still sees the first slide.
 
 ## The edition
 
@@ -119,25 +120,27 @@ without the summaries.
 Two ways in, and they share the same server.
 
 **The experimental browser** (this is the signboard): open
-`http://<this-machine-ip>:8080/` and leave it - the page turns itself. Every
-slide change is a full-screen repaint, which is exactly what e-ink does well.
+`http://<this-machine-ip>:8080/` and leave it - the page turns itself, and a
+tap on the left or right third turns it by hand, the same way a Kindle page
+does. Every slide change is a full-screen repaint, which is exactly what e-ink
+does well.
 Only the picture of the story on screen is fetched (the rest wait as `data-src`
 attributes), and the page reloads itself every ten minutes to pick up the next
 edition.
 
-**The KOReader plugin** (`prophet.koplugin/`): KOReader cannot render HTML, so
+**The KOReader plugin** (`einknews.koplugin/`): KOReader cannot render HTML, so
 the server photographs each slide and the plugin shows the pictures - one per
 screen, tap the left or right third to move on, middle tap for the buttons.
 
 ```sh
-cp -r prophet.koplugin /path/to/koreader/plugins/     # over USB: koreader/plugins/
+cp -r einknews.koplugin /path/to/koreader/plugins/     # over USB: koreader/plugins/
 ```
 
 Restart KOReader, then:
 
-1. **Tools -> E-INK HACKER NEWS: server** - type `http://<this-machine-ip>:8080`
+1. **Tools -> E-INK NEWS: server** - type `http://<this-machine-ip>:8080`
    once; it is remembered;
-2. **Tools -> E-INK HACKER NEWS** - the edition opens.
+2. **Tools -> E-INK NEWS** - the edition opens.
 
 The plugin asks the server for `edition.json` every 20 seconds while it is open
 (`Edition.watch_seconds`), so when a new edition is rendered the Kindle picks it
@@ -205,12 +208,12 @@ npm run auto-feed   # the same round every 10 minutes, for as long as it runs
 ```
 
 `tools/auto-feed.sh` loops (default 10 minutes, `sh tools/auto-feed.sh 5` for a
-tighter cycle) and appends to `/tmp/prophet-feed.log`. Leave it running and the
+tighter cycle) and appends to `/tmp/eink-news-feed.log`. Leave it running and the
 board keeps filling: new stories arrive, pictures are fetched, and a few more
 summaries are written each round. In the background:
 
 ```sh
-setsid nohup npm run auto-feed > /tmp/prophet-feed.log 2>&1 &
+setsid nohup npm run auto-feed > /tmp/eink-news-feed.log 2>&1 &
 ```
 
 ## Files
@@ -223,7 +226,7 @@ src/pages/slides/[n].astro  one slide, standing still (for the renderer)
 src/components/SignSlide.astro   one slide
 src/layouts/Sign.astro    the shell
 src/styles/sign.css       the whole look, written for old WebKit
-prophet.koplugin/         the KOReader app: downloads the pages, shows them
+einknews.koplugin/        the KOReader app: downloads the pages, shows them
 src/data/news.json        the committed edition the board reads
 src/data/summaries.json   AI summary cache, so a headline is never asked twice
 public/img/news/          pictures for that edition
@@ -256,9 +259,9 @@ The plugin is exercised inside a real KOReader, headless:
 
 ```sh
 npm run build && npm run render && npm run serve &     # the paper must be up
-PROPHET_DIST=$PWD/hogwarts-newspaper/dist/kindle \
-    sh dev-tools/koreader-headless.sh hogwarts-newspaper/prophet.koplugin \
-        hogwarts-newspaper/tests/koreader-probe.lua
+EINKNEWS_DIST=$PWD/dist/kindle \
+    sh ../dev-tools/koreader-headless.sh einknews.koplugin \
+        tests/koreader-probe.lua
 ```
 
 That probe is what keeps the watching honest: it edits the served `edition.json`

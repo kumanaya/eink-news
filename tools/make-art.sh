@@ -14,7 +14,7 @@ set -eu
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$ROOT/public/img"
-TMP="${TMPDIR:-/tmp}/prophet-art.$$"
+TMP="${TMPDIR:-/tmp}/eink-news-art.$$"
 mkdir -p "$OUT" "$TMP"
 trap 'rm -rf "$TMP"' EXIT INT TERM
 

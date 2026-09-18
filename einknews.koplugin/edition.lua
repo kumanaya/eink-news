@@ -42,7 +42,7 @@ local Edition = {}
 Edition.watch_seconds = 20
 
 local function editionDir()
-    return DataStorage:getDataDir() .. "/prophet"
+    return DataStorage:getDataDir() .. "/einknews"
 end
 
 local function fetch(url)
@@ -87,7 +87,7 @@ local function complain(title, server, detail)
     end
     text = text .. "\n\n" .. _("On the machine that prints the paper: npm run serve") ..
         "\n" .. _("(and let the firewall allow that port).")
-    logger.warn("prophet:", title, server, detail or "")
+    logger.warn("einknews:", title, server, detail or "")
     UIManager:show(InfoMessage:new{ text = text, timeout = 10 })
 end
 
@@ -150,7 +150,7 @@ local function preparePages(server, rendering)
             if not io.open(dest, "rb") then
                 local ok, why = download(base .. "/" .. page, dest)
                 if not ok then
-                    logger.warn("prophet: page failed:", page, why)
+                    logger.warn("einknews: page failed:", page, why)
                     missing = true
                     -- A checkerboard beats a crash: ImageWidget cannot paint a
                     -- nil image.
@@ -182,7 +182,7 @@ local function openViewer(server, edition, pages, opts)
         if stopped then return end
         local fresh = fetchEdition(server)
         if fresh and fresh.generated ~= edition.generated then
-            logger.info("prophet: a new edition is on the wire:", tostring(fresh.generated))
+            logger.info("einknews: a new edition is on the wire:", tostring(fresh.generated))
             stopped = true
             UIManager:close(viewer)
             Edition.show{ server = server, quiet = true }
@@ -256,7 +256,7 @@ function Edition.show(opts)
         end
         return
     end
-    logger.info(string.format("prophet: panel %dx%d -> rendering %dx%d (%s)",
+    logger.info(string.format("einknews: panel %dx%d -> rendering %dx%d (%s)",
         screen:getWidth(), screen:getHeight(),
         rendering.width or 0, rendering.height or 0, tostring(how)))
 
@@ -270,7 +270,7 @@ function Edition.show(opts)
     end
     closeMessage()
 
-    logger.info("prophet: showing", #pages, "pages from", server)
+    logger.info("einknews: showing", #pages, "pages from", server)
     openViewer(server, edition, pages, opts)
 end
 

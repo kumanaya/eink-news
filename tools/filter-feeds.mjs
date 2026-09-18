@@ -73,7 +73,7 @@ async function main() {
     try {
       const res = await fetch(job.feed.url, {
         signal: AbortSignal.timeout(TIMEOUT_MS),
-        headers: { 'user-agent': 'e-ink-hacker-news/1.0 (local e-ink reader)' },
+        headers: { 'user-agent': 'eink-news/1.0 (local e-ink reader)' },
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const xml = await res.text();

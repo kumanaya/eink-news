@@ -11,13 +11,13 @@
 # hammering the free models.
 #
 # Stop it with Ctrl-C, or in the background:
-#   setsid nohup sh tools/auto-feed.sh > /tmp/prophet-feed.log 2>&1 &
+#   setsid nohup sh tools/auto-feed.sh > /tmp/eink-news-feed.log 2>&1 &
 
 set -eu
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 MINUTES="${1:-10}"
-LOG="${LOG:-/tmp/prophet-feed.log}"
+LOG="${LOG:-/tmp/eink-news-feed.log}"
 
 echo "auto-feed: every ${MINUTES} min (log: $LOG)"
 

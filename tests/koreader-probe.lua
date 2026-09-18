@@ -4,16 +4,16 @@ Probe that exercises the newspaper plugin inside a real KOReader, headless.
 Run through the harness, with the paper being served:
 
     npm run build && npm run render && npm run serve     # in another terminal
-    PROPHET_DIST=$PWD/hogwarts-newspaper/dist/kindle \
-        sh dev-tools/koreader-headless.sh hogwarts-newspaper/prophet.koplugin \
-            hogwarts-newspaper/tests/koreader-probe.lua
+    EINKNEWS_DIST=$PWD/dist/kindle \
+        sh ../dev-tools/koreader-headless.sh einknews.koplugin \
+            tests/koreader-probe.lua
 
-The probe points the plugin at PROPHET_SERVER (default http://127.0.0.1:8080)
+The probe points the plugin at EINKNEWS_SERVER (default http://127.0.0.1:8080)
 and walks what a tap does: fetch edition.json, download the pages, hand them to
 ImageViewer, fill the screen. Then it checks the two behaviours a user hits
 first: a dead server must show a message instead of taking KOReader down, and a
 new edition rendered on the server must replace the one on screen by itself
-(that is what PROPHET_DIST is for: the probe edits the served edition.json).
+(that is what EINKNEWS_DIST is for: the probe edits the served edition.json).
 
 Each step gets its own event-loop turn on purpose: showing, painting, closing
 and reopening are separate turns for a real user, and KOReader's widgets expect
@@ -30,9 +30,9 @@ local lfs = require("libs/libkoreader-lfs")
 
 local PLUGIN_DIR = _KCHAT_PLUGIN_DIR
 local RESULT = os.getenv("KCHAT_PROBE_RESULT") or "/tmp/zzprobe.txt"
-local SERVER = os.getenv("PROPHET_SERVER") or "http://127.0.0.1:8080"
+local SERVER = os.getenv("EINKNEWS_SERVER") or "http://127.0.0.1:8080"
 local DEAD_SERVER = "http://127.0.0.1:9" -- discard port: nothing listens there
-local DIST = os.getenv("PROPHET_DIST")   -- where the served page images live
+local DIST = os.getenv("EINKNEWS_DIST")   -- where the served page images live
 local expectedSlides = 0                 -- how many slides the next edition has
 
 package.path = PLUGIN_DIR .. "/?.lua;" .. package.path
@@ -65,7 +65,7 @@ local function topWidget()
 end
 
 local function pngCount()
-    local dir = DataStorage:getDataDir() .. "/prophet"
+    local dir = DataStorage:getDataDir() .. "/einknews"
     local n = 0
     for entry in lfs.dir(dir) do
         if entry:match("%.png$") then n = n + 1 end
@@ -128,8 +128,8 @@ end
 UIManager:scheduleIn(3, function()
     local Edition
     if not step("require the plugin's edition module", function()
-        Edition = require("prophet_edition")
-        assert(type(Edition.show) == "function", "no show() in prophet_edition")
+        Edition = require("edition")
+        assert(type(Edition.show) == "function", "no show() in edition")
     end) then
         logger.info("ZZPROBE DONE fails=" .. tostring(fails))
         return
@@ -173,7 +173,7 @@ end)
 -- --- turn 3: the unhappy path, nothing is listening ---------------------------
 
 UIManager:scheduleIn(10, function()
-    local Edition = require("prophet_edition")
+    local Edition = require("edition")
 
     step("a dead server shows a message instead of crashing", function()
         Edition.show{ server = DEAD_SERVER }
@@ -192,11 +192,11 @@ end)
 -- --- turn 4: a new edition appears on the server ------------------------------
 
 UIManager:scheduleIn(13, function()
-    local Edition = require("prophet_edition")
+    local Edition = require("edition")
     Edition.watch_seconds = 2 -- do not wait 20s in a test
 
     if not DIST then
-        record(false, "PROPHET_DIST not set: cannot test the live refresh")
+        record(false, "EINKNEWS_DIST not set: cannot test the live refresh")
         logger.info("ZZPROBE DONE fails=" .. tostring(fails))
         return
     end

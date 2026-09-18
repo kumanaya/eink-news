@@ -107,7 +107,7 @@ function log(method, pathname, status, bytes, started) {
 
 server.listen(PORT, HOST, () => {
   const name = HOST === '0.0.0.0' ? 'all interfaces' : HOST;
-  console.log(`The Daily Prophet is being printed at http://${name}:${PORT}/`);
+  console.log(`E-INK NEWS is being printed at http://${name}:${PORT}/`);
   console.log('On the Kindle, open:  http://<this-machine-ip>:' + PORT + '/');
   if (HOST === '0.0.0.0') {
     console.log('If the firewall is on:  sudo ufw allow ' + PORT + '/tcp');

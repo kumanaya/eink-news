@@ -1,9 +1,9 @@
 {
-  "name": "hogwarts-newspaper",
+  "name": "eink-news",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "The Wizarding World's newspaper, rendered for an e-ink Kindle",
+  "description": "A signboard of the day's news, rendered for an e-ink Kindle",
   "license": "MIT",
   "scripts": {
     "news": "node tools/fetch-feeds.mjs && node tools/summarize.mjs",

@@ -1,5 +1,5 @@
 --[[--
-The Daily Prophet: plugin entry point.
+E-INK NEWS: plugin entry point.
 
 Registers two entries under KOReader's Tools menu: one opens the newspaper that
 the server is printing, the other points the plugin at that server. The address
@@ -13,32 +13,32 @@ local InputDialog = require("ui/widget/inputdialog")
 local WidgetContainer = require("ui/widget/container/widgetcontainer")
 local _ = require("gettext")
 
-local Edition = require("prophet_edition")
+local Edition = require("edition")
 
 -- The machine this paper was built against. Change it in
--- Tools > The Daily Prophet: server (it is stored in KOReader's settings).
+-- Tools > E-INK NEWS: server (it is stored in KOReader's settings).
 local DEFAULT_SERVER = "http://192.168.15.25:8080"
 
-local SETTINGS_FILE = DataStorage:getSettingsDir() .. "/prophet.lua"
+local SETTINGS_FILE = DataStorage:getSettingsDir() .. "/einknews.lua"
 
-local Prophet = WidgetContainer:extend{
-    name = "prophet",
+local EinkNews = WidgetContainer:extend{
+    name = "einknews",
     is_doc_only = false,
 }
 
-function Prophet:init()
+function EinkNews:init()
     self.settings = LuaSettings:open(SETTINGS_FILE)
     self.ui.menu:registerToMainMenu(self)
 end
 
-function Prophet:server()
+function EinkNews:server()
     return self.settings:readSetting("server") or DEFAULT_SERVER
 end
 
-function Prophet:askServer(after)
+function EinkNews:askServer(after)
     local dialog
     dialog = InputDialog:new{
-        title = _("The Daily Prophet: server"),
+        title = _("E-INK NEWS: server"),
         description = _("Where the newspaper is being served, for instance http://192.168.1.10:8080"),
         input = self:server(),
         buttons = {
@@ -71,7 +71,7 @@ function Prophet:askServer(after)
     dialog:onShowKeyboard()
 end
 
-function Prophet:openEdition()
+function EinkNews:openEdition()
     Edition.show{
         server = self:server(),
         on_need_server = function()
@@ -80,16 +80,16 @@ function Prophet:openEdition()
     }
 end
 
-function Prophet:addToMainMenu(menu_items)
-    menu_items.prophet_open = {
-        text = _("The Daily Prophet"),
+function EinkNews:addToMainMenu(menu_items)
+    menu_items.einknews_open = {
+        text = _("E-INK NEWS"),
         sorting_hint = "tools",
         callback = function()
             self:openEdition()
         end,
     }
-    menu_items.prophet_server = {
-        text = _("The Daily Prophet: server"),
+    menu_items.einknews_server = {
+        text = _("E-INK NEWS: server"),
         sorting_hint = "tools",
         callback = function()
             self:askServer()
@@ -97,4 +97,4 @@ function Prophet:addToMainMenu(menu_items)
     }
 end
 
-return Prophet
+return EinkNews

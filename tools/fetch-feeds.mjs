@@ -43,43 +43,43 @@ const IMAGE_WIDTH = 640;       // the panel is 600 wide; 640 keeps it crisp
 const FETCH_TIMEOUT_MS = 15000;
 
 const BYLINES = [
-  'Rita Skeeter',
-  'Luna Lovegood',
-  'Barnabas Cuffe',
-  'Bathilda Bagshot',
-  'Gilderoy Lockhart',
-  'Xenophilius Lovegood',
-  'Percy Weasley',
+  'Ada Morrow',
+  'James Hale',
+  'Elena Voss',
+  'Kenji Sato',
+  'Amira Hassan',
+  'Tomasz Kruk',
+  'Claire Brennan',
 ];
 const DATELINES = [
-  'HOGSMEADE',
-  'DIAGON ALLEY',
-  'THE MINISTRY',
-  'GODRIC\u2019S HOLLOW',
-  'OTTERY ST CATCHPOLE',
-  'GRINGOTTS',
+  'LONDON',
+  'NEW YORK',
+  'TOKYO',
+  'BERLIN',
+  'PARIS',
+  'WASHINGTON',
 ];
 
 const SAMPLE_EDITION = [
   {
-    section: 'The Ministry',
-    title: 'Ministry confirms the Knight Bus will run through the holidays',
+    section: 'World',
+    title: 'The signboard holds the day\u2019s stories for the e-ink panel',
     description:
-      'The overnight service adds three extra decks between London and Hogsmeade. Officials remind travellers that eleven Sickles still buy a hot chocolate and a toothbrush.',
+      'Each feed contributes a handful of stories. Pictures are kept locally so the Kindle never makes an external request.',
     link: 'https://www.example.org/',
-    byline: 'Percy Weasley',
-    dateline: 'THE MINISTRY',
+    byline: 'Ada Morrow',
+    dateline: 'LONDON',
     image: null,
     summary: '',
   },
   {
-    section: 'Quidditch',
-    title: 'Wronski Feint declared legal for a fourth consecutive season',
+    section: 'Tech',
+    title: 'A second story fills the board when the first one has been read',
     description:
-      'The referee board voted nine to two. Seekers are advised to practise the dive with a cushioning charm.',
+      'The page turns on a timer, or on a tap at the left or right third of the screen, the same way a Kindle turns a page.',
     link: 'https://www.example.org/',
-    byline: 'Gilderoy Lockhart',
-    dateline: 'HOGSMEADE',
+    byline: 'James Hale',
+    dateline: 'NEW YORK',
     image: null,
     summary: '',
   },
@@ -324,7 +324,7 @@ async function main() {
     try {
       const res = await fetch(job.feed.url, {
         signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
-        headers: { 'user-agent': 'e-ink-hacker-news/1.0 (local e-ink reader)' },
+        headers: { 'user-agent': 'eink-news/1.0 (local e-ink reader)' },
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const xml = await res.text();

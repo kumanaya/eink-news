@@ -117,7 +117,7 @@ async function renderProfile(chromium, port, profile, slides) {
   mkdirSync(dir, { recursive: true });
 
   for (let i = 1; i <= slides; i += 1) {
-    const shot = path.join(process.env.TMPDIR || '/tmp', `prophet-${width}x${height}-${i}-${process.pid}.png`);
+    const shot = path.join(process.env.TMPDIR || '/tmp', `eink-news-${width}x${height}-${i}-${process.pid}.png`);
     const url = `http://127.0.0.1:${port}/slides/${i}.html`;
     await screenshot(chromium, url, width, height, shot);
 
