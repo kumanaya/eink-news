@@ -327,8 +327,7 @@ async function main() {
       candidates.push({
         section: result.job.section,
         title: truncate(raw.title, TITLE_CHARS),
-        // The AI summary is written by tools/summarize.mjs; the feed text
-        // stays as the description under it.
+        // The English headline, dek and blurb are written by tools/summarize.mjs.
         summary: '',
         description: isRealSummary(raw.description)
           ? truncate(plainText(raw.description), DESCRIPTION_CHARS)

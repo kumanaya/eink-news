@@ -3,19 +3,19 @@
 //
 //   node tools/summarize.mjs
 //
-// fetch-feeds leaves `summary` empty; this fills it with two plain sentences
-// for the board, keeping the feed text as the description below.
+// fetch-feeds leaves `summary` empty; this writes an English headline, dek and
+// blurb so the board stays in one language even though the feeds do not.
 //
 // The key comes from OPENROUTER_API_KEY, or from a .openrouter-key file next to
 // this project (git-ignored). Without a key the edition still builds - the
 // slides simply show the description alone.
 //
 // There are hundreds of stories and the free models are slow, so:
-// - summaries are cached by headline in src/data/summaries.json (committed),
-//   and survive editions (a story keeps its line when it appears again);
-// - each run spends a budget (summaries_per_run in feeds.json), so the board
-//   fills up over the following Actions runs instead of hammering the API
-//   all at once, and the Vercel build never waits on a model.
+// - English copy is cached by story link in src/data/summaries.json (committed),
+//   and survives editions (a story keeps its lines when it appears again);
+// - each run spends a budget (summaries_per_run in feeds.json), Kindle-first,
+//   so the board fills in English instead of reprinting the feed language;
+// - the Vercel build never waits on a model.
 //
 // Free models are shared and rate-limited, so the list is tried in order and a
 // slow or busy model never blocks the edition.
@@ -24,7 +24,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { isUsableSummary, plainText, tidySummary } from './plain-text.mjs';
+import { isEnglishCopy, isUsableSummary, plainText, tidySummary } from './plain-text.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const NEWS_FILE = path.join(ROOT, 'src', 'data', 'news.json');
@@ -42,14 +42,17 @@ const MODELS = [
   'qwen/qwen3.8-27b:free',
 ];
 const MAX_SUMMARY_CHARS = 240;
+const MAX_HEADLINE_CHARS = 90;
+const MAX_BLURB_CHARS = 170;
 const TIMEOUT_MS = 60000;
 
 const SYSTEM_PROMPT =
-  'You write the dek under a newspaper headline. The headline is already on the page. ' +
-  'Add facts the headline does not say: who else, where, what happens next, a number. ' +
-  'Exactly two sentences, at most 220 characters. Same language as the story. ' +
-  'Plain text only: no HTML, no markdown, no quotes, no opinions, no preamble. ' +
-  'Do not restate or lightly rephrase the headline. Answer with the two sentences only.';
+  'You are a newspaper copy desk. Stories arrive in any language. You write English only. ' +
+  'Reply with exactly three lines and nothing else:\n' +
+  'HEADLINE: <one English headline, max 90 characters, no trailing ellipsis>\n' +
+  'DEK: <exactly two English sentences, at most 220 characters, facts the headline does not say>\n' +
+  'BLURB: <one or two English sentences from the feed text, at most 170 characters>\n' +
+  'Plain text only: no HTML, no markdown, no quotes, no opinions, no preamble.';
 
 function readKey() {
   if (process.env.OPENROUTER_API_KEY) return process.env.OPENROUTER_API_KEY.trim();
@@ -70,7 +73,6 @@ async function ask(model, key, slide) {
     headers: {
       authorization: `Bearer ${key}`,
       'content-type': 'application/json',
-      // OpenRouter uses these for attribution; they are optional.
       'http-referer': 'https://github.com/kumanaya/eink-news',
       'x-title': 'E-INK NEWS',
     },
@@ -82,13 +84,11 @@ async function ask(model, key, slide) {
           role: 'user',
           content:
             `Headline: ${slide.title}\n\n` +
-            `Story: ${plainText(slide.description || '').slice(0, 700) || '(no extra text; do not repeat the headline)'}\n\n` +
-            'Write two sentences that add facts the headline does not already say.',
+            `Story: ${plainText(slide.description || '').slice(0, 700) || '(no extra text)'}\n\n` +
+            'Write HEADLINE, DEK and BLURB in English.',
         },
       ],
-      // Generous, because some models spend tokens thinking before answering;
-      // reasoning is excluded from the answer itself.
-      max_tokens: 400,
+      max_tokens: 500,
       reasoning: { exclude: true },
       temperature: 0.3,
     }),
@@ -99,17 +99,61 @@ async function ask(model, key, slide) {
     throw new Error(`HTTP ${res.status} ${body.slice(0, 120)}`);
   }
   const data = await res.json();
-  const raw = data.choices?.[0]?.message?.content || '';
-  return tidySummary(raw, MAX_SUMMARY_CHARS);
+  return parseCopy(data.choices?.[0]?.message?.content || '');
 }
 
-function isGoodSummary(text, title) {
-  return isUsableSummary(text, title);
+function lineValue(text, name) {
+  const m = String(text || '').match(new RegExp(`^${name}:\\s*(.+)$`, 'im'));
+  return m ? m[1].trim() : '';
+}
+
+function parseCopy(raw) {
+  const text = String(raw || '').replace(/```(?:json)?/gi, '').trim();
+  const headline = plainText(lineValue(text, 'HEADLINE')).replace(/\u2026+$/g, '').trim();
+  const dek = tidySummary(lineValue(text, 'DEK') || (!lineValue(text, 'HEADLINE') ? text : ''), MAX_SUMMARY_CHARS);
+  const blurb = plainText(lineValue(text, 'BLURB'));
+  return {
+    headline: headline.length > MAX_HEADLINE_CHARS
+      ? `${headline.slice(0, MAX_HEADLINE_CHARS).replace(/\s+\S*$/, '')}`
+      : headline,
+    dek,
+    blurb: blurb.length > MAX_BLURB_CHARS
+      ? `${blurb.slice(0, MAX_BLURB_CHARS).replace(/\s+\S*$/, '')}`
+      : blurb,
+  };
+}
+
+function isGoodCopy(copy, slide) {
+  if (!copy || !isUsableSummary(copy.dek, copy.headline || slide.title)) return false;
+  if (!copy.headline || copy.headline.length < 12 || !isEnglishCopy(copy.headline)) return false;
+  if (!isEnglishCopy(copy.dek)) return false;
+  if (slide.description && (!copy.blurb || !isEnglishCopy(copy.blurb))) return false;
+  return true;
+}
+
+function fromCache(known) {
+  if (!known) return null;
+  if (typeof known === 'string') return { headline: '', dek: known, blurb: '' };
+  if (known.dek) return known;
+  return null;
+}
+
+function needsCopy(slide) {
+  if (!slide || !slide.title) return true;
+  if (!isEnglishCopy(slide.title)) return true;
+  if (!isUsableSummary(slide.summary, slide.title)) return true;
+  if (slide.description && !isEnglishCopy(slide.description)) return true;
+  return false;
 }
 
 const settings = existsSync(FEEDS_FILE) ? JSON.parse(readFileSync(FEEDS_FILE, 'utf8')) : {};
 
-const cacheKey = (title) => title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const cacheKey = (slide) => (slide.link || slide.title || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().slice(0, 160);
+const titleKey = (title) => String(title || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+
+function lookupCache(cache, slide) {
+  return fromCache(cache[cacheKey(slide)] || cache[titleKey(slide.title)]);
+}
 
 async function loadCache() {
   if (!existsSync(CACHE_FILE)) return {};
@@ -129,37 +173,41 @@ async function main() {
   const edition = JSON.parse(await readFile(NEWS_FILE, 'utf8'));
   const cache = await loadCache();
 
-  // Drop HTML leftovers and headline-echo lines so a re-run repairs the board
-  // instead of reprinting the damage from last time.
+  // Drop HTML leftovers, headline-echo lines, and copy that is not English, so
+  // a re-run repairs the board instead of reprinting the damage from last time.
+  // Cached English copy is kept: the same story should not pay the API twice.
   for (const slide of edition.slides) {
     slide.description = plainText(slide.description);
-    if (slide.summary && !isGoodSummary(slide.summary, slide.title)) {
-      delete cache[cacheKey(slide.title)];
+    if (slide.summary && (!isUsableSummary(slide.summary, slide.title) || !isEnglishCopy(slide.summary))) {
       slide.summary = '';
     }
   }
 
-  // Whatever is already known is applied first, so the board keeps the lines it
-  // has even when the API is unreachable.
-  let fromCache = 0;
+  let cached = 0;
   for (const slide of edition.slides) {
-    const known = cache[cacheKey(slide.title)];
-    if (!slide.summary && isGoodSummary(known, slide.title)) {
-      slide.summary = known;
-      fromCache += 1;
+    const known = lookupCache(cache, slide);
+    if (!known) continue;
+    // Old cache entries were a dek string only. Skip them when the headline
+    // is still in the feed language, so the desk rewrites the whole card.
+    if (!known.headline && !isEnglishCopy(slide.title)) continue;
+    if (known.headline && isEnglishCopy(known.headline)) slide.title = known.headline;
+    if (known.blurb && isEnglishCopy(known.blurb)) slide.description = known.blurb;
+    if (isUsableSummary(known.dek, slide.title) && isEnglishCopy(known.dek)) {
+      slide.summary = known.dek;
+      cached += 1;
     }
   }
 
   const budget = Number(settings.summaries_per_run) || 40;
-  // Anything that failed validation last time is retried, so re-running the
-  // command repairs a bad edition instead of keeping the damage.
-  const pending = edition.slides
-    .filter((slide) => !isGoodSummary(slide.summary, slide.title) && slide.title)
-    .slice(0, budget);
+  const rendered = Number(settings.render_slides) || 100;
+  const pending = [
+    ...edition.slides.slice(0, rendered),
+    ...edition.slides.slice(rendered),
+  ].filter((slide) => needsCopy(slide)).slice(0, budget);
 
   if (pending.length === 0) {
     await writeFile(NEWS_FILE, JSON.stringify(edition, null, 2) + '\n');
-    console.log(`  every slide has a summary (${fromCache} came from the cache)`);
+    console.log(`  every slide is in English (${cached} came from the cache)`);
     return;
   }
 
@@ -169,7 +217,7 @@ async function main() {
     await writeFile(NEWS_FILE, JSON.stringify(edition, null, 2) + '\n');
     return;
   }
-  console.log(`  ${pending.length} to write this run (budget ${budget}, ${fromCache} from cache)`);
+  console.log(`  ${pending.length} to write this run (budget ${budget}, ${cached} from cache)`);
 
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -191,33 +239,36 @@ async function main() {
   let done = 0;
 
   const summarizeOne = async (slide) => {
-    let text = '';
+    let copy = null;
     let lastError = '';
-    // Free models are shared: a 429 or a truncated answer is normal, so the
-    // slide gets three passes over the model list, with a growing pause.
-    for (let round = 1; round <= 3 && !text; round += 1) {
+    for (let round = 1; round <= 3 && !copy; round += 1) {
       for (const candidate of [model, ...MODELS.filter((m) => m !== model)]) {
         try {
           const answer = await ask(candidate, key, slide);
-          if (!isGoodSummary(answer, slide.title)) {
-            throw new Error(`unusable answer: "${answer.slice(0, 50)}"`);
+          if (!isGoodCopy(answer, slide)) {
+            throw new Error(`unusable answer: "${(answer.dek || '').slice(0, 50)}"`);
           }
-          text = answer;
-          model = candidate; // stay on whatever worked
+          copy = answer;
+          model = candidate;
           break;
         } catch (err) {
           lastError = `${candidate.split('/')[0]}: ${err.message}`;
         }
       }
-      if (!text && round < 3) await sleep(round * 5000);
+      if (!copy && round < 3) await sleep(round * 5000);
     }
 
-    slide.summary = text;
-    if (text) cache[cacheKey(slide.title)] = text;
+    if (copy) {
+      const key = cacheKey(slide);
+      slide.title = copy.headline;
+      slide.summary = copy.dek;
+      if (copy.blurb) slide.description = copy.blurb;
+      cache[key] = copy;
+    }
     done += 1;
-    const how = text ? `ok (${model.split('/')[0]})` : `no summary (${lastError})`;
-    console.log(`  ${String(done).padStart(3)}/${pending.length} ${how} — ${slide.title.slice(0, 44)}`);
-    return text;
+    const how = copy ? `ok (${model.split('/')[0]})` : `no copy (${lastError})`;
+    console.log(`  ${String(done).padStart(3)}/${pending.length} ${how} — ${(copy ? copy.headline : slide.title).slice(0, 44)}`);
+    return copy;
   };
 
   // Small pool: `concurrency` summaries in flight.
@@ -235,9 +286,9 @@ async function main() {
 
   await writeFile(NEWS_FILE, JSON.stringify(edition, null, 2) + '\n');
   await writeFile(CACHE_FILE, JSON.stringify(cache, null, 2) + '\n');
-  const written = edition.slides.filter((slide) => slide.summary).length;
+  const english = edition.slides.filter((slide) => isEnglishCopy(slide.title) && isUsableSummary(slide.summary, slide.title)).length;
   const seconds = ((Date.now() - started) / 1000).toFixed(0);
-  console.log(`  ${written}/${edition.slides.length} slides have a summary in ${seconds}s (${concurrency} at a time)`);
+  console.log(`  ${english}/${edition.slides.length} slides in English in ${seconds}s (${concurrency} at a time)`);
 }
 
 main().catch((err) => {

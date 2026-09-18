@@ -126,3 +126,12 @@ export function slideHasBody(slide) {
   if (isUsableSummary(slide.summary, slide.title)) return true;
   return plainText(slide.description).length >= 40;
 }
+
+// The board is in English. Non-ASCII letters (ö, ő, α, 汉, …) mean the line
+// still needs the copy desk.
+export function isEnglishCopy(s) {
+  const t = plainText(s);
+  if (!t) return false;
+  if (/[^\u0000-\u007F\u2018\u2019\u201C\u201D\u2013\u2014\u2026\u00A0]/.test(t)) return false;
+  return /[A-Za-z]{3,}/.test(t);
+}

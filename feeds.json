@@ -828,7 +828,7 @@
   ],
   "max_slides": 200,
   "render_slides": 100,
-  "summaries_per_run": 40,
+  "summaries_per_run": 100,
   "max_images": 150,
   "profiles": [
     [
@@ -839,7 +839,7 @@
   "filteredAt": "2026-09-18T01:19:55.631Z",
   "require_image": true,
   "max_downloads": 500,
-  "summaries_concurrency": 3,
+  "summaries_concurrency": 4,
   "summaries_model": "nex-agi/nex-n2.5-pro:free",
   "summaries_fallback": true
 }
