@@ -4,264 +4,1386 @@
   "edition": "Morning Edition",
   "price": "Free",
   "seconds": 8,
-  "generatedAt": "2026-11-07T09:45:48.270Z",
+  "generatedAt": "2026-11-08T09:59:08.241Z",
   "feeds": {
     "polled": 170,
-    "reachable": 163
+    "reachable": 164
   },
   "slides": [
     {
-      "section": "Africa",
-      "title": "Fire destroys vulcanising shop at Dominase, ECG transformer salvaged",
-      "summary": "",
-      "description": "A fire has destroyed a vulcanising shop at Dominase in the Upper Denkyira West District of the Central Region, although personnel of the Ghana National Fire Service…",
-      "link": "https://www.myjoyonline.com/fire-destroys-vulcanising-shop-at-dominase-ecg-transformer-salvaged/",
-      "date": "Sat, 07 Nov 2026 09:43:47 +0000",
-      "byline": "Kenji Sato",
-      "dateline": "LONDON",
-      "image": "/img/news/da8e8efdeaf6.png"
-    },
-    {
       "section": "Europe",
-      "title": "S&P is cutting the prospect of a rating of Poland.",
+      "title": "Her own parents and sister were murdered by the Krakow terrorist",
       "summary": "",
-      "description": "- Friday's S&P assessment fits into an unfavorable sequence of events that we're already beginning to feel the effects of, and as a result, the location of our debt",
-      "link": "https://www.rp.pl/dane-gospodarcze/art45458311-s-p-tnie-perspektywe-ratingu-polski-piotr-soroczynski-to-moze-nie-byc-koniec",
-      "date": "Sat, 07 Nov 2026 10:43:02 +0100",
-      "byline": "Elena Voss",
-      "dateline": "TOKYO",
-      "image": "/img/news/4ac7259d33c7.png"
-    },
-    {
-      "section": "Latin America",
-      "title": "Pope urges healthcare for all in Uruguay",
-      "summary": "",
-      "description": "Three weeks after undergoing surgery for lung cancer, Pope Francis has begun a three-nation tour of Latin America, saying he felt better than he looked. His first stop…",
-      "link": "https://www.france24.com/en/pope-urges-healthcare-for-all-in-uruguay",
-      "date": "Sat, 07 Nov 2026 09:41:23 GMT",
-      "byline": "Elena Voss",
-      "dateline": "TOKYO",
-      "image": "/img/news/2f9e418207f1.png"
-    },
-    {
-      "section": "Europe",
-      "title": "He threw his own basketball in the ring at the last minute, and his team didn't get it",
-      "summary": "",
-      "description": "The post threw a basketball into his own ring at the last minute, yet he didn't get out of his team first appeared on 24.hu.",
-      "link": "https://24.hu/sport/2026/11/07/kosarlabda-emma-christiano-ongol/",
-      "date": "Sat, 07 Nov 2026 09:41:20 +0000",
-      "byline": "Tomasz Kruk",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/fbe595a105e1.png"
+      "description": "Police have confirmed that three bodies were found at the Krakow shooting house belonging to the 53-year-old father, 52-year-old mother and 20-year-old sister of the",
+      "link": "https://hvg.hu/vilag/20261108_sajat-szuleit-es-hugat-is-meggyilkolta-a-krakkoi-terrorista-ebx",
+      "date": "Sun, 08 Nov 2026 09:56:37 Z",
+      "byline": "Claire Brennan",
+      "dateline": "NEW YORK",
+      "image": "/img/news/c3f51a3e0eb2.png"
     },
     {
       "section": "Asia",
-      "title": "Suspension row at Sanskrit varsity: Prakash Raj says protesting students ‘are not…",
+      "title": "Crew member missing as Indonesian water-bombing helicopter crashes",
       "summary": "",
-      "description": "The actor visits protest site, says he will join protesting students if they are not allowed to appear for their examinations",
-      "link": "https://www.thehindu.com/news/national/kerala/suspension-row-at-sanskrit-varsity-prakash-raj-says-protesting-students-are-not-savarkars-to-tender-apology/article71677687.ece",
-      "date": "Sat, 07 Nov 2026 15:11:20 +0530",
-      "byline": "Elena Voss",
-      "dateline": "PARIS",
-      "image": "/img/news/7434e4e635c9.png"
-    },
-    {
-      "section": "Europe",
-      "title": "What is a retrograde Mercury, and why do people blame it for everything that goes wrong?",
-      "summary": "",
-      "description": "If you believe in astrology, you may find the culprit in heaven.",
-      "link": "https://n1info.hr/magazin/lifestyle/retrogradni-merkur-sto-je-koliko-traje-znanost/",
-      "date": "Sat, 07 Nov 2026 10:41:11 +0100",
-      "byline": "Kenji Sato",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/60b26599ab1d.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Thessaloniki: 18 arrests for tax evasion in nightclubs",
-      "summary": "",
-      "description": "According to preliminary evidence, the arrested men were alleged to have been operating as strawmen in an extensive network of tax evasion nightclubs.",
-      "link": "https://www.in.gr/2026/11/07/greece/thessaloniki-18-syllipseis-gia-megali-forodiafygi-se-nyxterina-kentra/",
-      "date": "Sat, 07 Nov 2026 11:40:32 +0200",
+      "description": "Dramatic video footage showed the firefighting helicopter being slowly dragged downward after filling its bucket from the Barito River, eventually plunging nose-first…",
+      "link": "https://www.thehindu.com/news/international/crew-member-missing-as-indonesian-water-bombing-helicopter-crashes/article71680784.ece",
+      "date": "Sun, 08 Nov 2026 15:23:21 +0530",
       "byline": "Tomasz Kruk",
+      "dateline": "PARIS",
+      "image": "/img/news/382bfd045bbf.png"
+    },
+    {
+      "section": "Asia",
+      "title": "Taiwan detains Communist Party leader over alleged Chinese sponsorship in election",
+      "summary": "",
+      "description": "Prosecutors also alleged that Mr. Lin sought to buy votes by repeatedly recruiting voters to travel to mainland China, where they received hospitality, the report said.",
+      "link": "https://www.thehindu.com/news/international/taiwan-detains-communist-party-leader-over-alleged-chinese-sponsorship-in-election/article71680805.ece",
+      "date": "Sun, 08 Nov 2026 15:22:10 +0530",
+      "byline": "Claire Brennan",
+      "dateline": "TOKYO",
+      "image": "/img/news/fc3e790678da.png"
+    },
+    {
+      "section": "Europe",
+      "title": "At least 22 wounded when strong earthquake rocks central Japan",
+      "summary": "",
+      "description": "At least 22 people were wounded Sunday when a strong earthquake shook central Japan, shattering store windows, causing people to flee buildings, local media reported…",
+      "link": "https://www.dailysabah.com/world/asia-pacific/at-least-22-wounded-when-strong-earthquake-rocks-central-japan",
+      "date": "Sun, 08 Nov 2026 12:52:00 +0300",
+      "byline": "Claire Brennan",
+      "dateline": "TOKYO",
+      "image": "/img/news/cc1ce4f77a6a.png"
+    },
+    {
+      "section": "Europe",
+      "title": "The Ministry has released new information on the A3 accident: two dead, dozens injured...",
+      "summary": "",
+      "description": "Two people were killed and more injured in a serious traffic accident that occurred at approximately 7.25am this morning on the A3 motorway, near",
+      "link": "https://n1info.hr/crna-kronika/prevrnuo-se-autobus-na-autocesti-ima-mrtvih/",
+      "date": "Sun, 08 Nov 2026 10:51:58 +0100",
+      "byline": "Kenji Sato",
+      "dateline": "TOKYO",
+      "image": "/img/news/2533de7be06d.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Conflict with Saudi Arabia: Houthis attack skyscrapers in central Riyadh",
+      "summary": "",
+      "description": "The almost daily attacks by the Houthis have left a big scratch on Saudi Arabia's image as a safe place for business and tourism.",
+      "link": "https://www.handelsblatt.com/politik/international/konflikt-mit-saudi-arabien-huthi-greifen-wolkenkratzer-im-zentrum-von-riad-an/100268197.html",
+      "date": "Sun, 08 Nov 2026 09:51:47 GMT",
+      "byline": "Ada Morrow",
+      "dateline": "PARIS",
+      "image": "/img/news/dd739f484f45.png"
+    },
+    {
+      "section": "Europe",
+      "title": "It's time to wake up.",
+      "summary": "",
+      "description": "The former prime minister shared a video of a German professor warning of the dangers of economic downturn on Sunday.",
+      "link": "https://24.hu/fn/gazdasag/2026/11/08/orban-viktor-ideje-lenne-felebredni/",
+      "date": "Sun, 08 Nov 2026 09:51:07 +0000",
+      "byline": "Claire Brennan",
+      "dateline": "BERLIN",
+      "image": "/img/news/a16c0ccfac6c.png"
+    },
+    {
+      "section": "Asia",
+      "title": "[Speeding] In the meantime, \"Fundamental local judicial consolidation sympathy... federal",
+      "summary": "",
+      "description": "United News TV newsletter and newsletter: Katoc/line jebo23",
+      "link": "https://www.yonhapnewstv.co.kr/news/AKR20261108185042QfK",
+      "date": "Sun, 08 Nov 2026 18:50:44 +0900",
+      "byline": "Elena Voss",
+      "dateline": "TOKYO",
+      "image": "/img/news/57aee4e3183e.png"
+    },
+    {
+      "section": "Europe",
+      "title": "The Hungarian flagship van that accompanied the Tisza campaign to the museum",
+      "summary": "",
+      "description": "The Ford Transit, known as Ricsi, also flew to Ukraine during the campaign, when donations were being shipped to a bombed Kiev children's hospital.",
+      "link": "https://24.hu/belfold/2026/11/08/tisza-part-furgon-ricsi-kozlekedesi-muzeum/",
+      "date": "Sun, 08 Nov 2026 09:50:29 +0000",
+      "byline": "Ada Morrow",
+      "dateline": "PARIS",
+      "image": "/img/news/b7301312300e.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Russia: One man killed in a Ukrainian drone strike in the Russian region of Kursk",
+      "summary": "",
+      "description": "The news was announced by the local governor of The post Russia: A man was killed in a Ukrainian drone attack in the Russian region of Kursk appeared first on in.gr.",
+      "link": "https://www.in.gr/2026/11/08/world/rosia-enas-anthropos-skotothike-se-oukraniki-epithesi-drone-sti-rosiki-perifereia-koursk/",
+      "date": "Sun, 08 Nov 2026 11:50:27 +0200",
+      "byline": "Ada Morrow",
       "dateline": "NEW YORK",
-      "image": "/img/news/02dc4ffe8876.png"
+      "image": "/img/news/606f2ba0a62b.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "Amsterdam protesters break into Microsoft data center construction site: Report",
+      "summary": "",
+      "description": "Dutch police said they detained 150-200 people for trespassing during the protest.",
+      "link": "https://cointelegraph.com/news/amsterdam-data-center-protesters-break-into-construction-site-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "date": "Sun, 08 Nov 2026 09:48:48 +0000",
+      "byline": "Ada Morrow",
+      "dateline": "PARIS",
+      "image": "/img/news/4a7b30210243.png"
+    },
+    {
+      "section": "Europe",
+      "title": "He hit Dalic hard, he made a sneaky move, I didn't want to reach out.",
+      "summary": "",
+      "description": "Former goalkeeper of the Rijeka, Dragan Žilić, spoke about his experience with former Croatian national team manager Zlatko Dalić who was his coach in Rijeka.",
+      "link": "https://www.jutarnji.hr/sportske/nogomet/nogomet-mix/zetoko-udario-po-dalicu-napravio-je-podmukao-potez-nisam-mu-htio-pruziti-ruku-on-se-ne-moze-ni-pribliziti-ciri-15763542",
+      "date": "Sun, 08 Nov 2026 10:48:45 +0100",
+      "byline": "Elena Voss",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/e5f213faf958.png"
+    },
+    {
+      "section": "Europe",
+      "title": "More than 20 injured in earthquake in central Japan",
+      "summary": "",
+      "description": "At least 24 people were injured in an earthquake in central Japan, local media reported, and images show people building buildings from the run-up and the windows of",
+      "link": "https://nos.nl/l/2638538",
+      "date": "Sun, 8 Nov 2026 10:48:00 +0100",
+      "byline": "James Hale",
+      "dateline": "LONDON",
+      "image": "/img/news/e19c3f7b6cdc.png"
     },
     {
       "section": "Africa",
-      "title": "Naira Would Have Been Worthless Without Economic Reforms, Tinubu Tells Nigerians",
+      "title": "Firefighters contain blaze at scrap storage facility near Circle Railway",
       "summary": "",
-      "description": "Using the biblical account of Moses and the Israelites' departure from Egypt, he said Nigeria must continue moving forward, stating: \"Nigeria will never go back to the…",
-      "link": "https://www.channelstv.com/2026/11/07/naira-would-have-been-worthless-without-economic-reforms-tinubu-tells-nigerians/",
-      "date": "Sat, 07 Nov 2026 09:38:45 +0000",
-      "byline": "Ada Morrow",
-      "dateline": "NEW YORK",
-      "image": "/img/news/1a0786b99841.png"
+      "description": "Firefighters have extinguished a fire that broke out at Circle Railway in Accra, preventing it from spreading beyond the affected section of a two-storey building.",
+      "link": "https://www.myjoyonline.com/firefighters-contain-blaze-at-scrap-storage-facility-near-circle-railway/",
+      "date": "Sun, 08 Nov 2026 09:47:56 +0000",
+      "byline": "Amira Hassan",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/27494ec71780.png"
     },
     {
       "section": "Europe",
-      "title": "Former Middle East correspondent Thomas Loudon (56) has died",
+      "title": "Middle East live: Riyadh's financial district targeted following deadly Saudi strikes in…",
       "summary": "",
-      "description": "Journalist and former correspondent Thomas Loudon has died battling neuroendocrine tumors, a slow-growing form of cancer, last year he was diagnosed with...",
-      "link": "https://nos.nl/l/2638410",
-      "date": "Sat, 7 Nov 2026 10:38:35 +0100",
-      "byline": "Tomasz Kruk",
-      "dateline": "PARIS",
-      "image": "/img/news/375a92f3882a.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Putin has chosen his representatives to negotiate with Ukraine",
-      "summary": "",
-      "description": "Vladimir Putin has appointed Russian officials for the planned peace talks with Ukraine on November 10 and 11, to be held in Abu Dhabi, Interfax reported.",
-      "link": "https://www.rp.pl/dyplomacja/art45458671-rozmowy-pokojowe-w-abu-zabi-putin-wybral-swoich-przedstawicieli-do-negocjacji-z-ukraina",
-      "date": "Sat, 07 Nov 2026 10:38:09 +0100",
-      "byline": "Ada Morrow",
+      "description": "Riyadh’s Aramco Tower was damaged by falling debris on Sunday after the Saudi-led coalition fighting Yemen’s Houthi rebels intercepted two ballistic missiles headed for…",
+      "link": "https://www.france24.com/en/middle-east/20261108-middle-east-live-riyadh-financial-district-targeted-deadly-strikes-yemen-israel-eisenkot-netanyahu-coalition-government-elections",
+      "date": "Sun, 08 Nov 2026 09:47:36 GMT",
+      "byline": "Kenji Sato",
       "dateline": "LONDON",
-      "image": "/img/news/2804c3bd97bb.png"
+      "image": "/img/news/b5a883852cff.png"
+    },
+    {
+      "section": "Finance",
+      "title": "America is Zohranomics-curious",
+      "summary": "",
+      "description": "Americans think life is too expensive. Democrats finally figured out how to talk about it — and they sound a lot like NYC Mayor Zohran Mamdani.",
+      "link": "https://www.businessinsider.com/zohran-mamdani-affordability-message-2026-midterms-2026-11",
+      "date": "2026-11-08T09:47:01Z",
+      "byline": "Kenji Sato",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/8a1c2a09d849.png"
     },
     {
       "section": "Europe",
-      "title": "Berlin: Budget becomes the actual test for red-green-red",
+      "title": "More than half a million people were left without power in eastern regions of Ukraine,",
       "summary": "",
-      "description": "The President of the Berlin Court of Auditors called the budgetary situation in the capital \"dramatic\".",
-      "link": "https://www.handelsblatt.com/politik/deutschland/berlin-haushalt-wird-zur-eigentlichen-bewaehrungsprobe-fuer-rot-gruen-rot/100267825.html",
-      "date": "Sat, 07 Nov 2026 09:37:07 GMT",
+      "description": "During the night from Saturday to Sunday, the Ukrainian Air Force announced that Ukraine had disabled more than 130 Russian drones.",
+      "link": "https://www.portfolio.hu/global/20261108/tobb-mint-fel-millio-ember-maradt-aram-nelkul-ukrajna-keleti-regioiban-zaporoztak-az-orosz-dronok-az-ejszaka-hireink-az-orosz-ukran-haborurol-vasarnap-874956",
+      "date": "Sun, 08 Nov 2026 10:47:00 +0100",
+      "byline": "Tomasz Kruk",
+      "dateline": "TOKYO",
+      "image": "/img/news/47c129a25370.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Ukraine is losing its vital arms supplies: it can no longer provide the...",
+      "summary": "",
+      "description": "Germany has exhausted its own stockpile, so without compromising its own defense capabilities, it can no longer use Patriot air defense systems and interceptor",
+      "link": "https://www.portfolio.hu/global/20261108/kulcsfontossagu-fegyverszallitmanyoktol-esik-el-ukrajna-nem-kepes-tobbet-szolgaltatni-az-egyik-legnagyobb-szovetsegesuk-874968",
+      "date": "Sun, 08 Nov 2026 10:47:00 +0100",
+      "byline": "Tomasz Kruk",
+      "dateline": "LONDON",
+      "image": "/img/news/fa4383d32f5d.png"
+    },
+    {
+      "section": "Asia",
+      "title": "'Foolishness, misplaced over-smartness': Maryam removes Jhelum DC over exam postponement…",
+      "summary": "",
+      "description": "Punjab Chief Minister Maryam Nawaz removed the Jhelum deputy commissioner (DC) from his post on Sunday, after it emerged that computer science papers for intermediate…",
+      "link": "https://www.dawn.com/news/2043049/foolishness-misplaced-over-smartness-maryam-removes-jhelum-dc-over-exam-postponement-for-her-visit",
+      "date": "Sun, 08 Nov 2026 14:44:52 +0500",
+      "byline": "Claire Brennan",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/7166e3bda802.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Donald Trump wants UFC fighters as assistants",
+      "summary": "",
+      "description": "After a series of combative press briefings between the Trump administration and journalists, the US president surprised many by reportedly offering Dana White, the head…",
+      "link": "https://www.france24.com/en/donald-trump-wants-ufc-fighters-as-assistants",
+      "date": "Sun, 08 Nov 2026 09:44:28 GMT",
+      "byline": "James Hale",
+      "dateline": "NEW YORK",
+      "image": "/img/news/58902ed04bb2.png"
+    },
+    {
+      "section": "Africa",
+      "title": "President Mahama urges the church to mentor the youth and support job creation",
+      "summary": "",
+      "description": "President John Dramani Mahama has called on professionals, entrepreneurs and artisans in the Assemblies of God, Ghana, to mentor young people and support them to acquire…",
+      "link": "https://www.myjoyonline.com/president-mahama-urges-the-church-to-mentor-the-youth-and-support-job-creation/",
+      "date": "Sun, 08 Nov 2026 09:43:09 +0000",
+      "byline": "Kenji Sato",
+      "dateline": "LONDON",
+      "image": "/img/news/464e4db7e951.png"
+    },
+    {
+      "section": "Europe",
+      "title": "43rd Marathon: Nulla's victory at the Greek Women, thrill with her tears...",
+      "summary": "",
+      "description": "Noola Station was the first Greek woman to finish the 43rd Athens Marathon, completing the course of 42,195 metres in 2 hours, 35 minutes and 13...",
+      "link": "https://www.tanea.gr/2026/11/08/greece/43os-athentikos-marathonios-niki-gia-noula-stis-ellinides-sygkinisi-me-klamata-tis-deyteris-kokkorou-ston-termatismo/",
+      "date": "Sun, 08 Nov 2026 09:43:08 +0000",
+      "byline": "James Hale",
+      "dateline": "TOKYO",
+      "image": "/img/news/e409f0bc2d66.png"
+    },
+    {
+      "section": "Europe",
+      "title": "A mysterious hotel room, and no near fatal blow stopped Rocky on his way to victory.",
+      "summary": "",
+      "description": "The ambulance took the star to the hospital at night, and he was immediately admitted to ICU.",
+      "link": "https://index.hu/fomo/2026/11/08/rocky-forgatas-helyszini-beszamolo-buenos-aires-sylvester-stallone-las-vegas/",
+      "date": "Sun, 08 Nov 2026 10:43:00 +0100",
       "byline": "Claire Brennan",
       "dateline": "BERLIN",
-      "image": "/img/news/1884d577ccc8.png"
+      "image": "/img/news/7bf563574cab.png"
+    },
+    {
+      "section": "Europe",
+      "title": "There could be serious consequences of the Croatian oil spill, more urgent...",
+      "summary": "",
+      "description": "One section of the Janaf oil pipeline was injured, 500,000 litres of oil spilled.",
+      "link": "https://index.hu/kulfold/2026/11/08/janaf-koolajvezetek-szivargas-olajszennyezes-horvatorszag/",
+      "date": "Sun, 08 Nov 2026 10:43:00 +0100",
+      "byline": "Amira Hassan",
+      "dateline": "BERLIN",
+      "image": "/img/news/9b6169b4d6fc.png"
+    },
+    {
+      "section": "Europe",
+      "title": "VIDEO / Video released from the crash site of Serbian bus",
+      "summary": "",
+      "description": "Two people were killed and more injured in a serious traffic accident that occurred at about 7.25 this morning on the A3 motorway towards Zagreb, not",
+      "link": "https://n1info.hr/crna-kronika/objavljena-snimka-s-mjesta-nesrece-srpskog-autobusa/",
+      "date": "Sun, 08 Nov 2026 10:41:32 +0100",
+      "byline": "Tomasz Kruk",
+      "dateline": "BERLIN",
+      "image": "/img/news/4b9c18dcd714.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Tax evasion in Thessaloniki: The 12 dead ranchers and the trick with the...",
+      "summary": "",
+      "description": "Due to the large volume of documents and the particularly high number of defendants, the possibility of dividing the file into two separate...",
+      "link": "https://www.tanea.gr/2026/11/08/greece/kykloma-forodiafygis-sti-thessaloniki-oi-12-nekroi-axyranthropoi-kai-to-kolpo-me-ta-fesia-tamias-xrostouse-184-ekatommyria-eyro/",
+      "date": "Sun, 08 Nov 2026 09:41:19 +0000",
+      "byline": "Amira Hassan",
+      "dateline": "LONDON",
+      "image": "/img/news/bbb5c896bd80.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Viral daytime dancer in Cyprus: He put roasted on his head but lost his...",
+      "summary": "",
+      "description": "The Internet has made an unexpected TV show air in Cyprus in recent hours, with a traditional dancer putting his whole head...",
+      "link": "https://www.iefimerida.gr/zoi/kypros-horeytis-psistaria-sto-kefali?utm_source=rss",
+      "date": "Sun, 08 Nov 2026 11:40:01 +0200",
+      "byline": "Kenji Sato",
+      "dateline": "NEW YORK",
+      "image": "/img/news/11d3de2bdd69.png"
+    },
+    {
+      "section": "Europe",
+      "title": "The World in Pictures: Catching the Eye",
+      "summary": "",
+      "description": "They impress, they flare, they fascinate, they scare, they document the big moment, they show small miracles, or they tell a story.",
+      "link": "https://www.handelsblatt.com/die-welt-in-bildern-blickfang/8906950.html",
+      "date": "Sun, 08 Nov 2026 09:39:00 GMT",
+      "byline": "Ada Morrow",
+      "dateline": "LONDON",
+      "image": "/img/news/7c7f2a9350ac.png"
+    },
+    {
+      "section": "Europe",
+      "title": "\"A terrorist offender\" - Prosecutor's office moves after the tragedy in Krakow",
+      "summary": "",
+      "description": "The prosecutor's office plans to open an investigation into the Krakow attack on Sunday, classifying it as an act of terrorism.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-08/czyn-o-charakterze-terrorystycznym-ruch-prokuratury-po-tragedii-w-krakowie/",
+      "date": "Sun, 08 Nov 2026 10:36:00 +0100",
+      "byline": "Elena Voss",
+      "dateline": "BERLIN",
+      "image": "/img/news/517bac2e7883.png"
     },
     {
       "section": "Latin America",
-      "title": "USA: Democrats vow to investigate Donald Trump",
+      "title": "Logistics already accounts for 30% of the dairy industry's costs and is located by...",
       "summary": "",
-      "description": "In this new era of divided government, Democratic lawmakers say their priorities will be tackling the rising cost of living, investigating alleged corruption and…",
-      "link": "https://www.france24.com/en/usa-democrats-vow-to-investigate-donald-trump",
-      "date": "Sat, 07 Nov 2026 09:36:25 GMT",
+      "description": "According to a private study, 29 out of every 100 pesos of production costs correspond to this link, the second largest cost after milk purchase.",
+      "link": "https://www.clarin.com/rural/logistica-representa-30-costos-industria-lactea-ubican-encima-paises-region_0_Ucgm0T7R8L.html",
+      "date": "Sun, 08 Nov 2026 09:35:21 +0000",
+      "byline": "Elena Voss",
+      "dateline": "PARIS",
+      "image": "/img/news/16e947eb2def.png"
+    },
+    {
+      "section": "Europe",
+      "title": "ELCEN announces that it is adding an additional 1,860,000 litres of hot water per hour to",
+      "summary": "",
+      "description": "Bucharest Electricity Company (ELCEN) announced that it is introducing 1,860 tonnes of hot water per hour additional to the system to compensate for losses in the",
+      "link": "https://www.digi24.ro/stiri/actualitate/elcen-anunta-ca-introduce-suplimentar-1-860-000-litri-de-apa-fierbinte-pe-ora-in-retea-pentru-a-compensa-pierderile-termoenergetica-4026623",
+      "date": "Sun, 08 Nov 2026 11:34:56 +0200",
+      "byline": "Elena Voss",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/1c4620fe0455.png"
+    },
+    {
+      "section": "Europe",
+      "title": "<unk>No €7 billion in NATO military aid to Ukraine",
+      "summary": "",
+      "description": "A significant financial shortfall, of about 7 billion euros, is facing NATO in terms of military aid to Ukraine for 2026, putting under...",
+      "link": "https://www.iefimerida.gr/kosmos/keno-7-dis-sti-stratiotiki-boitheia-toy-nato-pros-oykrania?utm_source=rss",
+      "date": "Sun, 08 Nov 2026 11:34:23 +0200",
+      "byline": "Claire Brennan",
+      "dateline": "LONDON",
+      "image": "/img/news/f22137a389ad.png"
+    },
+    {
+      "section": "Latin America",
+      "title": "Frances Glessner Lee, the woman who turned crime scenes into miniatures into a...",
+      "summary": "",
+      "description": "She was the heiress to one of Chicago's biggest fortunes, but she never could fulfill her dream of studying at the university.",
+      "link": "https://www.clarin.com/internacional/frances-glessner-lee-mujer-convirtio-escenas-crimenes-miniatura-revolucion-medicina-forense_0_4ChdG9fLZD.html",
+      "date": "Sun, 08 Nov 2026 09:31:21 +0000",
+      "byline": "Amira Hassan",
+      "dateline": "LONDON",
+      "image": "/img/news/75e26ce1baf9.png"
+    },
+    {
+      "section": "Europe",
+      "title": "\"Service is everything for Cuba\". New information about a wounded police officer",
+      "summary": "",
+      "description": "\"Service is everything for Cuba, and it's the kind of people we need most\", said the president of the Volunteer Fire Brigade in Bielsko-Biała Władysław Szypała about the",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-08/nowe-informcje-o-rannym-policjancie/",
+      "date": "Sun, 08 Nov 2026 10:31:00 +0100",
+      "byline": "Elena Voss",
+      "dateline": "NEW YORK",
+      "image": "/img/news/ac0ae344e213.png"
+    },
+    {
+      "section": "Europe",
+      "title": "The case of Djadzów and Głuchowski: the Marshal's Office of Małopolska denies it.",
+      "summary": "",
+      "description": "The Russian Federation has received a comment from the Marshal's Office of the Małopolska Province on the board's resolutions we have released prohibiting Krzysztof",
+      "link": "https://www.rp.pl/teatr/art45460101-sprawa-dziadow-i-gluchowskiego-urzad-marszalkowski-malopolski-zaprzecza-sobie-kiedy-mowi-nieprawde",
+      "date": "Sun, 08 Nov 2026 10:30:06 +0100",
+      "byline": "Kenji Sato",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/cd9a094a72b3.png"
+    },
+    {
+      "section": "Europe",
+      "title": "They've been delayed in the fight against the fastest-spreading Ebola outbreak in Africa",
+      "summary": "",
+      "description": "The current pandemic has taken more victims than any previous one, and its containment is hampered by poor health care and lack of foreign aid.",
+      "link": "https://hvg.hu/360/20261108_hvg-ebolajarvany-kongoi-demokratikus-koztarsasag-nigeria-kenya",
+      "date": "Sun, 08 Nov 2026 09:30:00 Z",
+      "byline": "Tomasz Kruk",
+      "dateline": "BERLIN",
+      "image": "/img/news/623fdc39cba4.png"
+    },
+    {
+      "section": "United States",
+      "title": "Iran live updates: Saudis say Houthi missiles targeted Riyadh, Aramco tower damaged",
+      "summary": "",
+      "description": "President Donald Trump announced \"major combat operations\" against Iran on Feb. 28.",
+      "link": "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456",
+      "date": "Sun, 08 Nov 2026 04:27:40 -0500",
+      "byline": "Elena Voss",
+      "dateline": "LONDON",
+      "image": "/img/news/ece8383bec08.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Buildings damaged in Riyadh after Saudi Arabia reported intercepting two rockets...",
+      "summary": "",
+      "description": "The financial district of Riyadh was hit on Sunday and an Aramco building damaged after the Saudi-led coalition claimed it would be...",
+      "link": "https://www.digi24.ro/stiri/externe/mapamond/cladiri-afectate-in-riad-dupa-ce-arabia-saudita-a-transmis-ca-a-interceptat-doua-rachete-balistice-ale-rebelilor-4026619",
+      "date": "Sun, 08 Nov 2026 11:26:15 +0200",
+      "byline": "Claire Brennan",
+      "dateline": "TOKYO",
+      "image": "/img/news/0b554d1f82e8.png"
+    },
+    {
+      "section": "Europe",
+      "title": "The police officers survived the night, one is in critical condition.",
+      "summary": "",
+      "description": "The officers wounded in Saturday's shooting are still alive, but the state of one of them remains critical.",
+      "link": "https://oko.press/na-zywo/na-zywo-relacja/krakow-ranni-policjanci-przezyli-noc",
+      "date": "Sun, 08 Nov 2026 09:18:38 +0000",
+      "byline": "Ada Morrow",
+      "dateline": "LONDON",
+      "image": "/img/news/6e4eadab2213.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Parachutists are killed after a collision in California",
+      "summary": "",
+      "description": "In the United States, two parachutists were killed in a collision in the air, and during the flight, their parachutes intersected, and they both got on...",
+      "link": "https://nos.nl/l/2638537",
+      "date": "Sun, 8 Nov 2026 10:16:09 +0100",
+      "byline": "Amira Hassan",
+      "dateline": "BERLIN",
+      "image": "/img/news/868d12bd50ce.png"
+    },
+    {
+      "section": "Asia",
+      "title": "Riyadh financial district targeted, Aramco tower damaged",
+      "summary": "",
+      "description": "The targeting of the King Abdullah Financial District would mark a major escalation in Saudi Arabia's fight against the Houthis.",
+      "link": "https://www.channelnewsasia.com/world/saudi-arabia-houthis-riyadh-financial-district-aramco-tower-6534071",
+      "date": "Sun, 08 Nov 2026 17:14:00 +0800",
       "byline": "James Hale",
       "dateline": "WASHINGTON",
-      "image": "/img/news/fcaf757b1987.png"
-    },
-    {
-      "section": "Europe",
-      "title": "The newly arrived Poland",
-      "summary": "",
-      "description": "WARSZAWA: If it's been a long time since you've been here, you might get a little shock.",
-      "link": "https://www.aftenposten.no/verden/i/9pjnkM/polens-oekonomi-vokser-raskt-her-er-forklaringene?utm_medium=rss",
-      "date": "Sat, 07 Nov 2026 09:36:12 GMT",
-      "byline": "Amira Hassan",
-      "dateline": "PARIS",
-      "image": "/img/news/1533a8098695.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Estonia narrows nuclear plant search to three sites in Viru-Nigula",
-      "summary": "",
-      "description": "Estonia has narrowed the search for a nuclear power plant site from six locations to three, all in Viru-Nigula municipality, Lääne-Viru County.",
-      "link": "https://news.err.ee/1610189191/estonia-narrows-nuclear-plant-search-to-three-sites-in-viru-nigula",
-      "date": "Sat, 07 Nov 2026 11:36:00 +0200",
-      "byline": "Elena Voss",
-      "dateline": "BERLIN",
-      "image": "/img/news/51d642a41fd8.png"
-    },
-    {
-      "section": "Europe",
-      "title": "The Boll King from the East Mark takes over Skjennungstua",
-      "summary": "",
-      "description": "Roy Knutsen becomes new host at Oslo's oldest markahytte",
-      "link": "https://www.aftenposten.no/oslo/i/589qeE/roy-knutsen-blir-ny-vert-paa-skjennungstua-i-nordmarka?utm_medium=rss",
-      "date": "Sat, 07 Nov 2026 09:34:51 GMT",
-      "byline": "James Hale",
-      "dateline": "PARIS",
-      "image": "/img/news/4c1f66616194.png"
-    },
-    {
-      "section": "Europe",
-      "title": "The MAV is introducing new technology to prevent fatal accidents",
-      "summary": "",
-      "description": "According to Hegyi Zsolt, this step will bring the group closer to the 21st century.",
-      "link": "https://index.hu/belfold/2026/11/07/hegyi-zsolt-mav-dron-vasut-ipari-terulet-megelozes-baleset/",
-      "date": "Sat, 07 Nov 2026 10:34:00 +0100",
-      "byline": "Ada Morrow",
-      "dateline": "PARIS",
-      "image": "/img/news/119d99c7732d.png"
+      "image": "/img/news/d6a281921808.png"
     },
     {
       "section": "Africa",
-      "title": "Nearly 60% of road fatalities linked to speeding, inattentive driving – NRSA",
+      "title": "Culture in Chad: training and building a market for youth, the challenge of Mawndoé",
       "summary": "",
-      "description": "The Director of Regulations, Inspections and Compliance at the National Road Safety Authority (NRSA), Kwame Kodua Attuahene, says speeding and inattentive driving…",
-      "link": "https://www.myjoyonline.com/nearly-60-of-road-fatalities-linked-to-speeding-inattentive-driving-nrsa/",
-      "date": "Sat, 07 Nov 2026 09:33:51 +0000",
-      "byline": "James Hale",
+      "description": "In N'Djamena, the space <unk> In the name of art <unk> aims to awaken children to creation while laying the foundations for a sustainable cultural economy for artists...",
+      "link": "https://www.alwihdainfo.com/culture-au-tchad-former-la-jeunesse-et-batir-un-marche-le-defi-de-mawndoe-celestin/",
+      "date": "Sun, 08 Nov 2026 09:09:23 GMT",
+      "byline": "Ada Morrow",
       "dateline": "WASHINGTON",
-      "image": "/img/news/9be5742eda90.png"
+      "image": "/img/news/3c6d6ea99a46.png"
     },
     {
       "section": "Europe",
-      "title": "Local elections: Mandela's ANC suffers historic defeat in local elections",
+      "title": "There has never been such an attack in Poland before, but the police response was quick",
       "summary": "",
-      "description": "Nelson Mandela's once dominant party suffered a crushing defeat in the local elections in South Africa, with less than a third of the electorate giving the ANC...",
-      "link": "https://www.handelsblatt.com/politik/international/kommunalwahlen-mandelas-anc-erleidet-historische-niederlage-bei-kommunalwahlen/100268077.html",
-      "date": "Sat, 07 Nov 2026 09:33:28 GMT",
-      "byline": "James Hale",
+      "description": "It was an attack technically classified as an active shooter, and the weapon used by the perpetrator is most likely a clone of an AR-15 rifle.",
+      "link": "https://oko.press/w-polsce-takiego-ataku-dotad-nie-bylo-ale-reakcja-policji-byla-szybka-i-zgodna-z-procedura",
+      "date": "Sun, 08 Nov 2026 09:05:06 +0000",
+      "byline": "Ada Morrow",
+      "dateline": "BERLIN",
+      "image": "/img/news/5390183e50de.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Istanbul Marathon: The good, the bad and the plastic",
+      "summary": "",
+      "description": "A week ago, early on Sunday morning, I stood on the deck of a ferry crossing the Bosporus, shoulder to shoulder with hundreds of runners. Around me, I heard Turkish…",
+      "link": "https://www.dailysabah.com/opinion/columns/istanbul-marathon-the-good-the-bad-and-the-plastic",
+      "date": "Sun, 08 Nov 2026 12:02:00 +0300",
+      "byline": "Claire Brennan",
       "dateline": "PARIS",
-      "image": "/img/news/960e7e3ffc75.png"
+      "image": "/img/news/6bc8e325655c.png"
     },
     {
       "section": "Europe",
-      "title": "<unk>Temptation for Iran is to misunderstand Trump's weakness and to make its own page...",
+      "title": "Inside a criminal network",
       "summary": "",
-      "description": "It is still unclear what the Republican defeat in the midterm elections means for the Iran war, but it is clear that one of the biggest foreign policy losers is...",
-      "link": "https://www.welt.de/politik/ausland/plus6aedbb5147b5fce02f87a162/krise-in-nahost-versuchung-fuer-iran-ist-trumps-schwaeche-misszuverstehen-und-das-eigene-blatt-zu-ueberreizen.html",
-      "date": "Sat, 07 Nov 2026 09:33:14 GMT",
+      "description": "In secret chatter, criminals plan to deceive Norwegians.",
+      "link": "https://e24.no/i/aJ9QV7?utm_medium=rss",
+      "date": "Sun, 08 Nov 2026 08:57:11 GMT",
       "byline": "Amira Hassan",
-      "dateline": "TOKYO",
-      "image": "/img/news/2cc30e24cb82.png"
+      "dateline": "PARIS",
+      "image": "/img/news/a1a2117495c2.png"
     },
     {
       "section": "Europe",
-      "title": "Deputy Archbishop was also expelled from the Opera House",
+      "title": "The wounded officers survived the night, one awake, the other in a coma.",
       "summary": "",
-      "description": "The former CEO responded to the firing of Chef Florág by killing a new one-man driver, a zero-kilometer-long one-man operation, under the tree.",
-      "link": "https://hvg.hu/kultura/20261107_ujabb-kirugas-az-operahaz-elerol-fozo-virag-okovacs-szilveszter",
-      "date": "Sat, 07 Nov 2026 09:32:55 Z",
-      "byline": "Tomasz Kruk",
+      "description": "All the wounded in the shooting on Saturday at the Main Market in Krakow survived, the mayor of Krakow, Krzysztof Klęczar, said.",
+      "link": "https://www.rp.pl/przestepczosc/art45460071-ranni-policjanci-przezyli-noc-jeden-wybudzony-drugi-w-spiaczce-nowe-informacje-z-krakowa",
+      "date": "Sun, 08 Nov 2026 09:56:00 +0100",
+      "byline": "Elena Voss",
+      "dateline": "PARIS",
+      "image": "/img/news/e65b61de0f0f.png"
+    },
+    {
+      "section": "Africa",
+      "title": "Egypt reopens embassy in Libya as it seeks to rebuild energy ties with Tripoli",
+      "summary": "",
+      "description": "Egypt’s foreign minister Badr Abdelatty was in Tripoli on Saturday to reopen his country’s embassy. The mission has been closed since 2012, when chaos swept Libya…",
+      "link": "http://www.africanews.com/2026/11/08/egypt-reopens-embassy-in-libya-as-it-seeks-to-rebuild-energy-ties-with-tripoli/",
+      "date": "Sun, 08 Nov 2026 08:52:33 +0000",
+      "byline": "Claire Brennan",
+      "dateline": "LONDON",
+      "image": "/img/news/c5483d50f161.png"
+    },
+    {
+      "section": "Africa",
+      "title": "Central Africa: Minister of Education announces the expulsion of students involved in...",
+      "summary": "",
+      "description": "Fr: Sa: Students involved in the violence last week at the Martyrs' High School in Bangui will be expelled and will not be able to enroll in any other...",
+      "link": "https://www.radiondekeluka.org/108257-centrafrique-le-ministre-de-leducation-annonce-la-radiation-des-eleves-impliques-dans-les-violences-au-lycee-des-martyrs",
+      "date": "Sun, 08 Nov 2026 08:44:33 +0000",
+      "byline": "Kenji Sato",
       "dateline": "WASHINGTON",
-      "image": "/img/news/901c6a727035.png"
+      "image": "/img/news/5901968a1d5b.png"
+    },
+    {
+      "section": "Africa",
+      "title": "Central Africa: the government considers the BRDC an illegal platform and...",
+      "summary": "",
+      "description": "Fr: Sa: The Central African government does not agree to the march of the Republican Bloc for the Defence of the Constitution (BRDC), scheduled for November 13 at...",
+      "link": "https://www.radiondekeluka.org/108253-centrafrique-le-gouvernement-considere-le-brdc-comme-une-plateforme-illegale-et-illegitime-pour-organiser-une-marche",
+      "date": "Sun, 08 Nov 2026 08:40:10 +0000",
+      "byline": "Ada Morrow",
+      "dateline": "NEW YORK",
+      "image": "/img/news/f15973b6c51d.png"
+    },
+    {
+      "section": "Africa",
+      "title": "Southern African farmers prepare for powerful El Nino with agroecology",
+      "summary": "",
+      "description": "Farmer Dudzai Matsapa works under a scorching sun, digging small, shallow pits across his field in Nyanga, east of the Zimbabwean capital, Harare. He will later fill…",
+      "link": "https://www.rfi.fr/en/africa/20261108-southern-african-farmers-prepare-their-fields-for-a-powerful-el-nino",
+      "date": "Sun, 08 Nov 2026 08:40:00 GMT",
+      "byline": "Ada Morrow",
+      "dateline": "NEW YORK",
+      "image": "/img/news/47572e9565ca.png"
+    },
+    {
+      "section": "Asia",
+      "title": "Babar Azam says selection not in his hands as youthful Pakistan face Sri Lanka",
+      "summary": "",
+      "description": "Pakistan captain Babar Azam says team selection is the responsibility of the selectors and coach, adding that his role is to get the best out of the players available to…",
+      "link": "https://www.dawn.com/news/2043046/babar-azam-says-selection-not-in-his-hands-as-youthful-pakistan-face-sri-lanka",
+      "date": "Sun, 08 Nov 2026 13:37:31 +0500",
+      "byline": "Tomasz Kruk",
+      "dateline": "NEW YORK",
+      "image": "/img/news/491116c1b9f8.png"
     },
     {
       "section": "Europe",
-      "title": "More people with confused behaviour, pressure on aid and justice",
+      "title": "Tartu Peace Treaty talks table on display at Ministry of Foreign Affairs",
       "summary": "",
-      "description": "The number of people who are harassed by people with mixed behaviors is increasing every year, and if the police were to intervene more than 66,000 times in 2015, it was",
-      "link": "https://nos.nl/l/2638408",
-      "date": "Sat, 7 Nov 2026 10:31:32 +0100",
+      "description": "The historic negotiating table used during the Tartu Peace Treaty talks between Estonia and the Soviet Union (1919-1920) is now temporarily on display at the Ministry of…",
+      "link": "https://news.err.ee/1610189672/tartu-peace-treaty-talks-table-on-display-at-ministry-of-foreign-affairs",
+      "date": "Sun, 08 Nov 2026 10:13:00 +0200",
+      "byline": "Ada Morrow",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/733a336a6474.png"
+    },
+    {
+      "section": "Africa",
+      "title": "Baze University acquires two aircraft as founder expands aviation education",
+      "summary": "",
+      "description": "According to Baze University Vice-Chancellor Abiodun Adeniyi, the acquisition reflects an investment philosophy that links entrepreneurship with national development…",
+      "link": "https://www.premiumtimesng.com/business/business-news/923676-baze-university-acquires-two-aircraft-as-founder-expands-aviation-education.html",
+      "date": "Sun, 08 Nov 2026 08:00:07 +0000",
+      "byline": "Kenji Sato",
+      "dateline": "LONDON",
+      "image": "/img/news/ab2c135eb4b4.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Why are laundromats becoming more popular in Estonia?",
+      "summary": "",
+      "description": "In Estonia, it is generally not customary to wash one's dirty laundry in public, but suddenly a whole string of self-service laundromats has appeared in Tallinn…",
+      "link": "https://www.lrt.lt/en/news-in-english/19/3103196/why-are-laundromats-becoming-more-popular-in-estonia",
+      "date": "Sun, 08 Nov 2026 10:00:00 +0200",
+      "byline": "Claire Brennan",
+      "dateline": "LONDON",
+      "image": "/img/news/43effd4690c8.png"
+    },
+    {
+      "section": "Politics",
+      "title": "What we know so far after Krakow gun attack",
+      "summary": "",
+      "description": "Six people were killed in a random shooting in Krakow's main square, and three bodies were later found at the home of the attacker.",
+      "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 08 Nov 2026 07:52:33 GMT",
+      "byline": "Kenji Sato",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/77d7f44e50a6.png"
+    },
+    {
+      "section": "Africa",
+      "title": "Gift Orban overtakes Victor Osimhen in Turkish Super Lig Golden Boot race",
+      "summary": "",
+      "description": "The Nigerian forward continued his impressive goalscoring form despite his team's disappointing result, taking his tally to double figures with a second-half header at…",
+      "link": "https://www.premiumtimesng.com/sports/football/923668-gift-orban-overtakes-victor-osimhen-in-turkish-super-lig-golden-boot-race.html",
+      "date": "Sun, 08 Nov 2026 07:39:23 +0000",
+      "byline": "Tomasz Kruk",
+      "dateline": "PARIS",
+      "image": "/img/news/988999d6be03.png"
+    },
+    {
+      "section": "Africa",
+      "title": "Gambia's opposition leader Bensouda files for presidential election despite abuse…",
+      "summary": "",
+      "description": "Supporters of Gambia’s UNITE-led coalition celebrated on Friday as their party leader Talib Ahmed Bensouda filed his candidacy papers for next month’s presidential…",
+      "link": "http://www.africanews.com/2026/11/08/gambias-opposition-leader-bensouda-files-for-presidential-election-despite-abuse-allegatio/",
+      "date": "Sun, 08 Nov 2026 07:38:53 +0000",
+      "byline": "Amira Hassan",
+      "dateline": "LONDON",
+      "image": "/img/news/2940e128242a.png"
+    },
+    {
+      "section": "Africa",
+      "title": "Chad: Middle Eastern youth mobilize to save Ngarta Tombalbaye Palace",
+      "summary": "",
+      "description": "In Sarh, the Middle Chari Youth Network launched the paving of the Ngarta Tombalbaye Palace with a collection of over 5,000 bricks.",
+      "link": "https://www.alwihdainfo.com/tchad-la-jeunesse-du-moyen-chari-se-mobilise-pour-sauver-le-palais-ngarta-tombalbaye/",
+      "date": "Sun, 08 Nov 2026 07:13:05 GMT",
+      "byline": "Ada Morrow",
+      "dateline": "TOKYO",
+      "image": "/img/news/7f1665fa8bb3.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Demand for raw milk leading to supermarket shortages, farmers say",
+      "summary": "",
+      "description": "Farmers have said there are no milk shortages in Estonia – despite gaps on supermarket shelves – but competition for raw milk has intensified as companies look for ways…",
+      "link": "https://news.err.ee/1610189654/demand-for-raw-milk-leading-to-supermarket-shortages-farmers-say",
+      "date": "Sun, 08 Nov 2026 08:53:00 +0200",
+      "byline": "Kenji Sato",
+      "dateline": "TOKYO",
+      "image": "/img/news/a4c00e617e6d.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Salary overdue? Legal tools to recover unpaid wages in Lithuania",
+      "summary": "",
+      "description": "An employer who delays salary payments in Lithuania may face financial penalties, while employees have several legal options to recover their money, including claiming…",
+      "link": "https://www.lrt.lt/en/news-in-english/19/3102312/salary-overdue-legal-tools-to-recover-unpaid-wages-in-lithuania",
+      "date": "Sun, 08 Nov 2026 08:00:00 +0200",
+      "byline": "Elena Voss",
+      "dateline": "TOKYO",
+      "image": "/img/news/788d9dba35f2.png"
+    },
+    {
+      "section": "United States",
+      "title": "Draisaitl powers Oilers past Canucks",
+      "summary": "",
+      "description": "Leon Draisaitl had two goals and an assist and Connor McDavid added three assists as the Edmonton Oilers came away with a 4-2 victory over the struggling Vancouver…",
+      "link": "https://globalnews.ca/news/12141670/draisaitl-powers-oilers-past-canucks/",
+      "date": "Sun, 08 Nov 2026 05:58:18 +0000",
+      "byline": "Tomasz Kruk",
+      "dateline": "NEW YORK",
+      "image": "/img/news/526daccc0631.png"
+    },
+    {
+      "section": "VC Blogs",
+      "title": "Pronto’s Second Shift",
+      "summary": "",
+      "description": "Anjali Sardana and Pronto entered India’s domestic services market in 2025 to solve a familiar urban problem: finding reliable…",
+      "link": "https://inc42.com/features/prontos-second-shift/",
+      "date": "Sun, 08 Nov 2026 05:30:13 +0000",
+      "byline": "James Hale",
+      "dateline": "LONDON",
+      "image": "/img/news/724e891e566c.png"
+    },
+    {
+      "section": "Middle East",
+      "title": "Oman registers 722,170 voters for municipal elections",
+      "summary": "",
+      "description": "Muscat: The Ministry of Interior (MoI) announced the preliminary voter lists for the fourth-term Municipal Council elections, scheduled for 2026, with a total of 722,170…",
+      "link": "https://www.omanobserver.om/article/1199301/oman/oman-registers-722170-voters-for-municipal-elections",
+      "date": "Sun, 08 Nov 2026 09:28:44 +0400",
+      "byline": "Claire Brennan",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/7471a2591ba7.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Weather forecasts for 18 years: rain, storm and snow",
+      "summary": "",
+      "description": "The Directorate-General of Meteorology has declared that the country's cold and rainy weather has increased its impact, and that the \"yellow\" for 18 provinces, including",
+      "link": "https://www.hurriyet.com.tr/gundem/meteorolojiden-18-il-icin-sari-kodlu-uyari-saganak-firtina-ve-kar-geliyor-43370092",
+      "date": "Sun, 08 Nov 2026 05:26:00 Z",
+      "byline": "Ada Morrow",
+      "dateline": "PARIS",
+      "image": "/img/news/907f8e0d358f.png"
+    },
+    {
+      "section": "Middle East",
+      "title": "Oman crosses 300 mark in corneal transplants",
+      "summary": "",
+      "description": "Muscat: Oman has performed more than 300 corneal transplant operations as of the end of October 2026, following the reactivation of its corneal transplantation programme…",
+      "link": "https://www.omanobserver.om/article/1199300/oman/health/oman-crosses-300-mark-in-corneal-transplants",
+      "date": "Sun, 08 Nov 2026 09:10:21 +0400",
+      "byline": "Claire Brennan",
+      "dateline": "LONDON",
+      "image": "/img/news/55af82e42a23.png"
+    },
+    {
+      "section": "United States",
+      "title": "Three teens, adult charged with murder after woman finds her teenage son dead in…",
+      "summary": "",
+      "description": "Austin Payne's mother tracked his cellphone to an abandoned Albany, Georgia, residence after the 15-year-old called to say he had been shot.",
+      "link": "https://www.foxnews.com/us/three-teens-adult-charged-murder-after-woman-finds-her-teenage-son-dead-abandoned-home",
+      "date": "Sun, 08 Nov 2026 00:02:35 -0500",
+      "byline": "Tomasz Kruk",
+      "dateline": "PARIS",
+      "image": "/img/news/fdb3af127761.png"
+    },
+    {
+      "section": "Finance",
+      "title": "Crypto industry braces for reckoning over Trump ties",
+      "summary": "",
+      "description": "Democrats have vowed to start investigation into president’s family after sweeping victory in midterms",
+      "link": "https://www.ft.com/content/f1b98a61-4103-447c-bb9a-3dccc0819f61?syn-25a6b1a6=1",
+      "date": "Sun, 08 Nov 2026 05:00:19 GMT",
+      "byline": "Tomasz Kruk",
+      "dateline": "BERLIN",
+      "image": "/img/news/7ec5dbbd0b7e.png"
+    },
+    {
+      "section": "Finance",
+      "title": "‘Radical left’ get the headlines but centrists dominate new US Congress",
+      "summary": "",
+      "description": "Most of the Democrats who swept to power in the midterms blue wave are moderates",
+      "link": "https://www.ft.com/content/c8692ed7-f32b-487f-9efa-3ccd3d144f42?syn-25a6b1a6=1",
+      "date": "Sun, 08 Nov 2026 05:00:19 GMT",
+      "byline": "Claire Brennan",
+      "dateline": "BERLIN",
+      "image": "/img/news/58060ad09da8.png"
+    },
+    {
+      "section": "United States",
+      "title": "Fowler is in control, the Canadian chases his demons",
+      "summary": "",
+      "description": "Jacob Fowler has 26 catches for 189 yards and eight touchdowns this season.",
+      "link": "https://ici.radio-canada.ca/sports/2299171/jacob-fowler-canadien-montreal-maple-leafs-toronto",
+      "date": "Sun, 08 Nov 2026 04:51:40 GMT",
+      "byline": "Claire Brennan",
+      "dateline": "TOKYO",
+      "image": "/img/news/4c9292b982c2.png"
+    },
+    {
+      "section": "United States",
+      "title": "McKenna gets benched, scores in latest Leafs’ loss",
+      "summary": "",
+      "description": "Gavin McKenna had the puck on his stick, looking to make a play in the offensive zone with the Maple Leafs already in a hole.",
+      "link": "https://globalnews.ca/news/12141554/mckenna-gets-benched-scores-in-latest-leafs-loss/",
+      "date": "Sun, 08 Nov 2026 04:49:09 +0000",
+      "byline": "Elena Voss",
+      "dateline": "BERLIN",
+      "image": "/img/news/47fd0f94b2be.png"
+    },
+    {
+      "section": "Middle East",
+      "title": "Houthis say at least 33 killed in Saudi air strike",
+      "summary": "",
+      "description": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented.",
+      "link": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 08 Nov 2026 04:03:12 GMT",
+      "byline": "Ada Morrow",
+      "dateline": "TOKYO",
+      "image": "/img/news/d8be60ff5279.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Crowborough, once among most 'welcoming towns in Britain,' is scarred by year of…",
+      "summary": "",
+      "description": "The small English town of 22,000 was once praised for welcoming Ukrainian refugees, but has been the scene of far-right marches every Sunday for the past year. Activists…",
+      "link": "https://www.lemonde.fr/en/m-le-mag/article/2026/11/08/crowborough-once-among-most-welcoming-towns-in-britain-is-scarred-by-year-of-anti-migrant-protests_6774682_117.html",
+      "date": "Sun, 08 Nov 2026 05:00:13 +0100",
+      "byline": "Tomasz Kruk",
+      "dateline": "BERLIN",
+      "image": "/img/news/b55db0525645.png"
+    },
+    {
+      "section": "United States",
+      "title": "Sotomayor says she hopes Supreme Court will overturn presidential immunity decision",
+      "summary": "",
+      "description": "Supreme Court Justice Sonia Sotomayor said on Saturday that she hopes the court's decision granting former presidents broad criminal immunity will be overturned, saying…",
+      "link": "https://thehill.com/regulation/court-battles/6206392-sotomayor-hopes-immunity-overturned/",
+      "date": "Sun, 08 Nov 2026 03:49:29 +0000",
+      "byline": "Kenji Sato",
+      "dateline": "TOKYO",
+      "image": "/img/news/82744af5a56f.png"
+    },
+    {
+      "section": "United States",
+      "title": "Judith-Jasmin and Antoine-Desilets Awards The press is brilliant and wins ten awards for",
+      "summary": "",
+      "description": "Five journalists and four photographers took the colours of La Presse to heart on Saturday night when they were crowned by the Federation of Professional Journalists.",
+      "link": "https://www.lapresse.ca/actualites/2026-11-07/prix-judith-jasmin-et-antoine-desilets/la-presse-brille-et-remporte-dix-prix-pour-ses-reportages-et-ses-photos.php?utm_source=rss&utm_medium=fil&utm_campaign=actualites",
+      "date": "Sat, 07 Nov 2026 22:05:57 -0500",
+      "byline": "Ada Morrow",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/c1da5fccabaa.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Five lessons to be learned from Fatma Betul",
+      "summary": "",
+      "description": "If I try to make a hierarchical list of the seven deadly sins... I'll write the most important.",
+      "link": "https://www.hurriyet.com.tr/yazarlar/ahmet-hakan/fatma-betul-olayindan-cikarilacak-bes-ders-43370009",
+      "date": "Sun, 08 Nov 2026 03:04:35 Z",
+      "byline": "Elena Voss",
+      "dateline": "PARIS",
+      "image": "/img/news/96321dacb39d.png"
+    },
+    {
+      "section": "United States",
+      "title": "Two experienced skydivers die after midair collision entangles their parachutes",
+      "summary": "",
+      "description": "The two skydivers collided midair at about 150 feet during an organized skydive in Southern California, entangling their parachutes.",
+      "link": "https://www.foxnews.com/us/two-experienced-skydivers-die-midair-collision-entangles-parachutes",
+      "date": "Sat, 07 Nov 2026 21:13:43 -0500",
+      "byline": "Amira Hassan",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/f86f380555ca.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "Tornado Cash-Funded Wallet Builds $26 Million Bitcoin-Ether Trade",
+      "summary": "",
+      "description": "The wallet converted 3,100 ETH into roughly 6.92 million USDC before pairing a Bitcoin long with an Ether short on Hyperliquid.",
+      "link": "https://thedefiant.io/news/hacks/tornado-cash-funded-wallet-builds-26-million-bitcoin-ether-trade",
+      "date": "Sun, 08 Nov 2026 01:53:00 GMT",
+      "byline": "Elena Voss",
+      "dateline": "BERLIN",
+      "image": "/img/news/9832b47a7263.png"
+    },
+    {
+      "section": "United States",
+      "title": "US military fires at cargo ship in Gulf of Oman",
+      "summary": "",
+      "description": "A U.S. military aircraft fired at a commercial vessel in the Gulf of Oman on Saturday disabling the ship, in a latest move in the ongoing conflict with Iran. “CENTCOM…",
+      "link": "https://thehill.com/policy/defense/6206359-us-military-disables-oman-vessel/",
+      "date": "Sun, 08 Nov 2026 01:45:13 +0000",
+      "byline": "James Hale",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/5e3b0581d998.png"
+    },
+    {
+      "section": "United States",
+      "title": "An error in e-mail address leads to the expulsion of an asylum seeker",
+      "summary": "",
+      "description": "A resident of Quebec from Togo has never been summoned to the hearing on his asylum application because of an administrative error.",
+      "link": "https://www.tvanouvelles.ca/2026/11/07/une-erreur-dadresse-courriel-pourrait-mener-a-lexpulsion-dun-demandeur-dasile",
+      "date": "Sat, 07 Nov 2026 20:38:43 EST",
+      "byline": "Tomasz Kruk",
+      "dateline": "LONDON",
+      "image": "/img/news/cca80ea354d2.png"
+    },
+    {
+      "section": "United States",
+      "title": "Federal budget: few measures for the middle class, whose purchasing power has declined...",
+      "summary": "",
+      "description": "The middle class seems to have been left out of its last budget, says one expert, who fears the erosion of purchasing power.",
+      "link": "https://www.tvanouvelles.ca/2026/11/07/budget-federal-peu-de-mesures-pour-la-classe-moyenne-dont-le-pouvoir-dachat-a-recule-de-11-en-10-ans-selon-un-expert",
+      "date": "Sat, 07 Nov 2026 20:26:38 EST",
+      "byline": "Ada Morrow",
+      "dateline": "PARIS",
+      "image": "/img/news/adb4eb227dec.png"
+    },
+    {
+      "section": "United States",
+      "title": "L'Isle-aux-Quadrés is just back, the ferry must be taken out of service already.",
+      "summary": "",
+      "description": "The problem is not over for the people of L'Isle-aux-Coudres, and the NM Joseph-Savard ferry was forced to...",
+      "link": "https://www.lapresse.ca/actualites/regional/2026-11-07/l-isle-aux-coudres/a-peine-revenu-le-traversier-doit-deja-etre-retire-du-service.php?utm_source=rss&utm_medium=fil&utm_campaign=actualites",
+      "date": "Sat, 07 Nov 2026 20:19:22 -0500",
       "byline": "Amira Hassan",
       "dateline": "BERLIN",
-      "image": "/img/news/36fdd829adb6.png"
+      "image": "/img/news/505e98a6c86e.png"
     },
     {
-      "section": "Europe",
-      "title": "Jupiter, the full-scale operation of the Prosecutor's Office, more than 70 home searches",
+      "section": "Crypto",
+      "title": "Cosmos Batch Moves 2,266 Staked ATOM From Six Accounts",
       "summary": "",
-      "description": "More than 70 home searches and 17 operational operations are scheduled for Saturday as part of Operation Jupiter, prosecutors from the...",
-      "link": "https://www.digi24.ro/stiri/actualitate/jupiter-operatiunea-de-amploare-a-parchetului-peste-70-de-perchezitii-domiciliare-si-17-operatiuni-planificate-4025971",
-      "date": "Sat, 07 Nov 2026 11:31:27 +0200",
+      "description": "One delegator reported theft, while Web3Auth says some apparent wallet drains are protective recovery transfers.",
+      "link": "https://thedefiant.io/news/hacks/cosmos-batch-moves-2-266-staked-atom-from-six-accounts",
+      "date": "Sun, 08 Nov 2026 00:39:24 GMT",
+      "byline": "Amira Hassan",
+      "dateline": "LONDON",
+      "image": "/img/news/fac28f5f3c00.png"
+    },
+    {
+      "section": "United States",
+      "title": "UFC boss Dana White says he's meeting with Trump after press secretary job offer",
+      "summary": "",
+      "description": "U.S. President Donald Trump said Saturday that he has offered the job of White House press secretary to his friend and UFC boss Dana White, an announcement…",
+      "link": "https://www.cbc.ca/news/world/trump-press-secretary-ufc-dana-white-9.7413697?cmp=rss",
+      "date": "Sat, 07 Nov 2026 19:35:42 EST",
+      "byline": "Claire Brennan",
+      "dateline": "LONDON",
+      "image": "/img/news/1ec71c2b21f0.png"
+    },
+    {
+      "section": "United States",
+      "title": "Province-wide protests call for moratorium on AI data centre proposals in N.S.",
+      "summary": "",
+      "description": "HALIFAX - The chants of nearly 1,000 Nova Scotians drowned out the rain in downtown Halifax Saturday as residents took to the streets to protest a proposed artificial…",
+      "link": "https://www.thestar.com/news/canada/nova-scotia/province-wide-protests-call-for-moratorium-on-ai-data-centre-proposals-in-n-s/article_93587ac9-beab-5676-af73-2d46284ff821.html",
+      "date": "Sat, 07 Nov 2026 18:14:00 -0500",
+      "byline": "Tomasz Kruk",
+      "dateline": "LONDON",
+      "image": "/img/news/56fdf60e9a2c.png"
+    },
+    {
+      "section": "Latin America",
+      "title": "Wife of alias Fito kept operations and transfers with company linked to the...",
+      "summary": "",
+      "description": "The name of the company FishCorp is in two extracts from the proceedings that followed in a Manta court against Adolfo Macias' wife, alias <unk>Fito<unk>.",
+      "link": "https://eluniverso.com/politica/expedientes/esposa-de-alias-fito-mantuvo-operaciones-y-transferencias-con-empresa-vinculada-a-los-estrada-nota/",
+      "date": "Sat, 07 Nov 2026 23:02:00 +0000",
+      "byline": "Claire Brennan",
+      "dateline": "LONDON",
+      "image": "/img/news/d3fd134b1afa.png"
+    },
+    {
+      "section": "United States",
+      "title": "What is Diwali, the Festival of Lights, and how is it celebrated?",
+      "summary": "",
+      "description": "The festival follows the Hindu lunar calendar, typically falling in late October or early November. This year, Diwali falls on Nov. 8.",
+      "link": "https://www.pbs.org/newshour/world/what-is-diwali-the-festival-of-lights-and-how-is-it-celebrated",
+      "date": "Sat, 07 Nov 2026 18:01:43 -0500",
       "byline": "Ada Morrow",
       "dateline": "WASHINGTON",
-      "image": "/img/news/742b0882f5fd.png"
+      "image": "/img/news/0886c2a72195.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "Thailand is cutting off Bitget. Users have until December 5 to prepare",
+      "summary": "",
+      "description": "The regulator asks customers to consider action on holdings before the block, while Bitget promises guidance on service access. Read the full story on CryptoSlate…",
+      "link": "https://cryptoslate.com/thailand-is-cutting-off-bitget-users-have-until-december-5-to-prepare/",
+      "date": "Sat, 07 Nov 2026 22:00:03 +0000",
+      "byline": "Kenji Sato",
+      "dateline": "PARIS",
+      "image": "/img/news/388979a5b187.png"
     },
     {
       "section": "Europe",
-      "title": "Turkish government: Orbán's era was not dictatorship",
+      "title": "Lando Norris takes pole at Interlagos after chaotic qualifying session",
       "summary": "",
-      "description": "And this spring, there was no revolution, no change of regime, according to the political scientist.",
-      "link": "https://hvg.hu/itthon/20261107_torok-gabor-orban-korszak-demokracia-diktatura-rendszervaltas-forradalom",
-      "date": "Sat, 07 Nov 2026 09:31:07 Z",
+      "description": "Lando Norris takes pole at Interlagos after chaotic qualifying session",
+      "link": "https://www.telegraph.co.uk/formula-1/2026/11/07/f1-sao-paulo-gp-qualifying-live-latest-lap-updates-brazil/",
+      "date": "Sat, 07 Nov 2026 21:41:24 GMT",
+      "byline": "Amira Hassan",
+      "dateline": "PARIS",
+      "image": "/img/news/6fced97dec7a.png"
+    },
+    {
+      "section": "United States",
+      "title": "UFC’s Dana White says he will meet Trump on Monday to discuss press secretary offer",
+      "summary": "",
+      "description": "President Donald Trump said that he’d offered the job of White House press secretary to the CEO and president of the Ultimate Fighting Championship, Dana White.",
+      "link": "https://www.nbcnews.com/politics/white-house/trump-offers-press-secretary-job-ufc-ceo-dana-white-rcna608039",
+      "date": "Sat, 07 Nov 2026 21:39:10 GMT",
+      "byline": "Tomasz Kruk",
+      "dateline": "BERLIN",
+      "image": "/img/news/b8199219bf83.png"
+    },
+    {
+      "section": "Community",
+      "title": "CENTCOM launches new podcast amid the ongoing Iran war",
+      "summary": "",
+      "description": "The first episode of “Inside CENTCOM” avoided discussion of the ongoing conflict. The post CENTCOM launches new podcast amid the ongoing Iran war appeared first on Task…",
+      "link": "https://taskandpurpose.com/news/centcom-iran-war-podcast/",
+      "date": "Sat, 07 Nov 2026 16:38:52 -0500",
+      "byline": "Kenji Sato",
+      "dateline": "BERLIN",
+      "image": "/img/news/da9cd37ca554.png"
+    },
+    {
+      "section": "Asia",
+      "title": "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest…",
+      "summary": "",
+      "description": "The national mood is low, and faith in politics even lower - with voters deserting the major parties at the polls.",
+      "link": "https://www.bbc.co.uk/news/articles/cxr5yyg2nj9eo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 07 Nov 2026 21:36:16 GMT",
+      "byline": "James Hale",
+      "dateline": "NEW YORK",
+      "image": "/img/news/80a1d34aeda2.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "Texas Voted to Pause New Data Centers. Which Bitcoin Miners Are Already Past the Freeze?",
+      "summary": "",
+      "description": "Bitcoin miners that turned into AI landlords have been valued on how many megawatts of power they control and how much of it sits in Texas, where power has been easiest…",
+      "link": "https://unchainedcrypto.com/texas-voted-to-pause-new-data-centers-which-bitcoin-miners-are-already-past-the-freeze/",
+      "date": "Sat, 07 Nov 2026 21:25:44 +0000",
+      "byline": "Claire Brennan",
+      "dateline": "PARIS",
+      "image": "/img/news/9eec4d43adfc.png"
+    },
+    {
+      "section": "United States",
+      "title": "Sen. Chris Murphy's stroke at 53 highlights a trend: Strokes among younger adults have…",
+      "summary": "",
+      "description": "Researchers found that the stroke incidence rate among adults from 1993-94 nearly doubled in 2020, jumping from 33.90 cases per 100,000 people to 62.18 cases.",
+      "link": "https://www.pbs.org/newshour/health/sen-chris-murphys-stroke-at-53-highlights-a-trend-strokes-among-younger-adults-have-risen",
+      "date": "Sat, 07 Nov 2026 16:14:44 -0500",
       "byline": "Ada Morrow",
+      "dateline": "TOKYO",
+      "image": "/img/news/a5e94e560caa.png"
+    },
+    {
+      "section": "United States",
+      "title": "\"Congress will investigate\": Nvidia CEO Jensen Huang faces probe over alleged Chinese spy…",
+      "summary": "",
+      "description": "Nvidia CEO Jensen Huang is facing increasing congressional scrutiny after multiple reports Friday night suggested he had a romantic relationship with a purported Chinese…",
+      "link": "https://www.axios.com/2026/11/07/jensen-huang-nvidia-congress-china-spy",
+      "date": "Sat, 07 Nov 2026 21:06:38 +0000",
+      "byline": "Elena Voss",
+      "dateline": "BERLIN",
+      "image": "/img/news/86ab11fa43f2.png"
+    },
+    {
+      "section": "United States",
+      "title": "He's their man: Montrealers honour Leonard Cohen, ten years after his death",
+      "summary": "",
+      "description": "MONTREAL - Juan Merchan has made a ritual of coming to Leonard Cohen's grave in since he first arrived to Montreal in 2017.",
+      "link": "https://www.thestar.com/news/canada/montrealers-visit-leonard-cohen-s-grave-on-the-ten-year-anniversary-of-his-death/article_3b76b616-818c-561f-8313-034e99e19f54.html",
+      "date": "Sat, 07 Nov 2026 16:02:00 -0500",
+      "byline": "Elena Voss",
+      "dateline": "PARIS",
+      "image": "/img/news/e89ce3d7967b.png"
+    },
+    {
+      "section": "United States",
+      "title": "Netanyahu rival Eisenkot tapped to form Israeli government",
+      "summary": "",
+      "description": "Israeli President Isaac Herzog announced Saturday that he will task Gadi Eisenkot , leader of the opposition Yashar party, with forming a new government, dealing a major…",
+      "link": "https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog",
+      "date": "Sat, 07 Nov 2026 20:48:32 +0000",
+      "byline": "Ada Morrow",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/0f41debcd4ef.png"
+    },
+    {
+      "section": "Latin America",
+      "title": "'A violent fighter and warrior': Trump offers press secretary role to UFC chief Dana White",
+      "summary": "",
+      "description": "US President Donald Trump on Saturday said he was asking mixed martial arts promoter Dana White to be the new White House press secretary. Trump has repeatedly tried to…",
+      "link": "https://www.france24.com/en/americas/20261107-a-violent-fighter-and-warrior-trump-offers-press-secretary-role-to-ufc-chief-dana-white",
+      "date": "Sat, 07 Nov 2026 20:45:45 GMT",
+      "byline": "Tomasz Kruk",
       "dateline": "LONDON",
-      "image": "/img/news/a18251f27b39.png"
+      "image": "/img/news/4d8697582a8f.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "US sanctions hit 41 companies accused of keeping Prince Group’s scam network running",
+      "summary": "",
+      "description": "Treasury says the network concealed ownership and sustained Prince Group operations, while US rules require covered assets to be blocked. Read the full story on…",
+      "link": "https://cryptoslate.com/us-sanctions-hit-41-companies-accused-of-keeping-prince-groups-scam-network-running/",
+      "date": "Sat, 07 Nov 2026 20:30:48 +0000",
+      "byline": "Elena Voss",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/fe5e5a638958.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Man City look to be crumbling after guilty verdict",
+      "summary": "",
+      "description": "Man City look to be crumbling after guilty verdict",
+      "link": "https://www.telegraph.co.uk/football/2026/11/07/nottingham-forest-vs-man-city-live-score-premier-league/",
+      "date": "Sat, 07 Nov 2026 20:22:47 GMT",
+      "byline": "Tomasz Kruk",
+      "dateline": "NEW YORK",
+      "image": "/img/news/2bfc6f8d869d.png"
+    },
+    {
+      "section": "Finance",
+      "title": "Trump says he offered 'violent fighter' Dana White the role of press secretary: 'Dana…",
+      "summary": "",
+      "description": "President Donald Trump said Dana White would make a White House press secretary like \"none other.\"",
+      "link": "https://www.businessinsider.com/trump-dana-white-house-press-secretary-job-2026-11",
+      "date": "2026-11-07T20:13:49Z",
+      "byline": "Kenji Sato",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/81190cd4c253.png"
+    },
+    {
+      "section": "Latin America",
+      "title": "Paraguay's former president charged after bank collapse",
+      "summary": "",
+      "description": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money.",
+      "link": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 07 Nov 2026 19:17:22 GMT",
+      "byline": "James Hale",
+      "dateline": "PARIS",
+      "image": "/img/news/6b272837789f.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "Binance users in some European countries told to pull crypto before fees kick in, with…",
+      "summary": "",
+      "description": "Affected accounts are reportedly set to close on Dec. 31. Users in Spain, France, and Poland say they've received similar notices.",
+      "link": "https://www.coindesk.com/business/2026/11/07/binance-users-in-some-european-countries-told-to-pull-crypto-before-fees-kick-in-with-accounts-closing-by-year-end",
+      "date": "Sat, 07 Nov 2026 19:13:16 +0000",
+      "byline": "Elena Voss",
+      "dateline": "BERLIN",
+      "image": "/img/news/1fe69c040623.png"
+    },
+    {
+      "section": "Latin America",
+      "title": "The government calls for surveillance of neighbors who install phone signal amplifiers",
+      "summary": "",
+      "description": "An official from the Ministry of Communications demands community collaboration to detect banned equipment, while Etecsa's failures persist",
+      "link": "https://www.14ymedio.com/cuba/gobierno-pide-vigilar-vecinos-instalan-amplificadores_1_1132939.html",
+      "date": "Sat, 07 Nov 2026 19:07:17 +0000",
+      "byline": "Claire Brennan",
+      "dateline": "NEW YORK",
+      "image": "/img/news/9f8cc3dd49d7.png"
+    },
+    {
+      "section": "Latin America",
+      "title": "Wave of \"illegal\" deportations from Havana to the provinces",
+      "summary": "",
+      "description": "It is a violation of Article 13 of the Universal Declaration of Human Rights on the right of everyone to freely choose their residence\".",
+      "link": "https://www.14ymedio.com/cuba/ola-deportaciones-ilegales-habana-provincias_1_1132937.html",
+      "date": "Sat, 07 Nov 2026 18:46:04 +0000",
+      "byline": "James Hale",
+      "dateline": "BERLIN",
+      "image": "/img/news/664abd71d049.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "U.S. Treasury moves to cut off crypto exchange MEXC over $16 billion in alleged illicit…",
+      "summary": "",
+      "description": "Treasury billed the move as part of its campaign against Iran, but the order rests on MEXC's alleged role in Russian illicit finance.",
+      "link": "https://www.coindesk.com/business/2026/11/07/u-s-treasury-moves-to-cut-off-crypto-exchange-mexc-over-usd16-billion-in-alleged-illicit-flows",
+      "date": "Sat, 07 Nov 2026 17:36:46 +0000",
+      "byline": "Claire Brennan",
+      "dateline": "PARIS",
+      "image": "/img/news/9a13f374b9e3.png"
+    },
+    {
+      "section": "Community",
+      "title": "An A-10 named ‘Rainbow Warrior’ sports Marilyn Monroe door art in the Middle East",
+      "summary": "",
+      "description": "All the colors of the rainbow go “BRRRRT.” The post An A-10 named ‘Rainbow Warrior’ sports Marilyn Monroe door art in the Middle East appeared first on Task & Purpose .",
+      "link": "https://taskandpurpose.com/news/a10-warthog-rainbow-warrior-marilyn-monroe/",
+      "date": "Sat, 07 Nov 2026 12:35:45 -0500",
+      "byline": "Kenji Sato",
+      "dateline": "PARIS",
+      "image": "/img/news/54f4a321c09f.png"
+    },
+    {
+      "section": "Cloud",
+      "title": "How we review 4x more AI code without reading every line",
+      "summary": "",
+      "description": "Do you need to read every line of AI-generated code to trust it? Not necessarily. Instead, check five things: the The post How we review 4x more AI code without reading…",
+      "link": "https://thenewstack.io/scale-ai-code-reviews/",
+      "date": "Sat, 07 Nov 2026 17:30:00 +0000",
+      "byline": "James Hale",
+      "dateline": "LONDON",
+      "image": "/img/news/37436711bd71.png"
+    },
+    {
+      "section": "Finance",
+      "title": "IRS announces 2027 tax changes: What taxpayers need to know",
+      "summary": "",
+      "description": "The IRS released its 2027 tax brackets with a boost to the standard deduction and a $100 increase to the child tax credit for families.",
+      "link": "https://www.foxbusiness.com/economy/irs-announces-2027-tax-changes-what-taxpayers-need-know",
+      "date": "Sat, 07 Nov 2026 12:10:38 -0500",
+      "byline": "James Hale",
+      "dateline": "TOKYO",
+      "image": "/img/news/47c2d51001a5.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "Apple Completes the Set: Every Magnificent Seven Stock Opts Out of OKX-ICE Venue",
+      "summary": "",
+      "description": "Apple and Meta’s objections mean all seven of the biggest U.S. tech companies have now asked to keep their shares off the planned OKX-ICE venue.",
+      "link": "https://decrypt.co/382768/apple-meta-every-magnificent-seven-stock-opts-out-okx-ice-venue",
+      "date": "Sat, 07 Nov 2026 17:01:03 +0000",
+      "byline": "Amira Hassan",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/f835969b669a.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "Why Coinbase Wallet’s Solana Trading Jumped 12x Without Incentives",
+      "summary": "",
+      "description": "If you already pay for this, I especially want your answer. We’re deciding what Unchained does next; new shows, stream times, and what Premium should include. The survey…",
+      "link": "https://unchainedcrypto.com/why-coinbase-wallets-solana-trading-jumped-12x-without-incentives/",
+      "date": "Sat, 07 Nov 2026 17:00:55 +0000",
+      "byline": "Claire Brennan",
+      "dateline": "BERLIN",
+      "image": "/img/news/8bd3e878b04e.png"
+    },
+    {
+      "section": "Cloud",
+      "title": "In the software factory, engineers become process engineers",
+      "summary": "",
+      "description": "For most of software’s history, the scarce resource was people who could write code. Every process the industry built assumed The post In the software factory, engineers…",
+      "link": "https://thenewstack.io/engineers-become-process-engineers/",
+      "date": "Sat, 07 Nov 2026 16:30:00 +0000",
+      "byline": "Elena Voss",
+      "dateline": "LONDON",
+      "image": "/img/news/9372f7b34f61.png"
+    },
+    {
+      "section": "Middle East",
+      "title": "Tens of thousands of tents flooded after heavy rains in Gaza",
+      "summary": "",
+      "description": "Heavy rain has flooded temporary shelters used by Palestinians displaced during Israel's war with Hamas.",
+      "link": "https://www.bbc.co.uk/news/articles/cx240e5py64jo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 07 Nov 2026 16:25:55 GMT",
+      "byline": "Elena Voss",
+      "dateline": "LONDON",
+      "image": "/img/news/ad707e8b6982.png"
+    },
+    {
+      "section": "VC Blogs",
+      "title": "New-Age Tech Stocks Extend Rally, CarTrade Leads With 23.3% Gain",
+      "summary": "",
+      "description": "New-age tech stocks extended their rally this week, with 54 of the 69 companies under Inc42’s coverage posting gains ranging…",
+      "link": "https://inc42.com/buzz/new-age-tech-stocks-extend-rally-cartrade-leads-with-23-3-gain/",
+      "date": "Sat, 07 Nov 2026 16:01:36 +0000",
+      "byline": "Tomasz Kruk",
+      "dateline": "PARIS",
+      "image": "/img/news/4a123360befe.png"
+    },
+    {
+      "section": "Crypto",
+      "title": "AI Chip Stocks Bounce After Global Rout—But Is the Bubble Starting to Burst?",
+      "summary": "",
+      "description": "A Friday rebound offered relief after a historic selloff. The question now is whether politics and mounting debt could turn an AI correction into something much worse.",
+      "link": "https://decrypt.co/382770/ai-chip-stocks-bounce-global-rout-bubble-starting-burst",
+      "date": "Sat, 07 Nov 2026 16:01:02 +0000",
+      "byline": "Elena Voss",
+      "dateline": "BERLIN",
+      "image": "/img/news/9e056bb43a05.png"
+    },
+    {
+      "section": "Asia",
+      "title": "No clear winner after tight New Zealand general election",
+      "summary": "",
+      "description": "Weeks of coalition talks could follow after preliminary results pointed to a highly divided national parliament.",
+      "link": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 07 Nov 2026 15:56:28 GMT",
+      "byline": "Tomasz Kruk",
+      "dateline": "TOKYO",
+      "image": "/img/news/2097b7526d49.png"
+    },
+    {
+      "section": "United States",
+      "title": "Polish police say gunman kills 6 in 'act of terror'; 3 more dead found at suspect's home",
+      "summary": "",
+      "description": "Six people were killed and 16 wounded after a gunman opened fire Saturday afternoon in a busy market square in Krakow, authorities said, in what Poland's defence…",
+      "link": "https://www.cbc.ca/news/world/krakow-poland-shooting-9.7413582?cmp=rss",
+      "date": "Sat, 07 Nov 2026 10:52:29 EST",
+      "byline": "Elena Voss",
+      "dateline": "NEW YORK",
+      "image": "/img/news/57e4545d671d.png"
+    },
+    {
+      "section": "Community",
+      "title": "European troops set to train in Poland for postwar Ukraine deployment",
+      "summary": "",
+      "description": "Britain and France will lead 2,800 troops from 11 nations in a two-week exercise testing how to move, protect and supply a force to rebuild Ukraine’s military after the…",
+      "link": "https://www.defensenews.com/news/2026/11/07/european-troops-set-to-train-in-poland-for-postwar-ukraine-deployment/",
+      "date": "Sat, 07 Nov 2026 15:05:44 +0000",
+      "byline": "Kenji Sato",
+      "dateline": "TOKYO",
+      "image": "/img/news/dbe07dc955ef.png"
+    },
+    {
+      "section": "Science",
+      "title": "This Week’s Awesome Tech Stories From Around the Web (Through November 7)",
+      "summary": "",
+      "description": "Every week, we scour the web for important, insightful, and fascinating stories in science and technology. The post This Week’s Awesome Tech Stories From Around the Web…",
+      "link": "https://singularityhub.com/2026/11/07/this-weeks-awesome-tech-stories-from-around-the-web-through-november-7-2/",
+      "date": "Sat, 07 Nov 2026 15:00:00 +0000",
+      "byline": "Tomasz Kruk",
+      "dateline": "LONDON",
+      "image": "/img/news/d96ef6a5ece3.png"
+    },
+    {
+      "section": "Africa",
+      "title": "Nigeria's plan for state police raises hopes for security and fears of abuse",
+      "summary": "",
+      "description": "Nigeria this week took a step closer to a major overhaul of its security system after 28 of its 36 states approved a constitutional reform that would allow individual…",
+      "link": "https://www.rfi.fr/en/africa/20261107-nigeria-plan-for-state-police-raises-hopes-for-security-and-fears-of-abuse",
+      "date": "Sat, 07 Nov 2026 13:57:13 GMT",
+      "byline": "Elena Voss",
+      "dateline": "PARIS",
+      "image": "/img/news/e741697915fe.png"
+    },
+    {
+      "section": "Africa",
+      "title": "Kenyan cult leader sentenced to 200 years in prison",
+      "summary": "",
+      "description": "Kenyan cult leader Paul Mackenzie has been sentenced to 200 years in prison for the deaths of 190 children who were starved to death on his orders in Shakahola Forest…",
+      "link": "https://www.france24.com/en/kenyan-cult-leader-sentenced-to-200-years-in-prison-1",
+      "date": "Sat, 07 Nov 2026 12:10:34 GMT",
+      "byline": "Claire Brennan",
+      "dateline": "NEW YORK",
+      "image": "/img/news/9334c12df4cb.png"
+    },
+    {
+      "section": "Government",
+      "title": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
+      "summary": "",
+      "description": "In Gaza, 10-year-old Anas is one of three siblings born without legs and with only two fingers on each of their hands. They struggle to move around and perform daily…",
+      "link": "https://news.un.org/feed/view/en/story/2026/11/1168759",
+      "date": "Sat, 07 Nov 2026 12:00:00 +0000",
+      "byline": "Kenji Sato",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/ed99608666a5.png"
+    },
+    {
+      "section": "Tech",
+      "title": "Best Wi-Fi Routers (2026): My Honest Picks After Testing 50+",
+      "summary": "",
+      "description": "Don’t suffer the buffer. These WIRED-tested home routers will deliver reliable internet across your home, whatever your needs or budget.",
+      "link": "https://www.wired.com/gallery/best-wifi-routers/",
+      "date": "Sat, 07 Nov 2026 12:00:00 +0000",
+      "byline": "Tomasz Kruk",
+      "dateline": "PARIS",
+      "image": "/img/news/a278f8cd6c34.png"
+    },
+    {
+      "section": "Nature",
+      "title": "These divers are killing a beautiful coral to save Brazil’s marine life",
+      "summary": "",
+      "description": "RIO DE JANEIRO — Beneath the surface of Brazil’s coastal waters, a silent invasion is transforming marine ecosystems. Sun coral (Tubastraea coccinea and Tubastraea…",
+      "link": "https://news.mongabay.com/video/2026/11/these-divers-are-killing-a-beautiful-coral-to-save-brazils-marine-life/",
+      "date": "07 Nov 2026 11:19:00 +0000",
+      "byline": "Ada Morrow",
+      "dateline": "BERLIN",
+      "image": "/img/news/3368c723c01a.png"
+    },
+    {
+      "section": "Nature",
+      "title": "This riverside border town is fueling an illegal gold rush",
+      "summary": "",
+      "description": "Mongabay’s reporter Max Radwin went to Suriname’s Amazon to investigate the advance of illegal gold mining on Indigenous territories. Despite a government pledge to…",
+      "link": "https://news.mongabay.com/short-article/2026/11/this-riverside-border-town-is-fueling-an-illegal-gold-rush/",
+      "date": "07 Nov 2026 11:08:19 +0000",
+      "byline": "James Hale",
+      "dateline": "TOKYO",
+      "image": "/img/news/956c838216d2.png"
+    },
+    {
+      "section": "Europe",
+      "title": "Stephen Miller, reactionary ideologue and white supremacist, promoted head of Trump…",
+      "summary": "",
+      "description": "Trump's loyal adviser, known for fueling conspiracy theories, will replace Susie Wiles. The appointment appears to be a desperate move following the Republicans' defeat…",
+      "link": "https://www.lemonde.fr/en/international/article/2026/11/07/stephen-miller-reactionary-ideologue-and-white-supremacist-promoted-head-of-trump-administration_6774220_4.html",
+      "date": "Sat, 07 Nov 2026 11:28:08 +0100",
+      "byline": "Amira Hassan",
+      "dateline": "WASHINGTON",
+      "image": "/img/news/e59f3c5ab139.png"
     },
     {
       "section": "Europe",
@@ -276,72 +1398,6 @@
     },
     {
       "section": "Europe",
-      "title": "In Greece, the new Toyota C-HR GR Sport - What are the prices",
-      "summary": "",
-      "description": "A new, stylish renewal of the more powerful version of the C-HR enhances the sporty character of Toyota's best-selling model.",
-      "link": "https://www.iefimerida.gr/aytokinito/stin-ellada-neo-toyota-c-hr-gr-sport?utm_source=rss",
-      "date": "Sat, 07 Nov 2026 11:29:11 +0200",
-      "byline": "Tomasz Kruk",
-      "dateline": "PARIS",
-      "image": "/img/news/3f5d77aac5ed.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Nadal is investing in luxury tourism",
-      "summary": "",
-      "description": "New sports centre in the Caribbean in 2027, in partnership with St. Regis. The business network of the Spanish tennis legend extends to four continents, with...",
-      "link": "https://www.in.gr/2026/11/07/sports/othersports/o-nadal-ependyei-ston-tourismo-polyteleias/",
-      "date": "Sat, 07 Nov 2026 11:26:37 +0200",
-      "byline": "Kenji Sato",
-      "dateline": "PARIS",
-      "image": "/img/news/12a924d8212e.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Cyprus: Viral dancer with glasses and roasting on his head",
-      "summary": "",
-      "description": "He dances with 511 glasses on his head and he's doing great, since he's also a Guinness World Record holder-- this time he ended it with a toast!",
-      "link": "https://www.tanea.gr/2026/11/07/world/kypros-viral-o-xoreytis-me-ta-potiria-kai-tin-psistaria-sto-kefali-to-peirama-me-tin-foukou-den-pige-poly-kala/",
-      "date": "Sat, 07 Nov 2026 09:24:20 +0000",
-      "byline": "Claire Brennan",
-      "dateline": "TOKYO",
-      "image": "/img/news/cf1231cab944.png"
-    },
-    {
-      "section": "Europe",
-      "title": "The Croatian Janaf oil pipeline was damaged, oil was released into the environment",
-      "summary": "",
-      "description": "A section of the Janaf pipeline in Croatia between Szesek and Slavonski Brod was damaged, causing oil to leak from the pipeline.",
-      "link": "https://www.portfolio.hu/befektetes/20261107/megserult-a-horvat-janaf-koolajvezetek-olaj-kerult-a-kornyezetbe-874866",
-      "date": "Sat, 07 Nov 2026 10:23:00 +0100",
-      "byline": "Amira Hassan",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/00222dafbc5e.png"
-    },
-    {
-      "section": "Europe",
-      "title": "US arenas said no to the Free Palestine tour",
-      "summary": "",
-      "description": "There will be no US tour of rapper Macklemore in support of Palestine, due to a number of arenas rejecting him due to...",
-      "link": "https://www.nrk.no/nyheter/macklemore_-usa-arenaer-sa-nei-til-fri-palestina-turne-1.18076286",
-      "date": "Sat, 07 Nov 2026 09:22:39 GMT",
-      "byline": "Amira Hassan",
-      "dateline": "PARIS",
-      "image": "/img/news/0099269512b4.png"
-    },
-    {
-      "section": "Europe",
-      "title": "It's a nonsense what they're doing at Dynam.",
-      "summary": "",
-      "description": "Ante Čačić has been in charge of the club for more than three years and has been without a coaching job ever since.",
-      "link": "https://www.jutarnji.hr/sportske/nogomet/cacic-nonsens-je-to-sto-rade-u-dinamu-leko-je-zasluzio-podrsku-a-ne-omalovazavanje-15763284",
-      "date": "Sat, 07 Nov 2026 10:21:55 +0100",
-      "byline": "Claire Brennan",
-      "dateline": "PARIS",
-      "image": "/img/news/9e840e9fc99f.png"
-    },
-    {
-      "section": "Europe",
       "title": "News in simple Latvian: 6th October, 2026",
       "summary": "",
       "description": "Every evening at 21:00, Latvian Radio 1 broadcasts a five-minute summary of the day's news stories in a simplified language format called Ziņas vieglajā valodā ('News in…",
@@ -350,149 +1406,6 @@
       "byline": "Claire Brennan",
       "dateline": "TOKYO",
       "image": "/img/news/bd1dd3327f50.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Marius Budăi makes the PSD ministers' balance sheet:",
-      "summary": "",
-      "description": "PSD MP Marius Budăi, former Labour Minister, says that Social Democratic ministers have shown, in the last week, that it can be governed with concrete results...",
-      "link": "https://www.digi24.ro/stiri/actualitate/politica/marius-budai-face-bilantul-ministrilor-psd-aceasta-este-schimbarea-de-directie-pe-care-am-promis-o-4025973",
-      "date": "Sat, 07 Nov 2026 11:20:39 +0200",
-      "byline": "James Hale",
-      "dateline": "BERLIN",
-      "image": "/img/news/4fdb248fac2e.png"
-    },
-    {
-      "section": "Europe",
-      "title": "He also had a driver, utility vehicle and a luxury hotel with a former HUN-REN",
-      "summary": "",
-      "description": "These benefits were accompanied by a multi-million-dollar annual salary.",
-      "link": "https://index.hu/belfold/2026/11/07/gulyas-balazs-hun-ren-fizetes/",
-      "date": "Sat, 07 Nov 2026 10:20:00 +0100",
-      "byline": "Kenji Sato",
-      "dateline": "BERLIN",
-      "image": "/img/news/65e0f99665d3.png"
-    },
-    {
-      "section": "Asia",
-      "title": "LPG availability, fair pricing among govt priorities, says petroleum minister",
-      "summary": "",
-      "description": "Petroleum Minister Ali Pervaiz Malik said on Saturday that addressing public concerns over the availability and unfair pricing of liquefied petroleum gas (LPG) was a…",
-      "link": "https://www.dawn.com/news/2042814/lpg-availability-fair-pricing-among-govt-priorities-says-petroleum-minister",
-      "date": "Sat, 07 Nov 2026 14:19:35 +0500",
-      "byline": "Amira Hassan",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/5ed333259b07.png"
-    },
-    {
-      "section": "Europe",
-      "title": "As soon as Bregovic heard that song of the Machine he decided with the White button to",
-      "summary": "",
-      "description": "Miško Kovač was the most charismatic singer in our area, and he was able to match the natives with his record strips without any problems, while building...",
-      "link": "https://www.jutarnji.hr/scena/domace-zvijezde/cim-je-bregovic-cuo-tu-misinu-pjesmu-odlucio-se-s-bijelim-dugmetom-povuci-s-natjecanja-15763283",
-      "date": "Sat, 07 Nov 2026 10:19:00 +0100",
-      "byline": "Amira Hassan",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/a357f2b2708d.png"
-    },
-    {
-      "section": "Africa",
-      "title": "Power minister explains recent nationwide outages",
-      "summary": "",
-      "description": "The unreliable electricity supply has placed additional pressure on businesses and households, particularly as petrol prices remain high. The post Power minister…",
-      "link": "https://www.premiumtimesng.com/news/top-news/923390-power-minister-explains-recent-nationwide-outages.html",
-      "date": "Sat, 07 Nov 2026 09:16:16 +0000",
-      "byline": "Elena Voss",
-      "dateline": "BERLIN",
-      "image": "/img/news/a37bd85fe701.png"
-    },
-    {
-      "section": "Europe",
-      "title": "The knife piece on the closed section took 20 minutes before the police were alerted.",
-      "summary": "",
-      "description": "A person died after being stabbed at Drammen Hospital on Friday, and it took 20 minutes for police to be notified, the South-East Police District said in a press release.",
-      "link": "https://www.nrk.no/nyheter/knivstukket-pa-lukket-avdeling-_-tok-20-minutter-for-politiet-ble-varslet-1.18076285",
-      "date": "Sat, 07 Nov 2026 09:15:45 GMT",
-      "byline": "Kenji Sato",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/46784e5d5f4b.png"
-    },
-    {
-      "section": "Latin America",
-      "title": "Actress Jennifer Aniston, 57, bought a $21 million mansion where...",
-      "summary": "",
-      "description": "The Friends actress owns a property in one of the most exclusive neighborhoods in Los Angeles, with spacious gardens, large windows and spaces designed for...",
-      "link": "https://www.clarin.com/estados-unidos/actriz-jennifer-aniston-57-anos-compro-lujosa-mansion-us21-millones-vive-perros-california_0_zRqo3rdTVp.html",
-      "date": "Sat, 07 Nov 2026 09:15:08 +0000",
-      "byline": "Kenji Sato",
-      "dateline": "PARIS",
-      "image": "/img/news/66b3e52bce56.png"
-    },
-    {
-      "section": "Latin America",
-      "title": "<unk>Aboles<unk>: Martin Reyna inviting you to contemplate nature at the Larreta Museum",
-      "summary": "",
-      "description": "More than 100 works, including drawings, paintings, travel books and installations, are part of the exhibition of the Argentine artist.",
-      "link": "https://www.clarin.com/cultura/arboles-martin-reyna-invita-contemplar-naturaleza-museo-larreta_0_IJdjewzj2C.html",
-      "date": "Sat, 07 Nov 2026 09:11:08 +0000",
-      "byline": "James Hale",
-      "dateline": "LONDON",
-      "image": "/img/news/67fb53659d3f.png"
-    },
-    {
-      "section": "Europe",
-      "title": "The deadline for redemption is near. Billions are still being spent on the Hungarians.",
-      "summary": "",
-      "description": "Less than a year from now, August 31, 2027, the deadline for redeeming the 1998 1000 forint notes is approaching.",
-      "link": "https://24.hu/fn/gazdasag/2026/11/07/1998-as-ezer-forintos-visszavaltasi-hatarido-kozeleg/",
-      "date": "Sat, 07 Nov 2026 09:11:03 +0000",
-      "byline": "Ada Morrow",
-      "dateline": "BERLIN",
-      "image": "/img/news/a45080c62fda.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "Suspicious prediction market activity seen before election poll release: NYT",
-      "summary": "",
-      "description": "Bets were placed shortly before two recent New York Times/Siena political polls were released to the public, according to a report.",
-      "link": "https://cointelegraph.com/news/suspicious-prediction-market-activity-seen-before-election-poll-release-nyt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "date": "Sat, 07 Nov 2026 09:10:35 +0000",
-      "byline": "Claire Brennan",
-      "dateline": "TOKYO",
-      "image": "/img/news/44ad7fb68a0e.png"
-    },
-    {
-      "section": "Asia",
-      "title": "'Not supported by tests': Petroleum ministry rejects over 20% ethanol blending in…",
-      "summary": "",
-      "description": "The Centre has clarified that all ethanol blending in Karnataka's petrol meets E20 specifications set by authorities. The Ministry of Petroleum and Natural Gas confirmed…",
-      "link": "https://timesofindia.indiatimes.com/india/not-supported-by-tests-petroleum-ministry-rejects-over-20-ethanol-blending-in-karnataka/articleshow/135631902.cms",
-      "date": "2026-11-07T14:37:48+05:30",
-      "byline": "Ada Morrow",
-      "dateline": "PARIS",
-      "image": "/img/news/fcec2328f6fe.png"
-    },
-    {
-      "section": "Africa",
-      "title": "Japan vs Nigeria Preview: Flamingos chase historic U-17 Women’s World Cup glory in Morocco",
-      "summary": "",
-      "description": "It is a fascinating contest between a nation chasing its maiden crown and a former champion seeking to add another trophy to its collection. But for Nigeria and the…",
-      "link": "https://www.premiumtimesng.com/news/headlines/923379-japan-vs-nigeria-preview-flamingos-chase-historic-u-17-womens-world-cup-glory-in-morocco.html",
-      "date": "Sat, 07 Nov 2026 09:06:55 +0000",
-      "byline": "Kenji Sato",
-      "dateline": "TOKYO",
-      "image": "/img/news/b1a7713f1d99.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Cold to the bone: temperatures have dropped to another record high, the coldest in the",
-      "summary": "",
-      "description": "Most of the country froze at dawn on Saturday, with only a few areas remaining above zero degrees, the coldest again at Zabaron, where it deepened...",
-      "link": "https://www.portfolio.hu/gazdasag/20261107/csontig-hatolo-hideg-ujabb-rekordszintre-zuhant-a-homerseklet-az-orszag-leghidegebb-telepulesen-874864",
-      "date": "Sat, 07 Nov 2026 10:04:00 +0100",
-      "byline": "Claire Brennan",
-      "dateline": "LONDON",
-      "image": "/img/news/d694be35a6d3.png"
     },
     {
       "section": "Community",
@@ -506,182 +1419,6 @@
       "image": "/img/news/f1d2e10302f6.png"
     },
     {
-      "section": "United States",
-      "title": "Photographer's new book tells the stories behind Canada's war graves and monuments",
-      "summary": "",
-      "description": "HALIFAX - Nova Scotia author and photographer Len Wagg was on his day off 30 years ago when he discovered how powerful and poignant a war cemetery could be.",
-      "link": "https://www.thestar.com/news/canada/nova-scotia/photographer-s-new-book-tells-the-stories-behind-canada-s-war-graves-and-monuments/article_59fe6080-f9fc-51b3-a8d8-f42b54240652.html",
-      "date": "Sat, 07 Nov 2026 04:00:08 -0500",
-      "byline": "Kenji Sato",
-      "dateline": "PARIS",
-      "image": "/img/news/eee40a6f88a1.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Supreme Court partially overturns conviction linked to anti-Soviet resistance",
-      "summary": "",
-      "description": "The Estonian Supreme Court on Friday partially rehabilitated a man convicted by the Supreme Court of the Estonian SSR in 1979 for attempting to flee the Soviet Union by…",
-      "link": "https://news.err.ee/1610188630/supreme-court-partially-overturns-conviction-linked-to-anti-soviet-resistance",
-      "date": "Sat, 07 Nov 2026 10:57:00 +0200",
-      "byline": "Elena Voss",
-      "dateline": "NEW YORK",
-      "image": "/img/news/41a74a8897b4.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Kenya sentences cult leader to 200 years over Shakahola massacre",
-      "summary": "",
-      "description": "A Kenyan court on Friday sentenced cult leader Paul Mackenzie to 200 years in prison for the starvation deaths and murders of 190 children who were killed on his orders…",
-      "link": "https://www.dailysabah.com/world/africa/kenya-sentences-cult-leader-to-200-years-over-shakahola-massacre",
-      "date": "Sat, 07 Nov 2026 11:52:00 +0300",
-      "byline": "Claire Brennan",
-      "dateline": "TOKYO",
-      "image": "/img/news/3803d25f9323.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Russian missiles damage Kyiv bridge, disrupt power, heating, water",
-      "summary": "",
-      "description": "Russian and Ukrainian forces exchanged overnight airstrikes Saturday, damaging energy infrastructure, residential buildings and a major bridge in and around Kyiv, as…",
-      "link": "https://www.dailysabah.com/world/europe/russian-missiles-damage-kyiv-bridge-disrupt-power-heating-water",
-      "date": "Sat, 07 Nov 2026 11:45:00 +0300",
-      "byline": "Amira Hassan",
-      "dateline": "LONDON",
-      "image": "/img/news/708cf03500a7.png"
-    },
-    {
-      "section": "Asia",
-      "title": "Bushra Bibi approaches IHC over worsening eyesight, seeks treatment from doctors of her…",
-      "summary": "",
-      "description": "ISLAMABAD: Bushra Bibi, wife of former prime minister and PTI founder Imran Khan, has approached the Islamabad High Court (IHC), seeking an immediate medical examination…",
-      "link": "https://www.dawn.com/news/2042815/bushra-bibi-approaches-ihc-over-worsening-eyesight-seeks-treatment-from-doctors-of-her-choice",
-      "date": "Sat, 07 Nov 2026 13:29:55 +0500",
-      "byline": "James Hale",
-      "dateline": "NEW YORK",
-      "image": "/img/news/cc45cd28f7a0.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "Millions watched Kalshi’s election odds without betting a dollar",
-      "summary": "",
-      "description": "Kalshi says people watching its midterm markets outnumbered traders five to one. For those spectators, Kalshi offers a forecast that keeps moving while the country waits…",
-      "link": "https://cryptoslate.com/millions-watched-kalshis-election-odds-without-betting-a-dollar/",
-      "date": "Sat, 07 Nov 2026 08:20:10 +0000",
-      "byline": "Amira Hassan",
-      "dateline": "LONDON",
-      "image": "/img/news/0b6a1d885b1b.png"
-    },
-    {
-      "section": "Asia",
-      "title": "Pakistan: University students robbed banks of Rs 20 crore, after a year and a half of",
-      "summary": "",
-      "description": "In the Balochistan province of Pakistan, university students had planned a bank robbery that they thought would keep them away from being caught.",
-      "link": "https://www.bbc.com/hindi/articles/c6pwgg481rj1o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 07 Nov 2026 08:14:34 GMT",
-      "byline": "Ada Morrow",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/bee28d179a5a.png"
-    },
-    {
-      "section": "Africa",
-      "title": "Security tour of Chad Marshal Mahamat Idriss Déby Itno to the provinces",
-      "summary": "",
-      "description": "President of Chad Mahamat Idriss Déby Itno is conducting a security tour of the provinces to assess the defence system and meet with the armed forces.",
-      "link": "https://www.alwihdainfo.com/tournee-securitaire-du-marechal-du-tchad-mahamat-idriss-deby-itno-dans-les-provinces/",
-      "date": "Sat, 07 Nov 2026 08:09:18 GMT",
-      "byline": "Amira Hassan",
-      "dateline": "NEW YORK",
-      "image": "/img/news/1a158dd07940.png"
-    },
-    {
-      "section": "Europe",
-      "title": "The Greek plan has stuck with Turkey.",
-      "summary": "",
-      "description": "Greece's electricity linking project in the Eastern Mediterranean has been plagued by Turkish objections to maritime jurisdiction.",
-      "link": "https://www.hurriyet.com.tr/dunya/atinada-soguk-dus-yunanistanin-plani-turkiyeye-takildi-43369145",
-      "date": "Sat, 07 Nov 2026 08:00:21 Z",
-      "byline": "Ada Morrow",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/60cfb5293fe1.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Plans for historic Klaipėda lighthouse replica spark criticism from maritime enthusiasts",
-      "summary": "",
-      "description": "Plans to build a symbolic replica of Klaipėda’s historic White Lighthouse on the city’s northern pier have sparked criticism from lighthouse enthusiasts, who argue that…",
-      "link": "https://www.lrt.lt/en/news-in-english/19/3106335/plans-for-historic-klaipeda-lighthouse-replica-spark-criticism-from-maritime-enthusiasts",
-      "date": "Sat, 07 Nov 2026 10:00:00 +0200",
-      "byline": "Kenji Sato",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/579cf28ac86e.png"
-    },
-    {
-      "section": "Africa",
-      "title": "Martyrs' High School: How did school anger turn to violence?",
-      "summary": "",
-      "description": "Fr.: Sa: This week's Patara show is about the events at the Martyrs' High School in Bangui, marked by a student demonstration that degenerated into...",
-      "link": "https://www.radiondekeluka.org/108245-lycee-des-martyrs-comment-une-colere-scolaire-a-t-elle-degenere-en-violences",
-      "date": "Sat, 07 Nov 2026 07:57:18 +0000",
-      "byline": "Tomasz Kruk",
-      "dateline": "NEW YORK",
-      "image": "/img/news/a31c3661c99c.png"
-    },
-    {
-      "section": "Africa",
-      "title": "National Assembly: highlights of the current session",
-      "summary": "",
-      "description": "The Parliamentary chronicle of this week focuses on the main activities of the current session of the National Assembly.",
-      "link": "https://www.radiondekeluka.org/108243-assemblee-nationale-les-temps-forts-de-la-session-en-cours",
-      "date": "Sat, 07 Nov 2026 07:48:32 +0000",
-      "byline": "Amira Hassan",
-      "dateline": "TOKYO",
-      "image": "/img/news/98cfdb4f77a5.png"
-    },
-    {
-      "section": "Africa",
-      "title": "Political chaos in Somalia after court ruling against president's term extension",
-      "summary": "",
-      "description": "Somalia's political crisis is deepening, with the opposition accusing the president of sending troops to arrest the Supreme Court's chief justice after the tribunal…",
-      "link": "http://www.africanews.com/2026/11/07/political-chaos-in-somalia-after-court-ruling-against-presidents-term-extension/",
-      "date": "Sat, 07 Nov 2026 07:47:35 +0000",
-      "byline": "Amira Hassan",
-      "dateline": "TOKYO",
-      "image": "/img/news/33e08029b3fc.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "Nvidia may face a more hostile post-election Washington: Report",
-      "summary": "",
-      "description": "CEO Jensen Huang’s relationship with President Donald Trump probably won’t save the company from a more adversarial Washington, Semafor says.",
-      "link": "https://cointelegraph.com/news/nvidia-may-be-facing-a-more-hostile-post-election-washington-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "date": "Sat, 07 Nov 2026 07:45:24 +0000",
-      "byline": "Amira Hassan",
-      "dateline": "BERLIN",
-      "image": "/img/news/30c8c886a2df.png"
-    },
-    {
-      "section": "Latin America",
-      "title": "Paraguay's president impeached and under house arrest after bank collapse",
-      "summary": "",
-      "description": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money.",
-      "link": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 07 Nov 2026 07:20:00 GMT",
-      "byline": "Elena Voss",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/6b272837789f.png"
-    },
-    {
-      "section": "Asia",
-      "title": "Stand on either side of escalators? Commuters reluctant to ditch 'keep left' habit in…",
-      "summary": "",
-      "description": "CNA's observations at City Hall MRT station found that commuters who walked up the steps on the right took about 20 seconds to complete the ride, compared with 30…",
-      "link": "https://www.channelnewsasia.com/singapore/smrt-escalator-stand-both-sides-trial-6532751",
-      "date": "Sat, 07 Nov 2026 15:07:48 +0800",
-      "byline": "James Hale",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/a44a4e7dfc96.png"
-    },
-    {
       "section": "Latin America",
       "title": "Pope in 'pretty good health' as he starts Latin America tour",
       "summary": "",
@@ -693,259 +1430,6 @@
       "image": "/img/news/70d424996abc.png"
     },
     {
-      "section": "Crypto",
-      "title": "Keplr Pauses Google and Apple Login After Unauthorized Transaction Reports",
-      "summary": "",
-      "description": "The wallet says recovery-phrase and hardware-wallet accounts are unaffected in its initial assessment, while social-login users should stop sending funds to their…",
-      "link": "https://thedefiant.io/news/security/keplr-pauses-google-and-apple-login-after-unauthorized-transaction-reports",
-      "date": "Sat, 07 Nov 2026 06:12:27 GMT",
-      "byline": "Tomasz Kruk",
-      "dateline": "PARIS",
-      "image": "/img/news/667c9f8cb118.png"
-    },
-    {
-      "section": "Europe",
-      "title": "I'm going to be gone for two weeks in a month, I have a disease that Poland doesn't",
-      "summary": "",
-      "description": "For two weeks a month, she's losing her words, afraid she'll end up under a bridge, wondering how much longer she can live, and for the next two, she's got a lot of",
-      "link": "https://oko.press/przed-miesiaczka-znikam-na-dwa-tygodnie-mam-chorobe-ktora-w-polsce-oficjalnie-nie-istnieje",
-      "date": "Sat, 07 Nov 2026 06:12:20 +0000",
-      "byline": "Kenji Sato",
-      "dateline": "LONDON",
-      "image": "/img/news/d1d6388eac91.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Does AI have consciousness like humans?",
-      "summary": "",
-      "description": "And that's what some of the engineering statements from companies that are creating AI models suggest, but it's hard to say what they consider consciousness, and is it",
-      "link": "https://oko.press/czy-sztuczna-inteligencja-ma-swiadomosc-tak-jak-czlowiek",
-      "date": "Sat, 07 Nov 2026 06:10:51 +0000",
-      "byline": "Elena Voss",
-      "dateline": "TOKYO",
-      "image": "/img/news/a4fc9b7b02a1.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "EIP-8037 state-gas rules force Ethereum dApps to rewrite billing",
-      "summary": "",
-      "description": "A November 6 appeal asks projects to test gas assumptions and report repair options that could shape Glamsterdam’s specifications. Read the full story on CryptoSlate…",
-      "link": "https://cryptoslate.com/eip-8037-state-gas-rules-force-ethereum-dapps-to-rewrite-billing/",
-      "date": "Sat, 07 Nov 2026 06:10:22 +0000",
-      "byline": "Ada Morrow",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/320ec2598267.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Labour law changes in Lithuania – here’s what you need to know",
-      "summary": "",
-      "description": "Amendments to the Labour Code took effect on November 1, changing probationary periods and other rules.",
-      "link": "https://www.lrt.lt/en/news-in-english/19/3103005/labour-law-changes-in-lithuania-here-s-what-you-need-to-know",
-      "date": "Sat, 07 Nov 2026 08:00:00 +0200",
-      "byline": "Ada Morrow",
-      "dateline": "TOKYO",
-      "image": "/img/news/14a7d72d592f.png"
-    },
-    {
-      "section": "United States",
-      "title": "Stephen Miller, a right-wing identity, promoted to Trump's chief of staff",
-      "summary": "",
-      "description": "According to a White House source, Susie Wiles resigned Thursday night.",
-      "link": "https://ici.radio-canada.ca/nouvelle/2298980/trump-susie-wiles-stephen-miller-chef-cabinet",
-      "date": "Sat, 07 Nov 2026 04:52:17 GMT",
-      "byline": "Elena Voss",
-      "dateline": "LONDON",
-      "image": "/img/news/b7e63e56161a.png"
-    },
-    {
-      "section": "United States",
-      "title": "Tristan Luneau shines in a Ducks victory over the Flames",
-      "summary": "",
-      "description": "Tristan Luneau scored his third goal of the season to help the Ducks beat the Flames 5-3.",
-      "link": "https://ici.radio-canada.ca/sports/2299074/tristan-luneau-ducks-flames-lnh",
-      "date": "Sat, 07 Nov 2026 04:43:50 GMT",
-      "byline": "Tomasz Kruk",
-      "dateline": "TOKYO",
-      "image": "/img/news/1a53645b0cfc.png"
-    },
-    {
-      "section": "United States",
-      "title": "Tillis says Miller is 'worst of all possible choices' for chief of staff role",
-      "summary": "",
-      "description": "Sen. Thom Tillis (R-N.C.) blasted President Trump’s Friday decision to replace outgoing White House chief of staff Susie Wiles with top adviser Stephen Miller, saying…",
-      "link": "https://thehill.com/homenews/administration/6205824-tillis-slams-trump-miller-hire/",
-      "date": "Sat, 07 Nov 2026 04:12:52 +0000",
-      "byline": "Tomasz Kruk",
-      "dateline": "TOKYO",
-      "image": "/img/news/bb8a34dce2c9.png"
-    },
-    {
-      "section": "United States",
-      "title": "Gauthier scores winner as Ducks top Flames 5-3",
-      "summary": "",
-      "description": "Cutter Gauthier extended his goal streak to five games with the game-winner on Friday night as the Anaheim Ducks came back for a 5-3 victory over the Calgary Flames.",
-      "link": "https://globalnews.ca/news/12140939/gauthier-scores-winner-as-ducks-top-flames-5-3/",
-      "date": "Sat, 07 Nov 2026 03:59:34 +0000",
-      "byline": "Tomasz Kruk",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/e3f13748a6a3.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Only 80 kilometers left, double strike: $51 billion in action!",
-      "summary": "",
-      "description": "In Yemen, the negotiations have been unprecedented in the years of war, and the Houthis, who have cornered Saudi Arabia militarily and politically, have been...",
-      "link": "https://www.hurriyet.com.tr/dunya/sadece-80-kilometre-kaldi-cifte-darbe-51-milyar-dolarlik-hamle-asil-tehlike-fuze-saldirilarindan-daha-buyuk-43367202",
-      "date": "Sat, 07 Nov 2026 03:52:53 Z",
-      "byline": "Kenji Sato",
-      "dateline": "LONDON",
-      "image": "/img/news/28aba02faefc.png"
-    },
-    {
-      "section": "United States",
-      "title": "An unexploded shell found in Nicolet",
-      "summary": "",
-      "description": "An unexploded shell was found at the port of Port Saint-François, Nicolet, not far from Trois-Rivières.",
-      "link": "https://www.lapresse.ca/actualites/justice-et-faits-divers/2026-11-06/un-obus-non-explose-retrouve-a-nicolet.php?utm_source=rss&utm_medium=fil&utm_campaign=actualites",
-      "date": "Fri, 06 Nov 2026 22:32:31 -0500",
-      "byline": "Amira Hassan",
-      "dateline": "LONDON",
-      "image": "/img/news/34c4c8fce949.png"
-    },
-    {
-      "section": "VC Blogs",
-      "title": "From GIVA To EloElo Group — Indian Startups Raised $255 Mn This Week",
-      "summary": "",
-      "description": "Startup funding activity gathered steam in the first week of November. As per Inc42 data, 20 Indian startups cumulatively raised…",
-      "link": "https://inc42.com/buzz/from-giva-to-eloelo-group-indian-startups-raised-255-mn-this-week/",
-      "date": "Sat, 07 Nov 2026 03:30:37 +0000",
-      "byline": "Ada Morrow",
-      "dateline": "NEW YORK",
-      "image": "/img/news/c490c008ad3f.png"
-    },
-    {
-      "section": "United States",
-      "title": "One of Okanagan’s most colourful characters dies at 96",
-      "summary": "",
-      "description": "Eddy Haymour died Wednesday at the age of 96, leaving behind a remarkable story of ambition, controversy and a dream that never quite came to fruition.",
-      "link": "https://globalnews.ca/news/12140696/okanagans-colourful-character-dies-96-eddy-haymour/",
-      "date": "Sat, 07 Nov 2026 03:13:47 +0000",
-      "byline": "Amira Hassan",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/4ba6fc8d1804.png"
-    },
-    {
-      "section": "United States",
-      "title": "Former GOP governor: 'Wisconsin is a blue state'",
-      "summary": "",
-      "description": "Former Wisconsin Gov. Tommy Thompson (R) declared the Badger State blue in a post-election interview Wednesday, pointing to recent statewide defeats for the GOP —…",
-      "link": "https://thehill.com/homenews/campaign/6205785-tommy-thompson-declares-wisconsin-blue-midterms/",
-      "date": "Sat, 07 Nov 2026 03:13:21 +0000",
-      "byline": "Kenji Sato",
-      "dateline": "PARIS",
-      "image": "/img/news/0ad481706d8b.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Who betrayed the unknown photographer who secretly captured Nazi-occupied Paris?",
-      "summary": "",
-      "description": "In 2024, Le Monde traced the fate of Raoul Minot, who was deported in 1943 for daring to secretly photograph the Occupation in Paris and its suburbs without the Nazis'…",
-      "link": "https://www.lemonde.fr/en/history/article/2026/11/07/who-betrayed-the-mysterious-photographer-who-secretly-captured-nazi-occupied-paris_6773989_157.html",
-      "date": "Sat, 07 Nov 2026 04:00:01 +0100",
-      "byline": "James Hale",
-      "dateline": "PARIS",
-      "image": "/img/news/0c1c009e1fbb.png"
-    },
-    {
-      "section": "United States",
-      "title": "Denver man found dead at bottom of national park canyon beneath steep drop-offs",
-      "summary": "",
-      "description": "A drone team located human remains on the floor of Gunnison National Park's Black Canyon after deputies found an abandoned vehicle on the South Rim.",
-      "link": "https://www.foxnews.com/us/denver-man-found-dead-bottom-national-park-canyon-beneath-steep-drop-offs",
-      "date": "Fri, 06 Nov 2026 21:34:59 -0500",
-      "byline": "Claire Brennan",
-      "dateline": "LONDON",
-      "image": "/img/news/1bcac0c8122b.png"
-    },
-    {
-      "section": "Finance",
-      "title": "US believes Nvidia’s Huang had romantic relationship with alleged Chinese spy",
-      "summary": "",
-      "description": "American intelligence warned the tech boss was involved with executive recruited by China to gather information on US group",
-      "link": "https://www.ft.com/content/a55a2a22-4479-4f93-a445-6147a5c6d790?syn-25a6b1a6=1",
-      "date": "Sat, 07 Nov 2026 02:33:26 GMT",
-      "byline": "Ada Morrow",
-      "dateline": "PARIS",
-      "image": "/img/news/7309407db710.png"
-    },
-    {
-      "section": "United States",
-      "title": "A 34-year-old woman dies after being stabbed in Pierrefonds-Roxboro",
-      "summary": "",
-      "description": "A 30-year-old woman was hit by a motorist while walking across the street in Montreal and is feared for her life.",
-      "link": "https://www.tvanouvelles.ca/2026/11/06/une-pietonne-happee-dans-pierrefond-roxboro",
-      "date": "Fri, 06 Nov 2026 21:26:15 EST",
-      "byline": "James Hale",
-      "dateline": "TOKYO",
-      "image": "/img/news/e2e9f78c9227.png"
-    },
-    {
-      "section": "United States",
-      "title": "Education: Minister Joël Arseneau wishes for a peaceful revolution in schools...",
-      "summary": "",
-      "description": "The new Minister of National Education wants to see the place of school in Quebec society.",
-      "link": "https://www.tvanouvelles.ca/2026/11/06/education-le-ministre-joel-arseneau-souhaite-une-revolution-dans-les-ecoles-quebecoises",
-      "date": "Fri, 06 Nov 2026 21:25:17 EST",
-      "byline": "Elena Voss",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/d17a2430d4ce.png"
-    },
-    {
-      "section": "United States",
-      "title": "Pierrefonds-Roxboro. A 34-year-old pedestrian died in a car crash.",
-      "summary": "",
-      "description": "A pedestrian died after being hit by a 92-year-old driver on Friday night in the Pierrefonds-Roxboro neighbourhood of Montreal.",
-      "link": "https://www.lapresse.ca/actualites/justice-et-faits-divers/2026-11-06/pierrefonds-roxboro/une-pietonne-de-34-ans-meurt-apres-une-collision-avec-une-voiture.php?utm_source=rss&utm_medium=fil&utm_campaign=actualites",
-      "date": "Fri, 06 Nov 2026 21:15:27 -0500",
-      "byline": "Tomasz Kruk",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/46665a982733.png"
-    },
-    {
-      "section": "United States",
-      "title": "Cornell faculty vote no confidence in university's leadership",
-      "summary": "",
-      "description": "The faculty senate of Cornell University approved a resolution Friday declaring no confidence in the school's top leaders, a symbolic gesture reflecting deep discontent…",
-      "link": "https://www.cbc.ca/news/world/cornell-university-leadership-no-confience-9.7413319?cmp=rss",
-      "date": "Fri, 06 Nov 2026 20:46:19 EST",
-      "byline": "Claire Brennan",
-      "dateline": "TOKYO",
-      "image": "/img/news/267b8c941b69.png"
-    },
-    {
-      "section": "VC Blogs",
-      "title": "OYO Parent PRISM’s Profit Jumps 17% YoY To ₹353 Cr In Q1",
-      "summary": "",
-      "description": "IPO-bound hospitality chain PRISM, the parent entity of OYO, reported a consolidated profit after tax (PAT) of ₹353 Cr in…",
-      "link": "https://inc42.com/buzz/oyo-parent-prisms-profit-jumps-17-yoy-to-%e2%82%b9353-cr-in-q1/",
-      "date": "Sat, 07 Nov 2026 01:30:12 +0000",
-      "byline": "Elena Voss",
-      "dateline": "BERLIN",
-      "image": "/img/news/b5a67880dee4.png"
-    },
-    {
-      "section": "United States",
-      "title": "Secret Service finds man parked near White House with multiple firearms: Authorities",
-      "summary": "",
-      "description": "The suspect, Ronny Guanipa-Chrinos, allegedly made threats to kill President Donald Trump, according to DHS.",
-      "link": "https://abcnews.com/US/man-arrested-after-secret-service-finds-parked-white/story?id=137930505",
-      "date": "Fri, 06 Nov 2026 20:28:56 -0500",
-      "byline": "Ada Morrow",
-      "dateline": "BERLIN",
-      "image": "/img/news/1bf6fc8bd7a1.png"
-    },
-    {
       "section": "Africa",
       "title": "The young Somali woman changing how the world sees Mogadishu",
       "summary": "",
@@ -955,61 +1439,6 @@
       "byline": "Kenji Sato",
       "dateline": "LONDON",
       "image": "/img/news/35aeca55d1df.png"
-    },
-    {
-      "section": "Latin America",
-      "title": "Former president Santiago Peña arrested after his removal",
-      "summary": "",
-      "description": "One of the prosecutors in the case reported that it was found that Peña is at his home and was made available.",
-      "link": "https://efectococuyo.com/internacionales/detienen-expresidente-santiago-pena/",
-      "date": "Sat, 07 Nov 2026 01:19:20 +0000",
-      "byline": "James Hale",
-      "dateline": "BERLIN",
-      "image": "/img/news/b9c47b4efcca.png"
-    },
-    {
-      "section": "United States",
-      "title": "Vance leads behind-the-scenes push for new Iran deal",
-      "summary": "",
-      "description": "Vice President Vance has spent the past two weeks personally involved in indirect talks with Iran aimed at reaching a new ceasefire and resuming nuclear negotiations…",
-      "link": "https://www.axios.com/2026/11/06/vance-leads-push-new-iran-deal",
-      "date": "Sat, 07 Nov 2026 01:10:14 +0000",
-      "byline": "Claire Brennan",
-      "dateline": "BERLIN",
-      "image": "/img/news/3e1d3a1ebb32.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "Dinari Promises Anthropic dShares on IPO Day, Including for US Investors",
-      "summary": "",
-      "description": "The pledge follows Ondo's non-US launch plan, while Dinari's US tokens remain non-transferable and barred from DeFi.",
-      "link": "https://thedefiant.io/converge/tradfi-and-fintech/dinari-promises-anthropic-dshares-on-ipo-day-including-for-us-investors",
-      "date": "Sat, 07 Nov 2026 00:00:13 GMT",
-      "byline": "Ada Morrow",
-      "dateline": "PARIS",
-      "image": "/img/news/9a2efab53d3b.png"
-    },
-    {
-      "section": "United States",
-      "title": "What Trump picking Stephen Miller for chief of staff signals about his agenda",
-      "summary": "",
-      "description": "Trump has replaced White House chief of staff Susie Wiles with Stephen Miller, the hardline architect of his immigration agenda, after a crushing midterm defeat…",
-      "link": "https://www.pbs.org/newshour/show/what-trump-picking-stephen-miller-for-chief-of-staff-signals-about-his-agenda",
-      "date": "Fri, 06 Nov 2026 18:55:50 -0500",
-      "byline": "Claire Brennan",
-      "dateline": "BERLIN",
-      "image": "/img/news/00b6b27b0cae.png"
-    },
-    {
-      "section": "United States",
-      "title": "News Wrap: Judge blocks construction of Trump's triumphal arch for now",
-      "summary": "",
-      "description": "In our news wrap Friday, Trump's plans to build a massive triumphal arch near Arlington National Cemetery have been put on hold, two more top officials resigned from the…",
-      "link": "https://www.pbs.org/newshour/show/news-wrap-judge-blocks-construction-of-trumps-triumphal-arch-for-now",
-      "date": "Fri, 06 Nov 2026 18:50:18 -0500",
-      "byline": "Amira Hassan",
-      "dateline": "NEW YORK",
-      "image": "/img/news/a0b6857f931d.png"
     },
     {
       "section": "Europe",
@@ -1045,83 +1474,6 @@
       "image": "/img/news/ef4f1e85d8a3.png"
     },
     {
-      "section": "Asia",
-      "title": "An Indian film that nobody would release is finally a hit - 18 awards later",
-      "summary": "",
-      "description": "Extraordinary scenes of audiences crying leaving theatres after watching the film have been shared on social media.",
-      "link": "https://www.bbc.co.uk/news/articles/c6ly334rem5do?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 06 Nov 2026 22:59:54 GMT",
-      "byline": "Amira Hassan",
-      "dateline": "PARIS",
-      "image": "/img/news/68ed0d4cf13e.png"
-    },
-    {
-      "section": "Finance",
-      "title": "US warns China it must ‘immediately’ meet terms of Busan trade deal",
-      "summary": "",
-      "description": "Washington says Beijing is not fulfilling commitments to increase supply of rare earths and other critical products",
-      "link": "https://www.ft.com/content/391bb785-0247-4c39-b53b-35007187d603?syn-25a6b1a6=1",
-      "date": "Fri, 06 Nov 2026 22:53:51 GMT",
-      "byline": "Claire Brennan",
-      "dateline": "LONDON",
-      "image": "/img/news/6d339d2a0085.png"
-    },
-    {
-      "section": "United States",
-      "title": "Lawyer says convicted killer was booted from McGill without due process",
-      "summary": "",
-      "description": "MONTREAL - A lawyer representing a man who was convicted of murder and attempted murder for attacks committed in 1984 says McGill University’s decision to revoke his…",
-      "link": "https://www.thestar.com/news/canada/quebec/lawyer-says-convicted-killer-was-booted-from-mcgill-without-due-process/article_ff9ad5be-bb1e-503e-bf3e-208f8001042f.html",
-      "date": "Fri, 06 Nov 2026 17:52:43 -0500",
-      "byline": "James Hale",
-      "dateline": "BERLIN",
-      "image": "/img/news/1843fb2f9186.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Ireland send out ominous warning with second-gear walloping of Argentina",
-      "summary": "",
-      "description": "Ireland send out ominous warning with second-gear walloping of Argentina",
-      "link": "https://www.telegraph.co.uk/rugby-union/2026/11/06/ireland-vs-argentina-live-score-latest-nations-championship/",
-      "date": "Fri, 06 Nov 2026 22:46:04 GMT",
-      "byline": "James Hale",
-      "dateline": "BERLIN",
-      "image": "/img/news/1d799454b92e.png"
-    },
-    {
-      "section": "Tech",
-      "title": "The Cybertruck’s Death Is Actually Great News for EVs",
-      "summary": "",
-      "description": "Tesla’s biggest failure is the second massive EV to get the axe within the last year, while smaller vehicles are proliferating. It could be a huge benefit for the US…",
-      "link": "https://www.wired.com/story/cybertrucks-death-great-news-for-evs/",
-      "date": "Fri, 06 Nov 2026 22:31:15 +0000",
-      "byline": "Kenji Sato",
-      "dateline": "TOKYO",
-      "image": "/img/news/e8b90c26a0d1.png"
-    },
-    {
-      "section": "United States",
-      "title": "Trump replaces chief of staff Susie Wiles with Stephen Miller",
-      "summary": "",
-      "description": "Angered over his midterm losses, President Trump announced Friday he was replacing Susie Wiles as White House chief of staff with longtime adviser Stephen Miller. Why it…",
-      "link": "https://www.axios.com/2026/11/06/susie-wiles-trump-stephen-miller-chief-of-staff",
-      "date": "Fri, 06 Nov 2026 22:16:01 +0000",
-      "byline": "Ada Morrow",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/b86f812b375f.png"
-    },
-    {
-      "section": "Europe",
-      "title": "‘Air Caluori’ puts on show as England A offer exciting glimpse into future",
-      "summary": "",
-      "description": "‘Air Caluori’ puts on show as England A offer exciting glimpse into future",
-      "link": "https://www.telegraph.co.uk/rugby-union/2026/11/06/england-a-v-argentina-xv-live-score-latest-updates/",
-      "date": "Fri, 06 Nov 2026 22:15:01 GMT",
-      "byline": "James Hale",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/a4ce0dad47e0.png"
-    },
-    {
       "section": "United States",
       "title": "Cornell Faculty Rebuke President Over Response to Sex-Assault Allegations",
       "summary": "",
@@ -1145,17 +1497,6 @@
     },
     {
       "section": "Community",
-      "title": "US forces leave important airfield in Somalia",
-      "summary": "",
-      "description": "Troops exited Baledogle Airfield after 14 years, but will remain in the country, a military official told Task & Purpose. The post US forces leave important airfield in…",
-      "link": "https://taskandpurpose.com/news/us-troops-somalia-baledogle-airfield/",
-      "date": "Fri, 06 Nov 2026 17:01:09 -0500",
-      "byline": "Tomasz Kruk",
-      "dateline": "BERLIN",
-      "image": "/img/news/6bbf053333d1.png"
-    },
-    {
-      "section": "Community",
       "title": "Global AI Stocks React to U.S. Midterm Results",
       "summary": "",
       "description": "Incoming Democrats have pledged to rein in AI and data centers.",
@@ -1164,17 +1505,6 @@
       "byline": "Amira Hassan",
       "dateline": "TOKYO",
       "image": "/img/news/a5db095e3b3a.png"
-    },
-    {
-      "section": "Finance",
-      "title": "Companies urged to adapt as restaurant franchisee files for bankruptcy: 'Businesses want…",
-      "summary": "",
-      "description": "Marcus Lemonis urges businesses to adapt to rising costs rather than \"make excuses\" after an Outback Steakhouse franchisee filed for bankruptcy with $449 million in debt.",
-      "link": "https://www.foxbusiness.com/economy/companies-urged-adapt-restaurant-franchisee-files-bankruptcy-businesses-want-make-excuses",
-      "date": "Fri, 06 Nov 2026 17:58:13 -0400",
-      "byline": "Claire Brennan",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/7be485d3b069.png"
     },
     {
       "section": "United States",
@@ -1186,28 +1516,6 @@
       "byline": "Ada Morrow",
       "dateline": "PARIS",
       "image": "/img/news/8919e1051eeb.png"
-    },
-    {
-      "section": "Africa",
-      "title": "Morocco marks anniversary of Western Sahara occupation as UN mission ends",
-      "summary": "",
-      "description": "The anniversary comes as the decades-old territorial conflict enters a new diplomatic phase, with a U.N. peacekeeping mission winding down after 35 years. Western Sahara…",
-      "link": "http://www.africanews.com/2026/11/06/morocco-marks-anniversary-of-western-sahara-occupation-as-un-mission-ends/",
-      "date": "Fri, 06 Nov 2026 21:45:03 +0000",
-      "byline": "Kenji Sato",
-      "dateline": "NEW YORK",
-      "image": "/img/news/adb9d077b517.png"
-    },
-    {
-      "section": "Latin America",
-      "title": "USD at 897.54 and EUR at 1.001 bolivars: This is how the foreign exchange market closes",
-      "summary": "",
-      "description": "Both benchmark currencies continue to rise, while prices and taxes become unattainable",
-      "link": "https://efectococuyo.com/economia/dolar-a-89754-y-euro-a-1-001-bolivares-asi-cierra-el-mercado-cambiario-esta-semana-en-venezuela/",
-      "date": "Fri, 06 Nov 2026 21:30:29 +0000",
-      "byline": "Ada Morrow",
-      "dateline": "NEW YORK",
-      "image": "/img/news/745061d5b143.png"
     },
     {
       "section": "Crypto",
@@ -1254,39 +1562,6 @@
       "image": "/img/news/e1216efb062d.png"
     },
     {
-      "section": "Africa",
-      "title": "Kenyan cult leader sentenced to 200 years in prison",
-      "summary": "",
-      "description": "In tonight's edition, cult leader Paul Mackenzie is sentenced to 200 years in prison for the murder of 190 children starved ‌to death on his orders. Also, in South…",
-      "link": "https://www.france24.com/en/kenyan-cult-leader-sentenced-to-200-years-in-prison",
-      "date": "Fri, 06 Nov 2026 21:23:53 GMT",
-      "byline": "Claire Brennan",
-      "dateline": "NEW YORK",
-      "image": "/img/news/1accc52c5d74.png"
-    },
-    {
-      "section": "United States",
-      "title": "Secret Service arrests armed Venezuelan migrant near White House over alleged Trump…",
-      "summary": "",
-      "description": "Secret Service officers arrested a Venezuelan migrant in Washington, D.C., after finding guns in a stolen vehicle and hearing an alleged threat against President Donald…",
-      "link": "https://www.foxnews.com/us/secret-service-arrests-armed-venezuelan-migrant-near-white-house-alleged-trump-assassination-threat",
-      "date": "Fri, 06 Nov 2026 17:18:15 -0400",
-      "byline": "Elena Voss",
-      "dateline": "TOKYO",
-      "image": "/img/news/0fb35b5facb8.png"
-    },
-    {
-      "section": "Tech",
-      "title": "How Stephen Miller Schemed His Way to the Top",
-      "summary": "",
-      "description": "The architect of the Trump administration’s brutal crackdowns on immigration and dissent was already known as “the prime minister.” Now he’ll work as the chief of staff.",
-      "link": "https://www.wired.com/story/how-stephen-miller-schemed-his-way-to-the-top/",
-      "date": "Fri, 06 Nov 2026 21:10:02 +0000",
-      "byline": "James Hale",
-      "dateline": "BERLIN",
-      "image": "/img/news/ee04d37469cb.png"
-    },
-    {
       "section": "Europe",
       "title": "Melania Trump receives Ukraine’s Order of Princess Olha at White House meeting on Oleshky…",
       "summary": "",
@@ -1296,28 +1571,6 @@
       "byline": "Amira Hassan",
       "dateline": "NEW YORK",
       "image": "/img/news/00fea74d3c61.png"
-    },
-    {
-      "section": "Politics",
-      "title": "AI stocks climb after trillions wiped from market values",
-      "summary": "",
-      "description": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development.",
-      "link": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 06 Nov 2026 21:06:25 GMT",
-      "byline": "Ada Morrow",
-      "dateline": "PARIS",
-      "image": "/img/news/bae3a9137c50.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "Treasury Cuts Crypto Exchange MEXC Off From US Financial System",
-      "summary": "",
-      "description": "FinCEN’s order, part of Operation Economic Outcast, bars U.S. institutions from any transfers to or from MEXC, which Treasury says facilitated $16 billion in illicit…",
-      "link": "https://decrypt.co/382758/treasury-cuts-off-crypto-exchange-mexc-us-financial-system",
-      "date": "Fri, 06 Nov 2026 21:06:03 +0000",
-      "byline": "Claire Brennan",
-      "dateline": "TOKYO",
-      "image": "/img/news/637369165d66.png"
     },
     {
       "section": "Community",
@@ -1342,17 +1595,6 @@
       "image": "/img/news/dc5f180f3696.png"
     },
     {
-      "section": "United States",
-      "title": "Cornell faculty senate votes no confidence in administration’s handling of sexual assault",
-      "summary": "",
-      "description": "Members of the Cornell University faculty senate on Friday issued a vote of no confidence in the administration’s ability to manage the response to an alleged sexual…",
-      "link": "https://www.nbcnews.com/news/education/cornell-faculty-senate-issues-no-confidence-vote-administrations-handl-rcna607286",
-      "date": "Fri, 06 Nov 2026 20:54:27 GMT",
-      "byline": "James Hale",
-      "dateline": "TOKYO",
-      "image": "/img/news/de52e10b49ea.png"
-    },
-    {
       "section": "Community",
       "title": "The U.S. Senate Just Got a Lot Younger",
       "summary": "",
@@ -1375,50 +1617,6 @@
       "image": "/img/news/9f5c51fbb876.png"
     },
     {
-      "section": "Crypto",
-      "title": "Greece Passes Crypto Tax Law With 10% Gains Levy, 15% on Staking and DeFi",
-      "summary": "",
-      "description": "Greece has approved a crypto tax framework with a €500 ($557) annual gains threshold and new rules for staking and DeFi income, but lawmakers left important questions…",
-      "link": "https://decrypt.co/382756/greece-passes-crypto-tax-law-staking-defi",
-      "date": "Fri, 06 Nov 2026 20:36:03 +0000",
-      "byline": "James Hale",
-      "dateline": "NEW YORK",
-      "image": "/img/news/0be8662ea14c.png"
-    },
-    {
-      "section": "Europe",
-      "title": "Trump appoints immigration hardliner Stephen Miller as new chief of staff",
-      "summary": "",
-      "description": "The 41 year-old Trump loyalist, one of the driving forces behind the president’s tough immigration agenda, will replace current White House chief of staff Susie Wiles as…",
-      "link": "https://www.lemonde.fr/en/international/article/2026/11/06/trump-appoints-immigration-hardliner-stephen-miller-as-new-chief-of-staff_6773758_4.html",
-      "date": "Fri, 06 Nov 2026 21:35:26 +0100",
-      "byline": "Ada Morrow",
-      "dateline": "BERLIN",
-      "image": "/img/news/e4438e3a559f.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "Apple, Meta reject OKX–ICE tokenized stock plans, leaving crypto firms as the ones to…",
-      "summary": "",
-      "description": "Strategy, Coinbase, Circle and Robinhood are among six companies from the venture’s initial selection with no disclosed objection, after 90% of issuers opted out.",
-      "link": "https://www.coindesk.com/policy/2026/11/06/apple-meta-reject-okx-ice-tokenized-stock-plans-leaving-crypto-firms-as-the-ones-to-watch",
-      "date": "Fri, 06 Nov 2026 20:09:18 +0000",
-      "byline": "James Hale",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/f57fc6eeee9b.png"
-    },
-    {
-      "section": "Finance",
-      "title": "Tesla to wind down Cybertruck production at Texas factory next year to make room for…",
-      "summary": "",
-      "description": "Elon Musk says Tesla will wind down Cybertruck production at Gigafactory Texas by mid-2027 to make room for increased Cybercab robotaxi output.",
-      "link": "https://www.foxbusiness.com/markets/tesla-wind-down-cybertruck-production-texas-factory-next-year-make-room-cybercab",
-      "date": "Fri, 06 Nov 2026 15:57:25 -0400",
-      "byline": "Tomasz Kruk",
-      "dateline": "PARIS",
-      "image": "/img/news/258877206e14.png"
-    },
-    {
       "section": "United States",
       "title": "LIVE: ABC News Live",
       "summary": "",
@@ -1430,39 +1628,6 @@
       "image": "/img/news/692022cca76a.png"
     },
     {
-      "section": "Nature",
-      "title": "Guatemala faces a human rights court over violent evictions of Indigenous communities",
-      "summary": "",
-      "description": "Years after Indigenous communities in Guatemala were forcibly evicted from their ancestral land, the Inter-American Commission on Human Rights (IACHR) is asking a court…",
-      "link": "https://news.mongabay.com/short-article/2026/11/guatemala-faces-a-human-rights-court-over-violent-evictions-of-indigenous-communities/",
-      "date": "06 Nov 2026 19:42:56 +0000",
-      "byline": "Elena Voss",
-      "dateline": "NEW YORK",
-      "image": "/img/news/cb7ea698603c.png"
-    },
-    {
-      "section": "Cloud",
-      "title": "AI agents are getting more complex. Developers shouldn’t have to babysit them.",
-      "summary": "",
-      "description": "What if your coding agent could catch its own mistakes before you ever reviewed its work? A few years ago, The post AI agents are getting more complex. Developers…",
-      "link": "https://thenewstack.io/harness-engineering-coding-agents/",
-      "date": "Fri, 06 Nov 2026 19:35:59 +0000",
-      "byline": "Ada Morrow",
-      "dateline": "BERLIN",
-      "image": "/img/news/25b2bc8ab599.png"
-    },
-    {
-      "section": "Latin America",
-      "title": "Expelled by the US, Cuban Richard Tur gets a position at the UN",
-      "summary": "",
-      "description": "The Cuban regime celebrates the event as a victory, although it remains to be seen whether Washington will give him the visa needed to exercise his functions in New York.",
-      "link": "https://www.14ymedio.com/cuba/expulsado-ee-uu-cubano-richard_1_1132905.html",
-      "date": "Fri, 06 Nov 2026 19:33:29 +0000",
-      "byline": "Claire Brennan",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/c905044824b7.png"
-    },
-    {
       "section": "Startups",
       "title": "The Week’s 10 Biggest Funding Rounds: AI, Defense And Space Tech Lead For Large Rounds",
       "summary": "",
@@ -1472,17 +1637,6 @@
       "byline": "Kenji Sato",
       "dateline": "LONDON",
       "image": "/img/news/b35d0bc502ce.png"
-    },
-    {
-      "section": "United States",
-      "title": "Trump names Stephen Miller as new chief of staff, replacing Susie Wiles after midterm…",
-      "summary": "",
-      "description": "Just days after the Republican Party's resounding defeat in the midterms, U.S. President Donald Trump is replacing his top political adviser, chief of staff Susie Wiles…",
-      "link": "https://www.cbc.ca/news/world/trump-susie-wiles-9.7412558?cmp=rss",
-      "date": "Fri, 06 Nov 2026 14:07:29 EST",
-      "byline": "Claire Brennan",
-      "dateline": "BERLIN",
-      "image": "/img/news/a6faaf518366.png"
     },
     {
       "section": "Community",
@@ -1497,13 +1651,13 @@
     },
     {
       "section": "Asia",
-      "title": "The Taipei Mayor Election Is Not About China",
+      "title": "Taipei’s Voters Aren’t Choosing Independence or Unification",
       "summary": "",
-      "description": "As usual, Taiwan’s local elections are about local politics – not independence or unification.",
+      "description": "Whatever the result of the election, don't take it as a reflection of Taiwanese preferences for China policy.",
       "link": "https://thediplomat.com/2026/11/the-taipei-mayor-election-is-not-about-china/",
       "date": "Sat, 07 Nov 2026 03:44:00 +0900",
-      "byline": "Ada Morrow",
-      "dateline": "NEW YORK",
+      "byline": "James Hale",
+      "dateline": "PARIS",
       "image": "/img/news/f2320627a0bd.png"
     },
     {
@@ -1551,30 +1705,8 @@
       "image": "/img/news/5dec96e85442.png"
     },
     {
-      "section": "Nature",
-      "title": "Peru’s drive for critical minerals threatens a disappearing glacier",
-      "summary": "",
-      "description": "Like many in the community of Phinaya, in southeastern Peru, Donato Bermúdez makes his living from alpacas. His flock of 500 roams the slopes beneath the vast Quelccaya…",
-      "link": "https://news.mongabay.com/2026/11/perus-drive-for-critical-minerals-threatens-a-disappearing-glacier/",
-      "date": "06 Nov 2026 18:21:03 +0000",
-      "byline": "Amira Hassan",
-      "dateline": "NEW YORK",
-      "image": "/img/news/9ded2d46386f.png"
-    },
-    {
-      "section": "Cloud",
-      "title": "Cognition turned an open model into a coding beast. But it won’t release the weights.",
-      "summary": "",
-      "description": "Cognition built its newest coding model on a foundation that anyone can download, yet the company is keeping its own The post Cognition turned an open model into a…",
-      "link": "https://thenewstack.io/cognition-flash-private-weights/",
-      "date": "Fri, 06 Nov 2026 18:16:42 +0000",
-      "byline": "Amira Hassan",
-      "dateline": "LONDON",
-      "image": "/img/news/a6a5f946dd9d.png"
-    },
-    {
       "section": "Africa",
-      "title": "AES: regional integration and economic development at the heart of trade between the two",
+      "title": "AES: regional integration and economic development at the heart of trade between the...",
       "summary": "",
       "description": "The President of the Transition Army, General Assimi Goïta, made a working visit to Burkina Faso and Niger on 5 November 2026.",
       "link": "https://www.studiotamani.org/209980-aes-integration-regionale-et-developpement-economique-au-coeur-des-echanges-entre-les-dirigeants",
@@ -1595,59 +1727,15 @@
       "image": "/img/news/34d4cd37ca86.png"
     },
     {
-      "section": "Latin America",
-      "title": "\"They're deporting me\": the voices of Cubans arrested for being in Havana",
-      "summary": "",
-      "description": "During the nine hours I was detained at a police station, I heard the goodbyes of those who would be expelled for not having an address for the capital in...",
-      "link": "https://www.14ymedio.com/cuba/deportar-voces-cubanos-detenidos-habana_1_1132899.html",
-      "date": "Fri, 06 Nov 2026 17:52:57 +0000",
-      "byline": "Elena Voss",
-      "dateline": "TOKYO",
-      "image": "/img/news/4c0752d34ff6.png"
-    },
-    {
       "section": "Africa",
       "title": "The Re-marriage of Family and Social Realities",
       "summary": "",
-      "description": "Tonight we're talking about the challenges of remarriage in our society, and when a first marriage ends in divorce or widowhood, life goes on, and a lot of...",
+      "description": "Tonight we're talking about the challenges of remarriage in our society, and when a first marriage ends, divorce or widowhood, life goes on, and a lot of...",
       "link": "https://www.studiotamani.org/209951-le-remariage-face-aux-realites-familiales-et-sociales",
       "date": "Fri, 06 Nov 2026 17:51:00 +0000",
       "byline": "James Hale",
       "dateline": "PARIS",
       "image": "/img/news/64fbdd18b65c.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "U.S. prediction markets regulator issues demand that clashes directly with courts",
-      "summary": "",
-      "description": "The Commodity Futures Trading Commission said regulated exchanges can't cut off customers state-by-state, but firms like Kalshi are under court orders to do so.",
-      "link": "https://www.coindesk.com/policy/2026/11/06/u-s-prediction-markets-regulator-issues-demand-that-clashes-directly-with-courts",
-      "date": "Fri, 06 Nov 2026 17:42:28 +0000",
-      "byline": "Elena Voss",
-      "dateline": "PARIS",
-      "image": "/img/news/5bc3d999a162.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "Binance-Controlled Korean Exchange GOPAX Stops Trading, Makes Users Email to Withdraw…",
-      "summary": "",
-      "description": "GOPAX cited a recommendation from financial authorities, gave no date for reopening, and now handles crypto withdrawals only through emailed requests to its support…",
-      "link": "https://unchainedcrypto.com/binance-controlled-korean-exchange-gopax-stops-trading-makes-users-email-to-withdraw-crypto/",
-      "date": "Fri, 06 Nov 2026 17:35:00 +0000",
-      "byline": "James Hale",
-      "dateline": "BERLIN",
-      "image": "/img/news/139549a82a1b.png"
-    },
-    {
-      "section": "Crypto",
-      "title": "Chainalysis Starts Reopening Compliance Tools Behind IP Allowlists in Sixth Breach Update",
-      "summary": "",
-      "description": "Customers that haven't sent trusted IP addresses must do so first, and every user must then set a new password; the firm said late Wednesday all users' password hashes…",
-      "link": "https://unchainedcrypto.com/chainalysis-starts-reopening-compliance-tools-behind-ip-allowlists-in-sixth-breach-update/",
-      "date": "Fri, 06 Nov 2026 17:05:00 +0000",
-      "byline": "James Hale",
-      "dateline": "PARIS",
-      "image": "/img/news/5e47e1669abe.png"
     },
     {
       "section": "Positive",
@@ -1661,17 +1749,6 @@
       "image": "/img/news/8aec40cb4e39.png"
     },
     {
-      "section": "Middle East",
-      "title": "Oman marks World Tsunami Awareness Day",
-      "summary": "",
-      "description": "The Sultanate of Oman has joined countries around the world in commemorating World Tsunami Awareness Day, observed annually on November 5, under the theme of “Enhance…",
-      "link": "https://www.omanobserver.om/article/1199225/oman/environment/oman-marks-world-tsunami-awareness-day",
-      "date": "Fri, 06 Nov 2026 20:12:53 +0400",
-      "byline": "James Hale",
-      "dateline": "BERLIN",
-      "image": "/img/news/aea8abca0956.png"
-    },
-    {
       "section": "Africa",
       "title": "Australia sanctions El Burhan and Hemedti over Sudan war and human rights abuses",
       "summary": "",
@@ -1681,17 +1758,6 @@
       "byline": "Kenji Sato",
       "dateline": "NEW YORK",
       "image": "/img/news/92e242daccad.png"
-    },
-    {
-      "section": "Middle East",
-      "title": "Symphony of unity",
-      "summary": "",
-      "description": "The open-air courtyard of the Royal Opera House Muscat was transformed into a vivid tapestry of sound, precision, and culture as thousands gathered for the annual…",
-      "link": "https://www.omanobserver.om/article/1199221/oman/community/symphony-of-unity",
-      "date": "Fri, 06 Nov 2026 19:28:54 +0400",
-      "byline": "Elena Voss",
-      "dateline": "PARIS",
-      "image": "/img/news/8cab3d2176d9.png"
     },
     {
       "section": "Asia",
@@ -1705,17 +1771,6 @@
       "image": "/img/news/1ffe684ce86c.png"
     },
     {
-      "section": "VC Blogs",
-      "title": "Charts of the Week: Apple Skips Capex, and the Crowd Goes Wild (Sort Of)",
-      "summary": "",
-      "description": "AI Does Roblox; GLP-1s: The Other GPT; Year of the Maxx",
-      "link": "https://www.a16z.news/p/charts-of-the-week-apple-skips-capex",
-      "date": "Fri, 06 Nov 2026 15:02:08 GMT",
-      "byline": "Elena Voss",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/350b0481e139.png"
-    },
-    {
       "section": "Science",
       "title": "What Does the ‘I’ in AI Really Mean?",
       "summary": "",
@@ -1725,17 +1780,6 @@
       "byline": "Elena Voss",
       "dateline": "LONDON",
       "image": "/img/news/fb8d53192f60.png"
-    },
-    {
-      "section": "Community",
-      "title": "National Guard expands free childcare program for drill weekends, but with some caveats",
-      "summary": "",
-      "description": "The expansion aims to make it easier for soldiers and their families, but one childcare expert argued that some of the eligibility requirements may limit its…",
-      "link": "https://taskandpurpose.com/news/national-guard-childcare-drill-weekend/",
-      "date": "Fri, 06 Nov 2026 09:58:22 -0500",
-      "byline": "Elena Voss",
-      "dateline": "LONDON",
-      "image": "/img/news/ea611e9166a7.png"
     },
     {
       "section": "Europe",
@@ -1760,17 +1804,6 @@
       "image": "/img/news/b59057deddfb.png"
     },
     {
-      "section": "Africa",
-      "title": "Kenyan cult leader sentenced to 200 years for Shakahola forest deaths",
-      "summary": "",
-      "description": "A self-proclaimed preacher from Kenya was sentenced to 200 years in prison on Friday for murdering 191 people, mostly children, by forcing them to starve to death…",
-      "link": "https://www.rfi.fr/en/africa/20261106-kenyan-cult-leader-sentenced-to-200-years-for-shakahola-forest-deaths",
-      "date": "Fri, 06 Nov 2026 14:38:10 GMT",
-      "byline": "Tomasz Kruk",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/b4945ecf44aa.png"
-    },
-    {
       "section": "Europe",
       "title": "Week in Review: Between Hope and Apathy",
       "summary": "",
@@ -1780,17 +1813,6 @@
       "byline": "Elena Voss",
       "dateline": "PARIS",
       "image": "/img/news/0cfd19503c22.png"
-    },
-    {
-      "section": "Middle East",
-      "title": "US midterm results spark fears in Israel over future of two countries' ties",
-      "summary": "",
-      "description": "Staunch US support of Israel has been raised as one of the reasons why Republicans performed so badly.",
-      "link": "https://www.bbc.co.uk/news/articles/cx30ee8018lvo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 06 Nov 2026 13:23:44 GMT",
-      "byline": "Ada Morrow",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/7d76c5ded71b.png"
     },
     {
       "section": "Europe",
@@ -1815,28 +1837,6 @@
       "image": "/img/news/4d161b291657.png"
     },
     {
-      "section": "Africa",
-      "title": "The human cost of recycling: Kenyan waste pickers put their health at risk",
-      "summary": "",
-      "description": "Two thousand tonnes of waste are dumped every day at the Dandora landfill site in the Kenyan capital Nairobi. An army of workers then rush in to recover recyclable…",
-      "link": "https://www.france24.com/en/tv-shows/reporters/20261106-the-human-cost-of-recycling-kenyan-waste-pickers-put-their-health-at-risk",
-      "date": "Fri, 06 Nov 2026 12:34:50 GMT",
-      "byline": "James Hale",
-      "dateline": "PARIS",
-      "image": "/img/news/6f0e03feb3e9.png"
-    },
-    {
-      "section": "Africa",
-      "title": "Tanzania opposition leader Lissu cleared of treason but jailed for incitement",
-      "summary": "",
-      "description": "A Tanzanian court on Friday sentenced opposition leader Tundu Lissu to four years in jail for inciting unrest, after earlier in the day clearing him of treason – meaning…",
-      "link": "https://www.rfi.fr/en/africa/20261106-tanzania-opposition-leader-lissu-cleared-of-treason-but-jailed-for-incitement",
-      "date": "Fri, 06 Nov 2026 12:15:24 GMT",
-      "byline": "Claire Brennan",
-      "dateline": "BERLIN",
-      "image": "/img/news/a76701a2a884.png"
-    },
-    {
       "section": "Startups",
       "title": "How To Challenge A Monopoly In The AI Age",
       "summary": "",
@@ -1857,17 +1857,6 @@
       "byline": "Amira Hassan",
       "dateline": "TOKYO",
       "image": "/img/news/c8beba91f07b.png"
-    },
-    {
-      "section": "Government",
-      "title": "World News in Brief: Civilians killed in DR Congo, Ukrainians wrestle with return…",
-      "summary": "",
-      "description": "At least 30 civilians were killed overnight on Thursday in Beni Territory, North Kivu in the Democratic Republic of the Congo, according to local sources cited by the UN…",
-      "link": "https://news.un.org/feed/view/en/story/2026/11/1168757",
-      "date": "Fri, 06 Nov 2026 12:00:00 +0000",
-      "byline": "Kenji Sato",
-      "dateline": "NEW YORK",
-      "image": "/img/news/e6903f3f262e.png"
     },
     {
       "section": "Europe",
@@ -1914,17 +1903,6 @@
       "image": "/img/news/45169d8f5340.png"
     },
     {
-      "section": "Latin America",
-      "title": "Rainfall on the Costa and Galapagos: These are the areas with rainfall forecast for...",
-      "summary": "",
-      "description": "According to the Inamhi, in the Guayas, rainfall of normal to moderate intensity is expected in places like Balzar, El Empalme and Beaches.",
-      "link": "https://eluniverso.com/comunidad/lluvias-en-la-costa-y-galapagos-estas-son-las-zonas-con-precipitaciones-previstas-para-este-viernes-6-de-noviembre-nota/",
-      "date": "Fri, 06 Nov 2026 10:58:02 +0000",
-      "byline": "Ada Morrow",
-      "dateline": "BERLIN",
-      "image": "/img/news/bde5a827413b.png"
-    },
-    {
       "section": "Asia",
       "title": "Pollution, shortages, crime: Daily life in Pakistan's megacity Karachi",
       "summary": "",
@@ -1947,17 +1925,6 @@
       "image": "/img/news/db2a057c58e8.png"
     },
     {
-      "section": "Asia",
-      "title": "What to know about the presidential wiretapping scandal rocking Indonesia",
-      "summary": "",
-      "description": "The scandal involves senior members of President Prabowo Subianto's government, and hint at growing tensions among its elites.",
-      "link": "https://www.bbc.co.uk/news/articles/cwkg55155mrro?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 06 Nov 2026 10:10:38 GMT",
-      "byline": "Claire Brennan",
-      "dateline": "LONDON",
-      "image": "/img/news/b2c6717765ad.png"
-    },
-    {
       "section": "Energy",
       "title": "Rio Tinto approves $144m for copper project in Arizona, US",
       "summary": "",
@@ -1967,17 +1934,6 @@
       "byline": "Ada Morrow",
       "dateline": "PARIS",
       "image": "/img/news/e95e8f1313c9.png"
-    },
-    {
-      "section": "Middle East",
-      "title": "Major construction ongoing near Iran missile bases, satellite images suggest",
-      "summary": "",
-      "description": "Evidence of digging and new buildings are visible in satellite imagery taken in November, satellite images suggest.",
-      "link": "https://www.bbc.co.uk/news/articles/ckjrwx1r2d5ro?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 06 Nov 2026 07:33:41 GMT",
-      "byline": "Kenji Sato",
-      "dateline": "WASHINGTON",
-      "image": "/img/news/42cbdb3c3fef.png"
     },
     {
       "section": "Positive",
@@ -2022,17 +1978,6 @@
       "byline": "Tomasz Kruk",
       "dateline": "TOKYO",
       "image": "/img/news/a9966b36d745.png"
-    },
-    {
-      "section": "Science",
-      "title": "Science Is Littered With AI Slop. A New Detector Could Filter It Out.",
-      "summary": "",
-      "description": "Rather than relying on text alone, the algorithm looks for clues in a paper’s reasoning. The post Science Is Littered With AI Slop. A New Detector Could Filter It Out…",
-      "link": "https://singularityhub.com/2026/11/05/science-is-littered-with-ai-slop-a-new-detector-could-filter-it-out/",
-      "date": "Thu, 05 Nov 2026 15:00:00 +0000",
-      "byline": "Ada Morrow",
-      "dateline": "TOKYO",
-      "image": "/img/news/4820fa3158ef.png"
     },
     {
       "section": "Crypto",
@@ -2146,14 +2091,14 @@
     },
     {
       "section": "Asia",
-      "title": "CBSE has released datasheets for 10th and 12th Board Exams",
+      "title": "U-19 Asia Cup: India gives Pakistan 209 runs",
       "summary": "",
-      "description": "The examinations for both classes will start on 16th February next year. The exam papers will start at 10:30 am.",
-      "link": "https://www.bbc.co.uk/hindi/live/cm62yy11q44gt?at_medium=RSS&at_campaign=rss",
+      "description": "India has scored 209 runs for Pakistan to win the U-19 Asia Cup in Oman.",
+      "link": "https://www.bbc.co.uk/hindi/live/c64g1nk0px2vt?at_medium=RSS&at_campaign=rss",
       "date": null,
-      "byline": "Amira Hassan",
-      "dateline": "TOKYO",
-      "image": "/img/news/813d64ec225b.png"
+      "byline": "Elena Voss",
+      "dateline": "BERLIN",
+      "image": "/img/news/e4ea16107e61.png"
     }
   ]
 }
