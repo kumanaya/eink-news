@@ -21,6 +21,6 @@
     "auto-feed": "sh tools/auto-feed.sh"
   },
   "devDependencies": {
-    "astro": "^7.3.3"
+    "astro": "^7.4.7"
   }
 }
